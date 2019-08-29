@@ -1735,6 +1735,7 @@
   <documents>Document.ЭлектронноеПисьмоИсходящее</documents>
   <documents>Document.РегистрационнаяАнкета</documents>
   <documents>Document.РегистрацияИТС</documents>
+  <documents>Document.НовыйДокумент</documents>
   <documentJournals>DocumentJournal.Взаимодействия</documentJournals>
   <documentJournals>DocumentJournal.СогласияНаОбработкуПерсональныхДанных</documentJournals>
   <enums>Enum.ВажностьПроблемыУчета</enums>
