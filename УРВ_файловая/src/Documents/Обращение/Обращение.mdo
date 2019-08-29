@@ -991,6 +991,15 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="79a104d1-d476-4ff5-9908-cb601a9ddbdb">
+    <name>ФормаДокумента2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа2</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <tabularSections uuid="ed921e17-473c-49f9-abc7-2864dfd5abdd">
     <producedTypes>
       <objectType typeId="807834a4-3d07-4f11-91bd-27aa46acae79" valueTypeId="a16915d3-1152-485f-bd8b-ab65a6fa2110"/>
