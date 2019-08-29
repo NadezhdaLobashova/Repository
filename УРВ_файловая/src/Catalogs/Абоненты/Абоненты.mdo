@@ -350,6 +350,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="3b6266f3-2350-4890-9922-e132317b9ce7">
+    <name>ТипАбонент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип абонент</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="eb955c38-4b69-42d4-8b90-19b64ac827fb">
     <producedTypes>
       <objectType typeId="039abeb6-c69b-4856-b942-3202c0b5315a" valueTypeId="85fd4c8f-c430-44cc-931b-2018067274c8"/>
