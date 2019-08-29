@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="647194eb-6b80-4455-82e6-3b5100a28deb">
+  <producedTypes>
+    <selectionType typeId="94e2b866-67e5-4328-9433-9042d494b200" valueTypeId="c5b47b33-a4a5-400a-82ef-d9f96a8ac66e"/>
+    <listType typeId="200cb3b7-c1fc-4b85-9e25-c79be874c827" valueTypeId="be81112a-76d4-4fc9-acf7-51a1cc96da53"/>
+    <managerType typeId="65b3bb4d-c861-4e4b-9203-af3c95e32240" valueTypeId="a26d0b96-f566-4186-a591-dd2d799af412"/>
+    <recordSetType typeId="eb977aaf-9ac8-45c4-8a4e-328ac0cade1e" valueTypeId="27a9c27b-57f0-4e5d-8e70-1639595407be"/>
+    <recordKeyType typeId="924513e1-c776-4cec-9e16-9c4507a8be19" valueTypeId="6fd4e9fb-7756-4627-a2e4-5678a744c3c1"/>
+    <recordType typeId="fa78ae22-4a3a-4475-83f7-83341a36db81" valueTypeId="c7d229ec-84ed-4fa8-92d2-763765c3a973"/>
+    <recordManagerType typeId="c84beb6c-5277-4afc-b8a2-ee667f29ed2f" valueTypeId="144a5511-4ed4-430a-8437-b12e55adc143"/>
+  </producedTypes>
+  <name>ОкладыСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оклады сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="5d458516-02ac-45a3-bd20-e02a380b838a">
+    <name>Оклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оклад</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="21ce01ee-3c8e-4e11-b1c6-3b1820b877aa">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

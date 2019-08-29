@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1e882ad3-f09e-4836-8453-2960bc404c53">
+  <name>НеИспользоватьНесколькоВитринСервисов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Не использовать несколько витрин сервисов</value>
+  </synonym>
+  <location>Constant.НеИспользоватьНесколькоВитринСервисов</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Document.Обращение.Attribute.Сервис</content>
+  <content>Catalog.ШаблоныТекстов.Attribute.Сервис</content>
+  <content>InformationRegister.ШаблоныТекстовПисем.Dimension.Сервис</content>
+  <content>Document.КомментарийПользователя.Attribute.Сервис</content>
+  <content>Catalog.Консультации.TabularSection.Сервисы.Attribute.Сервис</content>
+  <content>Catalog.Ошибки.TabularSection.Сервисы.Attribute.Сервис</content>
+  <content>Catalog.Пожелания.TabularSection.Сервисы.Attribute.Сервис</content>
+  <content>InformationRegister.ШаблоныТекстовПисем.Command.ШаблоныПисемСервисов</content>
+</mdclass:FunctionalOption>

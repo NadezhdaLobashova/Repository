@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b8b29da0-eb68-482d-891b-8644229a5b08">
+  <name>ФормаПодбораСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Форма подбора сотрудников</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+</mdclass:CommonForm>

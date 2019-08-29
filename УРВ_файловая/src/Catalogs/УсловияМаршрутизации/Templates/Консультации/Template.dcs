@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Код</dataPath>
+			<field>Код</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПометкаУдаления</dataPath>
+			<field>ПометкаУдаления</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Наименование</dataPath>
+			<field>Наименование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОписаниеАвторИзменения</dataPath>
+			<field>ОписаниеАвторИзменения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОписаниеХранилище</dataPath>
+			<field>ОписаниеХранилище</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаИзменения</dataPath>
+			<field>ДатаИзменения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Описание</dataPath>
+			<field>Описание</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Автор</dataPath>
+			<field>Автор</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОсновнаяКарточка</dataPath>
+			<field>ОсновнаяКарточка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОписаниеДатаИзменения</dataPath>
+			<field>ОписаниеДатаИзменения</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Актуальна</dataPath>
+			<field>Актуальна</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Разделы.Раздел</dataPath>
+			<field>Разделы.Раздел</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Компоненты.Компонент</dataPath>
+			<field>Компоненты.Компонент</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>Компоненты</dataPath>
+			<field>Компоненты</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>Сервисы</dataPath>
+			<field>Сервисы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сервисы.Сервис</dataPath>
+			<field>Сервисы.Сервис</field>
+		</field>
+		<field xsi:type="DataSetFieldNestedDataSet">
+			<dataPath>Разделы</dataPath>
+			<field>Разделы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаРегистрации</dataPath>
+			<field>ДатаРегистрации</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Консультации.Ссылка,
+	Консультации.ПометкаУдаления,
+	Консультации.Код,
+	Консультации.Наименование,
+	Консультации.Автор,
+	Консультации.Актуальна,
+	Консультации.ДатаИзменения,
+	Консультации.ДатаРегистрации,
+	Консультации.Описание,
+	Консультации.ОписаниеАвторИзменения,
+	Консультации.ОписаниеДатаИзменения,
+	Консультации.ОписаниеХранилище,
+	Консультации.ОсновнаяКарточка,
+	Консультации.Сервисы.(
+		Сервис
+	),
+	Консультации.Компоненты.(
+		Компонент
+	),
+	Консультации.Разделы.(
+		Раздел
+	)
+ИЗ
+	Справочник.Консультации КАК Консультации
+ГДЕ
+	Консультации.Ссылка = &amp;Объект</query>
+	</dataSet>
+	<parameter>
+		<name>Объект</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Объект</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Консультации</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ссылка</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Ссылка</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

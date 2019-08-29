@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8ba764b5-a8ed-4944-9e45-57c1698c40a9">
+  <producedTypes>
+    <selectionType typeId="77d2ba9c-f9c2-47b9-b0d4-cfbee5ea7e72" valueTypeId="0f52451f-8dc2-4002-9fcd-01a1cc229c23"/>
+    <listType typeId="d34830fa-83de-4893-abdf-2cfd5f459ab2" valueTypeId="6b72b9b7-e9bb-4dc1-993d-c38baf9df108"/>
+    <managerType typeId="56d7aeb7-b772-434b-87c7-89dc302fd714" valueTypeId="22274aba-e222-4268-a781-4e364d909c81"/>
+    <recordSetType typeId="d6a2d656-71fe-439f-9971-58a983a45c9c" valueTypeId="ce264cfc-d476-4653-90ab-337e687003c1"/>
+    <recordKeyType typeId="1be5168e-6a94-478e-ae8d-d2d7aee2d5f4" valueTypeId="32f3018c-21e4-4f6a-b6d1-2c051fa35b2b"/>
+    <recordType typeId="a33c42f4-b0de-4d60-ab7b-306681f55a2f" valueTypeId="c1622844-d18e-4acf-a358-7c0a3d3ffac7"/>
+    <recordManagerType typeId="8027cc83-96f6-4c1e-affc-3b76102905ef" valueTypeId="89f0b5c1-f1eb-48f5-93ba-66c83fc5cf21"/>
+  </producedTypes>
+  <name>РолиСотрудниковЛК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Роли сотрудников ЛК</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.РолиСотрудниковЛК.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.РолиСотрудниковЛК.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="448a1627-faf0-40a9-8238-af55557b3929">
+    <name>ДоступноСоздание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступно создание</value>
+    </synonym>
+    <comment>Сотрудник может создать новую запись</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="974d9af2-405f-4aaa-8dab-2379d9a48b24">
+    <name>ДоступноИзменение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступно изменение</value>
+    </synonym>
+    <comment>Сотрудник может изменить запись</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f9c0de39-57b2-419f-b3f0-fbf8b84b74eb">
+    <name>ДоступноПерепланирование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступно перепланирование</value>
+    </synonym>
+    <comment>Сотрудник может перенести свою запись </comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="52c04f9f-9db5-40ef-b905-4f6fbf863370">
+    <name>ДоступноБлокировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступно блокировка</value>
+    </synonym>
+    <comment>Сотрудник может блокировать свою запись </comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2ed3b585-253c-4568-ba34-8a39e889cac9">
+    <name>ДоступноОтменаБлокировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступно отмена блокировки</value>
+    </synonym>
+    <comment>Сотрудник может отменить свою запись</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="750bc666-2324-4a67-9005-ac62d287e388">
+    <name>ДоступноПросмотрДругихСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступно просмотр других сотрудников</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="328d3f8e-a044-4138-b7a5-39ea6e243012">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9165453b-f1e0-452b-b7e5-9cbcffa8e1c3">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="297cdcfd-3cae-41ab-af21-0b3164375f8e">
+    <name>Роль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль</value>
+    </synonym>
+    <type>
+      <types>EnumRef.РолиСотрудниковЛК</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>e831ed89-864f-474f-ba17-2e2729a052f8.00000000-0000-0000-0000-000000000000</value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="01f5f426-ce0b-4874-8f79-78725f48cd3c">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f8326722-4ad3-44ac-b8db-046ab2e71c1f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

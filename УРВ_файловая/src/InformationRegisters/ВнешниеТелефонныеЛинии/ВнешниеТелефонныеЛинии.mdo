@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c524d13-d3b2-48fb-85ba-160587106b6b">
+  <producedTypes>
+    <selectionType typeId="8bd25fed-0f59-4ef4-b42c-1d7dc0ee9804" valueTypeId="6474f4ea-c7e7-49e2-a15b-1bac6277c43b"/>
+    <listType typeId="324939b8-b0ad-4a7f-a51f-07c77260f000" valueTypeId="be75e2b7-aa83-4a47-b80c-0efb00251304"/>
+    <managerType typeId="24ddb416-300b-4f72-aee4-a4e70a96e17d" valueTypeId="1abfdafe-a804-42ae-9a53-d8403cc1751b"/>
+    <recordSetType typeId="fbba5341-4ac7-4d3e-9ea8-0f3635585811" valueTypeId="4adcdc6c-3dc5-453d-aba2-b06bce583a42"/>
+    <recordKeyType typeId="4c493de0-3bd7-4322-8e6d-9100e6d27f7e" valueTypeId="c545e3f4-25c3-4d3f-baaf-243c6edb137a"/>
+    <recordType typeId="ffcd904b-48bd-47a4-9702-a256e1d5894f" valueTypeId="0d7bff99-d832-4a28-8535-5b5b793e6a3f"/>
+    <recordManagerType typeId="a94fcdb5-9ac2-4ca6-9628-f233ead45bf2" valueTypeId="7c5d9782-a234-425c-826f-be5c763de6ea"/>
+  </producedTypes>
+  <name>ВнешниеТелефонныеЛинии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Внешние телефонные линии</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="a72f0539-9ca7-4658-9865-e9e702dc37ad">
+    <name>Сервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервис</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сервисы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d521d3c4-bd75-41af-9dfe-e98e1501de6d">
+    <name>ИмяЛинии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя линии</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

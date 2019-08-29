@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e45f8fd8-4de1-432e-9758-1175b21a18bf">
+  <name>URMExchangeСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>URMExchange сервер</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

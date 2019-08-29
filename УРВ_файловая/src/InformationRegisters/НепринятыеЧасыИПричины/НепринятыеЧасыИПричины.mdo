@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c121c69f-0e28-4a7e-a4d4-812535f9ede9">
+  <producedTypes>
+    <selectionType typeId="fdeb1c62-a476-4a04-a7fe-9475f02c1f7d" valueTypeId="68f6fba8-5db3-4191-9a86-f33b0e8dbeb8"/>
+    <listType typeId="9bdd73ac-1c6b-4cfa-b830-003cceaef942" valueTypeId="05938884-984d-4926-9107-598075bd93cf"/>
+    <managerType typeId="2ae65a40-3c78-48c4-847e-f5567ae2d57f" valueTypeId="9b385134-3cc8-4ac4-8f1b-11c025782772"/>
+    <recordSetType typeId="c0a5ebe0-2005-4757-8e3e-a6e4da61988c" valueTypeId="7313bae7-4506-4023-83de-14f82e7c750f"/>
+    <recordKeyType typeId="8fff78c5-78f9-4be3-92f8-3955075963b2" valueTypeId="d2a7ebbb-dd1d-4813-b282-00990c82f2e8"/>
+    <recordType typeId="1b801008-0df6-4fd3-ad88-731f613202df" valueTypeId="fdd4f291-cc56-4502-b4ef-4c6cb77451bf"/>
+    <recordManagerType typeId="a3a01bcf-bb70-492b-9607-526dab58ea58" valueTypeId="e83b0c3a-23b0-4eb1-b7d3-df97ba357a24"/>
+  </producedTypes>
+  <name>НепринятыеЧасыИПричины</name>
+  <synonym>
+    <key>ru</key>
+    <value>Непринятые часы и причины</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8b9c4fef-d2bc-4ec7-b84e-ee60d9fd6853">
+    <name>Причина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПричиныНепринятияЧасов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b7e7d23f-c0d5-42de-a880-977f3ecd47d2">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="dcfadeb0-45e5-4829-a595-a31e5b12eaf9">
+    <name>ИдентификаторСтроки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор строки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6880e653-dfe3-4b28-9fa6-6ffefa45e132">
+    <name>ПериодНачисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период начисления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c5f4b5d6-3f02-4bc2-9580-3d62a3066a6f">
+    <name>ВидДействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид действия</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыДействийСНепринятымиЧасами</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

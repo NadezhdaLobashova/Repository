@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="99f191fb-1666-4809-8faf-ba12e4d69e17">
+  <producedTypes>
+    <selectionType typeId="f8c2a063-3182-4250-93c2-b2f0a35e8572" valueTypeId="bb8f1b2c-d23c-4057-b339-1b757d70b19d"/>
+    <listType typeId="d30d5418-e67e-463a-9c36-d2b5147d8e12" valueTypeId="b144f05e-9210-4e24-a2bd-d4ccf33d3dd4"/>
+    <managerType typeId="773ef1b9-58be-4008-bfbf-ea2c61cd326b" valueTypeId="88254907-e4b1-4b4e-987f-98b06c3de367"/>
+    <recordSetType typeId="6f6781f1-9e79-48d1-8d34-ec3d89563791" valueTypeId="d186983a-6329-4118-b4ee-291c321e5f9e"/>
+    <recordKeyType typeId="510fd4c5-7c17-4386-98ee-5e1f3e98ce17" valueTypeId="8d4324a2-50b6-405c-835a-493fa1be0923"/>
+    <recordType typeId="07f6ec94-7e4c-45bd-910e-afa633d0d316" valueTypeId="6e470100-dfb8-430c-a3bb-75461dc18945"/>
+    <recordManagerType typeId="96a3d7fc-a859-4367-9106-59b9a4a75bb5" valueTypeId="5e43e322-51ba-4d5d-9c4b-1efcb13347a6"/>
+  </producedTypes>
+  <name>РуководителиПроектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Руководители проектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="eda8641b-4e7e-43c1-a830-f263933af399">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cb0668c2-a3a8-41da-a3c1-2c5de61fdc6d">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

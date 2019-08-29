@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1085ecf1-2373-4ff8-8df7-dd210afabd35">
+  <producedTypes>
+    <objectType typeId="eb14e70c-a4f8-49e4-8cd8-ce8e2835ba37" valueTypeId="9684134a-de2a-4c19-8290-666e38c962a5"/>
+    <managerType typeId="c6498509-2b5d-49cb-a14f-8f20d8d16275" valueTypeId="a1dfa25c-9402-4377-a39d-033fc97638d8"/>
+  </producedTypes>
+  <name>АнализВыполненияПлана</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ выполнения плана</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.АнализВыполненияПлана.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.АнализВыполненияПлана.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="fa27546d-cec6-43a8-bd4b-966ced1de861">
+    <name>КлючВарианта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ варианта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="dd098196-39c0-4ac2-aab1-86ef7b29c6c4">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ca2d8f39-f530-4988-bb12-107261880043">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="3fdf5cf0-7c25-4992-93c4-9774201eb9a0">
+    <name>МакетПоПроектам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет по проектам</value>
+    </synonym>
+  </templates>
+  <templates uuid="a184e6ee-f9e6-48c1-b5ec-01fe08832884">
+    <name>МакетПоСотрудникам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет по сотрудникам</value>
+    </synonym>
+  </templates>
+  <commands uuid="c0ccccfa-db00-4dc7-bf52-1beb1d6ca352">
+    <name>АнализВыполненияПлана</name>
+    <synonym>
+      <key>ru</key>
+      <value>Анализ выполнения плана</value>
+    </synonym>
+    <group>ActionsPanelReports</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Report>

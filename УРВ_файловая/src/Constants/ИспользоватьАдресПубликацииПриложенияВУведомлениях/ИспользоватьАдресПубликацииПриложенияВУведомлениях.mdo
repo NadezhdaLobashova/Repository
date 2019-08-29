@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="50406ddd-f40a-4455-8156-15c1e66d10c8">
+  <producedTypes>
+    <managerType typeId="f8172c77-d5e3-4170-9d11-fc2091027398" valueTypeId="a4a58c00-ed24-4b3e-8fa4-d2610e480175"/>
+    <valueManagerType typeId="4cb565c7-d838-4897-acb3-fb0fe522b137" valueTypeId="439513d3-fbf6-4179-908c-bfc4ba0165f4"/>
+    <valueKeyType typeId="6d332c53-bcb0-5ee2-aa7e-28d8330198b4" valueTypeId="0de00b7e-cc9b-55a1-b712-af97cbd2c961"/>
+  </producedTypes>
+  <name>ИспользоватьАдресПубликацииПриложенияВУведомлениях</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать адрес публикации приложения в уведомлениях</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

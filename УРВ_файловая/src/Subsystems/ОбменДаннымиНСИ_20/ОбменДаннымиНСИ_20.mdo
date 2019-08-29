@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5d2cc99b-85b1-48f6-b01a-0898a1eebf7c">
+  <name>ОбменДаннымиНСИ_20</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данными НСИ 20</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.СреднийВесОбъектовНСИ20</content>
+  <content>InformationRegister.СостоянияОбменовДаннымиНСИ20</content>
+  <content>DataProcessor.ОбменДаннымиНСИ20</content>
+  <content>Constant.ИспользоватьОбменДаннымиНСИ20</content>
+  <content>ExchangePlan.НСИ_20</content>
+  <content>Catalog.СоответствиеОбъектовОбмена</content>
+</mdclass:Subsystem>

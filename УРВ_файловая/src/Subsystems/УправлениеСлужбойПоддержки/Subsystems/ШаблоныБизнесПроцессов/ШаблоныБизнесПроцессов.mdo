@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="49690c8e-e617-47f6-a322-87b85c97ca83">
+  <name>ШаблоныБизнесПроцессов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблоны бизнес процессов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ШаблоныПоручений</content>
+  <content>InformationRegister.НастройкаШаблоновБизнесПроцессов</content>
+  <content>InformationRegister.ПравилаАвтоматическогоЗапускаБизнесПроцессов</content>
+  <content>CommonForm.ОповещениеПриИнтерактивномАвтоЗапускеБизнесПроцессов</content>
+  <content>CommonForm.ВыборПриИнтерактивномАвтоЗапускеБизнесПроцессов</content>
+  <content>Role.ДобавлениеИзменениеШаблоновБизнесПроцессов</content>
+  <content>Role.ЧтениеШаблоновБизнесПроцессов</content>
+  <parentSubsystem>Subsystem.УправлениеСлужбойПоддержки</parentSubsystem>
+</mdclass:Subsystem>

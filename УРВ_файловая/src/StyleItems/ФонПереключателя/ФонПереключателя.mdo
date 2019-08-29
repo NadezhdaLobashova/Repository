@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:StyleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="de21255c-079d-4cda-8016-0464563f8ff9">
+  <name>ФонПереключателя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Фон переключателя</value>
+  </synonym>
+  <value xsi:type="core:ColorValue">
+    <value xsi:type="core:ColorRef">
+      <color>Web.Gainsboro</color>
+    </value>
+  </value>
+</mdclass:StyleItem>

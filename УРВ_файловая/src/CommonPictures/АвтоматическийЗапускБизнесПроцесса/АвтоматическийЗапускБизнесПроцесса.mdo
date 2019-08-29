@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="07a6d8d3-b910-4dd7-a412-b5909105e691">
+  <name>АвтоматическийЗапускБизнесПроцесса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Автоматический запуск бизнес процесса</value>
+  </synonym>
+</mdclass:CommonPicture>

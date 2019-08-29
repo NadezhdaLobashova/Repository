@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f72b4810-cd90-4086-bb70-aab3f0f56ce5">
+  <name>ИнтеграцияСИнформационнымЦентром</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграция с информационным центром</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.ИнтеграцияСИнформационнымЦентром</content>
+  <content>WebService.InformationCenterIntegration_1_0_0_1</content>
+  <content>XDTOPackage.InformationCenterIntegration_1_0_0_1</content>
+  <content>Role.УдаленныйДоступИнформационныйЦентр</content>
+  <content>Catalog.Новости</content>
+  <subsystems>ЦентрИдей</subsystems>
+  <subsystems>ЦентрНовостей</subsystems>
+  <parentSubsystem>Subsystem.УправлениеСлужбойПоддержки</parentSubsystem>
+</mdclass:Subsystem>

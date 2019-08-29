@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5db0d8cf-ee8e-4dfd-8109-46961ab32f79">
+  <producedTypes>
+    <objectType typeId="497d01b9-d601-44ea-9256-fd5819495b1d" valueTypeId="6ec3981e-9f57-4979-8cf8-e6252e6fc6a7"/>
+    <managerType typeId="02430bbf-6b6f-42a7-8246-f1f03621f3cf" valueTypeId="64611f64-dc2a-4491-ae83-048c8de8f853"/>
+  </producedTypes>
+  <name>НачисленияСотрудникам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по начислениям сотрудникам (прогнозный)</value>
+  </synonym>
+  <comment>Отчет по всему фактическому времени</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.НачисленияСотрудникам.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.НачисленияСотрудникам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <attributes uuid="82233b65-0ab9-4184-99bf-bf7166fa85e9">
+    <name>КлючВарианта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ варианта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="7ec9bc80-6eb0-478d-94d1-03642ae3eb86">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="06b81452-8d9e-4644-b57b-295312232beb">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="e390096d-b2d1-4f55-a07e-dfce40821aba">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <templates uuid="e7224ccb-d405-4626-a3a5-d7dbca715987">
+    <name>МакетВРазрезеВыходных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет в разрезе выходных</value>
+    </synonym>
+  </templates>
+  <templates uuid="cd8c1fe2-47a7-4182-9fa5-cbbc1d402515">
+    <name>Сокращенный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сокращенный</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4564f311-172d-481c-bd55-3e4f69af6dab">
+  <producedTypes>
+    <selectionType typeId="59d6d905-8620-4a1a-a3c5-16630d1703d5" valueTypeId="b63af0d6-1e3a-48f8-a99e-1f9bf9f6e174"/>
+    <listType typeId="fdf7f320-25f3-4211-b73b-e6b779aa08d4" valueTypeId="6d2626b2-47b3-40b6-a603-d57925ab3a58"/>
+    <managerType typeId="8c7af2f8-1248-412a-8488-26442b6776b0" valueTypeId="6e2d23b1-b46f-418f-a356-9125dc23e386"/>
+    <recordSetType typeId="3b1c1b3b-c84c-4b9a-98ae-1af87d213885" valueTypeId="078fee3b-3310-4ac1-8562-d1935b4f4c59"/>
+    <recordKeyType typeId="e53a8a4d-4c73-49eb-906c-888d938957bd" valueTypeId="baeb3b41-4ed9-437a-8137-3e7641e62a0d"/>
+    <recordType typeId="578411fa-f0ec-4d79-8758-0945d5f42672" valueTypeId="61ed8a10-97ac-4328-8e9c-8114844d5c93"/>
+    <recordManagerType typeId="2aee7da9-66e8-4c42-9a24-71a609449fdd" valueTypeId="8ab582cc-ff10-4637-8eba-6631fb3b8b82"/>
+  </producedTypes>
+  <name>ДополнительныеРеквизитыОбъектовПоСервисам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнительные реквизиты объектов по сервисам</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ДополнительныеРеквизитыОбъектовПоСервисам.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="7a56e84b-ebb9-4c76-8592-1e6a3c7f67a6">
+    <name>Сервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервис</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сервисы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3b853730-0a91-40ad-8815-a77e87282d09">
+    <name>ДополнительныйРеквизит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительный реквизит</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="1b3cae6d-64ac-4493-9775-9e2b967dc70f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="03b3e3bc-920f-4047-8314-5295b0e536bd">
+    <name>ДополнительныеРеквизитыОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доп. реквизиты объектов</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Сервисы</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

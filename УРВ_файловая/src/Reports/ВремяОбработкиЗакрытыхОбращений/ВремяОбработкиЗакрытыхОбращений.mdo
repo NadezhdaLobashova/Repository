@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1352e281-d39c-4ca8-8c01-a3a4c1952c5f">
+  <producedTypes>
+    <objectType typeId="0119114d-61e5-474e-bdee-52073781e930" valueTypeId="fae443a8-4534-4bb4-8bd8-09b567af5c09"/>
+    <managerType typeId="bc0190b2-9a83-4e6f-b4b0-5ef34e5fbe81" valueTypeId="105f5ffe-8aa7-4b2e-a937-afe2d1ecc769"/>
+  </producedTypes>
+  <name>ВремяОбработкиЗакрытыхОбращений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Время обработки закрытых обращений</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.ВремяОбработкиЗакрытыхОбращений.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="be35782b-380c-47c9-83f5-92409bcfa8bc">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

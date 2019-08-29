@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a9ec05f-b43e-40a7-9ac6-7a703207f856">
+  <producedTypes>
+    <selectionType typeId="91023d61-2656-440c-b2a1-dbec6b2c7742" valueTypeId="57e7a697-cee7-4d5f-88cd-b1f1c594d7fc"/>
+    <listType typeId="71791ec1-e9f7-4934-ac0b-f7cad4f3a0b4" valueTypeId="ee399049-61a7-4111-9535-ef2f4ae86fe8"/>
+    <managerType typeId="bb74c2a3-03a3-41b3-9699-95641080c88a" valueTypeId="e8c627fe-b039-479d-8132-fcbe2fb4c9db"/>
+    <recordSetType typeId="1995bb19-d07e-4b9d-9e39-e9d3f207e996" valueTypeId="bf0e54db-9744-4995-968c-f984ac35dcae"/>
+    <recordKeyType typeId="35ba41f6-67d2-4133-aa1b-529a5f2aca5d" valueTypeId="5bf6b8ff-9da9-4bf8-8b3b-54f3a549b733"/>
+    <recordType typeId="d66c48e9-6e3e-4edc-8db0-690b6267e7b0" valueTypeId="98e0b286-ae01-40b8-a23e-163a86aaacc5"/>
+    <recordManagerType typeId="6de30fbb-14d2-4951-94b0-0831b789e0ea" valueTypeId="0203d34f-70ce-4dca-a1c8-ea6ce18945bc"/>
+  </producedTypes>
+  <name>ПользователиПриложений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пользователи приложений</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПользователиПриложений.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПользователиПриложений.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="0b662659-7928-4348-87fa-5a0f5b44c571">
+    <name>Сервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервис</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сервисы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="3a09bcc2-f01d-4a16-820b-0edba314292c">
+    <name>Разрешено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="411a3b10-c7fc-40d8-b744-35a1354724d9">
+    <name>Приложение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Приложения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f450f152-0750-44a4-bb83-6da688567a85">
+    <name>ПользовательСервиса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь сервиса</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПользователиСервисов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+  </dimensions>
+  <dimensions uuid="29bd4d7f-8376-4a8e-8af1-563b93e39790">
+    <name>Право</name>
+    <synonym>
+      <key>ru</key>
+      <value>Право</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПраваПользователейПриложений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <forms uuid="ae5546ff-24ed-4b0f-a627-ff5b8507f2d4">
+    <name>ПользователиПриложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователи приложения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="64a0dd64-b583-4aff-ac7c-382ce40959ef">
+    <name>ПриложенияПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложения пользователя</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9b654136-4fc4-4d4d-898b-16a6de0f3af0">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="33b8f074-3c7c-47e2-8994-954fd2e4d9c8">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="6e8be1b4-4205-424d-8ec4-754939c841ee">
+    <name>ПриложенияПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложения</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.ПользователиСервисов</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="eebe86f5-1234-4bb9-9208-e87f85690418">
+    <name>ПользователиПриложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователи</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Приложения</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="891365c0-8d55-4ee2-bd8a-c5fd374e21f0">
+  <producedTypes>
+    <managerType typeId="5350778e-79df-4e38-b657-007b3c66374f" valueTypeId="efb785be-3e72-431b-9852-72ea03d09823"/>
+    <valueManagerType typeId="829e5cef-77a6-4c7d-b092-73964b73fe9f" valueTypeId="7a2840ec-cd4a-4201-919d-7e2022b234c5"/>
+    <valueKeyType typeId="501ae634-8eb4-5dda-ace4-95c64da8ab1e" valueTypeId="732951fa-3b61-569e-a86b-07398c09ec15"/>
+  </producedTypes>
+  <name>ИспользоватьНесколькоВитринСервисов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать несколько витрин сервисов</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

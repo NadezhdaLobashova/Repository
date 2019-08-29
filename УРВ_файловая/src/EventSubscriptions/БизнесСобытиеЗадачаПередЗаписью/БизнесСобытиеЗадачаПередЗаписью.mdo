@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eb8393a8-a08c-4134-bbfd-958042c39af8">
+  <name>БизнесСобытиеЗадачаПередЗаписью</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бизнес событие задача перед записью</value>
+  </synonym>
+  <source>
+    <types>TaskObject.ЗадачаИсполнителя</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.БизнесСобытия.ЗадачаПередЗаписью</handler>
+</mdclass:EventSubscription>

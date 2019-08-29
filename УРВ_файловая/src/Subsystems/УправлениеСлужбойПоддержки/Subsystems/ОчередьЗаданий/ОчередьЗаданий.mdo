@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7d6ecb96-42d1-4cae-9e86-38148dca28dc">
+  <name>ОчередьЗаданий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь заданий</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Catalog.ОчередьЗаданий</content>
+  <content>Catalog.ШаблоныЗаданийОчереди</content>
+  <content>Enum.СостоянияЗаданий</content>
+  <content>Constant.МаксимальнаяДлительностьВыполненияИсполняющегоФоновогоЗадания</content>
+  <content>Constant.МаксимальноеКоличествоИсполняющихФоновыхЗаданий</content>
+  <content>ScheduledJob.ПланированиеОбработкиЗаданий</content>
+  <content>CommonModule.ОчередьЗаданий</content>
+  <content>CommonModule.ОчередьЗаданийПереопределяемый</content>
+  <content>CommonModule.ОчередьЗаданийСлужебный</content>
+  <content>CommonModule.ОчередьЗаданийСлужебныйПовтИсп</content>
+  <parentSubsystem>Subsystem.УправлениеСлужбойПоддержки</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8f891314-62bf-4396-b927-47ea80642019">
+  <producedTypes>
+    <objectType typeId="f59ebbfd-e81a-420c-952e-9b0d759a6932" valueTypeId="b936324d-4464-4e49-8bd9-c93bc8a5e6fd"/>
+    <managerType typeId="2dfdc0f0-8aa1-435c-b70e-685e098585c3" valueTypeId="b3caf9ab-4266-4a81-9c48-6f7b350dffe6"/>
+  </producedTypes>
+  <name>УправлениеСеансами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление сеансами</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.УправлениеСеансами.Form.Форма</defaultForm>
+  <forms uuid="0ce6b20d-04a1-438d-b481-66a98a8d525a">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

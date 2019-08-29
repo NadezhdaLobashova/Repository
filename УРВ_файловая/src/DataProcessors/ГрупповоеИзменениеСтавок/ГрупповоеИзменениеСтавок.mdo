@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cbd97b49-a2ff-4c05-8d60-0bdf25b3eb47">
+  <producedTypes>
+    <objectType typeId="ede94095-f6e3-4547-8021-91f7c58ee6b2" valueTypeId="1baab605-0081-48ef-805a-53d05a34fcdc"/>
+    <managerType typeId="b0bf82fd-d3b6-410b-b290-d853aa3f6c5f" valueTypeId="d62f4e8c-598f-49d3-8ce4-98ec66de63af"/>
+  </producedTypes>
+  <name>ГрупповоеИзменениеСтавок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Групповое изменение ставок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ГрупповоеИзменениеСтавок.Form.Форма</defaultForm>
+  <attributes uuid="6e8b3cdf-83b8-4055-87e4-70e03534bf20">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="bb005ecf-43ae-4023-9005-dfd6e653ce79">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <tabularSections uuid="2cd7766c-2cea-436d-b8c5-34e4407ad163">
+    <producedTypes>
+      <objectType typeId="3ff2cb16-0125-43c9-997e-e96d9b619c32" valueTypeId="3c3e6bf4-2504-4d7d-8cbd-c63bd965a35d"/>
+      <rowType typeId="40cc6190-c07e-4030-9368-ffb7fd1a90a8" valueTypeId="4886f042-8dcb-4b34-888e-99be5fdda43e"/>
+    </producedTypes>
+    <name>Ставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставки</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="0a27b604-a6b2-43e9-b818-0f58a7217acb">
+      <name>ВидРаботы</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид работы</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВидыРабот</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="90019a21-d75c-4e0f-907d-c8a0232ffe4c">
+      <name>СтавкаСтарая</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ставка старая</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9d3f7224-b966-4466-8a04-b817e61bbd6e">
+      <name>СтавкаНовая</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ставка новая</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="3e61581c-81e0-460b-9f05-e7120a02807e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

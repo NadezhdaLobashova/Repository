@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0586b378-65ce-4aaa-af23-1fcd8b0dc6d9">
+  <producedTypes>
+    <managerType typeId="44bfa1e8-e563-420d-b911-232df594e9a0" valueTypeId="a2bd61e3-bd72-4691-aa2f-6dc29f8f898b"/>
+    <valueManagerType typeId="73cd4ba2-f3ed-4a30-bbf2-cbfb61d07f6d" valueTypeId="13034ce0-3ff0-49e4-9098-c1967bba6abc"/>
+    <valueKeyType typeId="777c850a-5878-46a2-a37b-40b37df3c13e" valueTypeId="a27afaf2-9874-40eb-9b35-8e5a5ba48460"/>
+  </producedTypes>
+  <name>ДанныеАутентификацииСПартнерскимAPI_1C</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные аутентификации с партнерским API 1C</value>
+  </synonym>
+  <type>
+    <types>ValueStorage</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ДанныеАутентификацииСПартнерскимAPI_1C</defaultForm>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

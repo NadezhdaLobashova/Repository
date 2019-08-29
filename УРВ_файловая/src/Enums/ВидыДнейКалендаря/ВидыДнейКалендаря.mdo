@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f17b082e-f26a-4d70-802d-a063932c277a">
+  <producedTypes>
+    <refType typeId="95421fd6-a5d9-42fe-b0af-24b0caa31674" valueTypeId="d209d987-5d81-4f74-b97e-b9e2ab93ffea"/>
+    <listType typeId="4ad38b5a-aa8b-43c0-95c4-21b383a2bafb" valueTypeId="66a7e587-3a46-4c49-8a87-32fd97c7b1be"/>
+    <managerType typeId="a1d417ce-9844-412e-9705-735839e3316d" valueTypeId="2f9d5607-bdd3-4d3a-b4fd-64360e1ea350"/>
+  </producedTypes>
+  <name>ВидыДнейКалендаря</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды дней календаря</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="316857b2-f5c4-4c25-ad5a-448bd124469c">
+    <name>Выходной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выходной день</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9e7d2b53-689b-4ec1-aaf4-2a2f4bffadc1">
+    <name>Праздник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Праздник</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="75da9fff-f715-492f-a2a6-dce3d9bae163">
+    <name>Рабочий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рабочий день</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

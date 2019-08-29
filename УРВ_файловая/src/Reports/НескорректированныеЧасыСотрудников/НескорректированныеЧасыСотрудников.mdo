@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="89b0cc04-6f5f-44a2-8a79-78c21d501433">
+  <producedTypes>
+    <objectType typeId="c9ac248a-ddf2-4314-b7e8-72ca8879d082" valueTypeId="f2f203e1-f1cf-46eb-91e9-b7799fe93cf3"/>
+    <managerType typeId="93267eb4-e231-406a-8bb4-669a640bbc47" valueTypeId="c5d06e6a-a6f3-4886-a1cf-4e895fe3ea4a"/>
+  </producedTypes>
+  <name>НескорректированныеЧасыСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нескорректированные часы сотрудников (корп)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.НескорректированныеЧасыСотрудников.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="9331c5ae-fbf5-45da-9df9-17cd7e1c6d10">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

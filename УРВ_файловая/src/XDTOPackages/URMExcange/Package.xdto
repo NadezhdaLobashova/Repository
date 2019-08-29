@@ -1,0 +1,83 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://bear.rarus.ru/OBDExchange">
+	<objectType name="DocumentJob">
+		<property name="PartnerGUID" type="xs:ID"/>
+		<property name="employeeGUID" type="xs:ID"/>
+		<property name="projectID" type="xs:ID"/>
+		<property name="comment" type="xs:string"/>
+		<property name="startDate" type="xs:dateTime"/>
+		<property name="endDate" type="xs:dateTime"/>
+		<property name="deadline" type="xs:dateTime"/>
+		<property name="labourInput" type="xs:string"/>
+		<property name="status" type="xs:int"/>
+		<property name="name" type="xs:string"/>
+		<property name="documentGUID" type="xs:ID"/>
+		<property name="date" type="xs:dateTime"/>
+		<property name="namber" type="xs:string"/>
+		<property name="done" type="xs:boolean"/>
+		<property name="deleted" type="xs:boolean"/>
+	</objectType>
+	<objectType name="OperationResult">
+		<property name="Result" type="xs:boolean"/>
+		<property name="Message" type="xs:string"/>
+	</objectType>
+	<objectType name="Project">
+		<property name="NameProject" type="xs:string"/>
+		<property name="StartDate" type="xs:dateTime"/>
+		<property name="EndDate" type="xs:dateTime"/>
+		<property name="GUIDProject" type="xs:string"/>
+	</objectType>
+	<objectType name="Partner">
+		<property name="Name" type="xs:string"/>
+		<property name="INN" type="xs:string"/>
+		<property name="GUIDPartner" type="xs:string"/>
+	</objectType>
+	<objectType name="Employee">
+		<property name="Name" type="xs:string"/>
+		<property name="GUID" type="xs:string"/>
+		<property name="authentication" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="TakenHoursTable">
+		<property name="TakenHours" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="TakenHours">
+		<property name="EmployeeGUID" type="xs:string"/>
+		<property name="StageGUID" type="xs:string"/>
+		<property name="Date" type="xs:date"/>
+		<property name="Count" type="xs:string"/>
+		<property name="Description" type="xs:string"/>
+		<property name="NumberGUID" type="xs:string"/>
+		<property name="StageName" type="xs:string"/>
+	</objectType>
+	<objectType name="DocumentTimeTracking">
+		<property name="EmployeeGUID" type="xs:string"/>
+		<property name="PartnerGUID" type="xs:string"/>
+		<property name="Closed" type="xs:boolean"/>
+		<property name="Handed" type="xs:boolean"/>
+		<property name="DateHanded" type="xs:date"/>
+		<property name="Comment" type="xs:string"/>
+		<property xmlns:d3p1="http://bear.rarus.ru/OBDExchange" name="Works" type="d3p1:WorksTable" lowerBound="0" upperBound="-1"/>
+		<property name="documentGUID" type="xs:string"/>
+		<property name="DocumentDate" type="xs:date"/>
+		<property name="DocumentNomber" type="xs:string"/>
+		<property name="done" type="xs:boolean"/>
+		<property name="deleted" type="xs:boolean"/>
+		<property name="ProjectGUID" type="xs:string"/>
+		<property name="DateStartPeriod" type="xs:date"/>
+		<property name="DateEndPeriod" type="xs:date"/>
+		<property name="ResponsibleGUID" type="xs:string"/>
+		<property name="DepartmentGUID" type="xs:string"/>
+	</objectType>
+	<objectType name="WorksTable">
+		<property name="DateWork" type="xs:date"/>
+		<property name="StartTime" type="xs:time"/>
+		<property name="EndTime" type="xs:time"/>
+		<property name="JobGUID" type="xs:string"/>
+		<property name="Hours" type="xs:string"/>
+		<property name="TakenHours" type="xs:string"/>
+		<property name="NumberGUID" type="xs:string"/>
+		<property name="StageGUID" type="xs:string"/>
+		<property name="EmployeeGUID" type="xs:string"/>
+		<property name="Task" type="xs:string"/>
+		<property name="Description" type="xs:string"/>
+	</objectType>
+</package>

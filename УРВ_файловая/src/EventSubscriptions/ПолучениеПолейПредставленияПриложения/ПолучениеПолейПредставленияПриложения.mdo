@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e0fcca6a-2f96-48cb-9587-3ba39d5de4a4">
+  <name>ПолучениеПолейПредставленияПриложения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Получение полей представления приложения</value>
+  </synonym>
+  <source>
+    <types>CatalogManager.Приложения</types>
+  </source>
+  <event>PresentationFieldsGetProcessing</event>
+  <handler>CommonModule.ОбслуживаниеКлиентСервер.ОбработкаПолученияПолейПредставленияПриложения</handler>
+</mdclass:EventSubscription>

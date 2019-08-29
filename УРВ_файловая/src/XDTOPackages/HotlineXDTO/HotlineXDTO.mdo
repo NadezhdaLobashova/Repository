@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="03756e4c-0027-4ca8-a9a3-00b7858edac2">
+  <name>HotlineXDTO</name>
+  <synonym>
+    <key>ru</key>
+    <value>Hotline XDTO</value>
+  </synonym>
+  <namespace>http://bear.rarus.ru/Hotline</namespace>
+</mdclass:XDTOPackage>

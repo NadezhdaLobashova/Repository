@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af0e294b-bb69-4a8c-bfbf-6add376d4ecf">
+  <producedTypes>
+    <refType typeId="8617d0ba-4805-4899-b9ff-f6e0331c502f" valueTypeId="80ca8de1-6ab5-4bfd-bd4d-4a4c458a8d4d"/>
+    <listType typeId="d0a755ea-9243-4399-9d10-69ec702c71aa" valueTypeId="2739efeb-4870-46d2-bf87-af142449a46e"/>
+    <managerType typeId="d18fdc94-dbab-42d5-b16a-d8288d79bdc0" valueTypeId="14329509-6ee7-451e-b410-21924a4164a3"/>
+  </producedTypes>
+  <name>Интеграции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграции</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="8579a5f7-8b2b-4a57-8f9d-190db8c3c661">
+    <name>ПолучениеДанныхИзОБД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получение данных из ОБД</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0a167ce3-9530-4ac9-b01c-772b5d8e4c2d">
+    <name>СозданиеПроектаВЗУП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создание проекта в ЗУП</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5be5ca63-1380-40d2-89c9-ca13bb084ec4">
+    <name>СозданиеПроектаВОБД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создание проекта в ОБД</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4132dd14-23fb-4e09-bd0a-8e5e52158b71">
+    <name>СозданиеПодразделенияВЗУП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создание подразделения в ЗУП</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fdcacb12-5312-4b97-84b6-0d0ec29b5950">
+    <name>СозданиеПодразделенияВОБД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создание подразделения в ОБД</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="73fd08fa-498a-4762-9597-c316a6b7d724">
+    <name>СозданиеДокументовНачисленияВЗУП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создание документов начисления в ЗУП</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="11bc6f93-a3c8-4882-a14d-f2233838ef81">
+    <name>ПолучениеКонтактныхЛицИзОБД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получение контактных лиц из ОБД</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e6db579f-127e-4f33-be85-2e463714e149">
+    <name>СозданиеКонтактныхЛицВОБД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создание контактных лиц в ОБД</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="487b72fe-c239-485b-9ebe-905d12ff9320">
+    <name>ПолучениеПрограммыРазвитияИзЗУП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получение программы развития из ЗУП</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="db856150-5e7e-40d2-bb8b-02bb79fa51e5">
+    <name>НастройкиУправленияСеансамиОнлайн</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки управления сеансами онлайн</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

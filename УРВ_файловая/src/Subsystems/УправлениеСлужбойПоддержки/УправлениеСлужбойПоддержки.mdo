@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="51aebe9a-a675-4d32-9e31-9aa70f01f220">
+  <name>УправлениеСлужбойПоддержки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление службой поддержки</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Role.ДобавлениеИзменениеИнформацииПоСервисам</content>
+  <content>Role.ДобавлениеИзменениеОбслуживающихОрганизаций</content>
+  <content>Role.ЧтениеОбслуживающихОрганизаций</content>
+  <content>Role.ЧтениеИнформацииПоСервисам</content>
+  <content>Role.БазовыеПраваУСП</content>
+  <content>Role.ДобавлениеИзменениеЛинийПоддержки</content>
+  <content>Role.ЧтениеЛинийПоддержки</content>
+  <content>Constant.ИспользоватьАдресПубликацииПриложенияВУведомлениях</content>
+  <content>DataProcessor.ВыгрузкаЗагрузкаДанныхXML</content>
+  <content>Constant.ОтправлятьПисьмоОРегистрацииОбращенияБезПодтверждения</content>
+  <content>CommandGroup.БазаЗнаний</content>
+  <content>CommandGroup.КлиентыСервисов</content>
+  <content>CommandGroup.Настройки</content>
+  <content>CommandGroup.Обращения</content>
+  <content>CommandGroup.Обслуживание</content>
+  <content>CommandGroup.ОбслуживаниеСервисов</content>
+  <content>CommandGroup.Общее</content>
+  <content>CommandGroup.ПроцессыИЗадачи</content>
+  <content>CommandGroup.Регистрация</content>
+  <content>CommandGroup.УчетВремени</content>
+  <content>CommandGroup.Шаблоны</content>
+  <content>Document.КомментарийПользователя</content>
+  <content>Constant.ИспользоватьСоглашения</content>
+  <content>Constant.ИспользоватьТарифы</content>
+  <content>Constant.ОтправлятьУведомленияОЗадачахНаЛиниюПоддержки</content>
+  <subsystems>БизнесСобытия</subsystems>
+  <subsystems>ИнтеграцияСИнформационнымЦентром</subsystems>
+  <subsystems>НормативноСправочнаяИнформация</subsystems>
+  <subsystems>ОчередьЗаданий</subsystems>
+  <subsystems>Уведомления</subsystems>
+  <subsystems>ШаблоныБизнесПроцессов</subsystems>
+  <subsystems>ШаблоныТекстов</subsystems>
+  <subsystems>ИнтеграцияАстериск</subsystems>
+  <subsystems>Прочее</subsystems>
+</mdclass:Subsystem>

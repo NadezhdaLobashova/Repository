@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1a777302-ed8d-4730-8214-d73239f99a04">
+  <producedTypes>
+    <objectType typeId="f3ed04c3-2934-4d3b-86c4-6ee956622f5c" valueTypeId="26c790ae-c99a-461e-b3d2-ad7132a0e416"/>
+    <managerType typeId="30f91b98-d2d0-4ce4-a38e-dcd74ef0a17c" valueTypeId="dd17f8f6-525b-49ed-b33d-7b0d9ffe2cbb"/>
+  </producedTypes>
+  <name>Redmine</name>
+  <synonym>
+    <key>ru</key>
+    <value>Redmine</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.Redmine.Form.Форма</defaultForm>
+  <forms uuid="3d267107-0d80-4d04-a2cf-e92eb2e1fba2">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="39050fb9-7716-4876-815d-11775f641cda">
+    <name>СхеммаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схемма данных</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:DataProcessor>

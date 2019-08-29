@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="63ae0334-acc4-477e-ac2d-0722b1f09dda">
+  <producedTypes>
+    <objectType typeId="7941c091-97e1-4bee-912b-96035adcd02e" valueTypeId="3ebceb6f-2752-4eea-967a-c6390a77cf82"/>
+    <refType typeId="56401231-c587-479b-a41f-53973d9cac03" valueTypeId="f2004433-5fae-423d-bc3e-ae3da601205a"/>
+    <selectionType typeId="3fc804da-e519-4d87-8941-4b3353482bc4" valueTypeId="0c56d055-05ce-4f97-b210-bf3bc2ecf107"/>
+    <listType typeId="7adfaee1-779d-4645-8d9d-d057f0b8452f" valueTypeId="a2e2f9e1-8a16-46a3-b950-de8a5aa53de8"/>
+    <managerType typeId="b304cc20-1856-4664-a822-e9562c6f571b" valueTypeId="7ff7fc1b-b6b5-4beb-8135-202e91f7246a"/>
+  </producedTypes>
+  <name>ПользователиRedmine</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пользователи RedMine</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПользователиRedmine.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ПользователиRedmine.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="74af5823-ec78-41b4-96c0-bf0b3a3b5793">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3f9d73cf-7d7c-4131-8d24-d239c212edd4">
+    <name>idИсполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Id исполнитель</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ea3bd92a-f367-47ad-bbba-696e5420eb7e">
+    <name>Разработчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разработчик</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cb43873e-e2ed-457b-b565-b05f8b260677">
+    <name>Руководитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Руководитель</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

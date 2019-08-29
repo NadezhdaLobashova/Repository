@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:SessionParameter xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b00f405a-eff1-4bd1-abb9-eb50ff2c89c1">
+  <name>ВзаимоотношениеПровайдерОбслуживающаяОрганизация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взаимоотношение провайдер обслуживающая организация</value>
+  </synonym>
+  <type>
+    <types>EnumRef.ВидыВзаимоотношений</types>
+  </type>
+</mdclass:SessionParameter>

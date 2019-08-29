@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="282d4f3f-2352-45ab-b0bf-7063c00fbb4f">
+  <name>ДоступКОтчетам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Доступ к отчетам</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Role.ПросмотрОтчетаВремяОбработкиЗакрытыхОбращений</content>
+  <content>Role.ПросмотрОтчетаАнализКарточекБазыЗнаний</content>
+  <content>Role.ПросмотрОтчетаАнализОбращений</content>
+  <content>Role.ПросмотрОтчетаОбращенияВРаботе</content>
+  <content>Role.ПросмотрОтчетаДвижениеОбращений</content>
+  <content>Role.ПросмотрОтчетаДлительностьОбработкиОбращений</content>
+  <content>Role.ПросмотрОтчетаЗатратыВремени</content>
+  <content>Role.ПросмотрОтчетаОбработкаОбращений</content>
+  <content>Role.ПросмотрОтчетаСтоимостьПоддержки</content>
+  <parentSubsystem>Subsystem.Обслуживание</parentSubsystem>
+</mdclass:Subsystem>

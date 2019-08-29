@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1dd6cf48-06a9-406b-90eb-d5c0bfc527cd">
+  <producedTypes>
+    <selectionType typeId="6c70fa0d-8c08-4a4e-a5e3-0c13e54de3e6" valueTypeId="351b98de-73d5-4af3-8871-4d92e32b57e6"/>
+    <listType typeId="18ea476e-d8a9-4bac-8f2e-c439c3e155bd" valueTypeId="8319a8c4-63dd-4f4a-8033-bfe4995bea86"/>
+    <managerType typeId="68ec7520-fc67-4cd7-b1c6-54989c6906b5" valueTypeId="4c0512aa-3668-47cb-910c-d15b62b58f5b"/>
+    <recordSetType typeId="fa2dba65-9e1e-4d1f-a85e-b2cc00d4fe49" valueTypeId="c6aa5fb4-2223-43c4-b23a-512cbda7bb05"/>
+    <recordKeyType typeId="564141fc-20f3-4cd9-b9db-e2fc9c01bf1a" valueTypeId="d45bb04a-cc95-4f94-8880-c3ed20d59542"/>
+    <recordType typeId="af808602-13cb-47a5-9b41-290672ef9b4e" valueTypeId="de77b00d-021c-41fd-9844-d5ae87603e60"/>
+    <recordManagerType typeId="4b3ea5fc-e362-472d-a499-091ee3f2549f" valueTypeId="ad0c7d25-b110-46c4-988b-d64970f11532"/>
+  </producedTypes>
+  <name>РазрешенныеВидыБизнесСобытийДляКлиентовКомпании</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разрешенные виды бизнес событий для клиентов компании</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="0fe5aa22-746f-4065-a4bf-abeee7a20c6d">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="eb5122c4-9667-4650-817a-bfdf54388953">
+    <name>ВидБизнесСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид бизнес события</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыБизнесСобытий</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

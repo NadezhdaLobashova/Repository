@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bd5f1a8f-ae18-42d6-be57-3487b764a253">
+  <producedTypes>
+    <refType typeId="5704a6d3-1884-4f1c-8bff-8c7cecd58ea4" valueTypeId="9fff1aed-4d2b-448d-b5f5-fc81bec26d9d"/>
+    <listType typeId="7c4614ec-05ff-442a-8457-fd1ddf6837a9" valueTypeId="fa1fc0f0-5d46-401d-aa9a-85bcbba28790"/>
+    <managerType typeId="d9e9a5ef-35c1-4f4b-91f1-ff8f6fd04a73" valueTypeId="1c61042b-ceff-4e38-b5b5-3c61fbc73df3"/>
+  </producedTypes>
+  <name>ВидыРуководства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды руководства</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ce5f8cd3-c710-4a7a-95de-64e3a6e24872">
+    <name>Руководитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Руководитель</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="17dc31fe-0d8b-4f44-8d7d-c9df0bdafa47">
+    <name>Координатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Координатор</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

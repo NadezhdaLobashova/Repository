@@ -1,0 +1,3881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/"
+		xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:tns="http://www.rarus.ru/nsi"
+		xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+		xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:xsd1="cml"
+		xmlns:xsd2="http://v8.1c.ru/8.1/data/core"
+		xmlns:xsd3="http://www.rarus.ru/nsi"
+		xmlns:xsd4="http://www.rarus.ru/office/nsi-config"
+		xmlns:xsd5="http://www.rarus.ru/office/nsi-config/parametres"
+		name="NSI_DataTransfer"
+		targetNamespace="http://www.rarus.ru/nsi">
+	<types>
+		<xs:schema xmlns:tns="http://v8.1c.ru/8.1/data/core"
+				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xsd2="http://www.rarus.ru/office/nsi-config/parametres"
+				xmlns:xsd4="http://v8.1c.ru/8.1/data/core"
+				xmlns:xsd5="http://www.rarus.ru/office/nsi-config"
+				targetNamespace="http://v8.1c.ru/8.1/data/core"
+				attributeFormDefault="unqualified"
+				elementFormDefault="qualified">
+			<xs:simpleType name="AllowedLength">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Fixed"/>
+					<xs:enumeration value="Variable"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="AllowedSign">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Any"/>
+					<xs:enumeration value="Nonnegative"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="Array">
+				<xs:sequence>
+					<xs:element name="Value"
+							nillable="true"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="BinaryDataQualifiers">
+				<xs:sequence>
+					<xs:element name="Length"
+							type="xs:decimal"/>
+					<xs:element name="AllowedLength"
+							type="xsd4:AllowedLength"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="CompositeID">
+				<xs:restriction base="xs:string">
+					<xs:pattern value="-?[0-9]+(:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})?"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="DataFillError">
+				<xs:sequence>
+					<xs:element name="Data"
+							type="xs:string"/>
+					<xs:element name="DataDescr"
+							type="xs:string"/>
+					<xs:element name="Text"
+							type="xs:string"/>
+					<xs:element name="Status"
+							type="xsd4:FillCheckErrorStatus"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="DataFillErrors">
+				<xs:sequence>
+					<xs:element name="item"
+							type="xsd4:DataFillError"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="DateFractions">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Date"/>
+					<xs:enumeration value="Time"/>
+					<xs:enumeration value="DateTime"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="DateQualifiers">
+				<xs:sequence>
+					<xs:element name="DateFractions"
+							type="xsd4:DateFractions"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Exception">
+				<xs:complexContent>
+					<xs:extension base="xsd4:GenericException">
+						<xs:sequence>
+							<xs:element name="data"
+									type="xs:base64Binary"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:simpleType name="FillCheckErrorStatus">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Error"/>
+					<xs:enumeration value="Warning"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="FillChecking">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="DontCheck"/>
+					<xs:enumeration value="ShowError"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="FixedArray">
+				<xs:sequence>
+					<xs:element name="Value"
+							nillable="true"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="FixedMap">
+				<xs:sequence>
+					<xs:element name="pair"
+							type="xsd4:KeyAndValue"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="FixedStructure">
+				<xs:sequence>
+					<xs:element name="Property"
+							minOccurs="0"
+							maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Value"
+										nillable="true"/>
+							</xs:sequence>
+							<xs:attribute name="name"
+									type="xs:NMTOKEN"
+									use="required"/>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="GenericException"
+					abstract="true">
+				<xs:sequence>
+					<xs:element name="descr"
+							type="xs:string"/>
+					<xs:element name="inner"
+							type="xsd4:GenericException"
+							minOccurs="0"/>
+				</xs:sequence>
+				<xs:attribute name="clsid"
+						type="xsd4:UUID"
+						use="required"/>
+				<xs:attribute name="encoded"
+						type="xs:boolean"
+						default="false"/>
+			</xs:complexType>
+			<xs:complexType name="KeyAndValue">
+				<xs:sequence>
+					<xs:element name="Key"/>
+					<xs:element name="Value"
+							nillable="true"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="LocalStringItemType">
+				<xs:sequence>
+					<xs:element name="lang"
+							type="xs:NMTOKEN"/>
+					<xs:element name="content"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="LocalStringType">
+				<xs:sequence>
+					<xs:element name="item"
+							type="xsd4:LocalStringItemType"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Map">
+				<xs:sequence>
+					<xs:element name="pair"
+							type="xsd4:KeyAndValue"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="Null">
+				<xs:restriction base="xs:string">
+					<xs:length value="0"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="NumberQualifiers">
+				<xs:sequence>
+					<xs:element name="Digits"
+							type="xs:decimal"/>
+					<xs:element name="FractionDigits"
+							type="xs:decimal"/>
+					<xs:element name="AllowedSign"
+							type="xsd4:AllowedSign"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="StandardBeginningDate">
+				<xs:sequence>
+					<xs:element name="variant"/>
+					<xs:element name="date"
+							type="xs:dateTime"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="StandardBeginningDateVariant">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Custom"/>
+					<xs:enumeration value="BeginningOfThisDay"/>
+					<xs:enumeration value="BeginningOfThisWeek"/>
+					<xs:enumeration value="BeginningOfThisTenDays"/>
+					<xs:enumeration value="BeginningOfThisMonth"/>
+					<xs:enumeration value="BeginningOfThisQuarter"/>
+					<xs:enumeration value="BeginningOfThisHalfYear"/>
+					<xs:enumeration value="BeginningOfThisYear"/>
+					<xs:enumeration value="BeginningOfLastDay"/>
+					<xs:enumeration value="BeginningOfLastWeek"/>
+					<xs:enumeration value="BeginningOfLastTenDays"/>
+					<xs:enumeration value="BeginningOfLastMonth"/>
+					<xs:enumeration value="BeginningOfLastQuarter"/>
+					<xs:enumeration value="BeginningOfLastHalfYear"/>
+					<xs:enumeration value="BeginningOfLastYear"/>
+					<xs:enumeration value="BeginningOfNextDay"/>
+					<xs:enumeration value="BeginningOfNextWeek"/>
+					<xs:enumeration value="BeginningOfNextTenDays"/>
+					<xs:enumeration value="BeginningOfNextMonth"/>
+					<xs:enumeration value="BeginningOfNextQuarter"/>
+					<xs:enumeration value="BeginningOfNextHalfYear"/>
+					<xs:enumeration value="BeginningOfNextYear"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="StandardPeriod">
+				<xs:sequence>
+					<xs:element name="variant"/>
+					<xs:element name="startDate"
+							type="xs:dateTime"
+							minOccurs="0"/>
+					<xs:element name="endDate"
+							type="xs:dateTime"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="StandardPeriodVariant">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Custom"/>
+					<xs:enumeration value="Today"/>
+					<xs:enumeration value="ThisWeek"/>
+					<xs:enumeration value="ThisTenDays"/>
+					<xs:enumeration value="ThisMonth"/>
+					<xs:enumeration value="ThisQuarter"/>
+					<xs:enumeration value="ThisHalfYear"/>
+					<xs:enumeration value="ThisYear"/>
+					<xs:enumeration value="FromBeginningOfThisWeek"/>
+					<xs:enumeration value="FromBeginningOfThisTenDays"/>
+					<xs:enumeration value="FromBeginningOfThisMonth"/>
+					<xs:enumeration value="FromBeginningOfThisQuarter"/>
+					<xs:enumeration value="FromBeginningOfThisHalfYear"/>
+					<xs:enumeration value="FromBeginningOfThisYear"/>
+					<xs:enumeration value="Yesterday"/>
+					<xs:enumeration value="LastWeek"/>
+					<xs:enumeration value="LastTenDays"/>
+					<xs:enumeration value="LastMonth"/>
+					<xs:enumeration value="LastQuarter"/>
+					<xs:enumeration value="LastHalfYear"/>
+					<xs:enumeration value="LastYear"/>
+					<xs:enumeration value="LastWeekTillSameWeekDay"/>
+					<xs:enumeration value="LastTenDaysTillSameDayNumber"/>
+					<xs:enumeration value="LastMonthTillSameDate"/>
+					<xs:enumeration value="LastQuarterTillSameDate"/>
+					<xs:enumeration value="LastHalfYearTillSameDate"/>
+					<xs:enumeration value="LastYearTillSameDate"/>
+					<xs:enumeration value="Tomorrow"/>
+					<xs:enumeration value="NextWeek"/>
+					<xs:enumeration value="NextTenDays"/>
+					<xs:enumeration value="NextMonth"/>
+					<xs:enumeration value="NextQuarter"/>
+					<xs:enumeration value="NextHalfYear"/>
+					<xs:enumeration value="NextYear"/>
+					<xs:enumeration value="NextWeekTillSameWeekDay"/>
+					<xs:enumeration value="NextTenDaysTillSameDayNumber"/>
+					<xs:enumeration value="NextMonthTillSameDate"/>
+					<xs:enumeration value="NextQuarterTillSameDate"/>
+					<xs:enumeration value="NextHalfYearTillSameDate"/>
+					<xs:enumeration value="NextYearTillSameDate"/>
+					<xs:enumeration value="TillEndOfThisWeek"/>
+					<xs:enumeration value="TillEndOfThisTenDays"/>
+					<xs:enumeration value="TillEndOfThisMonth"/>
+					<xs:enumeration value="TillEndOfThisQuarter"/>
+					<xs:enumeration value="TillEndOfThisHalfYear"/>
+					<xs:enumeration value="TillEndOfThisYear"/>
+					<xs:enumeration value="Last7Days"/>
+					<xs:enumeration value="Next7Days"/>
+					<xs:enumeration value="Month"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="StringQualifiers">
+				<xs:sequence>
+					<xs:element name="Length"
+							type="xs:decimal"/>
+					<xs:element name="AllowedLength"
+							type="xsd4:AllowedLength"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Structure">
+				<xs:sequence>
+					<xs:element name="Property"
+							minOccurs="0"
+							maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Value"
+										nillable="true"/>
+							</xs:sequence>
+							<xs:attribute name="name"
+									type="xs:NMTOKEN"
+									use="required"/>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="Type">
+				<xs:restriction base="xs:QName"/>
+			</xs:simpleType>
+			<xs:complexType name="TypeDescription">
+				<xs:sequence>
+					<xs:element name="Type"
+							type="xs:QName"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="TypeSet"
+							type="xs:QName"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="TypeId"
+							type="xsd4:UUID"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="NumberQualifiers"
+							type="xsd4:NumberQualifiers"
+							minOccurs="0"/>
+					<xs:element name="StringQualifiers"
+							type="xsd4:StringQualifiers"
+							minOccurs="0"/>
+					<xs:element name="DateQualifiers"
+							type="xsd4:DateQualifiers"
+							minOccurs="0"/>
+					<xs:element name="BinaryDataQualifiers"
+							type="xsd4:BinaryDataQualifiers"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="UUID">
+				<xs:restriction base="xs:string">
+					<xs:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="ValueListItemType">
+				<xs:sequence>
+					<xs:element name="value"
+							nillable="true"/>
+					<xs:element name="presentation"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="checkState"
+							type="xs:decimal"
+							minOccurs="0"/>
+					<xs:element name="picture"
+							minOccurs="0"/>
+					<xs:element name="id"
+							type="xs:long"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ValueListType">
+				<xs:sequence>
+					<xs:element name="valueType"
+							type="xsd4:TypeDescription"/>
+					<xs:element name="availableValues"
+							type="xsd4:ValueListType"
+							minOccurs="0"/>
+					<xs:element name="item"
+							type="xsd4:ValueListItemType"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="lastId"
+							type="xs:long"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="ValueStorage">
+				<xs:restriction base="xs:base64Binary"/>
+			</xs:simpleType>
+			<xs:complexType name="ValueTable">
+				<xs:sequence>
+					<xs:element name="column"
+							type="xsd4:ValueTableColumn"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="index"
+							type="xsd4:ValueTableIndex"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="row"
+							type="xsd4:ValueTableRow"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ValueTableColumn">
+				<xs:sequence>
+					<xs:element name="Name"
+							type="xs:NMTOKEN"
+							minOccurs="0"/>
+					<xs:element name="ValueType"
+							type="xsd4:TypeDescription"
+							minOccurs="0"/>
+					<xs:element name="Title"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="Width"
+							type="xs:nonNegativeInteger"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ValueTableIndex">
+				<xs:sequence>
+					<xs:element name="column"
+							type="xs:NMTOKEN"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ValueTableRow">
+				<xs:sequence>
+					<xs:element name="Value"
+							nillable="true"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ValueTree">
+				<xs:sequence>
+					<xs:element name="column"
+							type="xsd4:ValueTreeColumn"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="row"
+							type="xsd4:ValueTreeRow"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ValueTreeColumn">
+				<xs:sequence>
+					<xs:element name="Name"
+							type="xs:NMTOKEN"
+							minOccurs="0"/>
+					<xs:element name="ValueType"
+							type="xsd4:TypeDescription"
+							minOccurs="0"/>
+					<xs:element name="Title"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="Width"
+							type="xs:nonNegativeInteger"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ValueTreeRow">
+				<xs:sequence>
+					<xs:element name="row"
+							type="xsd4:ValueTreeRow"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="Value"
+							nillable="true"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:schema>
+		<xs:schema xmlns:tns="cml"
+				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xsd2="http://www.rarus.ru/office/nsi-config/parametres"
+				xmlns:xsd4="http://v8.1c.ru/8.1/data/core"
+				xmlns:xsd5="http://www.rarus.ru/office/nsi-config"
+				targetNamespace="cml"
+				attributeFormDefault="unqualified"
+				elementFormDefault="qualified">
+			<xs:complexType name="Адрес">
+				<xs:sequence>
+					<xs:element name="Представление"
+							type="xsd1:НаименованиеТип"/>
+					<xs:element name="Комментарий"
+							type="xsd1:КомментарийТип"
+							minOccurs="0"/>
+					<xs:element name="АдресноеПоле"
+							type="xsd1:АдресноеПоле"
+							minOccurs="0"
+							maxOccurs="10"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="АдресТип">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Почтовый индекс"/>
+					<xs:enumeration value="Страна"/>
+					<xs:enumeration value="Регион"/>
+					<xs:enumeration value="Район"/>
+					<xs:enumeration value="Населенный пункт"/>
+					<xs:enumeration value="Город"/>
+					<xs:enumeration value="Улица"/>
+					<xs:enumeration value="Дом"/>
+					<xs:enumeration value="Корпус"/>
+					<xs:enumeration value="Квартира"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="АдресноеПоле">
+				<xs:sequence>
+					<xs:element name="Тип"
+							type="xsd1:АдресТип"/>
+					<xs:element name="Значение"
+							type="xsd1:СтрокаТип"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Акциз">
+				<xs:sequence>
+					<xs:element name="Наименование"
+							type="xsd1:НаименованиеТип"/>
+					<xs:element name="СуммаЗаЕдиницу"
+							type="xsd1:СуммаТип"/>
+					<xs:element name="Валюта"
+							type="xsd1:ВалютаТип"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Акцизы">
+				<xs:sequence>
+					<xs:element name="Акциз"
+							type="xsd1:Акциз"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Аналог">
+				<xs:sequence>
+					<xs:element name="ИдКаталога"
+							type="xsd1:ИдентфикаторГлобальныйТип"
+							minOccurs="0"/>
+					<xs:element name="ИдКлассификатора"
+							type="xsd1:ИдентфикаторГлобальныйТип"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Аналоги">
+				<xs:sequence>
+					<xs:element name="Аналог"
+							type="xsd1:Аналог"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="АртикулТип">
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+			<xs:simpleType name="БИКТип">
+				<xs:restriction base="xs:string">
+					<xs:length value="9"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="БазоваяЕдиница">
+				<xs:sequence>
+					<xs:element name="Пересчет"
+							type="xsd1:Пересчет"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:attribute name="Код"
+						type="xsd1:Строка3"/>
+				<xs:attribute name="НаименованиеПолное"
+						type="xsd1:СтрокаТип"/>
+				<xs:attribute name="МеждународноеСокращение"
+						type="xsd1:Строка3"/>
+			</xs:complexType>
+			<xs:complexType name="Банк">
+				<xs:sequence>
+					<xs:element name="СчетКорреспондентский"
+							type="xsd1:СчетНомерТип"
+							minOccurs="0"/>
+					<xs:element name="Наименование"
+							type="xsd1:НаименованиеТип"
+							minOccurs="0"/>
+					<xs:element name="Адрес"
+							type="xsd1:Адрес"
+							minOccurs="0"/>
+					<xs:element name="Контакты"
+							type="xsd1:КонтактнаяИнформация"
+							minOccurs="0"/>
+					<xs:element name="БИК"
+							type="xsd1:БИКТип"/>
+					<xs:element name="SWIFT"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="ВалютаТип">
+				<xs:restriction base="xs:string">
+					<xs:length value="3"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="ВариантыЗначений">
+				<xs:sequence>
+					<xs:element name="Значение"
+							type="xsd1:ЗначениеТип"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="ВидДеятельностиТип">
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+			<xs:simpleType name="ВремяТип">
+				<xs:restriction base="xs:time">
+					<xs:whiteSpace value="collapse"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="Группа">
+				<xs:sequence>
+					<xs:element name="Ид"
+							type="xsd1:ИдентфикаторГлобальныйТип"/>
+					<xs:element name="Наименование"
+							type="xsd1:КомментарийТип"/>
+					<xs:element name="Описание"
+							type="xsd1:КомментарийТип"
+							minOccurs="0"/>
+					<xs:element name="Свойства"
+							type="xsd1:Свойства"
+							minOccurs="0"/>
+					<xs:element name="Группы"
+							type="xsd1:Группы"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Группы">
+				<xs:sequence>
+					<xs:element name="Группа"
+							type="xsd1:Группа"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="ДатаВремяТип">
+				<xs:restriction base="xs:dateTime"/>
+			</xs:simpleType>
+			<xs:simpleType name="ДатаТип">
+				<xs:restriction base="xs:date"/>
+			</xs:simpleType>
+			<xs:complexType name="Документ">
+				<xs:sequence>
+					<xs:element name="Ид"
+							type="xsd1:ИдентфикаторГлобальныйТип"/>
+					<xs:element name="Номер"
+							type="xsd1:НомерТип"/>
+					<xs:element name="Дата"
+							type="xsd1:ДатаТип"/>
+					<xs:element name="ХозОперация"
+							type="xsd1:ХозОперацияТип"/>
+					<xs:element name="Роль"
+							type="xsd1:РольТип"/>
+					<xs:element name="Валюта"
+							type="xsd1:ВалютаТип"/>
+					<xs:element name="Курс"
+							type="xsd1:КоэффициентТип"/>
+					<xs:element name="Сумма"
+							type="xsd1:СуммаТип"/>
+					<xs:element name="Контрагенты"
+							type="xsd1:Контрагенты"/>
+					<xs:element name="Время"
+							type="xsd1:ВремяТип"
+							minOccurs="0"/>
+					<xs:element name="СрокПлатежа"
+							type="xsd1:ДатаТип"
+							minOccurs="0"/>
+					<xs:element name="Комментарий"
+							type="xsd1:КомментарийТип"
+							minOccurs="0"/>
+					<xs:element name="Налоги"
+							type="xsd1:Налоги"
+							minOccurs="0"/>
+					<xs:element name="Скидки"
+							type="xsd1:Скидки"
+							minOccurs="0"/>
+					<xs:element name="ДопРасходы"
+							type="xsd1:ДопРасходы"
+							minOccurs="0"/>
+					<xs:element name="Товары"
+							type="xsd1:Товары"
+							minOccurs="0"/>
+					<xs:element name="ЗначенияРеквизитов"
+							type="xsd1:ЗначенияРеквизитов"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ДопРасход">
+				<xs:sequence>
+					<xs:element name="Наименование"
+							type="xsd1:НаименованиеТип"/>
+					<xs:element name="Сумма"
+							type="xsd1:СуммаТип"/>
+					<xs:element name="Процент"
+							type="xsd1:КоэффициентТип"
+							minOccurs="0"/>
+					<xs:element name="УчтеноВСумме"
+							type="xsd1:ПереключательТип"
+							minOccurs="0"/>
+					<xs:element name="Комментарий"
+							type="xsd1:КомментарийТип"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ДопРасходы">
+				<xs:sequence>
+					<xs:element name="ДопРасход"
+							type="xsd1:ДопРасход"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="ЕГРПОТип">
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+			<xs:simpleType name="ЕдиницаТип">
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+			<xs:complexType name="ЗначениеРеквизита">
+				<xs:sequence>
+					<xs:element name="Наименование"
+							type="xsd1:НаименованиеТип"/>
+					<xs:element name="Значение"
+							type="xsd1:ЗначениеТип"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="ЗначениеТип">
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="1000"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="ЗначенияРеквизитов">
+				<xs:sequence>
+					<xs:element name="ЗначениеРеквизита"
+							type="xsd1:ЗначениеРеквизита"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ЗначенияСвойств">
+				<xs:sequence>
+					<xs:element name="ЗначенияСвойства"
+							type="xsd1:ЗначенияСвойства"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ЗначенияСвойства">
+				<xs:sequence>
+					<xs:element name="Ид"
+							type="xsd1:ИдентфикаторГлобальныйТип"/>
+					<xs:element name="Наименование"
+							type="xsd1:НаименованиеТип"
+							minOccurs="0"/>
+					<xs:element name="Значение"
+							type="xsd1:ЗначениеТип"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="ИННТип">
+				<xs:restriction base="xs:string">
+					<xs:minLength value="10"/>
+					<xs:maxLength value="12"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="ИдГрупп">
+				<xs:sequence>
+					<xs:element name="Ид"
+							type="xsd1:ИдентфикаторГлобальныйТип"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="Идентификатор80">
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="80"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="ИдентфикаторГлобальныйТип">
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="ИдентфикаторТип">
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="20"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="ИмяФайлаТип">
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+			<xs:simpleType name="КППТип">
+				<xs:restriction base="xs:string">
+					<xs:length value="9"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="Каталог">
+				<xs:sequence>
+					<xs:element name="Ид"
+							type="xsd1:ИдентфикаторГлобальныйТип"/>
+					<xs:element name="ИдКлассификатора"
+							type="xsd1:ИдентфикаторГлобальныйТип"
+							minOccurs="0"/>
+					<xs:element name="Наименование"
+							type="xsd1:НаименованиеТип"/>
+					<xs:element name="Владелец"
+							type="xsd1:Контрагент"/>
+					<xs:element name="Товары"
+							type="xsd1:Товары"/>
+					<xs:element name="Описание"
+							type="xsd1:КомментарийТип"
+							minOccurs="0"/>
+				</xs:sequence>
+				<xs:attribute name="СодержитТолькоИзменения"
+						type="xsd1:ПереключательТип"/>
+			</xs:complexType>
+			<xs:complexType name="Классификатор">
+				<xs:sequence>
+					<xs:element name="Ид"
+							type="xsd1:ИдентфикаторГлобальныйТип"/>
+					<xs:element name="Наименование"
+							type="xsd1:НаименованиеТип"/>
+					<xs:element name="Владелец"
+							type="xsd1:Контрагент"/>
+					<xs:element name="Описание"
+							type="xsd1:КомментарийТип"
+							minOccurs="0"/>
+					<xs:element name="Свойства"
+							type="xsd1:Свойства"
+							minOccurs="0"/>
+					<xs:element name="ТипыЦен"
+							type="xsd1:ТипыЦен"
+							minOccurs="0"/>
+					<xs:element name="Группы"
+							type="xsd1:Группы"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="КоличествоТип">
+				<xs:restriction base="xs:decimal"/>
+			</xs:simpleType>
+			<xs:simpleType name="КомментарийТип">
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="3000"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="КоммерческаяИнформация">
+				<xs:sequence>
+					<xs:element name="Классификатор"
+							type="xsd1:Классификатор"
+							minOccurs="0"/>
+					<xs:element name="Каталог"
+							type="xsd1:Каталог"
+							minOccurs="0"/>
+					<xs:element name="ПакетПредложений"
+							type="xsd1:ПакетПредложений"
+							minOccurs="0"/>
+					<xs:element name="Документ"
+							type="xsd1:Документ"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="ОписаниеОшибки"
+							type="xs:string"
+							minOccurs="0"/>
+				</xs:sequence>
+				<xs:attribute name="ВерсияСхемы"
+						type="xs:string"
+						use="required"/>
+				<xs:attribute name="ДатаФормирования"
+						type="xsd1:ДатаВремяТип"
+						use="required"/>
+			</xs:complexType>
+			<xs:complexType name="Комплектующее">
+				<xs:sequence>
+					<xs:element name="ИдКаталога"
+							type="xsd1:ИдентфикаторГлобальныйТип"
+							minOccurs="0"/>
+					<xs:element name="ИдКлассификатора"
+							type="xsd1:ИдентфикаторГлобальныйТип"
+							minOccurs="0"/>
+					<xs:element name="Количество"
+							type="xsd1:КоличествоТип"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Комплектующие">
+				<xs:sequence>
+					<xs:element name="Комплектующее"
+							type="xsd1:Комплектующее"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Контакт">
+				<xs:sequence>
+					<xs:element name="Тип"
+							type="xsd1:КонтактТип"/>
+					<xs:element name="Значение"
+							type="xsd1:СтрокаТип"/>
+					<xs:element name="Комментарий"
+							type="xsd1:КомментарийТип"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="КонтактТип">
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="100"/>
+					<xs:enumeration value="Телефон внутренний"/>
+					<xs:enumeration value="Телефон рабочий"/>
+					<xs:enumeration value="Телефон мобильный"/>
+					<xs:enumeration value="Телефон домашний"/>
+					<xs:enumeration value="Пейджер"/>
+					<xs:enumeration value="Факс"/>
+					<xs:enumeration value="Почта"/>
+					<xs:enumeration value="ICQ"/>
+					<xs:enumeration value="ВебСайт"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="КонтактнаяИнформация">
+				<xs:sequence>
+					<xs:element name="Контакт"
+							type="xsd1:Контакт"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Контрагент">
+				<xs:sequence>
+					<xs:element name="Ид"
+							type="xsd1:ИдентфикаторГлобальныйТип"
+							minOccurs="0"/>
+					<xs:element name="Наименование"
+							type="xsd1:НаименованиеТип"
+							minOccurs="0"/>
+					<xs:element name="ОфициальноеНаименование"
+							type="xsd1:НаименованиеТип"
+							minOccurs="0"/>
+					<xs:element name="ЮридическийАдрес"
+							type="xsd1:Адрес"
+							minOccurs="0"/>
+					<xs:element name="ИНН"
+							type="xsd1:ИННТип"
+							minOccurs="0"/>
+					<xs:element name="КПП"
+							type="xsd1:КППТип"
+							minOccurs="0"/>
+					<xs:element name="ОсновнойВидДеятельности"
+							type="xsd1:НаименованиеТип"
+							minOccurs="0"/>
+					<xs:element name="ЕГРПО"
+							type="xsd1:ЕГРПОТип"
+							minOccurs="0"/>
+					<xs:element name="ОКВЭД"
+							type="xsd1:ОКВЭДТип"
+							minOccurs="0"/>
+					<xs:element name="ОКДП"
+							type="xsd1:ОКДПТип"
+							minOccurs="0"/>
+					<xs:element name="ОКОПФ"
+							type="xsd1:ОКОПФТип"
+							minOccurs="0"/>
+					<xs:element name="ОКФС"
+							type="xsd1:ОКФСТип"
+							minOccurs="0"/>
+					<xs:element name="ОКПО"
+							type="xsd1:ОКПОТип"
+							minOccurs="0"/>
+					<xs:element name="ДатаРегистрации"
+							type="xsd1:ДатаТип"
+							minOccurs="0"/>
+					<xs:element name="Руководитель"
+							type="xsd1:Контрагент"
+							minOccurs="0"/>
+					<xs:element name="РасчетныеСчета"
+							type="xsd1:РасчетныеСчета"
+							minOccurs="0"/>
+					<xs:element name="ПолноеНаименование"
+							type="xsd1:НаименованиеТип"
+							minOccurs="0"/>
+					<xs:element name="Обращение"
+							type="xsd1:ОбращениеТип"
+							minOccurs="0"/>
+					<xs:element name="Фамилия"
+							type="xsd1:СтрокаТип"
+							minOccurs="0"/>
+					<xs:element name="Имя"
+							type="xsd1:СтрокаТип"
+							minOccurs="0"/>
+					<xs:element name="Отчество"
+							type="xsd1:СтрокаТип"
+							minOccurs="0"/>
+					<xs:element name="ДатаРождения"
+							type="xsd1:ДатаТип"
+							minOccurs="0"/>
+					<xs:element name="МестоРождения"
+							type="xsd1:Адрес"
+							minOccurs="0"/>
+					<xs:element name="Пол"
+							type="xsd1:ПолТип"
+							minOccurs="0"/>
+					<xs:element name="УдостоверениеЛичности"
+							type="xsd1:УдостоверениеЛичности"
+							minOccurs="0"/>
+					<xs:element name="АдресРегистрации"
+							type="xsd1:Адрес"
+							minOccurs="0"/>
+					<xs:element name="Организация"
+							type="xsd1:Контрагент"
+							minOccurs="0"/>
+					<xs:element name="Должность"
+							type="xsd1:СтрокаТип"
+							minOccurs="0"/>
+					<xs:element name="Комментарий"
+							type="xsd1:КомментарийТип"
+							minOccurs="0"/>
+					<xs:element name="Адрес"
+							type="xsd1:Адрес"
+							minOccurs="0"/>
+					<xs:element name="Контакты"
+							type="xsd1:КонтактнаяИнформация"
+							minOccurs="0"/>
+					<xs:element name="Представители"
+							type="xsd1:Представители"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Контрагенты">
+				<xs:sequence>
+					<xs:element name="Контрагент"
+							type="xsd1:Контрагент"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="КоэффициентТип">
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+			<xs:simpleType name="НаименованиеТип">
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="250"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="Налог">
+				<xs:sequence>
+					<xs:element name="Наименование"
+							type="xsd1:НаименованиеТип"/>
+					<xs:element name="УчтеноВСумме"
+							type="xsd1:ПереключательТип"
+							minOccurs="0"/>
+					<xs:element name="Акциз"
+							type="xsd1:ПереключательТип"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Налоги">
+				<xs:sequence>
+					<xs:element name="Налог"
+							type="xsd1:Налог"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="НомерТип">
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+			<xs:simpleType name="ОКВЭДТип">
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+			<xs:simpleType name="ОКДПТип">
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+			<xs:simpleType name="ОКОПФТип">
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+			<xs:simpleType name="ОКПОТип">
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+			<xs:simpleType name="ОКФСТип">
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+			<xs:simpleType name="ОбращениеТип">
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:enumeration value="товарищ"/>
+					<xs:enumeration value="гражданин"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="ОбязательностьСвойствТип">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Для каталога"/>
+					<xs:enumeration value="Для документа"/>
+					<xs:enumeration value="Для предложений"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="ПакетПредложений">
+				<xs:sequence>
+					<xs:element name="Ид"
+							type="xsd1:ИдентфикаторГлобальныйТип"
+							minOccurs="0"/>
+					<xs:element name="Наименование"
+							type="xsd1:НаименованиеТип"/>
+					<xs:element name="ИдКаталога"
+							type="xsd1:ИдентфикаторГлобальныйТип"/>
+					<xs:element name="ИдКлассификатора"
+							type="xsd1:ИдентфикаторГлобальныйТип"
+							minOccurs="0"/>
+					<xs:element name="ДействительноС"
+							type="xsd1:ДатаТип"
+							minOccurs="0"/>
+					<xs:element name="ДействительноДо"
+							type="xsd1:ДатаТип"
+							minOccurs="0"/>
+					<xs:element name="Описание"
+							type="xsd1:КомментарийТип"
+							minOccurs="0"/>
+					<xs:element name="Владелец"
+							type="xsd1:Контрагент"/>
+					<xs:element name="ТипыЦен"
+							type="xsd1:ТипыЦен"/>
+					<xs:element name="ЗначенияСвойств"
+							type="xsd1:ЗначенияСвойств"
+							minOccurs="0"/>
+					<xs:element name="Предложения"
+							type="xsd1:Предложения"/>
+				</xs:sequence>
+				<xs:attribute name="СодержитТолькоИзменения"
+						type="xsd1:ПереключательТип"/>
+			</xs:complexType>
+			<xs:simpleType name="ПереключательТип">
+				<xs:restriction base="xs:boolean"/>
+			</xs:simpleType>
+			<xs:complexType name="Пересчет">
+				<xs:sequence>
+					<xs:element name="Единица"
+							type="xsd1:ЕдиницаТип"
+							minOccurs="0"/>
+					<xs:element name="Коэффициент"
+							type="xsd1:КоэффициентТип"
+							minOccurs="0"/>
+					<xs:element name="ДополнительныеДанные"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="ПолТип">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="М"/>
+					<xs:enumeration value="Ж"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="Предложение">
+				<xs:complexContent>
+					<xs:extension base="xsd1:Товар">
+						<xs:sequence>
+							<xs:element name="Цены"
+									type="xsd1:Цены"/>
+							<xs:element name="Количество"
+									type="xsd1:КоличествоТип"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="Предложения">
+				<xs:sequence>
+					<xs:element name="Предложение"
+							type="xsd1:Предложение"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Представители">
+				<xs:sequence>
+					<xs:element name="Представитель"
+							type="xsd1:Представитель"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Представитель">
+				<xs:sequence>
+					<xs:element name="Отношение"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="РасчетныеСчета">
+				<xs:sequence>
+					<xs:element name="РасчетныйСчет"
+							type="xsd1:РасчетныйСчет"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="РасчетныйСчет">
+				<xs:sequence>
+					<xs:element name="НомерСчета"
+							type="xsd1:СчетНомерТип"/>
+					<xs:element name="Банк"
+							type="xsd1:Банк"/>
+					<xs:element name="БанкКорреспондент"
+							type="xsd1:Банк"
+							minOccurs="0"/>
+					<xs:element name="Комментарий"
+							type="xsd1:КомментарийТип"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="РольТип">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Продавец"/>
+					<xs:enumeration value="Покупатель"/>
+					<xs:enumeration value="Плательщик"/>
+					<xs:enumeration value="Получатель"/>
+					<xs:enumeration value="Комитент"/>
+					<xs:enumeration value="Комиссионер"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="СВИФТТип">
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+			<xs:complexType name="Свойства">
+				<xs:sequence>
+					<xs:element name="Свойство"
+							type="xsd1:Свойство"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Свойство">
+				<xs:sequence>
+					<xs:element name="Ид"
+							type="xsd1:ИдентфикаторГлобальныйТип"/>
+					<xs:element name="Наименование"
+							type="xsd1:НаименованиеТип"/>
+					<xs:element name="Описание"
+							type="xsd1:КомментарийТип"
+							minOccurs="0"/>
+					<xs:element name="Обязательное"
+							type="xsd1:ОбязательностьСвойствТип"
+							minOccurs="0"/>
+					<xs:element name="Множественное"
+							type="xsd1:ПереключательТип"
+							minOccurs="0"/>
+					<xs:element name="ТипЗначений"
+							type="xsd1:ТипЗначенийТип"
+							minOccurs="0"/>
+					<xs:element name="ВариантыЗначений"
+							type="xsd1:ВариантыЗначений"
+							minOccurs="0"/>
+					<xs:element name="ДляТоваров"
+							type="xsd1:ПереключательТип"
+							minOccurs="0"/>
+					<xs:element name="ДляПредложений"
+							type="xsd1:ПереключательТип"
+							minOccurs="0"/>
+					<xs:element name="ДляДокументов"
+							type="xsd1:ПереключательТип"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Скидка">
+				<xs:sequence>
+					<xs:element name="Наименование"
+							type="xsd1:НаименованиеТип"/>
+					<xs:element name="Сумма"
+							type="xsd1:СуммаТип"/>
+					<xs:element name="Процент"
+							type="xsd1:КоэффициентТип"
+							minOccurs="0"/>
+					<xs:element name="УчтеноВСумме"
+							type="xsd1:ПереключательТип"
+							minOccurs="0"/>
+					<xs:element name="Комментарий"
+							type="xsd1:КомментарийТип"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Скидки">
+				<xs:sequence>
+					<xs:element name="Скидка"
+							type="xsd1:Скидка"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Склад">
+				<xs:sequence>
+					<xs:element name="Ид"
+							type="xsd1:ИдентфикаторГлобальныйТип"/>
+					<xs:element name="Наименование"
+							type="xsd1:НаименованиеТип"/>
+					<xs:element name="Комментарий"
+							type="xsd1:КомментарийТип"
+							minOccurs="0"/>
+					<xs:element name="Адрес"
+							type="xsd1:Адрес"
+							minOccurs="0"/>
+					<xs:element name="Контакты"
+							type="xsd1:КонтактнаяИнформация"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="СтавкаНалога">
+				<xs:sequence>
+					<xs:element name="Наименование"
+							type="xsd1:СтрокаТип"/>
+					<xs:element name="Ставка"
+							type="xsd1:КоэффициентТип"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="СтавкиНалогов">
+				<xs:sequence>
+					<xs:element name="СтавкаНалога"
+							type="xsd1:СтавкаНалога"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="СтатусТип">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Новый"/>
+					<xs:enumeration value="Изменен"/>
+					<xs:enumeration value="Удален"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="Строка3">
+				<xs:restriction base="xs:string">
+					<xs:minLength value="1"/>
+					<xs:maxLength value="3"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="СтрокаТип">
+				<xs:restriction base="xs:string"/>
+			</xs:simpleType>
+			<xs:simpleType name="СуммаТип">
+				<xs:restriction base="xs:decimal">
+					<xs:totalDigits value="18"/>
+					<xs:fractionDigits value="2"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="СчетНомерТип">
+				<xs:restriction base="xs:string">
+					<xs:length value="20"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="ТипЗначенийТип">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Строка"/>
+					<xs:enumeration value="Число"/>
+					<xs:enumeration value="Время"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="ТипЦены">
+				<xs:sequence>
+					<xs:element name="Ид"
+							type="xsd1:ИдентфикаторГлобальныйТип"/>
+					<xs:element name="Наименование"
+							type="xsd1:НаименованиеТип"
+							minOccurs="0"/>
+					<xs:element name="Валюта"
+							type="xsd1:ВалютаТип"
+							minOccurs="0"/>
+					<xs:element name="Описание"
+							type="xsd1:КомментарийТип"
+							minOccurs="0"/>
+					<xs:element name="Налог"
+							type="xsd1:Налог"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ТипыЦен">
+				<xs:sequence>
+					<xs:element name="ТипЦены"
+							type="xsd1:ТипЦены"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Товар">
+				<xs:sequence>
+					<xs:element name="Ид"
+							type="xsd1:Идентификатор80"
+							minOccurs="0"/>
+					<xs:element name="Штрихкод"
+							type="xsd1:ШтрихкодТип"
+							minOccurs="0"/>
+					<xs:element name="Артикул"
+							type="xsd1:АртикулТип"
+							minOccurs="0"/>
+					<xs:element name="Наименование"
+							type="xsd1:НаименованиеТип"/>
+					<xs:element name="БазоваяЕдиница"
+							type="xsd1:БазоваяЕдиница"/>
+					<xs:element name="ИдТовараУКонтрагента"
+							type="xsd1:ИдентфикаторГлобальныйТип"
+							minOccurs="0"/>
+					<xs:element name="Группы"
+							type="xsd1:ИдГрупп"
+							minOccurs="0"/>
+					<xs:element name="Описание"
+							type="xsd1:СтрокаТип"
+							minOccurs="0"/>
+					<xs:element name="Картинка"
+							type="xsd1:ИмяФайлаТип"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="Страна"
+							type="xsd1:СтрокаТип"
+							minOccurs="0"/>
+					<xs:element name="ТорговаяМарка"
+							type="xsd1:СтрокаТип"
+							minOccurs="0"/>
+					<xs:element name="ВладелецТорговойМарки"
+							type="xsd1:Контрагент"
+							minOccurs="0"/>
+					<xs:element name="Изготовитель"
+							type="xsd1:Контрагент"
+							minOccurs="0"/>
+					<xs:element name="ЗначенияСвойств"
+							type="xsd1:ЗначенияСвойств"
+							minOccurs="0"/>
+					<xs:element name="СтавкиНалогов"
+							type="xsd1:СтавкиНалогов"
+							minOccurs="0"/>
+					<xs:element name="Акцизы"
+							type="xsd1:Акцизы"
+							minOccurs="0"/>
+					<xs:element name="Комплектующие"
+							type="xsd1:Комплектующие"
+							minOccurs="0"/>
+					<xs:element name="Аналоги"
+							type="xsd1:Аналоги"
+							minOccurs="0"/>
+					<xs:element name="ХарактеристикиТовара"
+							type="xsd1:ХарактеристикиТовара"
+							minOccurs="0"/>
+					<xs:element name="ЗначенияРеквизитов"
+							type="xsd1:ЗначенияРеквизитов"
+							minOccurs="0"/>
+					<xs:element name="ISBN"
+							type="xs:string"
+							nillable="true"
+							minOccurs="0"/>
+				</xs:sequence>
+				<xs:attribute name="Статус"
+						type="xsd1:СтатусТип"/>
+			</xs:complexType>
+			<xs:complexType name="Товары">
+				<xs:sequence>
+					<xs:element name="Товар"
+							type="xsd1:Товар"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="УдостоверениеЛичности">
+				<xs:sequence>
+					<xs:element name="ВидДокумента"
+							type="xsd1:СтрокаТип"/>
+					<xs:element name="Серия"
+							type="xsd1:СтрокаТип"
+							minOccurs="0"/>
+					<xs:element name="Номер"
+							type="xsd1:НомерТип"/>
+					<xs:element name="ДатаВыдачи"
+							type="xsd1:ДатаТип"/>
+					<xs:element name="КемВыдан"
+							type="xsd1:НаименованиеТип"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ХарактеристикаТовара">
+				<xs:sequence>
+					<xs:element name="Наименование"
+							type="xsd1:НаименованиеТип"/>
+					<xs:element name="Значение"
+							type="xsd1:ЗначениеТип"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ХарактеристикиТовара">
+				<xs:sequence>
+					<xs:element name="ХарактеристикаТовара"
+							type="xsd1:ХарактеристикаТовара"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="ХозОперацияТип">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Заказ товара"/>
+					<xs:enumeration value="Счет на оплату"/>
+					<xs:enumeration value="Отпуск товара"/>
+					<xs:enumeration value="Счет-фактура"/>
+					<xs:enumeration value="Возврат товара"/>
+					<xs:enumeration value="Передача товара на комиссию"/>
+					<xs:enumeration value="Возврат комиссионного товара"/>
+					<xs:enumeration value="Отчет о продажах комиссионного товара"/>
+					<xs:enumeration value="Выплата наличных денег"/>
+					<xs:enumeration value="Возврат наличных денег"/>
+					<xs:enumeration value="Выплата безналичных денег"/>
+					<xs:enumeration value="Возврат безналичных денег"/>
+					<xs:enumeration value="Переоценка товаров"/>
+					<xs:enumeration value="Прочие"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="Цена">
+				<xs:sequence>
+					<xs:element name="Представление"
+							type="xsd1:НаименованиеТип"
+							minOccurs="0"/>
+					<xs:element name="ИдТипаЦены"
+							type="xsd1:ИдентфикаторГлобальныйТип"/>
+					<xs:element name="ЦенаЗаЕдиницу"
+							type="xsd1:СуммаТип"/>
+					<xs:element name="Валюта"
+							type="xsd1:ВалютаТип"
+							minOccurs="0"/>
+					<xs:element name="Единица"
+							type="xsd1:ЕдиницаТип"
+							minOccurs="0"/>
+					<xs:element name="Коэффициент"
+							type="xsd1:КоэффициентТип"
+							minOccurs="0"/>
+					<xs:element name="ДополнительныеДанные"
+							minOccurs="0"/>
+					<xs:element name="МинКоличество"
+							type="xsd1:КоличествоТип"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Цены">
+				<xs:sequence>
+					<xs:element name="Цена"
+							type="xsd1:Цена"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="ШтрихкодТип">
+				<xs:restriction base="xs:string">
+					<xs:minLength value="8"/>
+					<xs:maxLength value="14"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:schema>
+		<xs:schema xmlns:ns1="cml"
+				xmlns:ns2="http://www.rarus.ru/office/nsi-config"
+				xmlns:tns="http://www.rarus.ru/office/nsi-config/parametres"
+				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xsd2="http://www.rarus.ru/office/nsi-config/parametres"
+				xmlns:xsd4="http://v8.1c.ru/8.1/data/core"
+				xmlns:xsd5="http://www.rarus.ru/office/nsi-config"
+				targetNamespace="http://www.rarus.ru/office/nsi-config/parametres"
+				attributeFormDefault="unqualified"
+				elementFormDefault="qualified">
+			<xs:import namespace="cml"/>
+			<xs:import namespace="http://www.rarus.ru/office/nsi-config"/>
+			<xs:complexType name="SelectChangesLog">
+				<xs:choice>
+					<xs:element name="Types"
+							minOccurs="0"/>
+					<xs:element name="Refs"
+							minOccurs="0"/>
+					<xs:element name="Status"
+							minOccurs="0"/>
+				</xs:choice>
+			</xs:complexType>
+			<xs:complexType name="inAdd"/>
+			<xs:complexType name="inDeleteChangesLog"/>
+			<xs:complexType name="inExistChangesLog"/>
+			<xs:complexType name="inGet"/>
+			<xs:complexType name="inGetChanges"/>
+			<xs:complexType name="inGetChangesLog">
+				<xs:sequence>
+					<xs:element name="SelectChangesLog"
+							type="xsd2:SelectChangesLog"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="inGetEnabledChangesLog"/>
+			<xs:complexType name="inGetSubscription"/>
+			<xs:complexType name="inReadAccess"/>
+			<xs:complexType name="inSetEnabledChangesLog"/>
+			<xs:complexType name="inSetSubscription"/>
+			<xs:complexType name="inUpdate"/>
+			<xs:complexType name="outAdd"/>
+			<xs:complexType name="outDeleteChangesLog"/>
+			<xs:complexType name="outExistChangesLog"/>
+			<xs:complexType name="outGet"/>
+			<xs:complexType name="outGetChanges"/>
+			<xs:complexType name="outGetChangesLog">
+				<xs:sequence>
+					<xs:element name="ЖурналИзменений"
+							type="xsd5:ЖурналИзменений"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="outGetEnabledChangesLog"/>
+			<xs:complexType name="outGetSubscription"/>
+			<xs:complexType name="outReadAccess"/>
+			<xs:complexType name="outSetEnabledChangesLog"/>
+			<xs:complexType name="outSetSubscription"/>
+			<xs:complexType name="outUpdate"/>
+		</xs:schema>
+		<xs:schema xmlns:ns1="http://v8.1c.ru/8.1/data/core"
+				xmlns:tns="http://www.rarus.ru/office/nsi-config"
+				xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xsd2="http://www.rarus.ru/office/nsi-config/parametres"
+				xmlns:xsd4="http://v8.1c.ru/8.1/data/core"
+				xmlns:xsd5="http://www.rarus.ru/office/nsi-config"
+				targetNamespace="http://www.rarus.ru/office/nsi-config"
+				attributeFormDefault="unqualified"
+				elementFormDefault="qualified">
+			<xs:import namespace="http://v8.1c.ru/8.1/data/core"/>
+			<xs:complexType name="AnyObjects">
+				<xs:sequence>
+					<xs:element name="ВидыДеятельностиКомпании"
+							type="xsd5:CatalogObject.ВидыДеятельностиКомпании"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="СтатьиЗатрат"
+							type="xsd5:CatalogObject.СтатьиЗатрат"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="Подразделения"
+							type="xsd5:CatalogObject.Подразделения"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="Должности"
+							type="xsd5:CatalogObject.Должности"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="Работники"
+							type="xsd5:CatalogObject.Работники"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="НоменклатурныеГруппы"
+							type="xsd5:CatalogObject.НоменклатурныеГруппы"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="Номенклатура"
+							type="xsd5:CatalogObject.Номенклатура"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="СтруктураПрайса"
+							type="xsd5:CatalogObject.СтруктураПрайса"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="КатегорииОбъектов"
+							type="xsd5:CatalogObject.КатегорииОбъектов"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="СвойстваОбъектов"
+							type="xsd5:ChartOfCharacteristicTypesObject.СвойстваОбъектов"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="Организации"
+							type="xsd5:CatalogObject.Организации"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="ТипыЦенНоменклатуры"
+							type="xsd5:CatalogObject.ТипыЦенНоменклатуры"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="ВидыСертификатов"
+							type="xsd5:CatalogObject.ВидыСертификатов"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="ЦФО"
+							type="xsd5:CatalogObject.ЦФО"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="БазыРаспределения"
+							type="xsd5:CatalogObject.БазыРаспределения"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="СтатьиДвиженияДенежныхСредств"
+							type="xsd5:CatalogObject.СтатьиДвиженияДенежныхСредств"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="Проекты"
+							type="xsd5:CatalogObject.Проекты"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="Кассы"
+							type="xsd5:CatalogObject.Кассы"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="БанковскиеСчета"
+							type="xsd5:CatalogObject.БанковскиеСчета"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="AnyRefs">
+				<xs:sequence>
+					<xs:element name="СтатьиЗатрат"
+							type="xsd5:CatalogRef.СтатьиЗатрат"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="ВидыДеятельностиКомпании"
+							type="xsd5:CatalogRef.ВидыДеятельностиКомпании"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="Подразделения"
+							type="xsd5:CatalogRef.Подразделения"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="Работники"
+							type="xsd5:CatalogRef.Работники"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="Должности"
+							type="xsd5:CatalogRef.Должности"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="Номенклатура"
+							type="xsd5:CatalogRef.Номенклатура"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="СтруктураПрайса"
+							type="xsd5:CatalogRef.СтруктураПрайса"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="НоменклатурныеГруппы"
+							type="xsd5:CatalogRef.НоменклатурныеГруппы"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="КатегорииОбъектов"
+							type="xsd5:CatalogRef.КатегорииОбъектов"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="СвойстваОбъектов"
+							type="xsd5:ChartOfCharacteristicTypesRef.СвойстваОбъектов"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="Организации"
+							type="xsd5:CatalogRef.Организации"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="ТипыЦенНоменклатуры"
+							type="xsd5:CatalogRef.ТипыЦенНоменклатуры"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="ВидыСертификатов"
+							type="xsd5:CatalogRef.ВидыСертификатов"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="ЦФО"
+							type="xsd5:CatalogRef.ЦФО"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="БазыРаспределения"
+							type="xsd5:CatalogRef.БазыРаспределения"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="СтатьиДвиженияДенежныхСредств"
+							type="xsd5:CatalogRef.СтатьиДвиженияДенежныхСредств"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="Проекты"
+							type="xsd5:CatalogRef.Проекты"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="Кассы"
+							type="xsd5:CatalogRef.Кассы"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="БанковскиеСчета"
+							type="xsd5:CatalogRef.БанковскиеСчета"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="CatalogObject">
+				<xs:complexContent>
+					<xs:extension base="xsd5:RootObjectExt">
+						<xs:sequence>
+							<xs:element name="Код"
+									type="xs:string"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="Наименование"
+									type="xs:string"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="Родитель"
+									type="xsd5:КодСинхронизации"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="ЭтоГруппа"
+									type="xs:boolean"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="Владелец"
+									type="xsd5:КодСинхронизации"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="ТипВладельца"
+									type="xs:string"
+									nillable="true"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="CatalogObject.БазыРаспределения">
+				<xs:complexContent>
+					<xs:extension base="xsd5:CatalogObject">
+						<xs:sequence>
+							<xs:element name="НатуральныйПоказатель"
+									type="xsd5:EnumRef.НатуральныеПоказателиБазРаспределения"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="CatalogObject.БанковскиеСчета">
+				<xs:complexContent>
+					<xs:extension base="xsd5:CatalogObject"/>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="CatalogObject.ВидыДеятельностиКомпании">
+				<xs:complexContent>
+					<xs:extension base="xsd5:CatalogObject"/>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="CatalogObject.ВидыСертификатов">
+				<xs:complexContent>
+					<xs:extension base="xsd5:CatalogObject">
+						<xs:sequence>
+							<xs:element name="Степень"
+									type="xs:string"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="Платформа"
+									type="xs:string"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="Конфигурация"
+									type="xs:string"
+									nillable="true"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="CatalogObject.Должности">
+				<xs:complexContent>
+					<xs:extension base="xsd5:CatalogObject">
+						<xs:sequence>
+							<xs:element name="Требования"
+									type="xs:string"
+									minOccurs="0"/>
+							<xs:element name="Инструкции"
+									type="xs:string"
+									minOccurs="0"/>
+							<xs:element name="НазваниеВакансииВСМИ"
+									type="xs:string"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="CatalogObject.Кассы">
+				<xs:complexContent>
+					<xs:extension base="xsd5:CatalogObject"/>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="CatalogObject.КатегорииОбъектов">
+				<xs:complexContent>
+					<xs:extension base="xsd5:CatalogObject"/>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="CatalogObject.Номенклатура">
+				<xs:complexContent>
+					<xs:extension base="xsd5:CatalogObject">
+						<xs:sequence>
+							<xs:element name="НаименованиеПолное"
+									type="xs:string"
+									minOccurs="0"/>
+							<xs:element name="Артикул"
+									type="xs:string"
+									minOccurs="0"/>
+							<xs:element name="БазоваяЕдиницаИзмерения"
+									type="xs:string"
+									minOccurs="0"/>
+							<xs:element name="Устарело"
+									type="xs:boolean"
+									minOccurs="0"/>
+							<xs:element name="СтавкаНДС"
+									type="xsd5:EnumRef.СтавкиНДС"
+									minOccurs="0"/>
+							<xs:element name="НоменклатурнаяГруппа"
+									type="xsd5:CatalogRef.НоменклатурныеГруппы"
+									minOccurs="0"/>
+							<xs:element name="СтатьяЗатрат"
+									type="xsd5:CatalogRef.СтатьиЗатрат"
+									minOccurs="0"/>
+							<xs:element name="ДатаГТД"
+									type="xs:dateTime"
+									minOccurs="0"/>
+							<xs:element name="ЦеныНоменклатуры"
+									type="xsd5:ЦеныНоменклатуры"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="CatalogObject.НоменклатурныеГруппы">
+				<xs:complexContent>
+					<xs:extension base="xsd5:CatalogObject">
+						<xs:sequence>
+							<xs:element name="СтавкаНДС"
+									type="xsd5:EnumRef.СтавкиНДС"
+									minOccurs="0"/>
+							<xs:element name="СтатьяЗатрат"
+									type="xsd5:CatalogRef.СтатьиЗатрат"
+									minOccurs="0"/>
+							<xs:element name="БазоваяЕдиницаИзмерения"
+									type="xs:string"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="CatalogObject.Организации">
+				<xs:complexContent>
+					<xs:extension base="xsd5:CatalogObject">
+						<xs:sequence>
+							<xs:element name="Префикс"
+									type="xs:string"
+									minOccurs="0"/>
+							<xs:element name="НаименованиеПолное"
+									type="xs:string"
+									minOccurs="0"/>
+							<xs:element name="НаименованиеПлательщикаПриПеречисленииНалогов"
+									type="xs:string"
+									minOccurs="0"/>
+							<xs:element name="ИНН"
+									type="xs:string"
+									minOccurs="0"/>
+							<xs:element name="КПП"
+									type="xs:string"
+									minOccurs="0"/>
+							<xs:element name="КодПоОКПО"
+									type="xs:string"
+									minOccurs="0"/>
+							<xs:element name="КодПоОКАТО"
+									type="xs:string"
+									minOccurs="0"/>
+							<xs:element name="КодИМНС"
+									type="xs:string"
+									minOccurs="0"/>
+							<xs:element name="ОГРН"
+									type="xs:string"
+									minOccurs="0"/>
+							<xs:element name="ЮрФизЛицо"
+									type="xsd5:EnumRef.ЮрФизЛицо"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="CatalogObject.Подразделения">
+				<xs:complexContent>
+					<xs:extension base="xsd5:CatalogObject">
+						<xs:sequence>
+							<xs:element name="Руководитель"
+									type="xsd5:CatalogRef.Работники"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="ЗаместительРуководителя"
+									type="xsd5:CatalogRef.Работники"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="КодВнутреннегоТелефона"
+									type="xsd5:Строка10"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="ВидПодразделения"
+									type="xsd5:EnumRef.ВидыПодразделений"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="ЦФО"
+									type="xsd5:CatalogRef.ЦФО"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="Состояние"
+									type="xsd5:СостояниеПодразделения"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="Домен"
+									type="xsd5:Строка20"
+									nillable="true"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="CatalogObject.Проекты">
+				<xs:complexContent>
+					<xs:extension base="xsd5:CatalogObject">
+						<xs:sequence>
+							<xs:element name="ВидПроекта"
+									type="xsd5:EnumRef.ВидыПроектов"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="ФинансовоеСостояние"
+									type="xsd5:ФинансовоеСостояниеПроекта"
+									nillable="true"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="CatalogObject.Работники">
+				<xs:complexContent>
+					<xs:extension base="xsd5:CatalogObject">
+						<xs:sequence>
+							<xs:element name="ИНН"
+									type="xs:string"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="ДатаРождения"
+									type="xs:date"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="КодИМНС"
+									type="xs:string"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="СтраховойНомерПФР"
+									type="xs:string"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="Пол"
+									type="xsd5:EnumRef.ПолФизическихЛиц"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="МестоРождения"
+									type="xs:string"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="ОсновноеИзображение"
+									type="xsd4:ValueStorage"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="МестоРожденияКодПоОКАТО"
+									type="xs:string"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="СоставСемьи"
+									type="xsd5:CatalogTabularSectionRow.Работники.СоставСемьи"
+									nillable="true"
+									minOccurs="0"
+									maxOccurs="unbounded"/>
+							<xs:element name="Образование"
+									type="xsd5:CatalogTabularSectionRow.Работники.Образование"
+									nillable="true"
+									minOccurs="0"
+									maxOccurs="unbounded"/>
+							<xs:element name="ТрудоваяДеятельность"
+									type="xsd5:CatalogTabularSectionRow.Работники.ТрудоваяДеятельность"
+									nillable="true"
+									minOccurs="0"
+									maxOccurs="unbounded"/>
+							<xs:element name="ЗнаниеЯзыков"
+									type="xsd5:CatalogTabularSectionRow.Работники.ЗнаниеЯзыков"
+									nillable="true"
+									minOccurs="0"
+									maxOccurs="unbounded"/>
+							<xs:element name="Профессии"
+									type="xs:string"
+									nillable="true"
+									minOccurs="0"
+									maxOccurs="unbounded"/>
+							<xs:element name="Стажи"
+									type="xsd5:CatalogTabularSectionRow.Работники.Стажи"
+									nillable="true"
+									minOccurs="0"
+									maxOccurs="unbounded"/>
+							<xs:element name="ПаспортныеДанные"
+									type="xsd5:InformationRegisterRecord.Работники.ПаспортныеДанные"
+									nillable="true"
+									minOccurs="0"
+									maxOccurs="unbounded"/>
+							<xs:element name="КонтактнаяИнформация"
+									type="xsd5:InformationRegisterRecord.Работники.КонтактнаяИнформация"
+									nillable="true"
+									minOccurs="0"
+									maxOccurs="unbounded"/>
+							<xs:element name="ФИО"
+									type="xsd5:InformationRegisterRecord.Работники.ФИО"
+									nillable="true"
+									minOccurs="0"
+									maxOccurs="unbounded"/>
+							<xs:element name="Логин"
+									type="xsd5:ТабельныйНомер"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="КадроваяИнформация"
+									type="xsd5:InformationRegisterRecord.Работники.КадроваяИнформация"
+									nillable="true"
+									minOccurs="0"
+									maxOccurs="unbounded"/>
+							<xs:element name="ПользовательОфиснойБазы"
+									type="xs:boolean"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="Сертификаты"
+									type="xsd5:InformationRegisterRecord.Работники.Сертификаты"
+									minOccurs="0"/>
+							<xs:element name="Организация"
+									type="xsd5:CatalogObject.Организации"
+									minOccurs="0"/>
+							<xs:element name="Фото"
+									type="xsd5:Картинка"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="ГрафикОтсутствий"
+									type="xsd5:ОтсутствиеНаРаботе"
+									nillable="true"
+									minOccurs="0"
+									maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="CatalogObject.СтатьиДвиженияДенежныхСредств">
+				<xs:complexContent>
+					<xs:extension base="xsd5:CatalogObject"/>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="CatalogObject.СтатьиЗатрат">
+				<xs:complexContent>
+					<xs:extension base="xsd5:CatalogObject">
+						<xs:sequence>
+							<xs:element name="ВидЗатрат"
+									type="xsd5:EnumRef.ВидыЗатрат"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="ХарактерЗатрат"
+									type="xsd5:EnumRef.ХарактерЗатрат"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="ОтнесениеРасходовКДеятельностиЕНВД"
+									type="xsd5:EnumRef.ОтнесениеРасходовКДеятельностиЕНВД"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="ПоказательДляРаспределения"
+									type="xs:int"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="ВидДоходаИРасхода"
+									type="xsd5:EnumRef.ВидыДоходовИРасходов"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="ТипСтатьи"
+									type="xs:int"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="ВидДохода"
+									type="xsd5:CatalogRef.ВидыДеятельностиКомпании"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="БазаРаспределения"
+									type="xsd5:CatalogRef.БазыРаспределения"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="НаименованиеНН"
+									type="xs:string"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="НаименованиеСПб"
+									type="xs:string"
+									nillable="true"
+									minOccurs="0"/>
+							<xs:element name="НаименованиеСМР"
+									type="xs:string"
+									nillable="true"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="CatalogObject.СтруктураПрайса">
+				<xs:complexContent>
+					<xs:extension base="xsd5:CatalogObject">
+						<xs:sequence>
+							<xs:element name="Порядок"
+									type="xs:integer"
+									minOccurs="0"/>
+							<xs:element name="ТипЭлемента"
+									type="xsd5:EnumRef.ТипыЭлементовСтруктураПрайса"
+									minOccurs="0"/>
+							<xs:element name="Колонки"
+									type="xsd5:КолонкиПрайса"
+									minOccurs="0"/>
+							<xs:element name="Строки"
+									type="xsd5:СтрокиПрайса"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="CatalogObject.ТипыЦенНоменклатуры">
+				<xs:complexContent>
+					<xs:extension base="xsd5:CatalogObject">
+						<xs:sequence>
+							<xs:element name="ВалютаЦены"
+									type="xs:string"
+									minOccurs="0"/>
+							<xs:element name="БазовыйТипЦен"
+									type="xsd5:CatalogRef.ТипыЦенНоменклатуры"
+									minOccurs="0"/>
+							<xs:element name="Рассчитывается"
+									type="xs:boolean"
+									minOccurs="0"/>
+							<xs:element name="ПроцентСкидкиНаценки"
+									type="xs:double"
+									minOccurs="0"/>
+							<xs:element name="ЦенаВключаетНДС"
+									type="xs:boolean"
+									minOccurs="0"/>
+							<xs:element name="ПорядокОкругления"
+									type="xsd5:EnumRef.ПорядкиОкругления"
+									minOccurs="0"/>
+							<xs:element name="ОкруглятьВБольшуюСторону"
+									type="xs:boolean"
+									minOccurs="0"/>
+							<xs:element name="СпособРасчетаЦены"
+									type="xsd5:EnumRef.СпособыРасчетаЦены"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="CatalogObject.ЦФО">
+				<xs:complexContent>
+					<xs:extension base="xsd5:CatalogObject"/>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:simpleType name="CatalogRef.БазыРаспределения">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:simpleType name="CatalogRef.БанковскиеСчета">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:simpleType name="CatalogRef.ВидыДеятельностиКомпании">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:simpleType name="CatalogRef.ВидыСертификатов">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:simpleType name="CatalogRef.Должности">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:simpleType name="CatalogRef.Кассы">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:simpleType name="CatalogRef.КатегорииОбъектов">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:simpleType name="CatalogRef.Номенклатура">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:simpleType name="CatalogRef.НоменклатурныеГруппы">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:simpleType name="CatalogRef.Организации">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:simpleType name="CatalogRef.Подразделения">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:simpleType name="CatalogRef.Проекты">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:simpleType name="CatalogRef.Работники">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:simpleType name="CatalogRef.СтатьиДвиженияДенежныхСредств">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:simpleType name="CatalogRef.СтатьиЗатрат">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:simpleType name="CatalogRef.СтруктураПрайса">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:simpleType name="CatalogRef.ТипыЦенНоменклатуры">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:simpleType name="CatalogRef.ЦФО">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:complexType name="CatalogTabularSectionRow.Работники.ЗнаниеЯзыков">
+				<xs:sequence>
+					<xs:element name="Язык"
+							type="xs:string"/>
+					<xs:element name="СтепеньЗнанияЯзыка"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="CatalogTabularSectionRow.Работники.Образование">
+				<xs:sequence>
+					<xs:element name="ВидОбразования"
+							type="xs:string"/>
+					<xs:element name="УчебноеЗаведение"
+							type="xs:string"/>
+					<xs:element name="Специальность"
+							type="xs:string"/>
+					<xs:element name="Диплом"
+							type="xs:string"/>
+					<xs:element name="ГодОкончания"
+							type="xs:int"/>
+					<xs:element name="Квалификация"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="CatalogTabularSectionRow.Работники.СоставСемьи">
+				<xs:sequence>
+					<xs:element name="СтепеньРодства"
+							type="xs:string"/>
+					<xs:element name="Имя"
+							type="xs:string"/>
+					<xs:element name="ГодРождения"
+							type="xs:int"
+							nillable="true"
+							minOccurs="0"/>
+					<xs:element name="ДатаРождения"
+							type="xs:date"
+							nillable="true"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="CatalogTabularSectionRow.Работники.Стажи">
+				<xs:sequence>
+					<xs:element name="ВидСтажа"
+							type="xsd5:EnumRef.ВидСтажа"/>
+					<xs:element name="ДатаОтсчета"
+							type="xs:date"/>
+					<xs:element name="РазмерМесяцев"
+							type="xs:int"/>
+					<xs:element name="РазмерДней"
+							type="xs:int"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="CatalogTabularSectionRow.Работники.ТрудоваяДеятельность">
+				<xs:sequence>
+					<xs:element name="Организация"
+							type="xs:string"/>
+					<xs:element name="ДатаНачала"
+							type="xs:date"/>
+					<xs:element name="ДатаОкончания"
+							type="xs:date"/>
+					<xs:element name="Должность"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ChartOfCharacteristicTypesObject">
+				<xs:complexContent>
+					<xs:extension base="xsd5:RootObject">
+						<xs:sequence>
+							<xs:element name="Наименование"
+									type="xs:string"
+									minOccurs="0"/>
+							<xs:element name="ЭтоГруппа"
+									type="xs:boolean"
+									minOccurs="0"/>
+							<xs:element name="Родитель"
+									type="xsd5:КодСинхронизации"
+									minOccurs="0"/>
+							<xs:element name="Код"
+									type="xs:string"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="ChartOfCharacteristicTypesObject.СвойстваОбъектов">
+				<xs:complexContent>
+					<xs:extension base="xsd5:ChartOfCharacteristicTypesObject"/>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:simpleType name="ChartOfCharacteristicTypesRef.СвойстваОбъектов">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:simpleType name="EnumRef.ВидСтажа">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Непрерывный стаж"/>
+					<xs:enumeration value="Общий стаж"/>
+					<xs:enumeration value="Стаж на надбавку за выслугу лет"/>
+					<xs:enumeration value="Страховой стаж для оплаты больничных листов"/>
+					<xs:enumeration value="ПустаяСсылка"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="EnumRef.ВидТипаЗначения">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="РеквизитСправочникаНоменклатура"/>
+					<xs:enumeration value="СвойствоСправочникаНоменклатура"/>
+					<xs:enumeration value="ТипЦен"/>
+					<xs:enumeration value="Другое"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="EnumRef.ВидыДоходовИРасходов">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="ОсновныеДоходы"/>
+					<xs:enumeration value="ДополнительныеДоходы"/>
+					<xs:enumeration value="ПостоянныеРасходы"/>
+					<xs:enumeration value="ПеременныеРасходы"/>
+					<xs:enumeration value="ИздержкиОбращения"/>
+					<xs:enumeration value="ПрочиеРасходы"/>
+					<xs:enumeration value="Прочее"/>
+					<xs:enumeration value="ПустаяСсылка"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="EnumRef.ВидыЗатрат">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Материальные"/>
+					<xs:enumeration value="Прочие"/>
+					<xs:enumeration value="ПустаяСсылка"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="EnumRef.ВидыПодразделений">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="ОсновноеПроизводство"/>
+					<xs:enumeration value="ВспомогательноеПроизводство"/>
+					<xs:enumeration value="Прочее"/>
+					<xs:enumeration value="Прибылеобразующее"/>
+					<xs:enumeration value="Затратное"/>
+					<xs:enumeration value="Общехозяйственное"/>
+					<xs:enumeration value="Административное"/>
+					<xs:enumeration value="Прямое"/>
+					<xs:enumeration value="ПустаяСсылка"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="EnumRef.ВидыПроектов">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Внутренний"/>
+					<xs:enumeration value="Внешний"/>
+					<xs:enumeration value="Комплексный"/>
+					<xs:enumeration value="ГруппаПроектов"/>
+					<xs:enumeration value="МаркетинговыйПроект"/>
+					<xs:enumeration value="ИнвестиционныйПроект"/>
+					<xs:enumeration value="ПустаяСсылка"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="EnumRef.НатуральныеПоказателиБазРаспределения">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="МаржинальнаяПрибыль"/>
+					<xs:enumeration value="МаржинальнаяПрибыльОтПродажСНДС"/>
+					<xs:enumeration value="СуммаДСПолученныхИзКассКомпании"/>
+					<xs:enumeration value="КоличествоОтгруженныхКоробок"/>
+					<xs:enumeration value="КоличествоВыписанныхДокументов"/>
+					<xs:enumeration value="КоличествоЧасовОтработанныхПодразделением"/>
+					<xs:enumeration value="КоличествоСотрудниковВПодразделении"/>
+					<xs:enumeration value="АрендуемаяПлощадь"/>
+					<xs:enumeration value="КоличествоВыпущенныхТОР"/>
+					<xs:enumeration value="ВаловаяПрибыльСоСторнированнымКомиссионнымВознаграждением"/>
+					<xs:enumeration value="Прочее"/>
+					<xs:enumeration value="ПустаяСсылка"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="EnumRef.ОтнесениеРасходовКДеятельностиЕНВД">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="РасходыОтносятсяКнеЕНВД"/>
+					<xs:enumeration value="РасходыОтносятсяКЕНВД"/>
+					<xs:enumeration value="РасходыРаспределяются"/>
+					<xs:enumeration value="ПустаяСсылка"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="EnumRef.ПолФизическихЛиц">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Мужской"/>
+					<xs:enumeration value="Женский"/>
+					<xs:enumeration value="ПустаяСсылка"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="EnumRef.ПорядкиОкругления">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Окр0_01"/>
+					<xs:enumeration value="Окр0_05"/>
+					<xs:enumeration value="Окр0_1"/>
+					<xs:enumeration value="Окр0_5"/>
+					<xs:enumeration value="Окр1"/>
+					<xs:enumeration value="Окр5"/>
+					<xs:enumeration value="Окр10"/>
+					<xs:enumeration value="Окр50"/>
+					<xs:enumeration value="Окр100"/>
+					<xs:enumeration value="ПустаяСсылка"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="EnumRef.ПричинаИзмененияСостояния">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="ПриемНаРаботу"/>
+					<xs:enumeration value="Перемещение"/>
+					<xs:enumeration value="Увольнение"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="EnumRef.СпособыРасчетаЦены">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="ПоПроцентнойНаценкеНаБазовыйТип"/>
+					<xs:enumeration value="ПоВхождениюБазовойЦеныВДиапазон"/>
+					<xs:enumeration value="ПустаяСсылка"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="EnumRef.СтавкиНДС">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="НДС18"/>
+					<xs:enumeration value="НДС18_118"/>
+					<xs:enumeration value="НДС10"/>
+					<xs:enumeration value="НДС10_110"/>
+					<xs:enumeration value="НДС0"/>
+					<xs:enumeration value="БезНДС"/>
+					<xs:enumeration value="НДС20"/>
+					<xs:enumeration value="НДС20_120"/>
+					<xs:enumeration value="ПустаяСсылка"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="EnumRef.СтатусИзменения">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Новый"/>
+					<xs:enumeration value="Изменен"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="EnumRef.ТипыXDTO">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="CatalogObject.СтатьиЗатрат"/>
+					<xs:enumeration value="CatalogObject.ВидыДеятельностиКомпании"/>
+					<xs:enumeration value="CatalogObject.Подразделения"/>
+					<xs:enumeration value="CatalogObject.Работники"/>
+					<xs:enumeration value="CatalogObject.Должности"/>
+					<xs:enumeration value="CatalogObject.Номенклатура"/>
+					<xs:enumeration value="CatalogObject.СтруктураПрайса"/>
+					<xs:enumeration value="CatalogObject.НоменклатурныеГруппы"/>
+					<xs:enumeration value="CatalogObject.КатегорииОбъектов"/>
+					<xs:enumeration value="ChartOfCharacteristicTypesObject.СвойстваОбъектов"/>
+					<xs:enumeration value="CatalogObject.Организации"/>
+					<xs:enumeration value="CatalogObject.ТипыЦенНоменклатуры"/>
+					<xs:enumeration value="CatalogObject.ВидыСертификатов"/>
+					<xs:enumeration value="CatalogObject.ЦФО"/>
+					<xs:enumeration value="CatalogObject.БазыРаспределения"/>
+					<xs:enumeration value="CatalogObject.СтатьиДвиженияДенежныхСредств"/>
+					<xs:enumeration value="CatalogObject.Проекты"/>
+					<xs:enumeration value="CatalogObject.Кассы"/>
+					<xs:enumeration value="CatalogObject.БанковскиеСчета"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="EnumRef.ТипыКонтактнойИнформации">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Адрес"/>
+					<xs:enumeration value="Телефон"/>
+					<xs:enumeration value="АдресЭлектроннойПочты"/>
+					<xs:enumeration value="ВебСтраница"/>
+					<xs:enumeration value="Другое"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="EnumRef.ТипыЭлементовСтруктураПрайса">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Прайс"/>
+					<xs:enumeration value="Таблица"/>
+					<xs:enumeration value="Группировка"/>
+					<xs:enumeration value="РазделПрайса"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="EnumRef.ХарактерЗатрат">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="БракВПроизводстве"/>
+					<xs:enumeration value="ВложенияВоВнеоборотныеАктивы"/>
+					<xs:enumeration value="ИздержкиОбращения"/>
+					<xs:enumeration value="КоммерческиеРасходы"/>
+					<xs:enumeration value="ОбщепроизводственныеРасходы"/>
+					<xs:enumeration value="ОбщехозяйственныеРасходы"/>
+					<xs:enumeration value="ПроизводственныеРасходы"/>
+					<xs:enumeration value="Прочие"/>
+					<xs:enumeration value="ПустаяСсылка"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="EnumRef.ЮрФизЛицо">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="ЮрЛицо"/>
+					<xs:enumeration value="ФизЛицо"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="InformationRegisterRecord.Работники.КадроваяИнформация">
+				<xs:sequence>
+					<xs:element name="Период"
+							type="xs:dateTime"/>
+					<xs:element name="Подразделение"
+							type="xsd5:CatalogRef.Подразделения"
+							nillable="true"
+							minOccurs="0"/>
+					<xs:element name="Должность"
+							type="xs:string"
+							nillable="true"
+							minOccurs="0"/>
+					<xs:element name="ЗанимаемыхСтавок"
+							type="xs:double"
+							nillable="true"
+							minOccurs="0"/>
+					<xs:element name="ТабельныйНомер"
+							type="xsd5:ТабельныйНомер"
+							nillable="true"
+							minOccurs="0"/>
+					<xs:element name="ПричинаИзмененияСостояния"
+							type="xsd5:EnumRef.ПричинаИзмененияСостояния"/>
+					<xs:element name="ПричинаУвольнения"
+							type="xs:string"
+							nillable="true"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="InformationRegisterRecord.Работники.КонтактнаяИнформация">
+				<xs:sequence>
+					<xs:element name="Тип"
+							type="xsd5:EnumRef.ТипыКонтактнойИнформации"/>
+					<xs:element name="Вид"
+							type="xs:string"/>
+					<xs:element name="Представление"
+							type="xs:string"/>
+					<xs:element name="Поле1"
+							type="xs:string"/>
+					<xs:element name="Поле2"
+							type="xs:string"/>
+					<xs:element name="Поле3"
+							type="xs:string"/>
+					<xs:element name="Поле4"
+							type="xs:string"/>
+					<xs:element name="Поле5"
+							type="xs:string"/>
+					<xs:element name="Поле6"
+							type="xs:string"/>
+					<xs:element name="Поле7"
+							type="xs:string"/>
+					<xs:element name="Поле8"
+							type="xs:string"/>
+					<xs:element name="Поле9"
+							type="xs:string"/>
+					<xs:element name="Поле10"
+							type="xs:string"/>
+					<xs:element name="Комментарий"
+							type="xs:string"/>
+					<xs:element name="ЗначениеПоУмолчанию"
+							type="xs:boolean"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="InformationRegisterRecord.Работники.ПаспортныеДанные">
+				<xs:sequence>
+					<xs:element name="ДокументВид"
+							type="xs:string"/>
+					<xs:element name="ДокументСерия"
+							type="xs:string"/>
+					<xs:element name="ДокументНомер"
+							type="xs:string"/>
+					<xs:element name="ДокументДатаВыдачи"
+							type="xs:date"/>
+					<xs:element name="ДокументКемВыдан"
+							type="xs:string"/>
+					<xs:element name="ДокументКодПодразделения"
+							type="xs:string"/>
+					<xs:element name="ДатаРегистрацииПоМестуЖительства"
+							type="xs:date"/>
+					<xs:element name="Период"
+							type="xs:date"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="InformationRegisterRecord.Работники.Сертификаты">
+				<xs:sequence>
+					<xs:element name="Сертификат"
+							type="xsd5:Сертификат"
+							nillable="true"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="InformationRegisterRecord.Работники.ФИО">
+				<xs:sequence>
+					<xs:element name="Период"
+							type="xs:date"/>
+					<xs:element name="Фамилия"
+							type="xs:string"/>
+					<xs:element name="Имя"
+							type="xs:string"/>
+					<xs:element name="Отчество"
+							type="xs:string"
+							nillable="true"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="InformationRegisterRecord.ЦеныНоменклатуры">
+				<xs:attribute name="Период"
+						type="xs:dateTime"
+						use="required"/>
+				<xs:attribute name="ТипЦен"
+						type="xsd5:CatalogRef.ТипыЦенНоменклатуры"
+						use="required"/>
+				<xs:attribute name="Валюта"
+						type="xs:string"
+						use="required"/>
+				<xs:attribute name="Цена"
+						type="xs:decimal"
+						use="required"/>
+				<xs:attribute name="ПроцентСкидкиНаценки"
+						type="xs:decimal"
+						use="required"/>
+				<xs:attribute name="СпособРасчетаЦены"
+						type="xsd5:EnumRef.СпособыРасчетаЦены"/>
+			</xs:complexType>
+			<xs:complexType name="ParameterGet">
+				<xs:sequence>
+					<xs:element name="ТипОбъекта"
+							type="xsd5:EnumRef.ТипыXDTO"/>
+					<xs:element name="Свойства"
+							type="xs:string"
+							nillable="true"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="КодыСинхронизации"
+							type="xsd5:КодСинхронизации"
+							nillable="true"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ParameterGetMethod">
+				<xs:sequence>
+					<xs:element name="Parameters"
+							type="xsd5:ParameterGet"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ReturnAddMethod">
+				<xs:sequence>
+					<xs:element name="РезультатыДобавленияОбъектов"
+							type="xsd5:РезультатДобавленияОбъекта"
+							nillable="true"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+					<xs:element name="РезультатВыполненияМетода"
+							type="xsd5:РезультатВыполненияМетода"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="RootObject">
+				<xs:sequence>
+					<xs:element name="КодСинхронизации"
+							type="xsd5:КодСинхронизации"
+							nillable="true"
+							minOccurs="0"/>
+					<xs:element name="ПометкаУдаления"
+							type="xs:boolean"
+							nillable="true"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="RootObjectExt">
+				<xs:complexContent>
+					<xs:extension base="xsd5:RootObject">
+						<xs:sequence>
+							<xs:element name="ЗначенияСвойств"
+									type="xsd5:ЗначенияСвойств"
+									minOccurs="0"/>
+							<xs:element name="Категории"
+									type="xsd5:Категории"
+									minOccurs="0"/>
+							<xs:element name="ДопРеквизиты"
+									type="xsd5:ДопРеквизиты"
+									minOccurs="0"/>
+						</xs:sequence>
+					</xs:extension>
+				</xs:complexContent>
+			</xs:complexType>
+			<xs:complexType name="Subscription">
+				<xs:sequence>
+					<xs:element name="КаналПубликации"
+							type="xsd5:КаналПубликации"/>
+					<xs:element name="Параметры"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="ВидОтсутствияНаРаботе">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Отпуск"/>
+					<xs:enumeration value="Декрет"/>
+					<xs:enumeration value="Другое"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="ГрафикОтсутствий">
+				<xs:sequence>
+					<xs:element name="Отсутствие"
+							type="xsd5:ОтсутствиеНаРаботе"
+							nillable="true"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ДанныеКолонкиПрайса">
+				<xs:attribute name="Колонка"
+						type="xsd5:КодСинхронизации"
+						use="required"/>
+				<xs:attribute name="Значение"
+						type="xs:string"
+						use="required"/>
+			</xs:complexType>
+			<xs:complexType name="ДанныеКолонокПрайса">
+				<xs:sequence>
+					<xs:element name="ДанныеКолонки"
+							type="xsd5:ДанныеКолонкиПрайса"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ДопРеквизит">
+				<xs:sequence>
+					<xs:element name="Наименование"
+							type="xs:string"/>
+					<xs:element name="Значение"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ДопРеквизиты">
+				<xs:sequence>
+					<xs:element name="ДопРеквизит"
+							nillable="true"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ДоступныеПрайсы">
+				<xs:sequence>
+					<xs:element name="Прайс"
+							type="xsd5:Прайс"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ЖурналИзменений">
+				<xs:sequence>
+					<xs:element name="Запись"
+							type="xsd5:ЗаписьЖурналаИзменений"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ЗаписьЖурналаИзменений">
+				<xs:sequence>
+					<xs:element name="КодСинхронизации"
+							type="xsd5:КодСинхронизации"/>
+					<xs:element name="ТипXDTO"
+							type="xsd5:EnumRef.ТипыXDTO"/>
+					<xs:element name="Статус"
+							type="xsd5:EnumRef.СтатусИзменения"/>
+					<xs:element name="СвойствоОбъекта"
+							type="xs:string"
+							minOccurs="0"/>
+					<xs:element name="Версия"
+							type="xs:nonNegativeInteger"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ЗаписьСостояниеПодразделения">
+				<xs:attribute name="Период"
+						type="xs:dateTime"
+						use="required"/>
+				<xs:attribute name="Вид"
+						type="xsd5:EnumRef.ВидыПодразделений"
+						use="required"/>
+				<xs:attribute name="ПодразделениеЗатрат"
+						type="xsd5:CatalogRef.Подразделения"
+						use="required"/>
+				<xs:attribute name="ЦФО"
+						type="xsd5:CatalogRef.ЦФО"
+						use="required"/>
+			</xs:complexType>
+			<xs:complexType name="ЗаписьФинансовоеСостояниеПроекта">
+				<xs:attribute name="Период"
+						type="xs:dateTime"
+						use="required"/>
+				<xs:attribute name="Распределяемый"
+						type="xs:boolean"/>
+			</xs:complexType>
+			<xs:complexType name="ЗначенияСвойств">
+				<xs:sequence>
+					<xs:element name="Свойство"
+							type="xsd5:Свойство"
+							nillable="true"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="КаналПубликации">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="E-mail"/>
+					<xs:enumeration value="Web-service"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="Картинка">
+				<xs:sequence>
+					<xs:element name="ДвоичныеДанные"
+							type="xs:base64Binary"
+							nillable="true"
+							minOccurs="0"/>
+					<xs:element name="Формат"
+							type="xsd5:ФорматКартинки"
+							nillable="true"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Категории">
+				<xs:sequence>
+					<xs:element name="Ид"
+							type="xsd5:КодСинхронизации"
+							nillable="true"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="КодСинхронизации">
+				<xs:restriction base="xsd4:UUID"/>
+			</xs:simpleType>
+			<xs:complexType name="КолонкаПрайса">
+				<xs:attribute name="Ид"
+						type="xsd5:КодСинхронизации"
+						use="required"/>
+				<xs:attribute name="Наименование"
+						type="xs:string"
+						use="required"/>
+				<xs:attribute name="ВидТипаЗначения"
+						type="xsd5:EnumRef.ВидТипаЗначения"
+						use="required"/>
+				<xs:attribute name="Значение"
+						type="xs:string"/>
+			</xs:complexType>
+			<xs:complexType name="КолонкиПрайса">
+				<xs:sequence>
+					<xs:element name="Колонка"
+							type="xsd5:КолонкаПрайса"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="ОперацииСДанными">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="Чтение"/>
+					<xs:enumeration value="Добавление"/>
+					<xs:enumeration value="Изменение"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="ОтсутствиеНаРаботе">
+				<xs:attribute name="Вид"
+						type="xsd5:ВидОтсутствияНаРаботе"
+						use="required"/>
+				<xs:attribute name="Начало"
+						type="xs:dateTime"
+						use="required"/>
+				<xs:attribute name="Окончание"
+						type="xs:dateTime"
+						use="required"/>
+			</xs:complexType>
+			<xs:complexType name="ПраваДоступа">
+				<xs:sequence>
+					<xs:element name="Право"
+							type="xsd5:Право"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Право">
+				<xs:sequence>
+					<xs:element name="Тип"
+							type="xsd5:EnumRef.ТипыXDTO"/>
+					<xs:element name="Операция"
+							type="xsd5:ОперацииСДанными"/>
+					<xs:element name="Свойства"
+							type="xsd5:СвойстваXDTO"
+							minOccurs="0"/>
+					<xs:element name="Комментарий"
+							type="xs:string"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Прайс">
+				<xs:attribute name="Идентификатор"
+						type="xsd5:КодСинхронизации"
+						use="required"/>
+				<xs:attribute name="Наименование"
+						type="xs:string"
+						use="required"/>
+			</xs:complexType>
+			<xs:simpleType name="РезультатВыполненияМетода">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="БезОшибок"/>
+					<xs:enumeration value="ОтказаноВДоступе"/>
+					<xs:enumeration value="ВыполненоСОшибками"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="РезультатДобавленияОбъекта">
+				<xs:sequence>
+					<xs:element name="Позиция"
+							type="xs:int"/>
+					<xs:element name="КодСинхронизации"
+							type="xsd5:КодСинхронизации"
+							nillable="true"
+							minOccurs="0"/>
+					<xs:element name="ТипДанных"
+							type="xs:string"/>
+					<xs:element name="ОписаниеОшибки"
+							type="xs:string"
+							nillable="true"
+							minOccurs="0"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="СвойстваXDTO">
+				<xs:sequence>
+					<xs:element name="Свойство"
+							type="xs:string"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Свойство">
+				<xs:sequence>
+					<xs:element name="Ид"
+							type="xsd5:КодСинхронизации"/>
+					<xs:element name="Значение"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="Сертификат">
+				<xs:sequence>
+					<xs:element name="Период"
+							type="xs:dateTime"/>
+					<xs:element name="ВидСертификата"
+							type="xsd5:КодСинхронизации"/>
+					<xs:element name="Действует"
+							type="xs:boolean"/>
+					<xs:element name="Примечание"
+							type="xs:string"/>
+					<xs:element name="НомерСертификата"
+							type="xs:string"/>
+					<xs:element name="ОрганизацияВыдачи"
+							type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="СостояниеПодразделения">
+				<xs:sequence>
+					<xs:element name="Запись"
+							type="xsd5:ЗаписьСостояниеПодразделения"
+							nillable="true"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="Строка10">
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="10"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:simpleType name="Строка20">
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="20"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="СтрокаПрайса">
+				<xs:sequence>
+					<xs:element name="ДанныеКолонок"
+							type="xsd5:ДанныеКолонокПрайса"
+							minOccurs="0"/>
+				</xs:sequence>
+				<xs:attribute name="Номенклатура"
+						type="xsd5:КодСинхронизации"
+						use="required"/>
+			</xs:complexType>
+			<xs:complexType name="СтрокиПрайса">
+				<xs:sequence>
+					<xs:element name="Строка"
+							type="xsd5:СтрокаПрайса"
+							nillable="true"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="ТабельныйНомер">
+				<xs:restriction base="xs:string">
+					<xs:maxLength value="20"/>
+					<xs:pattern value="[0-9a-zfA-Z_]{0,20}"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="ТипыОбъектов">
+				<xs:sequence>
+					<xs:element name="Типы"
+							type="xsd5:EnumRef.ТипыXDTO"
+							nillable="true"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="ФинансовоеСостояниеПроекта">
+				<xs:sequence>
+					<xs:element name="Запись"
+							type="xsd5:ЗаписьФинансовоеСостояниеПроекта"
+							nillable="true"
+							minOccurs="0"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:simpleType name="ФорматКартинки">
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="BMP"/>
+					<xs:enumeration value="EMF"/>
+					<xs:enumeration value="GIF"/>
+					<xs:enumeration value="Icon"/>
+					<xs:enumeration value="JPEG"/>
+					<xs:enumeration value="PNG"/>
+					<xs:enumeration value="TIFF"/>
+					<xs:enumeration value="WMF"/>
+					<xs:enumeration value="UnknownFormat"/>
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:complexType name="ЦеныНоменклатуры">
+				<xs:sequence>
+					<xs:element name="Цена"
+							type="xsd5:InformationRegisterRecord.ЦеныНоменклатуры"
+							nillable="true"
+							maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:schema>
+		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+				xmlns:xs1="http://v8.1c.ru/8.1/data/core"
+				xmlns:xs2="cml"
+				xmlns:xs3="http://www.rarus.ru/office/nsi-config/parametres"
+				xmlns:xs4="http://www.rarus.ru/office/nsi-config"
+				xmlns:xs5="http://www.rarus.ru/nsi"
+				xmlns:xsd2="http://www.rarus.ru/office/nsi-config/parametres"
+				xmlns:xsd4="http://v8.1c.ru/8.1/data/core"
+				xmlns:xsd5="http://www.rarus.ru/office/nsi-config"
+				targetNamespace="http://www.rarus.ru/nsi"
+				elementFormDefault="qualified">
+			<xs:import namespace="http://v8.1c.ru/8.1/data/core"/>
+			<xs:import namespace="cml"/>
+			<xs:import namespace="http://www.rarus.ru/office/nsi-config/parametres"/>
+			<xs:import namespace="http://www.rarus.ru/office/nsi-config"/>
+			<xs:element name="ReadAccess">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ReadAccessResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd5:ПраваДоступа"
+								nillable="true"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Add">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="AnyObjects"
+								type="xsd5:AnyObjects"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="AddResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd5:ReturnAddMethod"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Update">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="AnyObjects"
+								type="xsd5:AnyObjects"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="UpdateResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd5:ReturnAddMethod"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Get">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ParametersGet"
+								type="xsd5:ParameterGetMethod"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd5:AnyObjects"
+								nillable="true"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SetEnabledChangesLog">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Enabled"
+								type="xs:boolean"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SetEnabledChangesLogResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:boolean"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetEnabledChangesLog">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetEnabledChangesLogResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:boolean"
+								nillable="true"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetChanges">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Types"
+								type="xsd5:ТипыОбъектов"
+								nillable="true"/>
+						<xs:element name="Refs"
+								type="xsd5:AnyRefs"
+								nillable="true"/>
+						<xs:element name="Status"
+								type="xsd5:EnumRef.СтатусИзменения"
+								nillable="true"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetChangesResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd5:AnyObjects"
+								nillable="true"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetChangesLog">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="SelectChangesLog"
+								type="xsd2:inGetChangesLog"
+								nillable="true"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetChangesLogResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd2:outGetChangesLog"
+								nillable="true"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ExistChangesLog">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Types"
+								type="xsd5:ТипыОбъектов"
+								nillable="true"/>
+						<xs:element name="Refs"
+								type="xsd5:AnyRefs"
+								nillable="true"/>
+						<xs:element name="Status"
+								type="xsd5:EnumRef.СтатусИзменения"
+								nillable="true"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ExistChangesLogResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:boolean"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DeleteChangesLog">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Types"
+								type="xsd5:ТипыОбъектов"
+								nillable="true"/>
+						<xs:element name="Refs"
+								type="xsd5:AnyRefs"
+								nillable="true"/>
+						<xs:element name="Status"
+								type="xsd5:EnumRef.СтатусИзменения"
+								nillable="true"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="DeleteChangesLogResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:boolean"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetSubscription">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetSubscriptionResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xsd5:Subscription"
+								nillable="true"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SetSubscription">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Subscription"
+								type="xsd5:Subscription"
+								nillable="true"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SetSubscriptionResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:boolean"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetDocumentation">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetDocumentationResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Select">
+				<xs:complexType>
+					<xs:sequence/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SelectResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="return"
+								type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:schema>
+	</types>
+	<message name="ReadAccessRequestMessage">
+		<part name="parameters"
+				element="tns:ReadAccess"/>
+	</message>
+	<message name="ReadAccessResponseMessage">
+		<part name="parameters"
+				element="tns:ReadAccessResponse"/>
+	</message>
+	<message name="AddRequestMessage">
+		<part name="parameters"
+				element="tns:Add"/>
+	</message>
+	<message name="AddResponseMessage">
+		<part name="parameters"
+				element="tns:AddResponse"/>
+	</message>
+	<message name="UpdateRequestMessage">
+		<part name="parameters"
+				element="tns:Update"/>
+	</message>
+	<message name="UpdateResponseMessage">
+		<part name="parameters"
+				element="tns:UpdateResponse"/>
+	</message>
+	<message name="GetRequestMessage">
+		<part name="parameters"
+				element="tns:Get"/>
+	</message>
+	<message name="GetResponseMessage">
+		<part name="parameters"
+				element="tns:GetResponse"/>
+	</message>
+	<message name="SetEnabledChangesLogRequestMessage">
+		<part name="parameters"
+				element="tns:SetEnabledChangesLog"/>
+	</message>
+	<message name="SetEnabledChangesLogResponseMessage">
+		<part name="parameters"
+				element="tns:SetEnabledChangesLogResponse"/>
+	</message>
+	<message name="GetEnabledChangesLogRequestMessage">
+		<part name="parameters"
+				element="tns:GetEnabledChangesLog"/>
+	</message>
+	<message name="GetEnabledChangesLogResponseMessage">
+		<part name="parameters"
+				element="tns:GetEnabledChangesLogResponse"/>
+	</message>
+	<message name="GetChangesRequestMessage">
+		<part name="parameters"
+				element="tns:GetChanges"/>
+	</message>
+	<message name="GetChangesResponseMessage">
+		<part name="parameters"
+				element="tns:GetChangesResponse"/>
+	</message>
+	<message name="GetChangesLogRequestMessage">
+		<part name="parameters"
+				element="tns:GetChangesLog"/>
+	</message>
+	<message name="GetChangesLogResponseMessage">
+		<part name="parameters"
+				element="tns:GetChangesLogResponse"/>
+	</message>
+	<message name="ExistChangesLogRequestMessage">
+		<part name="parameters"
+				element="tns:ExistChangesLog"/>
+	</message>
+	<message name="ExistChangesLogResponseMessage">
+		<part name="parameters"
+				element="tns:ExistChangesLogResponse"/>
+	</message>
+	<message name="DeleteChangesLogRequestMessage">
+		<part name="parameters"
+				element="tns:DeleteChangesLog"/>
+	</message>
+	<message name="DeleteChangesLogResponseMessage">
+		<part name="parameters"
+				element="tns:DeleteChangesLogResponse"/>
+	</message>
+	<message name="GetSubscriptionRequestMessage">
+		<part name="parameters"
+				element="tns:GetSubscription"/>
+	</message>
+	<message name="GetSubscriptionResponseMessage">
+		<part name="parameters"
+				element="tns:GetSubscriptionResponse"/>
+	</message>
+	<message name="SetSubscriptionRequestMessage">
+		<part name="parameters"
+				element="tns:SetSubscription"/>
+	</message>
+	<message name="SetSubscriptionResponseMessage">
+		<part name="parameters"
+				element="tns:SetSubscriptionResponse"/>
+	</message>
+	<message name="GetDocumentationRequestMessage">
+		<part name="parameters"
+				element="tns:GetDocumentation"/>
+	</message>
+	<message name="GetDocumentationResponseMessage">
+		<part name="parameters"
+				element="tns:GetDocumentationResponse"/>
+	</message>
+	<message name="SelectRequestMessage">
+		<part name="parameters"
+				element="tns:Select"/>
+	</message>
+	<message name="SelectResponseMessage">
+		<part name="parameters"
+				element="tns:SelectResponse"/>
+	</message>
+	<portType name="NSI_DataTransferPortType">
+		<operation name="ReadAccess">
+			<input name="ReadAccessRequest"
+					message="tns:ReadAccessRequestMessage"/>
+			<output name="ReadAccessResponse"
+					message="tns:ReadAccessResponseMessage"/>
+		</operation>
+		<operation name="Add">
+			<input name="AddRequest"
+					message="tns:AddRequestMessage"/>
+			<output name="AddResponse"
+					message="tns:AddResponseMessage"/>
+		</operation>
+		<operation name="Update">
+			<input name="UpdateRequest"
+					message="tns:UpdateRequestMessage"/>
+			<output name="UpdateResponse"
+					message="tns:UpdateResponseMessage"/>
+		</operation>
+		<operation name="Get">
+			<input name="GetRequest"
+					message="tns:GetRequestMessage"/>
+			<output name="GetResponse"
+					message="tns:GetResponseMessage"/>
+		</operation>
+		<operation name="SetEnabledChangesLog">
+			<input name="SetEnabledChangesLogRequest"
+					message="tns:SetEnabledChangesLogRequestMessage"/>
+			<output name="SetEnabledChangesLogResponse"
+					message="tns:SetEnabledChangesLogResponseMessage"/>
+		</operation>
+		<operation name="GetEnabledChangesLog">
+			<input name="GetEnabledChangesLogRequest"
+					message="tns:GetEnabledChangesLogRequestMessage"/>
+			<output name="GetEnabledChangesLogResponse"
+					message="tns:GetEnabledChangesLogResponseMessage"/>
+		</operation>
+		<operation name="GetChanges">
+			<input name="GetChangesRequest"
+					message="tns:GetChangesRequestMessage"/>
+			<output name="GetChangesResponse"
+					message="tns:GetChangesResponseMessage"/>
+		</operation>
+		<operation name="GetChangesLog">
+			<input name="GetChangesLogRequest"
+					message="tns:GetChangesLogRequestMessage"/>
+			<output name="GetChangesLogResponse"
+					message="tns:GetChangesLogResponseMessage"/>
+		</operation>
+		<operation name="ExistChangesLog">
+			<input name="ExistChangesLogRequest"
+					message="tns:ExistChangesLogRequestMessage"/>
+			<output name="ExistChangesLogResponse"
+					message="tns:ExistChangesLogResponseMessage"/>
+		</operation>
+		<operation name="DeleteChangesLog">
+			<input name="DeleteChangesLogRequest"
+					message="tns:DeleteChangesLogRequestMessage"/>
+			<output name="DeleteChangesLogResponse"
+					message="tns:DeleteChangesLogResponseMessage"/>
+		</operation>
+		<operation name="GetSubscription">
+			<input name="GetSubscriptionRequest"
+					message="tns:GetSubscriptionRequestMessage"/>
+			<output name="GetSubscriptionResponse"
+					message="tns:GetSubscriptionResponseMessage"/>
+		</operation>
+		<operation name="SetSubscription">
+			<input name="SetSubscriptionRequest"
+					message="tns:SetSubscriptionRequestMessage"/>
+			<output name="SetSubscriptionResponse"
+					message="tns:SetSubscriptionResponseMessage"/>
+		</operation>
+		<operation name="GetDocumentation">
+			<input name="GetDocumentationRequest"
+					message="tns:GetDocumentationRequestMessage"/>
+			<output name="GetDocumentationResponse"
+					message="tns:GetDocumentationResponseMessage"/>
+		</operation>
+		<operation name="Select">
+			<input name="SelectRequest"
+					message="tns:SelectRequestMessage"/>
+			<output name="SelectResponse"
+					message="tns:SelectResponseMessage"/>
+		</operation>
+	</portType>
+	<binding name="NSI_DataTransferSoapBinding"
+			type="tns:NSI_DataTransferPortType">
+		<soapbind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="ReadAccess">
+			<soapbind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:ReadAccess"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Add">
+			<soapbind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:Add"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Update">
+			<soapbind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:Update"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get">
+			<soapbind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:Get"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="SetEnabledChangesLog">
+			<soapbind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:SetEnabledChangesLog"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetEnabledChangesLog">
+			<soapbind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:GetEnabledChangesLog"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetChanges">
+			<soapbind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:GetChanges"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetChangesLog">
+			<soapbind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:GetChangesLog"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ExistChangesLog">
+			<soapbind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:ExistChangesLog"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="DeleteChangesLog">
+			<soapbind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:DeleteChangesLog"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSubscription">
+			<soapbind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:GetSubscription"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="SetSubscription">
+			<soapbind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:SetSubscription"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetDocumentation">
+			<soapbind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:GetDocumentation"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Select">
+			<soapbind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:Select"/>
+			<input>
+				<soapbind:body use="literal"/>
+			</input>
+			<output>
+				<soapbind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<binding name="NSI_DataTransferSoap12Binding"
+			type="tns:NSI_DataTransferPortType">
+		<soap12bind:binding style="document"
+				transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="ReadAccess">
+			<soap12bind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:ReadAccess"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Add">
+			<soap12bind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:Add"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Update">
+			<soap12bind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:Update"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Get">
+			<soap12bind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:Get"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="SetEnabledChangesLog">
+			<soap12bind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:SetEnabledChangesLog"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetEnabledChangesLog">
+			<soap12bind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:GetEnabledChangesLog"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetChanges">
+			<soap12bind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:GetChanges"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetChangesLog">
+			<soap12bind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:GetChangesLog"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="ExistChangesLog">
+			<soap12bind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:ExistChangesLog"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="DeleteChangesLog">
+			<soap12bind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:DeleteChangesLog"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetSubscription">
+			<soap12bind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:GetSubscription"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="SetSubscription">
+			<soap12bind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:SetSubscription"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="GetDocumentation">
+			<soap12bind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:GetDocumentation"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+		<operation name="Select">
+			<soap12bind:operation style="document"
+					soapAction="http://www.rarus.ru/nsi#NSI_DataTransfer:Select"/>
+			<input>
+				<soap12bind:body use="literal"/>
+			</input>
+			<output>
+				<soap12bind:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="NSI_DataTransfer">
+		<port name="NSI_DataTransferSoap"
+				binding="tns:NSI_DataTransferSoapBinding">
+			<documentation> 
+				<wsi:Claim xmlns:wsi="http://ws-i.org/schemas/conformanceClaim/"
+						conformsTo="http://ws-i.org/profiles/basic/1.1"/>
+			</documentation>
+			<soapbind:address location="https://ob8.rarus.ru/WSRarus/ws/dto.1cws"/>
+		</port>
+		<port name="NSI_DataTransferSoap12"
+				binding="tns:NSI_DataTransferSoap12Binding">
+			<soap12bind:address location="https://ob8.rarus.ru/WSRarus/ws/dto.1cws"/>
+		</port>
+	</service>
+</definitions>

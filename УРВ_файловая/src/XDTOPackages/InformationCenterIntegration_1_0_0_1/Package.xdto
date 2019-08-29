@@ -1,0 +1,83 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1">
+	<valueType name="Sort" base="xs:string">
+		<enumeration xsi:type="xs:string">CreateDate</enumeration>
+		<enumeration xsi:type="xs:string">LastInteractionDate</enumeration>
+	</valueType>
+	<valueType name="Filter" base="xs:string">
+		<enumeration xsi:type="xs:string">All</enumeration>
+		<enumeration xsi:type="xs:string">Closed</enumeration>
+		<enumeration xsi:type="xs:string">InProgress</enumeration>
+		<enumeration xsi:type="xs:string">NeedAnswer</enumeration>
+		<enumeration xsi:type="xs:string">New</enumeration>
+	</valueType>
+	<valueType name="UserIncidenStatus" base="xs:string">
+		<enumeration xsi:type="xs:string">Closed</enumeration>
+		<enumeration xsi:type="xs:string">InProgress</enumeration>
+		<enumeration xsi:type="xs:string">NeedAnswer</enumeration>
+		<enumeration xsi:type="xs:string">New</enumeration>
+	</valueType>
+	<valueType name="TypeInteracion" base="xs:string">
+		<enumeration xsi:type="xs:string">Email</enumeration>
+		<enumeration xsi:type="xs:string">Comment</enumeration>
+		<enumeration xsi:type="xs:string">PhoneCall</enumeration>
+	</valueType>
+	<objectType name="IncidentListPresentation">
+		<property xmlns:d3p1="http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1" name="incidents" type="d3p1:Incident" lowerBound="0" upperBound="-1"/>
+		<property name="IsStill" type="xs:boolean"/>
+	</objectType>
+	<objectType name="InteractionListPresintation">
+		<property name="Interactions" lowerBound="0" upperBound="-1"/>
+		<property name="IsStill" type="xs:boolean"/>
+	</objectType>
+	<objectType name="Incident">
+		<property name="Date" type="xs:dateTime"/>
+		<property name="LastInteractionDate" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="Name" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="500"/>
+		</property>
+		<property name="Id" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="36"/>
+		</property>
+		<property name="Number" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="15"/>
+		</property>
+		<property xmlns:d3p1="http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1" name="Status" type="d3p1:UserIncidenStatus" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1" name="UnreviewedInteractions" type="d3p1:Interaction" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Interaction">
+		<property name="Id" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="36"/>
+		</property>
+		<property name="Date" type="xs:dateTime" lowerBound="0"/>
+		<property name="Name" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="500"/>
+		</property>
+		<property xmlns:d3p1="http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1" name="Type" type="d3p1:TypeInteracion" lowerBound="0" nillable="true"/>
+		<property name="Incoming" type="xs:boolean" lowerBound="0"/>
+		<property name="HTMLText" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1" name="Files" type="d3p1:File" lowerBound="0" upperBound="-1"/>
+		<property xmlns:d3p1="http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1" name="HTMLFiles" type="d3p1:File" lowerBound="0" upperBound="-1"/>
+		<property name="Viewed" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="Description" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" minLength="0" maxLength="2000"/>
+		</property>
+		<property name="IsFiles" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType name="File">
+		<property name="Name" type="xs:string" lowerBound="0"/>
+		<property name="Id" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="36"/>
+		</property>
+		<property name="Data" type="xs:base64Binary" lowerBound="0" nillable="true"/>
+		<property name="Extension" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" maxLength="10"/>
+		</property>
+		<property name="Size" lowerBound="0"/>
+	</objectType>
+	<objectType name="ListFile">
+		<property xmlns:d3p1="http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1" name="Files" type="d3p1:File" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ListInteraction">
+		<property xmlns:d3p1="http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1" name="Interactions" type="d3p1:Interaction" lowerBound="0" upperBound="-1"/>
+	</objectType>
+</package>

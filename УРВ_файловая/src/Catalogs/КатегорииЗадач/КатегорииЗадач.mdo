@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9d379ecf-9d6d-44f2-a52d-230eef4e110a">
+  <producedTypes>
+    <objectType typeId="017c245d-76b9-4683-b763-094368866fd9" valueTypeId="a3eda38c-6f32-4a78-8a2b-ac08bab4ab44"/>
+    <refType typeId="19f7385d-1ecb-4236-a2e9-cda66d878549" valueTypeId="fe9a4be0-4bfc-4311-9ec0-10220ecda93f"/>
+    <selectionType typeId="e74f7ee0-bec1-41dd-bcd4-4366efd83082" valueTypeId="8ed9e21c-7f22-4322-b786-b529ab61d5fe"/>
+    <listType typeId="9ab95ab4-a179-4f14-89ac-d921dab27bdb" valueTypeId="d723c0e9-35d2-4358-a486-1c19a070e974"/>
+    <managerType typeId="df999257-b95b-4e6e-b99e-091a8043debc" valueTypeId="f7e01c7f-16e1-4ffb-8f2f-4cbd9c7bf633"/>
+  </producedTypes>
+  <name>КатегорииЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категории задач</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КатегорииЗадач.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.КатегорииЗадач.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

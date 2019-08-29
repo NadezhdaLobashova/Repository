@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00abb9c7-0235-4d52-bacd-0f4c6f1c6f22">
+  <producedTypes>
+    <refType typeId="6b3124c7-a027-427a-b6e1-a47012068ac1" valueTypeId="80d3d286-4de0-4da1-ae71-329bb6b719a6"/>
+    <listType typeId="beeba8e1-d49a-4635-9465-4706ff8f65ae" valueTypeId="11ed7c31-c3c2-4589-82bc-1c893a82050b"/>
+    <managerType typeId="21d91ca3-4b90-412a-a156-252aeb80806a" valueTypeId="b860e401-0bdc-47dc-bd35-1b565e01ece2"/>
+  </producedTypes>
+  <name>ТипыОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы объектов</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="63cb0f3a-e1d6-42d1-b081-f2b240065b14">
+    <name>Обращения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обращения</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7e81c439-bbc7-4f1a-b85d-466e60cde0d1">
+    <name>Консультации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Консультации</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3c52c8cd-c3fd-44ba-a0ce-4a711ca7e08b">
+    <name>Ошибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3a61785f-4af5-4b99-b72c-2b931de87502">
+    <name>Пожелания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пожелания</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cdbe2ef8-801f-418c-a040-01613e8ca018">
+    <name>Файлы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файлы</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

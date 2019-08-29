@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d3ae949e-4e73-47e0-8399-f161f6269b85">
+  <name>ИнтеграцияАстериск</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграция астериск</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>FunctionalOption.ИспользоватьИнтеграциюСТелефонией</content>
+  <content>InformationRegister.ВнешниеТелефонныеЛинии</content>
+  <content>InformationRegister.ЗначенияНастроекТелефонии</content>
+  <content>InformationRegister.ТелефонныеНомераДляПереадресации</content>
+  <content>Constant.ИспользоватьИнтеграциюСТелефонией</content>
+  <parentSubsystem>Subsystem.УправлениеСлужбойПоддержки</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7b632672-b205-4254-ac86-d50f637baafb">
+  <producedTypes>
+    <objectType typeId="d4123097-1a8a-4db9-9e96-c9da6519d879" valueTypeId="ab6e5a66-92cc-4b54-8813-9c11d297a4d4"/>
+    <managerType typeId="32c6f6dc-6730-48c9-8cbe-8518e8040878" valueTypeId="17d168de-a6f7-4074-98e0-c3479dfcd928"/>
+  </producedTypes>
+  <name>НачисленияСотрудникамПоПринятымЧасам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по начислениям сотрудникам (по принятым часам)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.НачисленияСотрудникамПоПринятымЧасам.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.НачисленияСотрудникамПоПринятымЧасам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="9998bb56-8785-4473-941b-74ea9b15b787">
+    <name>КлючВарианта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ варианта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="d64d8d38-a206-4ef1-b0f9-c03c5095a402">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="085aa408-99b2-4171-9f4d-31729c80e436">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="7bd674f1-3bc7-48af-806a-ebedc6e47885">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <templates uuid="1dbb72de-fe3f-4a19-9bb9-caa3886ed38b">
+    <name>Сокращенный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сокращенный</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

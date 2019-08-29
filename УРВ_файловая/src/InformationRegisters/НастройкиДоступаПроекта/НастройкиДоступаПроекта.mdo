@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1bf7f16a-22af-4438-ab08-47cc7c484d89">
+  <producedTypes>
+    <selectionType typeId="449eb4e6-52bc-4e88-a461-37206ad103b0" valueTypeId="fec867a0-578f-4a84-bd8f-2b7fdf2b9058"/>
+    <listType typeId="8b0722f2-a8ca-403a-84c1-cbd1913dfd51" valueTypeId="f7d3f615-724d-4dc8-a390-4ddfb0fbcfa5"/>
+    <managerType typeId="5f591ba8-f92a-4987-ac84-2a7b82f212b6" valueTypeId="9d0f1a58-a2d9-4e5e-aeb0-fccad53aa37f"/>
+    <recordSetType typeId="c4df5502-dcf0-4f91-b016-e3b39a47e875" valueTypeId="27b50a87-87d3-4334-91e5-e85943ace966"/>
+    <recordKeyType typeId="b74a4489-299f-41d3-b8fa-f99d5002da7f" valueTypeId="1b74ced6-bb04-4672-9966-ab49bb835743"/>
+    <recordType typeId="b521a336-be3d-499b-8892-e925c2d66687" valueTypeId="5f5e72b0-5a5c-4027-af1f-a1c3f31d885f"/>
+    <recordManagerType typeId="bcf09505-f3d8-4633-a800-0cb55543708c" valueTypeId="2bb6812a-63fd-4323-9cf6-91ed0a6bfddb"/>
+  </producedTypes>
+  <name>НастройкиДоступаПроекта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки доступа проекта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="7613266d-a312-4a63-ad61-7ba32e46fbe4">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fa7d6815-2109-44f6-8746-c70a629fa0f2">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

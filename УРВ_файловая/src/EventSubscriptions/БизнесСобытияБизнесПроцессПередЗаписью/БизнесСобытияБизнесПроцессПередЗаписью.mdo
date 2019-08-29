@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e0f0fc9e-a3bd-462d-a38f-d7c46ca27385">
+  <name>БизнесСобытияБизнесПроцессПередЗаписью</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бизнес события бизнес процесс перед записью</value>
+  </synonym>
+  <source>
+    <types>BusinessProcessObject</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.БизнесСобытия.БизнесПроцессПередЗаписью</handler>
+</mdclass:EventSubscription>

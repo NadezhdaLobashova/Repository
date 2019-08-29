@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bda9cb8b-aec2-486c-8dc4-4a1a8d6b0125">
+  <name>ИспользоватьТарифы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать тарифы</value>
+  </synonym>
+  <location>Constant.ИспользоватьТарифы</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.ВидыОграниченийТарифов</content>
+  <content>Catalog.Тарифы</content>
+  <content>Document.Подписка</content>
+  <content>Enum.ТипыПодписок</content>
+</mdclass:FunctionalOption>

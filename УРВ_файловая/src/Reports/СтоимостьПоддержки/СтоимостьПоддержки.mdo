@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bd9bac0b-1494-4630-8f77-5b95373729ea">
+  <producedTypes>
+    <objectType typeId="e39f064e-5cdd-4e6c-aeac-7600f094cab6" valueTypeId="c276f369-928d-4ea2-a011-fef4f1eb768c"/>
+    <managerType typeId="2d23fc1a-3292-4110-bc28-523f07df38e2" valueTypeId="d6bb8539-5a8c-426b-b5a7-f56e080367c0"/>
+  </producedTypes>
+  <name>СтоимостьПоддержки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стоимость поддержки</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.СтоимостьПоддержки.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="af370ae2-8ee5-42e8-a157-c4b0d8ad3186">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

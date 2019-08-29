@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1fb97977-a646-4b60-85ad-c664c09f7987">
+  <producedTypes>
+    <selectionType typeId="3307c7f2-b1fc-423b-a819-fd382227ab90" valueTypeId="01bf4bd3-cb8f-4c2a-ad9b-43fe650c4708"/>
+    <listType typeId="1ae0606c-0845-4286-a498-5d8189f55555" valueTypeId="4c16fdf6-0558-4f03-8147-f56bed890854"/>
+    <managerType typeId="e5b07856-e095-42e6-9d0b-64ce6f38ee13" valueTypeId="78fc5d6f-f632-441c-95a3-0197042d793d"/>
+    <recordSetType typeId="88a777de-80d6-4cc3-87a7-5875012a1788" valueTypeId="d817b707-6b79-4a4a-b375-f3256a4067bd"/>
+    <recordKeyType typeId="827e0510-5e95-422e-bb0f-a2092343a2a9" valueTypeId="2359bacb-8e02-4c30-9e06-13363b482e94"/>
+    <recordType typeId="fe59d8aa-d912-42ea-9f30-9df04b5d2602" valueTypeId="a769c173-7632-4169-8e31-7550df37d89a"/>
+    <recordManagerType typeId="4a93dbcc-38c9-42eb-b1cc-bfb946f4b0f1" valueTypeId="e336d5b3-0835-4d95-83d3-1dd12b5d7a4a"/>
+  </producedTypes>
+  <name>ПодпискиНаУведомления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подписки на уведомления</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ПодпискиНаУведомления.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2d868ed8-b0cd-4648-a5f8-2de0ab6451c3">
+    <name>ПодпискаАктивна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подписка активна</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="2fa5daf3-284e-45b5-bd00-dfc35ad3e236">
+    <name>ВидСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид события</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыБизнесСобытий</types>
+      <types>EnumRef.СобытияУведомлений</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид бизнес-события</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b2b89728-1e9d-40bf-8444-e5c4f2d808b2">
+    <name>ОбъектПодписки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект подписки</value>
+    </synonym>
+    <type>
+      <types>TaskRef.ЗадачаИсполнителя</types>
+      <types>CatalogRef.Пожелания</types>
+      <types>CatalogRef.Консультации</types>
+      <types>CatalogRef.Пользователи</types>
+      <types>DocumentRef.Обращение</types>
+      <types>CatalogRef.Ошибки</types>
+      <types>BusinessProcessRef</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект подписки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="08453452-ed43-4eba-9ff0-45f1818ff363">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.ЛинииПоддержки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="9b476cbf-2f2b-426e-bf67-e2a8df769cd4">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="86dd1a88-e04e-46c1-b8e9-9f1d2c004729">
+  <name>Экономист</name>
+  <synonym>
+    <key>ru</key>
+    <value>Экономист</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Экономист</picture>
+  </picture>
+  <content>Report.АнализВыполненияПлана</content>
+  <content>Report.АнализЗагрузкиСотрудников</content>
+  <content>Report.ПланФактПоВыполненнымРаботам</content>
+  <content>Report.ПланФактПоВыполненнымРаботамРасшифровка</content>
+  <content>Report.СоблюдениеСроковПоВыполнениюЗадач</content>
+  <content>Report.ОтчетАнализПоПроектам</content>
+  <content>Report.НачисленияСотрудникам</content>
+  <content>Report.ОтчетАнализПоПроектамИКонтрагентам</content>
+  <content>InformationRegister.СтавкиСотрудниковПоВидамРабот</content>
+  <content>Report.РасширенныйАнализРабот</content>
+  <content>Report.НескорректированныеЧасыСотрудников</content>
+  <content>Report.НачисленияСотрудникамПоПринятымЧасам</content>
+  <content>DataProcessor.МассоваяПриемкаЧасов</content>
+  <content>DataProcessor.РаспределениеОкладов</content>
+  <content>Report.ЗатратыПроекта</content>
+  <content>DataProcessor.СозданиеДокументовДляВыгрузкиВЗУП</content>
+  <content>Report.ЗатратыПроектаПоАктам</content>
+  <content>DataProcessor.ГрупповоеИзменениеСтавок</content>
+  <subsystems>Справочники</subsystems>
+  <subsystems>Документы</subsystems>
+</mdclass:Subsystem>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e7de5a79-0905-4bd4-aafd-1218882c453b">
+  <producedTypes>
+    <managerType typeId="dc1b50dd-efb6-4348-9f75-aa5ba0787dd4" valueTypeId="65de9602-4e31-4ca1-8420-af20e86760cc"/>
+    <valueManagerType typeId="e91c5968-3be7-4450-99a7-031e6a83b7e2" valueTypeId="6afd79d3-8637-4ace-aa4c-628c2a14ca00"/>
+    <valueKeyType typeId="d32d9d1e-555d-5cd5-b4ca-9825d2ad6e58" valueTypeId="4cf82feb-1d1c-5c67-9f1b-266fd96d2fbe"/>
+  </producedTypes>
+  <name>ОтправлятьПисьмоОРегистрацииОбращенияБезПодтверждения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отправлять письмо о регистрации обращения без подтверждения</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

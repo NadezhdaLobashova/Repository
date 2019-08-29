@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="077ea40a-8212-46a5-9fdf-3694e772dcb3">
+  <producedTypes>
+    <selectionType typeId="d3b035a2-fbe1-40cc-bf2f-2e599f29e852" valueTypeId="9628c852-f159-436e-97b0-c5f144d11411"/>
+    <listType typeId="42854bc6-92df-4974-a73e-bb175f1ee9ef" valueTypeId="2b0a86ac-6017-4cf0-8c23-5bec7b901d94"/>
+    <managerType typeId="a95611d5-a3c9-472c-b3f7-21acd629b944" valueTypeId="30a75538-5839-4d03-9f75-f6672db25169"/>
+    <recordSetType typeId="66cbf18a-e57f-4e4d-b7f3-7d25fd87e078" valueTypeId="9fd105c3-480e-4df7-b99b-4d41ae79b879"/>
+    <recordKeyType typeId="bdac4a2d-3928-4199-a3b7-8b6e434263e5" valueTypeId="6d7a5248-43ba-42ee-b48c-08d39d7953d8"/>
+    <recordType typeId="38df8810-732f-4905-b229-c53da96dd0d1" valueTypeId="f431c057-ec53-40f9-85c1-ac99499af0b9"/>
+    <recordManagerType typeId="b22e3aed-3e90-4449-a229-1042d93309f4" valueTypeId="af92102f-a604-40a8-a976-96ec989574c5"/>
+  </producedTypes>
+  <name>СтавкиСотрудниковПоВидамРабот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ставки сотрудников по видам работ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6fd13698-e00f-4ece-87a2-c7ae0f0d0043">
+    <name>Ставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bc7bee79-4326-4e08-afdd-4dc333ccfa14">
+    <name>Оклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оклад</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9df5a9b5-6ff7-4449-ac74-0876cbc5c3b1">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="13161dbc-98e7-4213-b60d-79d460508a1e">
+    <name>Регион</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регион</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Регионы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d100f502-a694-434c-a4a3-734ceb1bcb10">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="76add6b2-4d81-46a0-80d3-a8452048f7f7">
+    <name>ВидРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид работы</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыРабот</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

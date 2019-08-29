@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6cdca553-d55e-46ea-a73f-994ddcfb4e2b">
+  <producedTypes>
+    <selectionType typeId="430cf102-a8fc-40ab-aa68-6815a7bf6850" valueTypeId="702168e5-6054-4f33-b77c-6adc62457ada"/>
+    <listType typeId="16e7eb6f-3f28-4532-9a0f-4db2669f1e70" valueTypeId="80a58ef2-33fd-4b97-b19e-3e6f46966045"/>
+    <managerType typeId="937a8820-9074-4c34-a0d6-034eed95b7c4" valueTypeId="3ea1bd21-0e9a-436c-bd24-c68feebe4dbf"/>
+    <recordSetType typeId="0ac9df8f-78cc-45b6-9334-1b897ee2efb6" valueTypeId="d2effc54-b476-4647-ab87-254f417d2464"/>
+    <recordKeyType typeId="8bdf0359-1076-45cc-9069-b892f5684d0c" valueTypeId="2ed68d1f-6b3a-4099-b4aa-781d93e1d78d"/>
+    <recordType typeId="0dbcc89d-866c-4d8f-9581-37c6794aa73f" valueTypeId="dbda64af-ab84-4f56-9782-a87cce5e12af"/>
+    <recordManagerType typeId="b2261b94-db39-4a33-adda-21da579277c2" valueTypeId="0ac719ed-1867-4eae-9cc7-f9e656f826fb"/>
+  </producedTypes>
+  <name>ПодпискиНаБизнесСобытия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подписки на бизнес-события</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ПодпискиНаБизнесСобытия.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="6b6a5238-adca-4808-9ce6-cbcb710db9bb">
+    <name>ВидСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид события</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыБизнесСобытий</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид события</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9d06fa0e-ed26-4f86-a864-e852414480d5">
+    <name>Потребитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Потребитель</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПотребителиБизнесСобытий</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Потребитель</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="a3e1681f-5c64-4408-8400-47a6535101d9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

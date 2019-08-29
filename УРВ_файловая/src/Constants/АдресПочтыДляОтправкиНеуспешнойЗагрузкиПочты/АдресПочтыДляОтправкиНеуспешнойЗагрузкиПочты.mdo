@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2065b2f1-f99d-4f73-b267-7ce25759b103">
+  <producedTypes>
+    <managerType typeId="085d6c70-c654-498f-a682-9b4d039eed89" valueTypeId="4dc8f4cd-b7e2-410b-8563-ee251d6fd84e"/>
+    <valueManagerType typeId="77b50df7-bd1f-4f17-bde2-68756d418de9" valueTypeId="b258d795-7765-46bd-a88f-c62c1675ff06"/>
+    <valueKeyType typeId="b1a3b904-34bc-47e4-bb1c-30f76fea10ba" valueTypeId="ec1737fd-6c85-4339-83e0-03d54bf3b3bc"/>
+  </producedTypes>
+  <name>АдресПочтыДляОтправкиНеуспешнойЗагрузкиПочты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Адрес почты для отправки неуспешной загрузки почты</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.УчетныеЗаписиЭлектроннойПочты</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

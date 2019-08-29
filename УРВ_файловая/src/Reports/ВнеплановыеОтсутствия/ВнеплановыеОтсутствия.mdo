@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e56859e5-1863-45ef-98d4-913f5a0e34ca">
+  <producedTypes>
+    <objectType typeId="42358eba-b027-42f4-b868-f2ddac1ca4ba" valueTypeId="af97dece-61c2-4f9e-8878-35dc6036cd3e"/>
+    <managerType typeId="b7d5a783-e232-4375-8b07-2ea0fd915c0e" valueTypeId="ce603d6c-dc88-436b-bbcd-03fa71e7fc16"/>
+  </producedTypes>
+  <name>ВнеплановыеОтсутствия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Внеплановые отсутствия</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ВнеплановыеОтсутствия.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="636a8db2-5f66-4f6e-af93-a39e4f1d7765">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

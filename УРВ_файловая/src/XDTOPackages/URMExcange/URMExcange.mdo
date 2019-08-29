@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e7054e1e-0c5f-4abc-97e0-2e0e99ad564b">
+  <name>URMExcange</name>
+  <synonym>
+    <key>ru</key>
+    <value>URMExcange</value>
+  </synonym>
+  <namespace>http://bear.rarus.ru/OBDExchange</namespace>
+</mdclass:XDTOPackage>

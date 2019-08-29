@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2d618fd8-e779-4c1e-b7ee-29c93859e8e6">
+  <producedTypes>
+    <selectionType typeId="95b80ae9-475a-4a12-8408-5953f5094064" valueTypeId="2466b3af-dec2-46e5-bd3b-1c4820d5a363"/>
+    <listType typeId="73a8f02d-711b-4ff0-9175-bcfbcc608043" valueTypeId="d5902c32-7b62-4c93-940a-5768831e19fe"/>
+    <managerType typeId="393152d3-1190-41c3-8b17-43d9c85b2ab3" valueTypeId="babd2c2e-9276-485e-841e-650e0ed6a8cd"/>
+    <recordSetType typeId="3d71b9a0-9dab-4358-9fa3-f9db68f35cab" valueTypeId="e814907d-7a03-4743-bf93-5f5904bd8f03"/>
+    <recordKeyType typeId="253710ad-e658-4a9c-a13f-9211a56617ec" valueTypeId="7351a10d-14ec-43ec-8383-6f95988e99c0"/>
+    <recordType typeId="e1631ce6-1f01-4e39-be23-fa0fa8904bab" valueTypeId="92667e13-fde7-406b-a544-6616e06595b3"/>
+  </producedTypes>
+  <name>ОтсутствияСотрудников_Обороты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отсутствия сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="02f7e0d8-4a3c-4dec-b941-17202a1286f3">
+    <name>Часы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Часы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="b94e4394-5a2d-48f6-9d7d-d9067f3034ef">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a67bdb60-1972-4247-a8ea-c3911aa3e4a9">
+    <name>ВидОтсутствия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид отсутствия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Работы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="2617c63a-320e-47e8-b4b3-ad3786429ba3">
+    <name>ПодразделениеСотрудника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение сотрудника</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d2056434-52ae-4e94-86eb-7d8446ad5055">
+    <name>Сценарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сценарий</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сценарий</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

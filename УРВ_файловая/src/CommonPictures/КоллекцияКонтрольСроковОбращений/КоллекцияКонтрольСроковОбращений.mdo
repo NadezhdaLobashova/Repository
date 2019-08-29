@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fdbd4428-a8a6-4b9b-91d5-9450403599c5">
+  <name>КоллекцияКонтрольСроковОбращений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коллекция контроль сроков обращений</value>
+  </synonym>
+</mdclass:CommonPicture>

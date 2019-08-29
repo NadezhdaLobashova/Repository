@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6c0ac827-7859-4b1c-80fc-6d4af2510679">
+  <producedTypes>
+    <objectType typeId="05d4ba1b-f4bc-4d24-bc2c-a37e0592c56f" valueTypeId="5d457b70-a45f-421b-a95a-2a18b3370cf5"/>
+    <managerType typeId="9f5cf432-8fd7-4d74-a7a9-8d1b1fd968c7" valueTypeId="5dac44ca-ecd1-4023-a570-5b29702d41b7"/>
+  </producedTypes>
+  <name>СамообслуживаниеПартнеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Самообслуживание партнеров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.СамообслуживаниеПартнеров.Form.Форма</defaultForm>
+  <forms uuid="367dffc6-e208-4ef7-85b7-c3187707e411">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="fc7788e9-6b93-40fd-a570-db83935b3d86">
+    <name>ГлавнаяСтраница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Главная страница</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+</mdclass:DataProcessor>

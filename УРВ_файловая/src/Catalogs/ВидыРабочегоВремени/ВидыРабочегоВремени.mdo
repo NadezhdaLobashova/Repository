@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f97039b6-9f0c-487f-b537-8ae63e9a367f">
+  <producedTypes>
+    <objectType typeId="ce673de4-230d-4cea-828d-342220009285" valueTypeId="8aeacd15-3ef4-432a-8341-2395744b605b"/>
+    <refType typeId="b09b30d1-5a54-4463-b6af-e072b26d72e3" valueTypeId="c4e46952-e0fd-4585-a7f0-549003e6fb1b"/>
+    <selectionType typeId="c0491431-b76a-4c83-a527-a065fffdd737" valueTypeId="138e00e3-a86e-4dba-8262-61e7ac48b987"/>
+    <listType typeId="fcf51113-f3dd-4b75-9a8d-35f6e046a04c" valueTypeId="6673d222-f194-4341-bc9b-38847c383ab1"/>
+    <managerType typeId="480f337d-6310-4f08-ba9e-f9918abb728a" valueTypeId="c053a77c-53a6-4efa-badd-66aec34914dd"/>
+  </producedTypes>
+  <name>ВидыРабочегоВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды рабочего времени</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыРабочегоВремени.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыРабочегоВремени.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="29eb0bb8-90f5-4ba8-86f3-475cf26a4dfd">
+      <name>РаботаВВыходныеДни</name>
+      <description>Работа в выходные дни</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="60957862-a563-4d1c-9be0-91b85a5356d9">
+      <name>РаботаВОсновноеВремя</name>
+      <description>Работа в основное время</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="6581808f-1e3e-4422-9c4c-9bf44333429a">
+    <name>Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

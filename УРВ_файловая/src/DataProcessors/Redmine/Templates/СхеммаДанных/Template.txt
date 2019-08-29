@@ -1,0 +1,141 @@
+<Model xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Model">
+	<package targetNamespace="e-mail@stop_time@list.ru">
+		<property xmlns:d3p1="e-mail@stop_time@list.ru" name="issue" type="d3p1:TypeIssue"/>
+		<property xmlns:d3p1="e-mail@stop_time@list.ru" name="upload" type="d3p1:TypeUpload"/>
+		<property xmlns:d3p1="e-mail@stop_time@list.ru" name="attachment" type="d3p1:TypeAttachment"/>
+		<property xmlns:d3p1="e-mail@stop_time@list.ru" name="Issues" type="d3p1:TypeIssues"/>
+		<property xmlns:d3p1="e-mail@stop_time@list.ru" name="projects" type="d3p1:TypeProjects"/>
+		<property xmlns:d3p1="e-mail@stop_time@list.ru" name="time_entries" type="d3p1:TypeTimeEntrys"/>
+		<property xmlns:d3p1="e-mail@stop_time@list.ru" name="project" type="d3p1:TypeProject"/>
+		<property xmlns:d3p1="e-mail@stop_time@list.ru" name="time_entry" type="d3p1:TypeTimeEntry"/>
+		<objectType name="TypeAddFile">
+			<property name="type" type="xs:string" lowerBound="0" form="Attribute"/>
+			<property xmlns:d4p1="e-mail@stop_time@list.ru" name="uploads" type="d4p1:TypeUploads"/>
+			<property name="issue_id" type="xs:string"/>
+		</objectType>
+		<objectType name="TypeAttachment">
+			<property name="id" type="xs:string"/>
+			<property name="filename" type="xs:string"/>
+			<property name="filesize" type="xs:int"/>
+			<property name="content_type" type="xs:string"/>
+			<property name="description" type="xs:string"/>
+			<property name="content_url" type="xs:string"/>
+			<property xmlns:d4p1="e-mail@stop_time@list.ru" name="author" type="d4p1:TypeIDName"/>
+			<property name="created_on" type="xs:string"/>
+		</objectType>
+		<objectType name="TypeIDName">
+			<property name="id" type="xs:string" lowerBound="0" form="Attribute"/>
+			<property name="name" type="xs:string" lowerBound="0" form="Attribute"/>
+		</objectType>
+		<objectType name="TypeIssue">
+			<property name="id" type="xs:string"/>
+			<property xmlns:d4p1="e-mail@stop_time@list.ru" name="project" type="d4p1:TypeIDName"/>
+			<property xmlns:d4p1="e-mail@stop_time@list.ru" name="tracker" type="d4p1:TypeIDName"/>
+			<property xmlns:d4p1="e-mail@stop_time@list.ru" name="status" type="d4p1:TypeIDName"/>
+			<property xmlns:d4p1="e-mail@stop_time@list.ru" name="priority" type="d4p1:TypeIDName"/>
+			<property xmlns:d4p1="e-mail@stop_time@list.ru" name="author" type="d4p1:TypeIDName"/>
+			<property xmlns:d4p1="e-mail@stop_time@list.ru" name="category" type="d4p1:TypeIDName"/>
+			<property name="subject" type="xs:string"/>
+			<property name="description" type="xs:string"/>
+			<property name="start_date" type="xs:date"/>
+			<property name="due_date" type="xs:date"/>
+			<property name="done_ratio" type="xs:string"/>
+			<property name="estimated_hours" type="xs:string"/>
+			<property name="custom_fields">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="e-mail@stop_time@list.ru" name="custom_field" type="d6p1:TypeIDName"/>
+				</typeDef>
+			</property>
+			<property name="created_on"/>
+			<property name="updated_on"/>
+		</objectType>
+		<objectType name="TypeIssues">
+			<property name="type" type="xs:string" lowerBound="0" form="Attribute"/>
+			<property name="count" type="xs:integer" lowerBound="0" form="Attribute"/>
+			<property xmlns:d4p1="e-mail@stop_time@list.ru" ref="d4p1:issue"/>
+		</objectType>
+		<objectType name="TypeNewIssue">
+			<property name="project_id" type="xs:string"/>
+			<property name="tracker_id" type="xs:string"/>
+			<property name="status_id" type="xs:string"/>
+			<property name="priority_id" type="xs:string"/>
+			<property name="subject" type="xs:string"/>
+			<property name="description" type="xs:string"/>
+			<property name="category_id" type="xs:string"/>
+			<property name="fixed_version_id" type="xs:string"/>
+			<property name="assigned_to_id" type="xs:string"/>
+			<property name="parent_issue_id" type="xs:string"/>
+			<property name="custom_fields">
+				<typeDef xsi:type="ObjectType">
+					<property name="custom_field" type="xs:string"/>
+				</typeDef>
+			</property>
+		</objectType>
+		<objectType name="TypeNewTimeEntryIssue">
+			<property name="issue_id" type="xs:string" lowerBound="0" form="Attribute"/>
+			<property name="hours" type="xs:string" lowerBound="0" form="Attribute"/>
+			<property name="comments" type="xs:string" lowerBound="0" form="Attribute"/>
+			<property name="spent_on" type="xs:string" lowerBound="0" form="Attribute"/>
+			<property name="activity_id" type="xs:string" lowerBound="0" form="Attribute"/>
+		</objectType>
+		<objectType name="TypeNewTimeEntryProject">
+			<property name="hours" type="xs:string" lowerBound="0" form="Attribute"/>
+			<property name="comments" type="xs:string" lowerBound="0" form="Attribute"/>
+			<property name="spent_on" type="xs:string" lowerBound="0" form="Attribute"/>
+			<property name="activity_id" type="xs:string" lowerBound="0" form="Attribute"/>
+			<property name="project_id" type="xs:string" lowerBound="0" form="Attribute"/>
+		</objectType>
+		<objectType name="TypeProject">
+			<property name="id" type="xs:string"/>
+			<property name="name" type="xs:string"/>
+			<property name="identifier" type="xs:string"/>
+			<property name="description" type="xs:string"/>
+			<property name="created_on" type="xs:string"/>
+			<property name="updated_on" type="xs:string"/>
+			<property name="is_public" type="xs:boolean"/>
+		</objectType>
+		<objectType name="TypeProjects">
+			<property name="type" type="xs:string" lowerBound="0" form="Attribute"/>
+			<property name="limit" type="xs:string" lowerBound="0" form="Attribute"/>
+			<property name="offset" type="xs:string" lowerBound="0" form="Attribute"/>
+			<property name="total_count" type="xs:string" lowerBound="0" form="Attribute"/>
+			<property xmlns:d4p1="e-mail@stop_time@list.ru" ref="d4p1:project"/>
+		</objectType>
+		<objectType name="TypeTimeEntry">
+			<property name="id" type="xs:string" lowerBound="0"/>
+			<property name="hours" type="xs:string" lowerBound="0"/>
+			<property name="comments" type="xs:string" lowerBound="0"/>
+			<property name="spent_on" type="xs:string" lowerBound="0"/>
+			<property name="created_on" type="xs:string" lowerBound="0"/>
+			<property name="updated_on" type="xs:string" lowerBound="0"/>
+			<property name="project" lowerBound="0" upperBound="-1">
+				<typeDef xmlns:d5p1="e-mail@stop_time@list.ru" xsi:type="ObjectType" base="d5p1:TypeIDName"/>
+			</property>
+			<property name="issue" lowerBound="0" upperBound="-1">
+				<typeDef xmlns:d5p1="e-mail@stop_time@list.ru" xsi:type="ObjectType" base="d5p1:TypeIDName"/>
+			</property>
+			<property name="user" lowerBound="0" upperBound="-1">
+				<typeDef xmlns:d5p1="e-mail@stop_time@list.ru" xsi:type="ObjectType" base="d5p1:TypeIDName"/>
+			</property>
+			<property name="activity" lowerBound="0" upperBound="-1">
+				<typeDef xmlns:d5p1="e-mail@stop_time@list.ru" xsi:type="ObjectType" base="d5p1:TypeIDName"/>
+			</property>
+		</objectType>
+		<objectType name="TypeTimeEntrys">
+			<property name="total_count" type="xs:string" lowerBound="0" form="Attribute"/>
+			<property name="offset" type="xs:string" lowerBound="0" form="Attribute"/>
+			<property name="limit" type="xs:string" lowerBound="0" form="Attribute"/>
+			<property name="type" type="xs:string" lowerBound="0" form="Attribute"/>
+			<property xmlns:d4p1="e-mail@stop_time@list.ru" ref="d4p1:time_entry" lowerBound="0" upperBound="-1"/>
+		</objectType>
+		<objectType name="TypeUpload">
+			<property name="token" type="xs:string"/>
+			<property name="filename" type="xs:string"/>
+			<property name="description" type="xs:string"/>
+			<property name="content_type" type="xs:string"/>
+		</objectType>
+		<objectType name="TypeUploads">
+			<property xmlns:d4p1="e-mail@stop_time@list.ru" ref="d4p1:upload"/>
+		</objectType>
+	</package>
+</Model>

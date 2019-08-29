@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e3a99c1d-4071-413c-8a6d-b656158e10ef">
+  <producedTypes>
+    <objectType typeId="40724498-addf-4ab2-946d-ebe7dcbef25a" valueTypeId="c273acc1-8203-41dd-a407-a75255d70981"/>
+    <refType typeId="e8e91b9f-a6d4-421d-b5da-fc5c1945ff74" valueTypeId="8d2dfa4e-b39c-4f2f-92dc-39c0818d060e"/>
+    <selectionType typeId="359948d9-98bc-4401-a7b2-ee878d6631a7" valueTypeId="4a5edcb9-0092-4222-af1d-5ed1a2956adb"/>
+    <listType typeId="8d42bbaf-d3dc-4b76-b50d-ee6e29cc2d24" valueTypeId="02918619-e9a2-4465-a9ff-dd38cdcf4597"/>
+    <managerType typeId="aaeb2f59-ceb1-488d-9d37-233dd737cb7c" valueTypeId="c8473408-a1be-4b5c-896d-7e300fee95e7"/>
+  </producedTypes>
+  <name>ТипыШаблоновТекстов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы шаблонов текстов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТипыШаблоновТекстов.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="1bcb7c18-a575-426d-bf5d-f986af382ad8">
+      <name>ПисьмоЗакрытиеОбращения</name>
+      <description>Письмо о закрытии обращения</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="2925dfc4-aad2-4038-a813-6b0d532cfa67">
+      <name>ПисьмоРегистрацияНовогоОбращения</name>
+      <description>Письмо о регистрации нового обращения</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="ef44c89f-7bd6-4a29-940d-7595a5b2f840">
+      <name>ПисьмоОтветНаКомментарийКПожеланию</name>
+      <description>Письмо ответ на комментарий к пожеланию</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="66aa2fc3-a4a9-4c32-ae87-e3a8476c1b06">
+      <name>ПисьмоОтправкаПриглашенияНаРегистрацию</name>
+      <description>Письмо отправка приглашения на регистрацию</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="c863c4d5-0e4a-4b87-a607-878889ede52a">
+      <name>ПисьмоПожеланиеДобавлено</name>
+      <description>Письмо пожелание добавлено</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="f72273e3-48bf-4ae7-b4b3-0fdad5ad75dd">
+      <name>ПисьмоПожеланиеЗапланированоКРеализации</name>
+      <description>Письмо пожелание запланировано к реализации</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="54eabbf5-5773-4cdd-92a2-119b3955a95d">
+      <name>ПисьмоПожеланиеНаГолосовании</name>
+      <description>Письмо пожелание на голосовании</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="3e6cbbe9-205f-457c-933d-c435fdd930a5">
+      <name>ПисьмоПожеланиеОтклонено</name>
+      <description>Письмо пожелание отклонено</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="e4868e4d-1190-4ae6-a9bc-716c9f7d8275">
+      <name>ПисьмоПожеланиеРеализовано</name>
+      <description>Письмо пожелание реализовано</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="a3afe79d-1a5e-45dd-b135-8ba5f23b9ac6">
+      <name>ПисьмоПожеланиеЯвляетсяДублем</name>
+      <description>Письмо пожелание является дублем</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

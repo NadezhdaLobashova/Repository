@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a0ff8e70-4a4a-466a-9a9e-989d97dcf876">
+  <name>ИспользованиеВнешнегоИнтерфейса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование внешнего интерфейса</value>
+  </synonym>
+</mdclass:Role>

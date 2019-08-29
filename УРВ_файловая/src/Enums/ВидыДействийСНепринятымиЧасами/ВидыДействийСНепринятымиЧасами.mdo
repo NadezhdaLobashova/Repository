@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="31e8dfce-b07a-4542-b99d-4cbbae2a4efe">
+  <producedTypes>
+    <refType typeId="b01adaaf-4689-40a5-b8d5-f7bd17875b52" valueTypeId="95e021cd-8949-4842-83a0-0fd39dbf2292"/>
+    <listType typeId="40b69301-3163-4ab3-b0c6-af8fec6fdd4f" valueTypeId="acfb834f-19a6-4872-83c4-40dea0d0a026"/>
+    <managerType typeId="66c21258-5562-4719-bc36-4d311309f023" valueTypeId="6493d06e-e2e1-480a-a445-273db83ee5f6"/>
+  </producedTypes>
+  <name>ВидыДействийСНепринятымиЧасами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды действий с непринятыми часами</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a7379ac0-29eb-4ccd-8a6f-c5a64dbdf7b0">
+    <name>ОстатокОтложить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Остаток отложить</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3cf29139-bcc9-42e0-9017-c31fc7614822">
+    <name>ОстатокСписать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Остаток списать</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

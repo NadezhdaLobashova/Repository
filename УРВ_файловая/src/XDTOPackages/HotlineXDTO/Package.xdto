@@ -1,0 +1,217 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://bear.rarus.ru/Hotline" elementFormQualified="true" attributeFormQualified="false">
+	<objectType name="Address">
+		<property name="Code" type="xs:string"/>
+		<property name="Description" type="xs:string"/>
+		<property name="latitudeTopLeft" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="longitudeTopLeft" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="latitudeTopRight" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="longitudeTopRight" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="latitudeBottomLeft" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="longitudeBottomLeft" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="latitudeBottomRight" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="longitudeBottomRight" type="xs:double" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="Answer">
+		<property name="AnswerText" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="AvailableFunctions">
+		<property name="Function" type="xs:string"/>
+		<property name="available" type="xs:boolean"/>
+		<property name="ProfileCode" type="xs:string"/>
+	</objectType>
+	<objectType name="CheckNotifications_Result">
+		<property name="Result" type="xs:boolean"/>
+		<property name="Message" type="xs:string"/>
+		<property name="IdNotification" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Parameter" type="xs:anyType" lowerBound="0" nillable="true"/>
+		<property name="Specification" type="xs:anyType" lowerBound="0" nillable="true"/>
+		<property name="Date" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="BaseNumber" type="xs:anyType" lowerBound="0" nillable="true"/>
+		<property name="ExtraParameters" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="Contact">
+		<property name="Code" type="xs:string"/>
+		<property name="Name" type="xs:string"/>
+		<property name="PhoneNumber" type="xs:string"/>
+	</objectType>
+	<objectType name="ContactTable">
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="Table" type="d3p1:Contact" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Event">
+		<property name="Date" type="xs:dateTime"/>
+		<property name="Code" type="xs:string"/>
+		<property name="PhoneNumber" type="xs:string"/>
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="Address" type="d3p1:Address" lowerBound="0" nillable="true"/>
+		<property name="Description" type="xs:string"/>
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="ProgramTableOfTheEvent" type="d3p1:ProgramTableOfTheEvent" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="TableWithEventMaterials" type="d3p1:TableWithEventMaterials" lowerBound="0" nillable="true"/>
+		<property name="CompositionCode" type="xs:string"/>
+		<property name="CompositionName" type="xs:string"/>
+		<property name="ProfileCode" type="xs:string" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="ServicesTable" type="d3p1:ServicesTable" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="File">
+		<property name="FileNumber" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="FileType" type="xs:string" lowerBound="0"/>
+		<property name="File" type="xs:anyType" lowerBound="0" nillable="true"/>
+		<property name="Result" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="Message" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="FileExtension" type="xs:anyType" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="FileTable">
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="Table" type="d3p1:File" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="GetContactList_Result">
+		<property name="Result" type="xs:boolean"/>
+		<property name="Message" type="xs:string"/>
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="ContactTable" type="d3p1:ContactTable" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="GetDetailsOfAllEvents_Result">
+		<property name="Result" type="xs:boolean"/>
+		<property name="Message" type="xs:string"/>
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="TableOflEvents" type="d3p1:TableOflEvents" lowerBound="0" nillable="true"/>
+		<property name="UserAlreadyRegistered" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="GetEvaluationParametersTable_Result">
+		<property name="Message" type="xs:string"/>
+		<property name="Result" type="xs:boolean"/>
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="RatingParametersTable" type="d3p1:RatingParametersTable" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="GetInformationAboutAvailableUsers_Result">
+		<property name="Result" type="xs:boolean"/>
+		<property name="Message" type="xs:string" nillable="true"/>
+		<property name="TableOfInformationAboutAvailableUsers" type="xs:anyType" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="GetQuestionnaire_Result">
+		<property name="Result" type="xs:boolean"/>
+		<property name="Message" type="xs:string"/>
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="QuestionnaireDataTable" type="d3p1:QuestionnaireDataTable" lowerBound="0" nillable="true"/>
+		<property name="QuestionnaireName" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="QuestionnaireСode" type="xs:anyType"/>
+	</objectType>
+	<objectType name="GetReservedSlots_Result">
+		<property name="Result" type="xs:boolean"/>
+		<property name="Message" type="xs:string"/>
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="ReservedSlotTable" type="d3p1:ReservedSlotTable" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="GetServices_Result">
+		<property name="Result" type="xs:boolean"/>
+		<property name="Message" type="xs:string" nillable="true"/>
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="ServicesTable" type="d3p1:ServicesTable" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="GetSlots_Result">
+		<property name="Result" type="xs:boolean"/>
+		<property name="Message" type="xs:string"/>
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="SlotTable" type="d3p1:SlotTable" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="GetTheListOfFiles_Result">
+		<property name="Result" type="xs:boolean"/>
+		<property name="Message" type="xs:string"/>
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="FileTable" type="d3p1:FileTable" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="InformationAboutAvailableUsers">
+		<property name="ApplicationID" type="xs:string" nillable="true"/>
+		<property name="PhoneNumber" type="xs:string"/>
+		<property name="Email" type="xs:string"/>
+		<property name="FullName" type="xs:string"/>
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="TableOfAvailableFunctions" type="d3p1:TableOfAvailableFunctions" lowerBound="0" nillable="true"/>
+		<property name="ThisIsARegisteredUser" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="DateOfRegistration" type="xs:date"/>
+		<property name="ProfileCode" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="MaterialsOfTheEvent">
+		<property name="Description" type="xs:string"/>
+		<property name="ReportCode" type="xs:string"/>
+		<property name="Value" type="xs:base64Binary"/>
+	</objectType>
+	<objectType name="OperationResult">
+		<property name="Result" type="xs:boolean"/>
+		<property name="Message" type="xs:string"/>
+	</objectType>
+	<objectType name="ProgramElement">
+		<property name="Time" type="xs:time"/>
+		<property name="Speaker" type="xs:string"/>
+		<property name="Topic" type="xs:string"/>
+		<property name="Duration" type="xs:time"/>
+		<property name="ReportCode" type="xs:string"/>
+	</objectType>
+	<objectType name="ProgramTableOfTheEvent">
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="Table" type="d3p1:ProgramElement" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="QuestionnaireData">
+		<property name="ThisIABindingQuestion" type="xs:boolean"/>
+		<property name="TheTextOfTtheQuestion" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="QuestionType" type="xs:string"/>
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="TableOfAnswers" type="d3p1:TableOfAnswers" lowerBound="0"/>
+		<property name="QuestionСode" type="xs:anyType"/>
+	</objectType>
+	<objectType name="QuestionnaireDataTable">
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="Table" type="d3p1:QuestionnaireData" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="RatingParameters">
+		<property name="Description" type="xs:string"/>
+		<property name="IdNotification" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="RatingParametersTable">
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="Table" type="d3p1:RatingParameters" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ReservedSlot">
+		<property name="DateTime" type="xs:dateTime"/>
+		<property name="SpecialistCode" type="xs:string"/>
+		<property name="Used" type="xs:boolean"/>
+		<property name="QuestionTheme" type="xs:string"/>
+		<property name="ContactPersonName" type="xs:string"/>
+		<property name="State" type="xs:string"/>
+	</objectType>
+	<objectType name="ReservedSlotTable">
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="Table" type="d3p1:ReservedSlot" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Service">
+		<property name="Name" type="xs:string" nillable="true"/>
+		<property name="Code" type="xs:anyType" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="ServicesTable">
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="Table" type="d3p1:Service" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Slot">
+		<property name="DateTime" type="xs:dateTime"/>
+		<property name="SpecialistCode" type="xs:string"/>
+	</objectType>
+	<objectType name="SlotTable">
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="Table" type="d3p1:Slot" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="TableOfAnswers">
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="Table" type="d3p1:Answer" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="TableOfAvailableFunctions">
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="Table" type="d3p1:AvailableFunctions" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="TableOfInformationAboutAvailableUsers">
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="Table" type="d3p1:InformationAboutAvailableUsers" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="TableOflEvents">
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="Table" type="d3p1:Event" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="TableWithEventMaterials">
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="Table" type="d3p1:MaterialsOfTheEvent"/>
+	</objectType>
+	<objectType name="ToRespondToTheInvitation_Result">
+		<property name="Result" type="xs:boolean"/>
+		<property name="Message" type="xs:string"/>
+		<property name="Barcode" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="BarcodePicture" type="xs:anyType" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="UserRegistration_Result">
+		<property name="Result" type="xs:boolean"/>
+		<property name="Message" type="xs:string"/>
+		<property xmlns:d3p1="http://bear.rarus.ru/Hotline" name="TableOfAvailableFunctions" type="d3p1:TableOfAvailableFunctions" lowerBound="0" nillable="true"/>
+		<property name="ApplicationID" type="xs:string" nillable="true"/>
+		<property name="RegistrationCode" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="CodeOfContact" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СheckАpp_Result">
+		<property name="Result" type="xs:boolean"/>
+		<property name="Message" type="xs:string"/>
+		<property name="Code" type="xs:int"/>
+	</objectType>
+</package>

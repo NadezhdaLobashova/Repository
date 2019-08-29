@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e8a59e59-8c6c-4ee5-aac6-bf5236833554">
+  <name>СериализацияДанныхНСИ_20Сервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сериализация данных НСИ 20 сервер</value>
+  </synonym>
+  <comment>// 1С:Рарус</comment>
+  <server>true</server>
+</mdclass:CommonModule>

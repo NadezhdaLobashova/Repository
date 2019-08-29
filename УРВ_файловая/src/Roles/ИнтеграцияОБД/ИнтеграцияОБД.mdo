@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="38fbac63-e69f-486b-8c27-0dc217537102">
+  <name>ИнтеграцияОБД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграция с ОБД</value>
+  </synonym>
+</mdclass:Role>

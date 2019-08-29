@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c8dc014-5558-413d-a0e2-ab946a72d381">
+  <producedTypes>
+    <refType typeId="5f640945-66c5-4220-ae30-f48e03f9897e" valueTypeId="0adf3194-6a45-49c1-832d-98b26029e697"/>
+    <listType typeId="f657fe17-6deb-412b-a44e-7c32e7a5e354" valueTypeId="4e720a03-8603-4c67-98ee-1f40e35048b2"/>
+    <managerType typeId="37455ef2-d877-4887-bc90-195c67300194" valueTypeId="d4a519d8-b2b8-4511-82a0-818627a74f6e"/>
+  </producedTypes>
+  <name>ТипыСрывовСроков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы срывов сроков</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="feaf4ee2-050b-438e-af2f-103e377947ef">
+    <name>СрывСрокаРеакции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срыв срока реакции</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8752debd-3509-4238-b7ed-6e0dd6c9a5b9">
+    <name>СрывСрокаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срыв срока обработки</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

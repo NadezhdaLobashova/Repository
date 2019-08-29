@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d111c98a-0a11-4207-8f14-be401e5260cb">
+  <producedTypes>
+    <objectType typeId="8c6610b2-a2ad-40a7-880e-81568590ed68" valueTypeId="e62a9f90-cea3-4f20-b570-dc1019d09fb8"/>
+    <refType typeId="2b179011-3a14-4879-a83b-1c63a92341d8" valueTypeId="2e9731d8-d196-4614-9781-75534c1738d6"/>
+    <selectionType typeId="bcff2b88-b791-46be-85a6-d144619a0812" valueTypeId="413b3836-eef5-4044-b3de-b1f599bf65c5"/>
+    <listType typeId="d8ab6f70-524e-49f8-8824-3cc2798ed254" valueTypeId="dffd461b-e122-4371-81bc-0a7c2d183aae"/>
+    <managerType typeId="5b4d3e2f-aa61-4217-9895-fa356d7b89da" valueTypeId="e931abb3-d470-465c-b345-18d565560da7"/>
+  </producedTypes>
+  <name>ШаблоныТекстов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблоны текстов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ШаблоныТекстов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ШаблоныТекстов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименование шаблона текста</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Код шаблона текста</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Шаблон текста</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>5</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ШаблоныТекстов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ШаблоныТекстов.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ШаблоныТекстов.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="06428e1a-ae16-4b34-8384-4a6208f38af5">
+    <name>Витрина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Витрина</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Витрины</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="43f5e79f-b254-47c6-afcf-93713bd0d633">
+    <name>Заголовок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заголовок</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ee7984fe-1a8a-4998-a5fc-ee900db4cb48">
+    <name>Сервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервис</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сервисы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сервис, для которого шаблон будет доступен.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c9d116b8-88e5-422f-a573-801079441391">
+    <name>Текст</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Текст шаблона</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="18b43f8b-6b0b-4e9a-8e6b-ab1fe850fcb7">
+    <name>ТекстХранилище</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст хранилище</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Хранилище форматированного документа шаблона текста</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c581bdb5-ab03-4d91-8b88-20063e76e8ab">
+    <name>ТипШаблона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип шаблона</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТипыШаблоновТекстов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e0ff56ac-dd91-40ed-bc57-2390f09a5216">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="c0a85f63-c8bd-4fd1-b9c2-009b34a3eac9">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ec32aa10-10cd-470e-bc77-bbd3b8a7c75f">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="61579596-4c63-42c2-b523-ae77b1d1559d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="5b847776-ccdb-4f09-97a8-c92ba054cec9">
+    <name>ПисьмоЗакрытиеОбращения_ru</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письмо закрытие обращения ru</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="1369ceaf-a63b-48dd-92b2-ab309aef9fa9">
+    <name>ПисьмоОтветНаКомментарийКПожеланию_ru</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письмо ответ на комментарий к пожеланию на русском</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="e7b38ff5-8931-47f7-a5c0-1cebcdd7ab07">
+    <name>ПисьмоОтправкаПриглашенияНаРегистрацию_ru</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письмо отправка приглашения на регистрацию ru</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="3f34322c-68b0-4b57-a303-266eb74a7200">
+    <name>ПисьмоПожеланиеДобавлено_ru</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письмо пожелание добавлено на русском</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="a19fe86e-609c-480a-b50f-034384c73444">
+    <name>ПисьмоПожеланиеЗапланированоКРеализации_ru</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письмо пожелание запланировано к реализации на русском</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="5401b32c-3989-40c2-81b5-2859e4358086">
+    <name>ПисьмоПожеланиеНаГолосовании_ru</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письмо пожелание на голосовании на русском</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="ce251d28-6670-4f88-bcaf-e5655a51a389">
+    <name>ПисьмоПожеланиеОтклонено_ru</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письмо пожелание отклонено на русском</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="eeb472da-7786-4bc8-acfe-c154e93d9545">
+    <name>ПисьмоПожеланиеРеализовано_ru</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письмо пожелание реализовано на русском</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="aec37e99-f715-4a12-8868-032bddde757e">
+    <name>ПисьмоПожеланиеЯвляетсяДублем_ru</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письмо пожелание является дублем на русском</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="b33844d2-ec68-45e7-8d19-53d99019105f">
+    <name>ПисьмоРегистрацияНовогоОбращения_ru</name>
+    <synonym>
+      <key>ru</key>
+      <value>Письмо регистрация нового обращения ru</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:Catalog>

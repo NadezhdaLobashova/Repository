@@ -1,0 +1,315 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.1cfresh.com/sd/data/1.1">
+	<import namespace="http://v8.1c.ru/8.1/data/core"/>
+	<import namespace="http://www.1c.ru/SSL/Exchange/Message"/>
+	<valueType name="ВидыВзаимоотношений" base="xs:string" variety="Atomic">
+		<enumeration>ПровайдерАбонент</enumeration>
+		<enumeration>ПровайдерОбслуживающаяОрганизация</enumeration>
+		<enumeration>ОбслуживающаяОрганизацияАбонент</enumeration>
+	</valueType>
+	<valueType name="ВидыКИ" base="xs:string" variety="Atomic">
+		<enumeration>ПочтовыйАдрес</enumeration>
+		<enumeration>ЮридическийАдрес</enumeration>
+		<enumeration>ФактическийАдрес</enumeration>
+		<enumeration>Телефон</enumeration>
+		<enumeration>ТелефонДомашний</enumeration>
+		<enumeration>ТелефонРабочий</enumeration>
+		<enumeration>Факс</enumeration>
+		<enumeration>ВебСтраница</enumeration>
+		<enumeration>АдресЭлектроннойПочты</enumeration>
+		<enumeration>ПользовательскаяКИДругая</enumeration>
+		<enumeration>ПользовательскаяКИТелефон</enumeration>
+		<enumeration>ПользовательскаяКИАдрес</enumeration>
+		<enumeration>ПользовательскаяКИАдресЭлектроннойПочты</enumeration>
+		<enumeration>ПользовательскаяКИВебСтраница</enumeration>
+		<enumeration>ПользовательскаяКИФакс</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="ДокументСсылка.Подписки" base="d2p1:Ref"/>
+	<valueType name="ПраваПользователейПриложений" base="xs:string" variety="Atomic">
+		<enumeration>Запуск</enumeration>
+		<enumeration>ЗапускИАдминистрирование</enumeration>
+	</valueType>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Абоненты" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.ВерсииКонфигураций" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.ВидыОграниченийТарифов" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.ДополнительныеРеквизиты" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.ЗначенияДополнительныхРеквизитов" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.ИнформационныеБазы" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Конфигурации" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Приложения" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Пользователи" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.Тарифы" base="d2p1:Ref"/>
+	<valueType name="ТипНомерДокумента" base="xs:string" variety="Atomic" maxLength="256"/>
+	<valueType name="ТипыПодписок" base="xs:string" variety="Atomic">
+		<enumeration xsi:type="xs:string">Продлевающая</enumeration>
+		<enumeration>Основная</enumeration>
+		<enumeration>Расширяющая</enumeration>
+	</valueType>
+	<objectType name="Документ.Подписка" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваПодписка"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Абонент" type="d3p1:КлючевыеСвойстваАбоненты" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="ВедущийАбонент" type="d3p1:КлючевыеСвойстваАбоненты" lowerBound="0"/>
+		<property name="ДатаОтключения" type="xs:dateTime" lowerBound="0"/>
+		<property name="ДатаПодключения" type="xs:dateTime" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="ОсновнаяПодписка" type="d3p1:КлючевыеСвойстваПодписка" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Тариф" type="d3p1:КлючевыеСвойстваТарифы" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="ТипПодписки" type="d3p1:ТипыПодписок" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваАбоненты">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Ссылка" type="d3p1:СправочникСсылка.Абоненты" lowerBound="0"/>
+		<property name="Наименование" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="64"/>
+		</property>
+		<property name="Код" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:int" variety="Atomic" totalDigits="12"/>
+		</property>
+	</objectType>
+	<objectType name="КлючевыеСвойстваВерсииКонфигураций">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Ссылка" type="d3p1:СправочникСсылка.ВерсииКонфигураций" lowerBound="0"/>
+		<property name="Наименование" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="18"/>
+		</property>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Конфигурация" type="d3p1:КлючевыеСвойстваКонфигурации" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваВидыОграниченийТарифов">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Ссылка" type="d3p1:СправочникСсылка.ВидыОграниченийТарифов" lowerBound="0"/>
+		<property name="Наименование" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="100"/>
+		</property>
+		<property name="Код" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="9"/>
+		</property>
+	</objectType>
+	<objectType name="КлючевыеСвойстваДополнительныеРеквизиты" open="true" sequenced="true">
+		<property name="Наименование" type="xs:string"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Ссылка" type="d3p1:СправочникСсылка.ДополнительныеРеквизиты" lowerBound="0"/>
+		<property name="ЭтоДополнительноеСведение" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваЗначенияДополнительныхРеквизитов" open="true" sequenced="true">
+		<property name="Наименование" type="xs:string"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Ссылка" type="d3p1:СправочникСсылка.ЗначенияДополнительныхРеквизитов" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Владелец" type="d3p1:КлючевыеСвойстваДополнительныеРеквизиты" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваИнформационныеБазы">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Ссылка" type="d3p1:СправочникСсылка.ИнформационныеБазы" lowerBound="0"/>
+		<property name="Наименование" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="64"/>
+		</property>
+	</objectType>
+	<objectType name="КлючевыеСвойстваКонфигурации">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Ссылка" type="d3p1:СправочникСсылка.Конфигурации" lowerBound="0"/>
+		<property name="Имя" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="255"/>
+		</property>
+	</objectType>
+	<objectType name="КлючевыеСвойстваПодписка">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Ссылка" type="d3p1:ДокументСсылка.Подписки" lowerBound="0"/>
+		<property name="Дата" type="xs:dateTime" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Номер" type="d3p1:ТипНомерДокумента" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваПользователи">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Ссылка" type="d3p1:СправочникСсылка.Пользователи" lowerBound="0"/>
+		<property name="Логин" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="150"/>
+		</property>
+		<property name="Наименование" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="150"/>
+		</property>
+	</objectType>
+	<objectType name="КлючевыеСвойстваПриложения">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Ссылка" type="d3p1:СправочникСсылка.Приложения" lowerBound="0"/>
+		<property name="Наименование" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="100"/>
+		</property>
+	</objectType>
+	<objectType name="КлючевыеСвойстваТарифы">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Ссылка" type="d3p1:СправочникСсылка.Тарифы" lowerBound="0"/>
+		<property name="Наименование" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="150"/>
+		</property>
+		<property name="Код" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="9"/>
+		</property>
+	</objectType>
+	<objectType name="КонтактнаяИнформация">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Строка" type="d3p1:КонтактнаяИнформация.Строка" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="КонтактнаяИнформация.Строка">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="ВидКонтактнойИнформации" type="d3p1:ВидыКИ"/>
+		<property name="ЗначенияПолей" type="xs:string"/>
+		<property name="НаименованиеКонтактнойИнформации" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="ЛюбаяСсылка">
+		<property name="СсылкаНаОбъект">
+			<typeDef xsi:type="ObjectType" sequenced="true">
+				<property xmlns:d5p1="http://www.1cfresh.com/sd/data/1.1" name="АбонентСсылка" type="d5p1:СправочникСсылка.Абоненты" lowerBound="0"/>
+				<property xmlns:d5p1="http://www.1cfresh.com/sd/data/1.1" name="ВерсияКонфигурацииСсылка" type="d5p1:СправочникСсылка.ВерсииКонфигураций" lowerBound="0"/>
+				<property xmlns:d5p1="http://www.1cfresh.com/sd/data/1.1" name="ВидОграниченийТарифовСсылка" type="d5p1:СправочникСсылка.ВидыОграниченийТарифов" lowerBound="0"/>
+				<property xmlns:d5p1="http://www.1cfresh.com/sd/data/1.1" name="ИнформационнаяБазаСсылка" type="d5p1:СправочникСсылка.ИнформационныеБазы" lowerBound="0"/>
+				<property xmlns:d5p1="http://www.1cfresh.com/sd/data/1.1" name="КонфигурацияСсылка" type="d5p1:СправочникСсылка.Конфигурации" lowerBound="0"/>
+				<property xmlns:d5p1="http://www.1cfresh.com/sd/data/1.1" name="ПодпискаСсылка" type="d5p1:ДокументСсылка.Подписки" lowerBound="0"/>
+				<property xmlns:d5p1="http://www.1cfresh.com/sd/data/1.1" name="ПользовательСсылка" type="d5p1:СправочникСсылка.Пользователи" lowerBound="0"/>
+				<property xmlns:d5p1="http://www.1cfresh.com/sd/data/1.1" name="ПриложениеСсылка" type="d5p1:СправочникСсылка.Приложения" lowerBound="0"/>
+				<property xmlns:d5p1="http://www.1cfresh.com/sd/data/1.1" name="ТарифСсылка" type="d5p1:СправочникСсылка.Тарифы" lowerBound="0"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.Абоненты" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваАбоненты"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="КонтактнаяИнформация" type="d3p1:КонтактнаяИнформация" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="ДополнительныеРеквизиты" type="d3p1:ДополнительныеРеквизиты" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.ВерсииКонфигураций" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваВерсииКонфигураций"/>
+		<property name="Код" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:decimal" variety="Atomic" totalDigits="15"/>
+		</property>
+	</objectType>
+	<objectType name="Справочник.ВзаимоотношенияАбонентов">
+		<property name="ПериодОтбор" type="xs:dateTime" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="ВедущийАбонентОтбор" type="d3p1:КлючевыеСвойстваАбоненты" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="ВидВзаимоотношенийОтбор" type="d3p1:ВидыВзаимоотношений" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="АбонентОтбор" type="d3p1:КлючевыеСвойстваАбоненты" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Записи" type="d3p1:Справочник.ВзаимоотношенияАбонентов.Записи" lowerBound="0"/>
+	</objectType>
+	<objectType name="Справочник.ВзаимоотношенияАбонентов.Записи">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Строка" type="d3p1:Справочник.ВзаимоотношенияАбонентов.Записи.Строка" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Справочник.ВзаимоотношенияАбонентов.Записи.Строка" open="true" sequenced="true">
+		<property name="Период" type="xs:dateTime" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="ВедущийАбонент" type="d3p1:КлючевыеСвойстваАбоненты" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="ВидВзаимоотношений" type="d3p1:ВидыВзаимоотношений" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Абонент" type="d3p1:КлючевыеСвойстваАбоненты" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.ВидыОграниченийТарифов" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваВидыОграниченийТарифов"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.ДополнительныеРеквизиты" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваДополнительныеРеквизиты"/>
+		<property name="МногострочноеПолеВвода" type="xs:decimal" lowerBound="0"/>
+		<property name="Заголовок" type="xs:string" lowerBound="0"/>
+		<property name="ЗаполнятьОбязательно" type="xs:boolean" lowerBound="0"/>
+		<property name="ДополнительныеЗначенияИспользуются" type="xs:boolean" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="ВладелецДополнительныхЗначений" type="d3p1:КлючевыеСвойстваДополнительныеРеквизиты" lowerBound="0"/>
+		<property name="ДополнительныеЗначенияСВесом" type="xs:boolean" lowerBound="0"/>
+		<property name="ЗаголовокФормыЗначения" type="xs:string" lowerBound="0"/>
+		<property name="ЗаголовокФормыВыбораЗначения" type="xs:string" lowerBound="0"/>
+		<property name="ФорматСвойства" type="xs:string" lowerBound="0"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0"/>
+		<property name="Подсказка" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.ЗначенияДополнительныхРеквизитов" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваЗначенияДополнительныхРеквизитов"/>
+		<property name="Вес" type="xs:decimal" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.ИнформационныеБазы" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваИнформационныеБазы"/>
+		<property name="Код" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:int" variety="Atomic" totalDigits="9"/>
+		</property>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="ВерсияКонфигурации" type="d3p1:КлючевыеСвойстваВерсииКонфигураций" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.Конфигурации" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваКонфигурации"/>
+		<property name="Наименование" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="64"/>
+		</property>
+		<property name="Код" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="9"/>
+		</property>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.Приложения" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваПриложения"/>
+		<property name="Код" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:int" variety="Atomic" totalDigits="7"/>
+		</property>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Абонент" type="d3p1:КлючевыеСвойстваАбоненты" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="ИнформационнаяБаза" type="d3p1:КлючевыеСвойстваИнформационныеБазы" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.Пользователи" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваПользователи"/>
+		<property name="ЧасовойПояс" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="20"/>
+		</property>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="КонтактнаяИнформация" type="d3p1:КонтактнаяИнформация" lowerBound="0"/>
+	</objectType>
+	<objectType name="Справочник.ПользователиАбонентов">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="АбонентОтбор" type="d3p1:КлючевыеСвойстваАбоненты" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="ПользовательОтбор" type="d3p1:КлючевыеСвойстваПользователи" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Записи" type="d3p1:Справочник.ПользователиАбонентов.Записи" lowerBound="0"/>
+	</objectType>
+	<objectType name="Справочник.ПользователиАбонентов.Записи">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Строка" type="d3p1:Справочник.ПользователиАбонентов.Записи.Строка" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Справочник.ПользователиАбонентов.Записи.Строка" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Абонент" type="d3p1:КлючевыеСвойстваАбоненты" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Пользователь" type="d3p1:КлючевыеСвойстваПользователи" lowerBound="0"/>
+	</objectType>
+	<objectType name="Справочник.ПользователиПриложений">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="ПользовательОтбор" type="d3p1:КлючевыеСвойстваПользователи" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="ПриложениеОтбор" type="d3p1:КлючевыеСвойстваПриложения" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="ПравоОтбор" type="d3p1:ПраваПользователейПриложений" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Записи" type="d3p1:Справочник.ПользователиПриложений.Записи" lowerBound="0"/>
+	</objectType>
+	<objectType name="Справочник.ПользователиПриложений.Записи">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Строка" type="d3p1:Справочник.ПользователиПриложений.Записи.Строка" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Справочник.ПользователиПриложений.Записи.Строка">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Пользователь" type="d3p1:КлючевыеСвойстваПользователи" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Приложение" type="d3p1:КлючевыеСвойстваПриложения" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Право" type="d3p1:ПраваПользователейПриложений"/>
+		<property name="Разрешено" type="xs:boolean"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.Тарифы" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваТарифы"/>
+		<property name="ДатаНачалаДействия" type="xs:dateTime" lowerBound="0"/>
+		<property name="ДатаОкончанияДействия" type="xs:dateTime" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ОписаниеДляАбонентов" type="d3p1:ValueStorage" lowerBound="0"/>
+		<property name="ОписаниеДляОбслуживающихОрганизаций" type="xs:string" lowerBound="0"/>
+		<property name="ПериодДействияПродлевающейПодписки" type="xs:decimal" lowerBound="0"/>
+		<property name="ПериодДействияРасширяющейПодписки" type="xs:decimal" lowerBound="0"/>
+		<property name="ПериодДобавленияПродлевающейПодписки" type="xs:decimal" lowerBound="0"/>
+		<property name="РасширениеТарифа" type="xs:boolean" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="ДоступныеТарифы" type="d3p1:Справочник.Тарифы.ДоступныеТарифы" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Конфигурации" type="d3p1:Справочник.Тарифы.Конфигурации" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Ограничения" type="d3p1:Справочник.Тарифы.Ограничения" lowerBound="0"/>
+	</objectType>
+	<objectType name="Справочник.Тарифы.ДоступныеТарифы">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Строка" type="d3p1:Справочник.Тарифы.ДоступныеТарифы.Строка" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Справочник.Тарифы.ДоступныеТарифы.Строка" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Тариф" type="d3p1:КлючевыеСвойстваТарифы" lowerBound="0"/>
+	</objectType>
+	<objectType name="Справочник.Тарифы.Конфигурации">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Строка" type="d3p1:Справочник.Тарифы.Конфигурации.Строка" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Справочник.Тарифы.Конфигурации.Строка" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Конфигурация" type="d3p1:КлючевыеСвойстваКонфигурации" lowerBound="0"/>
+	</objectType>
+	<objectType name="Справочник.Тарифы.Ограничения">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Строка" type="d3p1:Справочник.Тарифы.Ограничения.Строка" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Справочник.Тарифы.Ограничения.Строка" open="true" sequenced="true">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="ВидОграничений" type="d3p1:КлючевыеСвойстваВидыОграниченийТарифов" lowerBound="0"/>
+		<property name="КоличествоЛицензий" type="xs:decimal" lowerBound="0"/>
+		<property name="КоличествоДопЛицензийРасширяющейПодписки" type="xs:decimal" lowerBound="0"/>
+	</objectType>
+	<objectType name="УдалениеОбъекта">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="СсылкаНаОбъект" type="d3p1:ЛюбаяСсылка"/>
+	</objectType>
+	<objectType name="ДополнительныеРеквизиты">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Строка" type="d3p1:ДополнительныеРеквизиты.Строка" upperBound="-1"/>
+	</objectType>
+	<objectType name="ДополнительныеРеквизиты.Строка" open="true" sequenced="true">
+		<property name="ЗначениеСвойства" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://www.1cfresh.com/sd/data/1.1" name="ПользовательСсылка" type="d5p1:КлючевыеСвойстваПользователи" lowerBound="0"/>
+				<property xmlns:d5p1="http://www.1cfresh.com/sd/data/1.1" name="ЗначениеДополнительногоРеквизитаСсылка" type="d5p1:КлючевыеСвойстваЗначенияДополнительныхРеквизитов" lowerBound="0"/>
+				<property name="Число" type="xs:decimal" lowerBound="0"/>
+				<property name="Строка" type="xs:string" lowerBound="0"/>
+				<property name="Дата" type="xs:date" lowerBound="0"/>
+				<property name="Булево" type="xs:boolean" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/data/1.1" name="Свойство" type="d3p1:КлючевыеСвойстваДополнительныеРеквизиты"/>
+	</objectType>
+</package>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4de81b30-4e2b-4bf5-af50-488b90344402">
+  <name>ОтправлятьУведомленияОЗадачахНаЛиниюПоддержки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отправлять уведомления о задачах на линию поддержки</value>
+  </synonym>
+  <location>Constant.ОтправлятьУведомленияОЗадачахНаЛиниюПоддержки</location>
+  <privilegedGetMode>true</privilegedGetMode>
+</mdclass:FunctionalOption>

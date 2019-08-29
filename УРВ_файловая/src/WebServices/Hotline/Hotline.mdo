@@ -1,0 +1,1393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6cc6c57e-05d6-4320-8cad-dad3c6cdc9a8">
+  <name>Hotline</name>
+  <synonym>
+    <key>ru</key>
+    <value>Hotline</value>
+  </synonym>
+  <namespace>http://bear.rarus.ru/Hotline</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>b2e8327f-1e33-41cb-a113-145ceda21c5d</value>
+  </xdtoPackages>
+  <descriptorFileName>Hotline.1cws</descriptorFileName>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="094c195f-00f6-4ed0-8647-9e1babdcac4d">
+    <name>AcceptOrDeclineAUserRequest</name>
+    <synonym>
+      <key>ru</key>
+      <value>Accept or decline a user request</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>OperationResult</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>AcceptOrDeclineAUserRequest</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="520622cd-93c8-453d-9f08-ac8f927e086d">
+      <name>ApplicationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Application ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="4622c8db-c6e7-411f-a1e8-768ee3744d4c">
+      <name>UserApplicationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>User application ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="1087523a-bb53-480e-80f7-520a009c48b7">
+      <name>AcceptThisRequest</name>
+      <synonym>
+        <key>ru</key>
+        <value>Accept this request</value>
+      </synonym>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="a9138304-ce30-406e-9f90-ad0da53a5f15">
+      <name>ProfileCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Profile code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="3b5b7a3a-b14e-452a-8ddb-e3e7c56a8151">
+      <name>UserProfileCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>User profile code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="f958f7da-ce87-40b1-a046-4ef9400eb3cc">
+    <name>CheckNotifications</name>
+    <synonym>
+      <key>ru</key>
+      <value>Check notifications</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>CheckNotifications_Result</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>CheckNotifications</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="59883416-88b0-4761-b840-0b7ad7c7d7d6">
+      <name>ApplicationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Application ID</value>
+      </synonym>
+      <comment>ИдентификаторПриложения</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="cd7baad8-bf91-4abc-98ef-afacb04f242e">
+      <name>Parameter</name>
+      <synonym>
+        <key>ru</key>
+        <value>Parameter</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="df54057a-e354-4a0d-a608-c6c93b47515e">
+    <name>ConfirmTheOrder</name>
+    <synonym>
+      <key>ru</key>
+      <value>Confirm the order</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>OperationResult</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ConfirmTheOrder</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="d4291276-86f5-480b-8cbd-d9343cf67663">
+      <name>ApplicationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Application ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="89ecaf91-aa29-4dc8-bbf4-6f77e9928872">
+      <name>EventNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>Event number</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="41155fec-d083-4b29-8ab3-dc262e240039">
+      <name>CompositionCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Composition code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="9814d8c5-8932-4a79-9f5e-6547edd2f0f8">
+      <name>ProfileCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Profile code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="a1d15f6d-a2d5-4766-94f7-778fc2953a23">
+    <name>DeleteUser</name>
+    <synonym>
+      <key>ru</key>
+      <value>Delete user</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>OperationResult</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>DeleteUser</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="a26fac5b-c7fb-4a70-bf03-c853e3485f35">
+      <name>ApplicationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Application ID</value>
+      </synonym>
+      <comment>ИдентификаторПриложения</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="9bd2a664-e336-4299-86cd-9ffc217425e4">
+      <name>ProfileCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Profile code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="cc9d9503-9d8b-4d7b-afed-916088353947">
+    <name>GetAllFuction</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get all fuction</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>UserRegistration_Result</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>GetAllFuction</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="6494a90f-c640-46a0-aa87-ed79983405cc">
+      <name>ApplicationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Application ID</value>
+      </synonym>
+      <comment>ИдентификаторПриложения</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="823fc4c8-8054-40fc-aba1-d34cc8061654">
+      <name>ProfileCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Profile code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="12147bf6-3b92-41b7-8eab-655c5918d620">
+    <name>GetContactList</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get contact list</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>GetContactList_Result</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>GetContactList</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="698c4988-23dd-4234-bd55-63e90f1d3876">
+      <name>ClientINN</name>
+      <synonym>
+        <key>ru</key>
+        <value>Client INN</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="ce7c08cc-6739-4d63-838a-e658dbeca8bd">
+    <name>GetDetailsOfAllEvents</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get details of all events</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>GetDetailsOfAllEvents_Result</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>GetDetailsOfAllEvents</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="50d035c0-a012-4e48-b099-f903b60df5b9">
+      <name>ApplicationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Application ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="ba91ccd7-4443-4b65-a706-b0f7797a8821">
+      <name>EventNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>Event number</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="a832daad-7c42-4a2c-8d89-e8113a9b1d1e">
+      <name>CompositionCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Composition code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="36ca9aa7-33de-43c2-8f00-34853fc7686d">
+    <name>GetEvaluationParametersTable</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get evaluation parameters table</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>GetEvaluationParametersTable</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="0ab90478-6707-4201-bc32-c07820e5b19e">
+      <name>ReportCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Report code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="f749243c-23f4-4f81-b8b4-f60e26623f0a">
+      <name>ApplicationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Application ID</value>
+      </synonym>
+      <comment>ИдентификаторПриложения</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="3712a47d-5038-4aea-8b65-2254251a9de2">
+      <name>ProfileCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Profile code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="35e8dfe1-ae74-48a1-a1df-1133c4521539">
+    <name>GetFileByCode</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get file by code</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>File</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>GetFileByCode</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="aa5a69e7-f8da-4dff-96e8-b2ef2fdd22b2">
+      <name>FileNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>File number</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="a8776f4e-3f42-4442-b6ac-ce536e4ae8a9">
+    <name>GetInformationAboutAvailableUsers</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get information about available users</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>GetInformationAboutAvailableUsers_Result</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>GetInformationAboutAvailableUsers</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="2989c76d-acd9-4385-9f41-ed58dd5c0e71">
+      <name>ApplicationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Application ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="5c0bb6e9-cecd-4067-a854-5b7e0813bf24">
+      <name>ProfileCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Profile code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="a004429c-ff82-4e83-979c-ff2b22d456a7">
+    <name>GetQuestionnaire</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get questionnaire</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>GetQuestionnaire_Result</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>GetQuestionnaire</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="b821662d-f78b-47ba-ba6b-3d4cd2c1a4c5">
+      <name>ApplicationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Application ID</value>
+      </synonym>
+      <comment>ИдентификаторПриложения</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="5d98b4e5-8fc4-455d-804b-ec3abab02561">
+      <name>EventNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>Event number</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="c946ae28-09c2-479b-97c3-c3b2a157d3ed">
+      <name>CompositionCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Composition code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="8dd3b667-0d46-494d-a976-8aee13e10086">
+      <name>ProfileCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Profile code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="d6d55959-15b8-412d-bfcf-769eb225ef46">
+    <name>GetReservedSlots</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get reserved slots</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>GetReservedSlots_Result</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>GetReservedSlots</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="bf08f649-7925-45cd-9cb3-fb9343ea8234">
+      <name>BeginDateTime</name>
+      <synonym>
+        <key>ru</key>
+        <value>Begin date time</value>
+      </synonym>
+      <xdtoValueType>
+        <name>date</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="4f71f802-7f8a-4105-8f42-39ad55043651">
+      <name>EndDateTime</name>
+      <synonym>
+        <key>ru</key>
+        <value>End date time</value>
+      </synonym>
+      <xdtoValueType>
+        <name>date</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="1b6f5111-4583-4b88-9825-65fdefd2b647">
+      <name>ClientINN</name>
+      <synonym>
+        <key>ru</key>
+        <value>Client INN</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="36c04152-5e14-497d-b8b2-50e6c3cfc75f">
+      <name>OnlyUnused</name>
+      <synonym>
+        <key>ru</key>
+        <value>Only unused</value>
+      </synonym>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="b4cf3702-79bf-4c92-ad97-7307f96cdd95">
+    <name>GetServices</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get services</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>GetServices_Result</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>GetServices</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="a300cd03-3175-41a7-a44b-c417203b39aa">
+      <name>ApplicationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Application ID</value>
+      </synonym>
+      <comment>ИдентификаторПриложения</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="beb38886-cbc9-4678-b860-d7f7bff17022">
+      <name>ProfileCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Profile code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="132fc330-efc1-486f-a64a-f16907c9f889">
+    <name>GetSlots</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get slots</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>GetSlots_Result</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>GetSlots</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="3e636d36-141c-4df0-9eca-8417b57cd648">
+      <name>Date</name>
+      <synonym>
+        <key>ru</key>
+        <value>Date</value>
+      </synonym>
+      <xdtoValueType>
+        <name>date</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="38625fa1-467d-4953-b46e-6f3e255bb444">
+      <name>QuestionType</name>
+      <synonym>
+        <key>ru</key>
+        <value>Question type</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="e502e4b7-0567-47df-9649-1f8493178f41">
+      <name>ClientINN</name>
+      <synonym>
+        <key>ru</key>
+        <value>Client INN</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="0cfd9114-76b8-4453-83dd-6a633b6727a7">
+    <name>GetTheListOfFiles</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get the list of files</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>GetTheListOfFiles</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="82ed6172-74ac-43ec-9cab-42733b764b4b">
+      <name>EventNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>Event number</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="08ebe21a-ba87-452a-bb77-904700b1db51">
+    <name>NewNotificationID</name>
+    <synonym>
+      <key>ru</key>
+      <value>New notification ID</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>OperationResult</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>NewNotificationID</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="1a51e129-f77e-4598-8cd4-681597157abd">
+      <name>ApplicationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Application ID</value>
+      </synonym>
+      <comment>ИдентификаторПриложения</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="711a633d-ff2d-4748-a5e8-af78c8263508">
+      <name>NotificationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Notification ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>DeliverableNotificationSubscriberID</name>
+        <nsUri>http://v8.1c.ru/8.3/data/ext</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="8f0ee9b8-2002-4156-a8da-ab8c335bdb41">
+    <name>RegisterForTheEvent</name>
+    <synonym>
+      <key>ru</key>
+      <value>Register for the event</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>OperationResult</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>RegisterForTheEvent</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="10be046d-3cf5-4388-ac76-4aeddcfe0e50">
+      <name>ApplicationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Application ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="4ca4031e-ef8f-4587-984a-acb3d47033c7">
+      <name>EventNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>Event number</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="cf391b17-b486-4c3c-8f1c-d0686aec2de3">
+      <name>CompositionCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Composition code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="f3d0de57-624b-41e5-8a85-c648a13e6d1b">
+      <name>ProfileCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Profile code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="329c7cc8-d7d1-4209-9d85-7f7f58990845">
+    <name>ReserveSlot</name>
+    <synonym>
+      <key>ru</key>
+      <value>Reserve slot</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>OperationResult</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ReserveSlot</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="63bc411e-6566-4a89-ba10-a2be2ce59987">
+      <name>DateTime</name>
+      <synonym>
+        <key>ru</key>
+        <value>Date time</value>
+      </synonym>
+      <xdtoValueType>
+        <name>dateTime</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="37c91972-34c7-48ec-be38-5eb112fe84d8">
+      <name>Specialist</name>
+      <synonym>
+        <key>ru</key>
+        <value>Specialist</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="f9b8e5eb-5526-403c-858f-29b84aa536cb">
+      <name>ClientINN</name>
+      <synonym>
+        <key>ru</key>
+        <value>Client INN</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="2bd1eb3d-eb0e-453d-a309-2de270acf91e">
+      <name>ContactPersonCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Contact person code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="2d883106-60bd-407d-af89-78cbfd70fcbe">
+      <name>QuestionType</name>
+      <synonym>
+        <key>ru</key>
+        <value>Question type</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="31431de5-b36b-4439-9ee7-f5f2038a08c8">
+      <name>QuestionTheme</name>
+      <synonym>
+        <key>ru</key>
+        <value>Question theme</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="a735f857-23b6-405f-97f9-eee62fdcda68">
+      <name>Comment</name>
+      <synonym>
+        <key>ru</key>
+        <value>Comment</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="4555b702-0f37-438b-b70d-a1c4b18c0aae">
+      <name>LoginName</name>
+      <synonym>
+        <key>ru</key>
+        <value>Login name</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="8d28178c-08e3-4388-86f7-32a55d6db288">
+      <name>ContactPhone</name>
+      <synonym>
+        <key>ru</key>
+        <value>Contact phone</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="747919d5-1071-4d5d-8a48-fdbb10f1c5b5">
+    <name>SetTheResultOfTheUserQquestionnaire</name>
+    <synonym>
+      <key>ru</key>
+      <value>Set the result of the user qquestionnaire</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>OperationResult</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>SetTheResultOfTheUserQquestionnaire</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="c93f70ec-b351-424b-96a6-d8b21ff68ae6">
+      <name>ApplicationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Application ID</value>
+      </synonym>
+      <comment>ИдентификаторПриложения</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="d147b6b7-7c33-4673-a9a0-cdc6e10345e8">
+      <name>EventNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>Event number</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="a49c615b-940a-4930-b102-3f85cc9b8e6a">
+      <name>CompositionCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Composition code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="63fdc75e-3f29-4ac0-9808-0ae1da7c71f4">
+      <name>ResultOfTheUserQquestionnaire</name>
+      <synonym>
+        <key>ru</key>
+        <value>Result of the user qquestionnaire</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="29ba7a86-50f2-4053-a6df-faf58405411b">
+      <name>ProfileCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Profile code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="c18c25c2-9930-4cc6-afcc-6143b73c28c5">
+    <name>SetUserFunction</name>
+    <synonym>
+      <key>ru</key>
+      <value>Set user function</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>OperationResult</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>SetUserFunction</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="fc7c0450-684c-4fcd-8352-47ddc9c8ca32">
+      <name>ApplicationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Application ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="672ab650-6d8f-4207-b47f-c3ee30e44435">
+      <name>FunctionName</name>
+      <synonym>
+        <key>ru</key>
+        <value>Function name</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="fd10bae9-b2c0-4243-ad21-84d53b829435">
+      <name>FunctionValue</name>
+      <synonym>
+        <key>ru</key>
+        <value>Function value</value>
+      </synonym>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="b1335c0b-b747-4244-850f-da974cc2d70c">
+      <name>ProfileCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Profile code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="bb78d8ee-f4aa-4fce-aae3-8526fa0f12ec">
+    <name>ToRespondToTheInvitation</name>
+    <synonym>
+      <key>ru</key>
+      <value>To respond to the invitation</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>ToRespondToTheInvitation_Result</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ToRespondToTheInvitation</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="cbf45f8c-8c52-460a-8363-762917eefb00">
+      <name>ApplicationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Application ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="3edd1e12-4e43-4ae9-a690-d1eebecab87d">
+      <name>RegistrationPhase</name>
+      <synonym>
+        <key>ru</key>
+        <value>Registration phase</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="6b08b6c2-7791-4abb-a90b-a017ca4fbe22">
+      <name>EventNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>Event number</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="52b56e25-b061-47e6-945d-006a49eb3d8a">
+      <name>CompositionCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Composition code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="a61d46cf-bcc0-44ba-82ea-470c0acfc17e">
+      <name>RejectionReason</name>
+      <synonym>
+        <key>ru</key>
+        <value>Rejection reason</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="0965f744-ad4b-48a9-975e-bb88cee48948">
+      <name>ProfileCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Profile code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="d39f3b08-cb77-4349-a1e6-01d8a7f339c0">
+    <name>UnreserveSlot</name>
+    <synonym>
+      <key>ru</key>
+      <value>Unreserve slot</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>OperationResult</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>UnreserveSlot</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="55b9fd76-f360-48b2-a313-eae50ac5e818">
+      <name>DateTime</name>
+      <synonym>
+        <key>ru</key>
+        <value>Date time</value>
+      </synonym>
+      <xdtoValueType>
+        <name>dateTime</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="471cc75e-08f8-40f3-96ed-5eb12607fed6">
+      <name>Specialist</name>
+      <synonym>
+        <key>ru</key>
+        <value>Specialist</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="50269d3a-0ac0-496c-9c0c-fb1da8f50d65">
+      <name>ClientINN</name>
+      <synonym>
+        <key>ru</key>
+        <value>Client INN</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="db89a01e-f690-4881-a6df-14655ed4a551">
+    <name>UpdateTheValueOfTheNotification</name>
+    <synonym>
+      <key>ru</key>
+      <value>Update the value of the notification</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>OperationResult</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>UpdateTheValueOfTheNotification</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="669d0f73-b9ab-433c-b025-7ae8b69c1e97">
+      <name>IdNotification</name>
+      <synonym>
+        <key>ru</key>
+        <value>Id notification</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="e21aad63-ea7d-41d3-bb69-5a14fa04e256">
+      <name>Value</name>
+      <synonym>
+        <key>ru</key>
+        <value>Value</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="b00733d3-bf8e-4f7b-a606-76cc87eb46c6">
+    <name>UserRegistration</name>
+    <synonym>
+      <key>ru</key>
+      <value>User registration</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>UserRegistration_Result</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>UserRegistration</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="f27d1429-4bf5-40d4-ae6a-e17a30a63633">
+      <name>CurrentUserData</name>
+      <synonym>
+        <key>ru</key>
+        <value>Current user data</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="008712a7-7671-4b38-bf93-c2b415fd656f">
+    <name>СheckАpp</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сheck аpp</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>СheckАpp_Result</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>СheckАpp</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="acef6a33-cd31-4432-a464-45ab872a5fe7">
+      <name>PhoneNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>Phone number</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="73b12c6c-70f1-43c4-9f6b-a02f82b60130">
+      <name>ApplicationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Application ID</value>
+      </synonym>
+      <comment>ИдентификаторПриложения</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="74c1ae40-0f8d-4226-9574-c5118eb29e2c">
+      <name>email</name>
+      <synonym>
+        <key>ru</key>
+        <value>Email</value>
+      </synonym>
+      <comment>emailПользователя</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="da9931f1-39c8-4a40-bd99-06e2ce02963f">
+    <name>AskAQuestionAboutTheReport</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ask a question about the report</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>OperationResult</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>AskAQuestionAboutTheReport</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="9dc9a6e0-538e-4743-b950-49bd8594b2c1">
+      <name>ApplicationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Application ID</value>
+      </synonym>
+      <comment>ИдентификаторПриложения</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="ea34d455-3131-4b1f-a1e7-f97a8955f7f9">
+      <name>ProfileCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Profile code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="7c2a7760-c75d-46f2-bb3d-a41252a77240">
+      <name>EventNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>Event number</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="c95ac08c-9b9d-47e2-b70f-8f99ade632f7">
+      <name>CompositionCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Composition code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="5a4ce444-639a-45c3-a7bd-3ac29c5d43f0">
+      <name>ReportCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Report code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="917139b4-ea02-4fc5-8839-eca439341ea4">
+      <name>Question</name>
+      <synonym>
+        <key>ru</key>
+        <value>Question</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="96fea3e8-cb41-4f65-9b29-0d8984d7862e">
+    <name>OrderService</name>
+    <synonym>
+      <key>ru</key>
+      <value>Order service</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>OperationResult</name>
+      <nsUri>http://bear.rarus.ru/Hotline</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>OrderService</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="48363dd5-7835-41a2-a9fc-418085c2407a">
+      <name>ApplicationID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Application ID</value>
+      </synonym>
+      <comment>ИдентификаторПриложения</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="0db265b1-3115-4a8c-aa48-ff4bf6b4b1cb">
+      <name>ProfileCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Profile code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="54dab552-3ae4-4004-af01-a5bd4988c69c">
+      <name>EventNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>Event number</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="9f09a888-6994-4e17-bc3f-63afbe1ffdf7">
+      <name>CompositionCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Composition code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="a5710710-3119-46bf-8df9-48e32fcd5118">
+      <name>ServiceCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Service code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="38a8e4a9-bbd9-4f05-8e0e-e967987078fe">
+      <name>ToOrder</name>
+      <synonym>
+        <key>ru</key>
+        <value>To order</value>
+      </synonym>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

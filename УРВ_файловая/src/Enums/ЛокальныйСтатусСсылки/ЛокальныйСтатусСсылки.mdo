@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="21b6bc21-1d68-43b2-bbf0-68e8d85a0081">
+  <producedTypes>
+    <refType typeId="94ce4d92-6188-47c7-a332-86cf55262382" valueTypeId="ae5c0848-15dc-49ae-ae5e-fdbdad3151a6"/>
+    <listType typeId="42a1eee2-8e7e-48b6-9db4-fb97d85700e8" valueTypeId="425216fd-7de3-4f6f-b1d5-d699cec002cf"/>
+    <managerType typeId="6be41a1d-0439-446e-a645-ae30bbc0cdc1" valueTypeId="bbc89d0b-ab3b-4736-a29b-95e1bca27c39"/>
+  </producedTypes>
+  <name>ЛокальныйСтатусСсылки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Локальный статус ссылки</value>
+  </synonym>
+  <comment>//1С:Рарус НСИ 20</comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="58c20650-525e-4ccf-ae37-3deab6437d59">
+    <name>Новая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новая</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="480d03dd-4f9a-46cd-a5c1-58ac618473bd">
+    <name>Изменена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменена</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3ff4bbe1-1924-4111-a130-c77750060448">
+    <name>НетИзменений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нет изменений</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

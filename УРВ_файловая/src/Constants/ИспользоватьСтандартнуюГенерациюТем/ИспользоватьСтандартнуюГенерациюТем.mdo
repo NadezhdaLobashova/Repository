@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4f9ad6cc-2e3e-4dbe-a40e-2ab25cf5cb0f">
+  <producedTypes>
+    <managerType typeId="fe71b6eb-7ead-4229-bf32-5a5f902c3a92" valueTypeId="68584c27-1e86-489d-b60d-0ee613d42372"/>
+    <valueManagerType typeId="09ab0380-5e8e-46f4-ae2b-c4fefcb53fa3" valueTypeId="9ce29fb4-4f37-45d6-afca-f5b4beaba118"/>
+    <valueKeyType typeId="c073d05e-4a6c-5611-af44-ee6c4e8a2838" valueTypeId="7b7a1976-eb12-5a21-a8d2-1ca3511a6115"/>
+  </producedTypes>
+  <name>ИспользоватьСтандартнуюГенерациюТем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать стандартную генерацию тем</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

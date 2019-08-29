@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f71eb53c-2ec6-4ea2-a62a-82ab53ffad2e">
+  <name>ДобавлениеИзменениеЛинийПоддержки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавление и изменение линий поддержки</value>
+  </synonym>
+</mdclass:Role>

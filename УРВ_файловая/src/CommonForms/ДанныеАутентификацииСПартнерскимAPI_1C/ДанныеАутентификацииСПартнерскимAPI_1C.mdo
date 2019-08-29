@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c0bee74-e4ee-46a9-994c-0ceabd676708">
+  <name>ДанныеАутентификацииСПартнерскимAPI_1C</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные аутентификации с партнерским API 1C</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+</mdclass:CommonForm>

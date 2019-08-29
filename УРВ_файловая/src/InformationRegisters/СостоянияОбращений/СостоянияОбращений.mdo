@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a4dae71-1c9d-4c71-b82e-7354912c4505">
+  <producedTypes>
+    <selectionType typeId="4d878c7a-28c3-4fc7-83bf-acb787510773" valueTypeId="0504a983-59d7-478b-af02-ab40623aeb59"/>
+    <listType typeId="67487518-e046-4fbb-80d1-cc0a1411c5c7" valueTypeId="8eb7b122-d8b7-4e85-8bb1-a3db39abf972"/>
+    <managerType typeId="29fd5cdf-9764-4e55-a516-c0baea8b977a" valueTypeId="30e4d092-94eb-44c6-997e-b056b86838f9"/>
+    <recordSetType typeId="f660496b-8417-4e7d-b228-80727e0ebd00" valueTypeId="f6d46904-39cb-41b7-8c16-b5f45770a3b8"/>
+    <recordKeyType typeId="4acccc72-a995-49f5-bdfa-2fef72038fd3" valueTypeId="ed905eb0-d264-448d-a61e-b1b9ef102c23"/>
+    <recordType typeId="e3e19fc0-9073-483a-bc83-cb3c487eea65" valueTypeId="e0fb6591-0c72-4fbc-bd19-7f4735a0a9a5"/>
+    <recordManagerType typeId="326beff1-2f2f-40db-99f4-3faaa102cbd3" valueTypeId="bfdd9f32-f969-4d68-8a1e-3c0b796f9bc6"/>
+  </producedTypes>
+  <name>СостоянияОбращений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния обращений</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="644380a0-4b34-4e0c-889c-450a9a8b9c2f">
+    <name>ДатаПоследнегоВзаимодействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последнего взаимодействия</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата последнего взаимодействия по обращению</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="6309aa2b-1f51-4b60-a7b6-313d619b9cec">
+    <name>Обращение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обращение</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Обращение</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Обращение, по которому зафиксировано состояние</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fb5d7d22-610a-4134-95fb-aed6743edf54">
+  <name>УРВПовтИспКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>УРВ (повторное использование клиент)</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <returnValuesReuse>DuringRequest</returnValuesReuse>
+</mdclass:CommonModule>

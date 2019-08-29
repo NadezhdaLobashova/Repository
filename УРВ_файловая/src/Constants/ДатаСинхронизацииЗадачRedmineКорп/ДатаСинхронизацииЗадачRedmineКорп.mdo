@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2c7f7cb2-4dcc-4f34-adae-b3df4efa2b2d">
+  <producedTypes>
+    <managerType typeId="a16254d6-09bc-4adb-8121-d60c51133140" valueTypeId="6a2cdce9-0461-4ac2-b497-ab2312653e01"/>
+    <valueManagerType typeId="937d0959-6246-481e-9d16-84e13f50bb8b" valueTypeId="72f29442-33ac-4c66-b747-180f3f85b67d"/>
+    <valueKeyType typeId="495b29db-d77f-5027-a642-9f2241fb577a" valueTypeId="45a85540-2652-5362-b176-f2ec301d0835"/>
+  </producedTypes>
+  <name>ДатаСинхронизацииЗадачRedmineКорп</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дата синхронизации задач redmine корп</value>
+  </synonym>
+  <type>
+    <types>Date</types>
+    <dateQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

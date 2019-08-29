@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ac6e41fa-1dc1-40db-a8eb-a297c2616585">
+  <producedTypes>
+    <selectionType typeId="c91b3f53-a5cd-4a73-8a40-e5dfbd71c6e0" valueTypeId="ec1224b5-9d37-40d9-b537-d92c4e708892"/>
+    <listType typeId="efbf4aac-7190-482f-835c-4e07008ad792" valueTypeId="c1324bdf-2c9e-4938-8f9b-5bdfb829df37"/>
+    <managerType typeId="1c4be226-39eb-4b57-bbc9-887aeb49166b" valueTypeId="5f087298-0973-4c69-89eb-781d034f2b7a"/>
+    <recordSetType typeId="6de44162-a43f-4fd6-a3cb-014bd94df8a8" valueTypeId="b1008394-c9b7-4d8c-ac77-30588a4cd92b"/>
+    <recordKeyType typeId="e8512dc0-d2ff-4069-bb50-851ee902a275" valueTypeId="d242103b-0ecc-4e04-85c6-2cce7e1a9115"/>
+    <recordType typeId="d701acfa-7099-4a3c-adf4-544b556f2965" valueTypeId="611739a6-e98b-49a0-853f-0e7963bd6d3b"/>
+    <recordManagerType typeId="5ee7fad1-8c4c-488d-9b16-f11a6dfca385" valueTypeId="10f92555-3379-439f-a4a8-ad086d0cbaa3"/>
+  </producedTypes>
+  <name>ИзбранныеПожелания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Избранные пожелания</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="a2478f64-8009-4f61-9d5c-2266668ab1a7">
+    <name>ДатаИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата изменения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="e9efe993-7e2c-4c47-ac6d-5be7ae5a373c">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПользователиСервисов</types>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="16007935-169c-4c04-aeca-336275791bd2">
+    <name>Пожелание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пожелание</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пожелания</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

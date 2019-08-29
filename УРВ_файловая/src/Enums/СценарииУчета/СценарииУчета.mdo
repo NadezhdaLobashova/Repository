@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="74152cf9-b449-4803-828f-cd0bef187baa">
+  <producedTypes>
+    <refType typeId="cfbea14b-d74a-4e24-9c54-e219953d4287" valueTypeId="4170e0d5-f94f-4892-81e6-f15aeefb8346"/>
+    <listType typeId="a53d5ba6-2e4d-4985-8729-6e393f03bea2" valueTypeId="15d99dbf-71d2-47dc-9b65-fe9e26d75ab7"/>
+    <managerType typeId="dfcfc6d8-e403-4a0c-99bc-26f879148e66" valueTypeId="7e860095-7d3c-49d3-ac06-9832fba417a5"/>
+  </producedTypes>
+  <name>СценарииУчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сценарии учета</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="e68c57c9-e0bc-40cd-b920-ab9f93b3dd51">
+    <name>ГодовойПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Годовой план</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ba640192-1632-491a-8af6-6fcd3d0ba452">
+    <name>План</name>
+    <synonym>
+      <key>ru</key>
+      <value>План</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ae50bcd4-4886-4172-90d4-d1a1ed4de2b7">
+    <name>Прогноз</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прогноз</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="406246ac-eed4-4d36-9403-2c0a6d3f301e">
+    <name>Факт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Факт</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="481fa84a-57dc-4be9-a0db-c3b1c8b1d6a3">
+  <producedTypes>
+    <selectionType typeId="a15ff89a-96d7-439f-8d69-5e6d16bc128d" valueTypeId="5ba99050-8ae4-4d86-84ee-bcd9750628cc"/>
+    <listType typeId="3ae2e2dc-2be8-4769-a943-f7210b891dfe" valueTypeId="b32425ac-b0c9-4950-9721-647bb8865624"/>
+    <managerType typeId="0e3edea2-e2e9-46de-b9a3-a7d750902528" valueTypeId="8231b467-9a28-4f2f-97cf-07ba64b50549"/>
+    <recordSetType typeId="ccfb4f50-bb97-41f4-b0c2-2b5cdf60e0ac" valueTypeId="22a7ba63-a66e-49f8-917a-947e8357b346"/>
+    <recordKeyType typeId="e3c08f04-473f-45c8-9ebb-dabdf722ae69" valueTypeId="2ddc5743-0c7b-4dda-bd06-b7f14cdd512d"/>
+    <recordType typeId="51c63ff6-eed0-46dd-8c84-f96bdadfce81" valueTypeId="e92b72b6-215a-47f9-b06b-deb52d6baba1"/>
+    <recordManagerType typeId="0791b05f-51ab-4b67-ad72-58ec1da27eaf" valueTypeId="700d83a1-dc80-4759-a447-45d7e6bd8fd6"/>
+  </producedTypes>
+  <name>ШаблоныТекстовПисем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблоны текстов писем</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ШаблоныТекстовПисем.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ШаблоныТекстовПисем.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="253224bb-febc-4f36-9b03-b59d848e6eaa">
+    <name>ШаблонТекста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон текста</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ШаблоныТекстов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Сервис</name>
+      <field>InformationRegister.ШаблоныТекстовПисем.Dimension.Сервис</field>
+    </choiceParameterLinks>
+    <choiceParameterLinks>
+      <name>Отбор.ТипШаблона</name>
+      <field>InformationRegister.ШаблоныТекстовПисем.Dimension.ТипШаблона</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9db5f2e6-38be-4022-b80a-744c25668689">
+    <name>Сервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервис</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сервисы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2cb9e0f3-cb02-493b-96f2-286060d97296">
+    <name>Витрина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Витрина</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Витрины</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5f31cdcd-3eea-4f3c-ba5c-03c9826e4403">
+    <name>ТипШаблона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип шаблона</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТипыШаблоновТекстов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="26b08cef-8cb6-4839-bbce-a055bb44fda2">
+    <name>УчетнаяЗапись</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная запись</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчетныеЗаписиЭлектроннойПочты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d121e515-89a0-45b1-8248-872c64505d59">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="59597f9c-05d0-4c36-b602-26ed7840fa01">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bdf39abe-e6ea-4fb0-9ddd-ec2d9633e24a">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="2470c678-f468-443d-8d46-d3197483bb05">
+    <name>ШаблоныПисемВитрин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблоны писем</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Витрины</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="be5cfd1e-ab9f-4460-b6c3-c3441fa91130">
+    <name>ШаблоныПисемСервисов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблоны писем</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Сервисы</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

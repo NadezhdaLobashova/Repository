@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f24781e-15b3-4df6-ae1d-dd62800caaa8">
+  <producedTypes>
+    <managerType typeId="5d03d97d-db88-44d9-8df4-0133d8c2be7a" valueTypeId="e6c45154-610d-457c-abf2-c450269e6321"/>
+    <valueManagerType typeId="38101d44-f7ca-4331-9f52-39d94711aa8c" valueTypeId="7278a8b1-1f54-4e5f-85d6-b05394375847"/>
+    <valueKeyType typeId="cac29eb9-9c43-4baa-85b6-827c2f1aab2f" valueTypeId="58ccaf2e-75bc-4b40-a6b3-3840221030ea"/>
+  </producedTypes>
+  <name>ИнтервалНапоминанияНеуспешнойЗагрузкиПочты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интервал напоминания неуспешной загрузки почты (мин)</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>4</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

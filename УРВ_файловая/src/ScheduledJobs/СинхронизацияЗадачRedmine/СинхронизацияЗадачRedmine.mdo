@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7051cd40-c001-4a11-8edf-e66ac9940771">
+  <name>СинхронизацияЗадачRedmine</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задачи redmine КОРП</value>
+  </synonym>
+  <methodName>CommonModule.Redmine.СинхронизацияЗадачRedmine</methodName>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

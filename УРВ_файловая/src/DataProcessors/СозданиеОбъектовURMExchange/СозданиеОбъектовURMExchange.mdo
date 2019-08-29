@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6cb75a8b-f0a3-4c45-be2b-bceee58ee884">
+  <producedTypes>
+    <objectType typeId="b13bf0e7-e65d-4171-93c4-db1b0cec5c86" valueTypeId="1971215e-eb51-4658-87bd-74292e675615"/>
+    <managerType typeId="78c479cd-b657-4376-be7f-4eba53e9c933" valueTypeId="ea03778e-4e71-4391-a94d-fc99dbcd9bfe"/>
+  </producedTypes>
+  <name>СозданиеОбъектовURMExchange</name>
+  <synonym>
+    <key>ru</key>
+    <value>Создание объектов URMExchange</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.СозданиеОбъектовURMExchange.Form.Форма</defaultForm>
+  <tabularSections uuid="a36eebeb-8e8f-43ea-a1fe-e90a8173d6c2">
+    <producedTypes>
+      <objectType typeId="660f4382-6505-4936-8ae6-1c65f90da139" valueTypeId="a80e4db5-3a23-4f1a-b350-e7fb810dd02d"/>
+      <rowType typeId="831b607c-0a63-45ca-8bb5-b519d9c05ace" valueTypeId="2358b727-4614-4637-ba4f-c13c1a915ee4"/>
+    </producedTypes>
+    <name>ДанныеProject</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные project</value>
+    </synonym>
+    <attributes uuid="757ed6af-fb76-4a18-90f0-50751845bd87">
+      <name>NameProject</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="b91c7062-741a-4f3c-8eb8-de5924b46e5a">
+      <name>StartDate</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата начала</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c038fe42-6302-4e86-919e-d9611d3c5dd2">
+      <name>EndDate</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата окончания</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="45550ff4-30c5-478b-8ee6-5502a3d35e2f">
+      <name>GUIDProject</name>
+      <synonym>
+        <key>ru</key>
+        <value>GUID</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="cfc1e40c-d433-47e3-9a7b-02985f6e8dba">
+    <producedTypes>
+      <objectType typeId="3869c082-6a2b-48ee-b472-992478b00665" valueTypeId="7ad4c541-ea52-4542-ab39-779a5d69d183"/>
+      <rowType typeId="0b63b219-abcb-481a-97c1-64dd16915ecb" valueTypeId="c7706cee-7953-452a-a497-d4808e8b72ff"/>
+    </producedTypes>
+    <name>ДанныеPartner</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные partner</value>
+    </synonym>
+    <attributes uuid="ff99b5df-62ee-4af7-bab7-6f18a888b1ff">
+      <name>Name</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="fa2a9c23-3142-469e-aff1-c991a2223653">
+      <name>INN</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИНН</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>12</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="e51450b5-9e33-4fa3-a03f-7b2c40c529a6">
+      <name>GUIDPartner</name>
+      <synonym>
+        <key>ru</key>
+        <value>GUID</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="7df6f557-5678-48ed-b603-225d54d22213">
+    <producedTypes>
+      <objectType typeId="7d0c6ce7-bbee-4303-9136-fb866553d272" valueTypeId="1af78eac-7d69-4815-bb77-acf0a1d259d4"/>
+      <rowType typeId="dc5c2850-f456-4d4f-8758-44a28c83aa07" valueTypeId="fa708ca1-8d24-45f0-af7a-f8dcb410ee09"/>
+    </producedTypes>
+    <name>ДанныеEmployee</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные employee</value>
+    </synonym>
+    <attributes uuid="90317f88-9158-44d5-9cae-08f8f19a2c1d">
+      <name>Name</name>
+      <synonym>
+        <key>ru</key>
+        <value>Name</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="38a25b60-c3d7-4323-9391-401d66ea5c7a">
+      <name>GUID</name>
+      <synonym>
+        <key>ru</key>
+        <value>GUID</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="b1bd55d8-f245-4cad-9e31-73ad71a4ae9a">
+      <name>authentication</name>
+      <synonym>
+        <key>ru</key>
+        <value>Authentication</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="7b4a33d7-2f9b-4a98-b91b-174e7993b915">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b5aefd31-a218-4025-a14e-04062d37f39f">
+    <name>ПромежуточнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Промежуточная форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

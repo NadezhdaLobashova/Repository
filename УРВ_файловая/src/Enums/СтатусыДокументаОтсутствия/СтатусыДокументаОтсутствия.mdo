@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dc98cfdd-5f79-46e7-ba38-13d8a4f0b8ba">
+  <producedTypes>
+    <refType typeId="630c6570-ef8c-4d5b-8b35-4e3e4eecfc9c" valueTypeId="2fbe11e4-a48a-47c5-be73-07bfcf033a8b"/>
+    <listType typeId="762ac8e8-ece8-4412-8dc1-13d898709e4a" valueTypeId="00be03e7-46ee-454a-a325-0d5414afa5b1"/>
+    <managerType typeId="905aee6b-806a-458b-9b4f-a4f970d3a080" valueTypeId="5613d3b8-94ee-4af5-8136-cbcbff8e7054"/>
+  </producedTypes>
+  <name>СтатусыДокументаОтсутствия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы документа отсутствия</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="e7f193f7-3ea4-4b12-b975-0bc24261ed44">
+    <name>Черновик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Черновик</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="46a0da87-3179-4eae-9872-3d0c3d40f53f">
+    <name>НаУтверждение</name>
+    <synonym>
+      <key>ru</key>
+      <value>На утверждение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ac4aeb59-5d95-4e54-8298-b37945ef5561">
+    <name>Утвержден</name>
+    <synonym>
+      <key>ru</key>
+      <value>Утвержден</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bc3cd24e-8eb0-4e7d-86f6-d774235aef49">
+    <name>Отклонен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отклонен</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

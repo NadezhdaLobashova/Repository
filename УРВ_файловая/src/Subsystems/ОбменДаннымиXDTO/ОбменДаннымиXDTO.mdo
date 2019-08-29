@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="45ab8f3a-f527-4107-b469-8f4e30ca5889">
+  <name>ОбменДаннымиXDTO</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данными XDTO</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>InformationRegister.ПубличныеИдентификаторыСинхронизируемыхОбъектов</content>
+  <content>InformationRegister.ДанныеОбъектовДляРегистрацииВОбменах</content>
+  <content>DataProcessor.СопоставлениеОбъектовXDTO</content>
+  <content>DataProcessor.КонвертацияОбъектовXDTO</content>
+  <content>DataProcessor.УдалитьПомощникИнтерактивногоОбменаДаннымиЧерезXDTO</content>
+  <content>CommonModule.ОбменДаннымиXDTOПовтИсп</content>
+  <content>CommonModule.ОбменДаннымиXDTOПереопределяемый</content>
+  <content>CommonModule.ОбменДаннымиXDTOВызовСервера</content>
+  <content>CommonModule.ОбменДаннымиXDTOКлиентПовтИсп</content>
+  <content>CommonModule.ОбменДаннымиXDTOСервер</content>
+  <content>CommonModule.МенеджерОбменаДаннымиСервиса_1_0</content>
+  <content>bb7fad68-32d3-4e6a-be62-2c4c34c94737</content>
+</mdclass:Subsystem>

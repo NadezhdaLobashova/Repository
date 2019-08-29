@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="54181361-aac6-42f6-86e4-ab718a28ff55">
+  <producedTypes>
+    <objectType typeId="2ab61550-9167-4a79-a12e-3dd66e7ef942" valueTypeId="02250289-e135-4740-9ce9-0c4820b4295e"/>
+    <managerType typeId="3b70ace9-3274-49f6-b609-8dca453e3cfd" valueTypeId="243cc7db-bea4-47d7-80b8-052dd6f9ea46"/>
+  </producedTypes>
+  <name>ПанельАдминистрированияУСП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Панель администрирования УСП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПанельАдминистрированияУСП.Form.Форма</defaultForm>
+  <forms uuid="07053e12-6038-4d9d-9794-adee02f12877">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="90d279de-c17f-4cd5-9921-cbfb6fdd8b3b">
+    <name>НастройкиПриложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки приложения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="65721176-ffe9-4e97-bd17-056fc0b3aefc">
+    <name>НастройкиУведомлений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки уведомлений</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ba694ba8-ee00-4f86-a963-5d4843f04487">
+    <name>НастройкиТелефонии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки телефонии</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="fc2591f9-5840-4e07-ba42-192e5b2dcdf1">
+    <name>НастройкиПриложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки приложения</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="5596189f-a002-4f05-a293-896d3a0986dd">
+    <name>НастройкиУведомлений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомления</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="53eb5636-50bf-4ea8-a057-16ee8216f63e">
+    <name>НастройкиТелефонии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки телефонии</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

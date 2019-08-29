@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0734241a-a6ad-42db-ad1e-634c1c729014">
+  <producedTypes>
+    <managerType typeId="0e59cf4d-862a-4987-9085-cb397411fb2c" valueTypeId="53ebf5fe-f465-4dda-8d19-61dee3362b51"/>
+    <valueManagerType typeId="c5b12a66-7998-49d4-8611-e00a7a1ed639" valueTypeId="bc7093d2-c4dd-4159-9b5b-36656def999f"/>
+    <valueKeyType typeId="b669d05c-306b-51dc-a36d-96ad18e47734" valueTypeId="ca28d703-021f-59c2-a697-4c5367d76a22"/>
+  </producedTypes>
+  <name>Домен</name>
+  <synonym>
+    <key>ru</key>
+    <value>Домен</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

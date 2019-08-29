@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="26ac1aeb-a125-4133-999e-d226a02d4a5c">
+  <name>MobileExchange</name>
+  <synonym>
+    <key>ru</key>
+    <value>Mobile exchange</value>
+  </synonym>
+  <rootURL>MobileExchange</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>30</sessionMaxAge>
+  <urlTemplates uuid="ca89e6ac-9ea8-4e90-b808-da224f5a1895">
+    <name>Data</name>
+    <synonym>
+      <key>ru</key>
+      <value>Data</value>
+    </synonym>
+    <template>/data/{ИмяМетода}</template>
+    <methods uuid="0ccbcc52-abb6-427f-b114-f91e6e9d0dce">
+      <name>GetData</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get data</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>GetData</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

@@ -1,0 +1,21 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.1cfresh.com/sd/news/1.0">
+	<objectType name="NewsList">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/news/1.0" name="news" type="d3p1:News" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="News">
+		<property name="name" type="xs:string"/>
+		<property name="startDate" type="xs:dateTime"/>
+		<property name="endDate" type="xs:dateTime"/>
+		<property name="criticality" type="xs:int"/>
+		<property name="id" type="xs:string"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/news/1.0" name="textHTML" type="d3p1:HTMLObject" lowerBound="0"/>
+	</objectType>
+	<objectType name="HTMLObject">
+		<property name="htmlText" type="xs:string"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/news/1.0" name="images" type="d3p1:HTMLObjectImage" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="HTMLObjectImage">
+		<property name="name" type="xs:string"/>
+		<property name="data" type="xs:base64Binary"/>
+	</objectType>
+</package>

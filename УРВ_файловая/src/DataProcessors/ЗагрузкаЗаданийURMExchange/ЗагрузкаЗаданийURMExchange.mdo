@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee24c8f8-3891-4eb7-93d4-3f0368bc323a">
+  <producedTypes>
+    <objectType typeId="fad2f0dc-a4cc-487a-8cdc-d9a671efeea2" valueTypeId="1e561a51-6428-47ee-9bce-78a175d3c435"/>
+    <managerType typeId="47f40e91-c800-403a-ab9b-aa23e199015b" valueTypeId="5570cc6b-8bb7-4fb0-8925-1fcb820d2357"/>
+  </producedTypes>
+  <name>ЗагрузкаЗаданийURMExchange</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка заданий URMExchange</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаЗаданийURMExchange.Form.Форма</defaultForm>
+  <forms uuid="195b0759-52a9-4d97-aebf-78f19bf5d79f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

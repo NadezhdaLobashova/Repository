@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="32ed4d67-2cde-4d77-bb4c-44b467181873">
+  <producedTypes>
+    <refType typeId="50a932e7-3d1e-4e8c-84d8-4120eff82f37" valueTypeId="ea4a9a5f-81be-4618-9f0f-3dd7ff1bd587"/>
+    <listType typeId="ae644e91-8b8c-4f66-84b8-48ab99dd9e53" valueTypeId="6538633d-a40f-4de8-846a-62f3f8945717"/>
+    <managerType typeId="4f6bd5a0-0e96-42fd-97bd-a4b5bfb81542" valueTypeId="4edb71b4-eb5e-43e9-a0e6-f19ee6e39ca5"/>
+  </producedTypes>
+  <name>НастройкиУведомлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки уведомлений</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a0281ffd-dc6d-41aa-b5f5-8a771b4dbcfd">
+    <name>СрокУведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок уведомления</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6658fd6e-c9fe-424d-b98b-70d2fe48be2c">
+    <name>ЧастотаУведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Частота уведомления</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="19de674e-bf03-4ead-b489-47fcc8088418">
+    <name>Подписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подписка</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

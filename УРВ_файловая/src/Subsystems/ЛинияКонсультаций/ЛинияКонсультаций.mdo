@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="63cb924a-0ce6-476d-9202-435c283ce594">
+  <name>ЛинияКонсультаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расписание ЛК</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.РасписаниеЛК</picture>
+  </picture>
+  <content>Catalog.Абоненты</content>
+  <content>Catalog.Работы</content>
+  <content>Catalog.Проекты</content>
+  <content>Catalog.ПользователиСервисов</content>
+  <content>Catalog.ПричиныОтменыЗаписиНаЛК</content>
+  <content>Catalog.ПричиныНеоказанияКонсультацииЛК</content>
+  <content>Catalog.ВидыУслуг</content>
+  <content>22d2fd16-36d5-45c5-966d-760477de0e87</content>
+  <content>Catalog.ТипыКлиентовЛК</content>
+  <content>Document.УстановкаРасписанияЛК</content>
+  <content>Document.ЗаписьНаЛК</content>
+  <content>Document.ОтменаЗаписиНаЛК</content>
+  <content>Document.ВыполнениеКонсультацииЛК</content>
+  <content>Document.ВыполнениеРаботы</content>
+  <content>Document.БлокировкаЗаписиНаЛК</content>
+  <content>Document.ОтменаБлокировкиЗаписиНаЛК</content>
+  <content>Document.УстановкаОграниченийЗаписиНаЛК</content>
+  <content>Document.УстановкаОграниченийЗаписиНаЛК_ПоВидамУслуг</content>
+  <content>Document.ПланированиеЗагрузкиЛК</content>
+  <content>Document.ОтменаПланированияЗагрузкиЛК</content>
+  <content>Document.ОтменаПланированияЗагрузкиЗаПериодЛК</content>
+  <content>6b9b6418-47a0-4005-843e-04dc5a6be3a1</content>
+  <content>Document.УстановкаДоступностиВидовУслугКлиентамЛК</content>
+  <content>Enum.РолиСотрудниковЛК</content>
+  <content>Enum.ТипыЗаписейЛК</content>
+  <content>Enum.ИтоговыеСтатусыРасписанияЛК</content>
+  <content>Enum.СпособыВыводаОтчета</content>
+  <content>Enum.РезультатыКонсультации</content>
+  <content>Enum.СостоянияЭлементаРасписанияЛК</content>
+  <content>DataProcessor.РасписаниеЛК</content>
+  <content>InformationRegister.ДоступностьВидовУслугКлиентамЛК</content>
+  <content>InformationRegister.ОграниченияСотрудниковЛК_ПоВидамУслуг</content>
+  <content>InformationRegister.ОграниченияЗаписиНаЛК_ПоВидамУслуг</content>
+  <content>InformationRegister.РолиСотрудниковЛК</content>
+  <content>InformationRegister.СвойстваЭлементовРасписанияЛК</content>
+  <content>InformationRegister.ОграниченияЗаписиНаЛК</content>
+  <content>InformationRegister.ЦветаРасписанияЛК</content>
+  <content>InformationRegister.РезультатыКонсультаций</content>
+  <content>InformationRegister.РасписаниеКонсультаций</content>
+  <content>Role.ВебСервисHotline</content>
+  <content>Role.РуководительЛК</content>
+  <content>Role.АФ_СпециалистДАК</content>
+  <subsystems>Онлайн1С</subsystems>
+</mdclass:Subsystem>

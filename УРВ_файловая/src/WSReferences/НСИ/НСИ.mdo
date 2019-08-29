@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WSReference xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4bd1e653-9886-482d-a668-b5ec5c8488ce">
+  <producedTypes>
+    <managerType typeId="a76fecd7-e5fe-4158-863a-e09b24c533e5" valueTypeId="9226fd96-9a52-4962-b156-0e44578ed2cf"/>
+  </producedTypes>
+  <name>НСИ</name>
+  <synonym>
+    <key>ru</key>
+    <value>НСИ</value>
+  </synonym>
+  <comment>//1С:Рарус</comment>
+  <locationURL>https://ob8.rarus.ru/WSRarus/ws/dto.1cws?wsdl</locationURL>
+</mdclass:WSReference>

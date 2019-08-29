@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2eb0034b-d78d-4227-b50e-ad92807783fd">
+  <name>Бор_ПовторноеИспользованиеКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бор повторное использование клиент</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <returnValuesReuse>DuringSession</returnValuesReuse>
+</mdclass:CommonModule>

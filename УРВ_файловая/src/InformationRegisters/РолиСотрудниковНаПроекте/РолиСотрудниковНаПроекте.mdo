@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6b3df6ad-6e98-4290-8763-cf1869855bea">
+  <producedTypes>
+    <selectionType typeId="9fc7c505-d664-4524-925b-865370273371" valueTypeId="07981575-d1fb-4fbd-8621-029c82483fdf"/>
+    <listType typeId="d7d44041-8817-4ea0-8c56-73746b15e65e" valueTypeId="31695f27-5d5f-4ef5-a747-da38ec51066c"/>
+    <managerType typeId="78057629-c68b-4dc4-bd16-83bb5454b48a" valueTypeId="df707e7a-8572-4e18-baaf-e1f1b29d2c27"/>
+    <recordSetType typeId="43d2c1de-6a58-4cec-ba8f-9ca21e65a004" valueTypeId="60665d24-b27d-4495-979e-3f27eae5199e"/>
+    <recordKeyType typeId="d8e7b0c9-027d-48dc-818d-f416d92fd010" valueTypeId="497102db-c030-4550-9a08-bb0f966608a7"/>
+    <recordType typeId="fc842d00-4c52-478a-a878-899c672a7e77" valueTypeId="eda136ed-ebe7-45c6-95a8-c0f1038bdd9b"/>
+    <recordManagerType typeId="554f02c6-fb98-4b04-9352-35b7daf109da" valueTypeId="2f92d481-2dbb-4ff4-9d70-34c7180a3ed3"/>
+  </producedTypes>
+  <name>РолиСотрудниковНаПроекте</name>
+  <synonym>
+    <key>ru</key>
+    <value>Роли сотрудников на проекте</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="9a48fcf3-fb01-460a-abf5-01c3ede044e5">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="86db9164-0ac5-419c-8b17-e6f0647aef08">
+    <name>РольНаПроекте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль на проекте</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РолиНаПроекте</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

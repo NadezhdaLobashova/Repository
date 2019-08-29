@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d485649e-84a9-4522-a84e-19aeb2f47675">
+  <producedTypes>
+    <refType typeId="eb9222c9-4039-4c48-9d7d-878e3fd1f977" valueTypeId="d762514c-96d3-4f1e-b0d3-aab193ca00ef"/>
+    <listType typeId="2a7c5f31-8bb3-4d6a-ae18-288c47a202a7" valueTypeId="a140b455-76a1-4d24-8527-2505de6e44a8"/>
+    <managerType typeId="47805400-0add-4baa-ad88-9c6821deb04d" valueTypeId="1dad7fc9-8cc5-4610-870b-8b5c834c1996"/>
+  </producedTypes>
+  <name>ТипПрочихЗатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип прочих затрат</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="563fa492-bbc7-4e6f-ae0e-fe050c1f1c99">
+    <name>Оклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оклад</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c9a76e83-6051-44b7-b6ad-9295572384ae">
+    <name>Премия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Премия</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="568d0a56-e7e3-4dd3-a378-e111a92b14e2">
+    <name>ПрочиеЗатраты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочие затраты</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

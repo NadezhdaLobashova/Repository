@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d1f45e26-e64f-42d6-b038-e2bfaa3e0d43">
+  <producedTypes>
+    <selectionType typeId="165c1e0c-43be-433e-9bab-401ec2c5afe7" valueTypeId="37505ab2-437d-4d17-b9ad-47531df15f18"/>
+    <listType typeId="b4ca0380-9b48-45af-a5fe-f04f3d3c9d0f" valueTypeId="a1eb4df3-2ff1-40e8-b15f-5cbdb48ad178"/>
+    <managerType typeId="cc96880d-1fed-4d52-bc92-dd98f07f8336" valueTypeId="2d2b16a5-0bce-4a84-8cdd-f218b2cb5289"/>
+    <recordSetType typeId="0c36a348-df85-4980-8ecc-51d68e8d1e59" valueTypeId="283e6af1-50a4-4fee-be6a-225f3ead2ac8"/>
+    <recordKeyType typeId="b5a9e9c9-a314-42d3-88aa-e88922e8f546" valueTypeId="e2822737-bc15-45e0-a376-e0d56014ee68"/>
+    <recordType typeId="afdbc942-7da7-4c2a-8be4-0ca3aad7093b" valueTypeId="3565c3dc-011e-42aa-9ee2-cbd39478a10d"/>
+    <recordManagerType typeId="f544b2c4-7d7c-462b-9c31-ac9067e2bc25" valueTypeId="959072ee-918b-4366-a36d-f2793ffcb635"/>
+  </producedTypes>
+  <name>СреднийВесОбъектовНСИ20</name>
+  <synonym>
+    <key>ru</key>
+    <value>Средний вес объектов НСИ20</value>
+  </synonym>
+  <comment>//1С:Рарус</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="782e5abb-ba93-4a4c-b821-f5bb8809c187">
+    <name>Вес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4b241be4-9bed-47b5-a443-ee0a1c70d4dd">
+    <name>ВидОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид объекта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

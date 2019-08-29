@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="da4a7f3e-1a24-4bee-94c4-9d523e4abe3c">
+  <name>ОценкаВыбрано</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оценка выбрано</value>
+  </synonym>
+</mdclass:CommonPicture>

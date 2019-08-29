@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a90af450-e965-4169-9eaa-077ee4d66ac0">
+  <producedTypes>
+    <refType typeId="0b77f82b-abdb-4fad-9edc-ebc5389d052c" valueTypeId="70b7132b-530c-4aaa-9328-02dd85cf7fe4"/>
+    <listType typeId="4ccca40b-a9af-4474-b66e-f8968e32a68b" valueTypeId="246ba43d-46e6-471d-ae2d-360b57f8f17e"/>
+    <managerType typeId="ff3a073d-69a0-419b-927a-d37f10e2c63f" valueTypeId="8c8dd272-2084-4f94-b0e3-f2f59ff1c2f8"/>
+  </producedTypes>
+  <name>ТипыКарточекБазыЗнаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы карточек базы знаний</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="48f11369-fc94-4059-9942-1dda11eaa98c">
+    <name>Консультация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Консультация</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6fc08317-da9e-48eb-8b7b-1ebe91171892">
+    <name>Ошибка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6e3ff6da-2975-421d-b703-1598392a5b44">
+    <name>Пожелание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пожелание</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

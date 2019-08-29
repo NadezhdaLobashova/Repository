@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f9f8946-a23d-4ce5-8849-ed89c5ed76b7">
+  <name>БазаЗнаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>База знаний</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаБазаЗнаний</picture>
+  </picture>
+  <content>Role.ЧтениеОшибок</content>
+  <content>Role.ЧтениеПожеланий</content>
+  <content>Role.ЧтениеКонсультаций</content>
+  <content>Role.ДобавлениеИзменениеОшибок</content>
+  <content>Role.ДобавлениеИзменениеПожеланий</content>
+  <content>Role.ДобавлениеИзменениеКонсультаций</content>
+  <content>FilterCriterion.КарточкиПоКомпоненту</content>
+  <content>CommonForm.ФормаКомментария</content>
+  <subsystems>КарточкиБазыЗнаний</subsystems>
+</mdclass:Subsystem>

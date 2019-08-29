@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="02c15713-bfb8-4b58-9470-65b1ee5575f9">
+  <name>ШаблоныПисемПоУмолчанию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблоны писем по умолчанию</value>
+  </synonym>
+  <templateType>TextDocument</templateType>
+</mdclass:CommonTemplate>

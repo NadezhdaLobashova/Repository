@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd82e9dd-06ff-428a-ae86-0946eb360615">
+  <name>ВнешнийИнтерфейс_1_0_3</name>
+  <synonym>
+    <key>ru</key>
+    <value>Внешний интерфейс</value>
+  </synonym>
+  <namespace>http://www.1cfresh.com/sd/api</namespace>
+</mdclass:XDTOPackage>

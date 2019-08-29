@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:SettingsStorage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bf393271-abb3-46d8-a4d1-8318576931b2">
+  <producedTypes>
+    <managerType typeId="49ca9fc9-05e7-4bbf-ae49-d447a60fe4bc" valueTypeId="92fa50b0-01e6-4b1c-8a8a-7bf3686000e9"/>
+  </producedTypes>
+  <name>ХранилищеНастроекСписков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Хранилище настроек списков</value>
+  </synonym>
+  <forms uuid="e39235f1-6c92-432d-8ded-ca181cf12212">
+    <name>ФормаЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма загрузки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c05dc666-e824-4c04-a5e8-f91a28785fb3">
+    <name>ФормаСохранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма сохранения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:SettingsStorage>

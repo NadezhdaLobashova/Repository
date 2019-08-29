@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="917553ba-bfed-47db-a5e2-d7c9231dd9fb">
+  <producedTypes>
+    <managerType typeId="3f054689-2e16-4ea8-8971-90ece28c92f1" valueTypeId="5157f5e7-7007-444a-b3dd-7bdb994360bc"/>
+    <valueManagerType typeId="77eca50d-ddcb-443a-83fb-927e9c1ea202" valueTypeId="591576ee-942b-42dc-9143-692eb2dca59b"/>
+    <valueKeyType typeId="5faea073-f2c6-41a4-8c63-4a883feb10af" valueTypeId="e3051eea-1b9c-408e-bc4b-9406fac6a4fc"/>
+  </producedTypes>
+  <name>ОбъемПревышения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объем превышения</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>5</precision>
+      <scale>2</scale>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

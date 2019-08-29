@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommandGroup xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ade483f2-beae-4154-bfee-6d074317a9f9">
+  <name>Обращения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обращения</value>
+  </synonym>
+  <representation>Auto</representation>
+</mdclass:CommandGroup>
