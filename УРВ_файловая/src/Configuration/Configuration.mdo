@@ -1692,6 +1692,7 @@
   <catalogs>Catalog.ВидыСервисовИТС</catalogs>
   <catalogs>Catalog.СоответствиеОбъектовОбмена</catalogs>
   <catalogs>Catalog.Партнеры</catalogs>
+  <catalogs>Catalog.НовыйСправочник</catalogs>
   <documents>Document.АктВыполненныхРабот</documents>
   <documents>Document.БлокировкаЗаписиНаЛК</documents>
   <documents>Document.ВводНачальныхОстатковПоПринятымЧасам</documents>
