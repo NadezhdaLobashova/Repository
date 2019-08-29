@@ -892,6 +892,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="7cc1c511-c2e7-4e04-8f87-40a8e0df39ab">
+    <name>ДопРеквизит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доп реквизит</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="554db7d3-c38f-4d67-8e36-9c00e8b4fb42">
     <name>ОбращенияДляРабочегоСтола</name>
     <synonym>
