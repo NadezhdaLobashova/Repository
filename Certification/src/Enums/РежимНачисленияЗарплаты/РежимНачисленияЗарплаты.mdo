@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bc2527bd-bb91-4722-89cf-65e134913eb6">
+  <producedTypes>
+    <refType typeId="3a8d5795-da62-44a9-9e1e-3c646c36d26f" valueTypeId="43966919-cc90-41f3-ae68-ede86623949c"/>
+    <listType typeId="c592fbb8-dfe7-4392-be5e-a9e2d137f9e1" valueTypeId="eba933cd-a1a5-47f8-b925-fe827f932ebb"/>
+    <managerType typeId="50ce92ae-ba91-445d-b0cd-13016baccaeb" valueTypeId="bbee6fa9-8a3f-4be6-9086-afe9dd3fb8a5"/>
+  </producedTypes>
+  <name>РежимНачисленияЗарплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Режим начисления зарплаты</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="2054cca9-80e0-4739-b86c-769c2c31374c">
+    <name>ОкончательныйРасчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Окончательный расчет</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="12d247d6-bf78-4b67-b206-471b4e91ec58">
+    <name>РасчетПервойПоловиныМесяца</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет первой половины месяца</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

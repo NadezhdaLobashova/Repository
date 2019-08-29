@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="58d0a07b-2c76-4bb0-a30b-3e38aaa292e9">
+  <producedTypes>
+    <objectType typeId="504d2663-1f7a-4959-87a9-b6db6df3a8d4" valueTypeId="349d7e37-7649-49fe-be28-4c60b9ee4c4b"/>
+    <managerType typeId="767a510b-61b7-467d-a3bd-41444c376c81" valueTypeId="7c792822-fee0-4a15-bd00-7c8c4e888474"/>
+  </producedTypes>
+  <name>ОтсутствияСотрудниковСписком</name>
+  <synonym>
+    <key>ru</key>
+    <value>Плановые отсутствия сотрудников списком</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОтсутствияСотрудниковСписком.Form.Форма</defaultForm>
+  <attributes uuid="7704bb0e-bd74-4f38-869b-cacd8cf0b758">
+    <name>Отдел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отдел</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="08333c6b-334e-4391-afe7-62ad7a77bd7f">
+    <name>Месяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="c6270404-ca45-4c1e-9223-ed389ace59ac">
+    <producedTypes>
+      <objectType typeId="1794f62f-08f1-412a-8296-c20fd425f71f" valueTypeId="73fc0b64-0576-4af9-a9c1-b35d5a110441"/>
+      <rowType typeId="f0116d2e-1e6e-42e5-87ef-677734a996ac" valueTypeId="872e2d2f-bfa7-486a-91d9-aaaf0a5d3f3d"/>
+    </producedTypes>
+    <name>ТабельОтсутствияСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Табель отсутствия сотрудников</value>
+    </synonym>
+    <attributes uuid="179fbec8-d061-4481-9ce4-864fb89bb8be">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a6b06fca-e3c5-4830-8a08-62457f1c8031">
+      <name>День1</name>
+      <synonym>
+        <key>ru</key>
+        <value>День1</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="504a80bb-0751-463f-8d8b-90318150aeaa">
+      <name>День2</name>
+      <synonym>
+        <key>ru</key>
+        <value>День2</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="51566e33-4279-4d65-86ce-c8226b79fd25">
+      <name>День3</name>
+      <synonym>
+        <key>ru</key>
+        <value>День3</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5cea7ec9-8bd9-4050-aab0-04904527aeda">
+      <name>День4</name>
+      <synonym>
+        <key>ru</key>
+        <value>День4</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="322d3cb9-637d-4762-ad8d-6d9190dd95e1">
+      <name>День5</name>
+      <synonym>
+        <key>ru</key>
+        <value>День5</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="af70537a-86a9-4565-903a-ca63e1af21aa">
+      <name>День6</name>
+      <synonym>
+        <key>ru</key>
+        <value>День6</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="537d281f-dffc-4ae6-8604-d4dbe45cdd9a">
+      <name>День7</name>
+      <synonym>
+        <key>ru</key>
+        <value>День7</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4d8ea788-0bee-41b8-9e6c-1ae36e32683a">
+      <name>День8</name>
+      <synonym>
+        <key>ru</key>
+        <value>День8</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="af236917-0b4e-4a0d-8cc0-01c8ef85c162">
+      <name>День9</name>
+      <synonym>
+        <key>ru</key>
+        <value>День9</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9be9cb74-d48a-4ec2-8612-dfb64b350c10">
+      <name>День10</name>
+      <synonym>
+        <key>ru</key>
+        <value>День10</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="002e9941-0498-4c8b-9b61-17a3f051ff94">
+      <name>День11</name>
+      <synonym>
+        <key>ru</key>
+        <value>День11</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ea84364f-583b-4ab9-a897-d1b04e096eec">
+      <name>День12</name>
+      <synonym>
+        <key>ru</key>
+        <value>День12</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a272ecbb-c954-4497-bd65-12d199f204d1">
+      <name>День13</name>
+      <synonym>
+        <key>ru</key>
+        <value>День13</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5fd608f9-d4c6-4644-b446-047124a279fe">
+      <name>День14</name>
+      <synonym>
+        <key>ru</key>
+        <value>День14</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ee65518e-717e-41e9-9de6-99c7d964599f">
+      <name>День15</name>
+      <synonym>
+        <key>ru</key>
+        <value>День15</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="3752b63c-7090-4128-84c7-044a8ef146db">
+      <name>День16</name>
+      <synonym>
+        <key>ru</key>
+        <value>День16</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a0357ce4-00ab-49b3-ab15-8702b56138a1">
+      <name>День17</name>
+      <synonym>
+        <key>ru</key>
+        <value>День17</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2f7a8785-2e97-4ab4-abeb-2c8b4ee84082">
+      <name>День18</name>
+      <synonym>
+        <key>ru</key>
+        <value>День18</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="44cea3be-9c49-4bf8-a5a1-93603655b45a">
+      <name>День19</name>
+      <synonym>
+        <key>ru</key>
+        <value>День19</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="470319ac-1fc8-4da9-90ef-4e03c6449f3c">
+      <name>День20</name>
+      <synonym>
+        <key>ru</key>
+        <value>День20</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4de24326-afe1-446e-97e2-17a9621d056b">
+      <name>День21</name>
+      <synonym>
+        <key>ru</key>
+        <value>День21</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d4c84317-0a4b-48b6-90f0-2ada476f236e">
+      <name>День22</name>
+      <synonym>
+        <key>ru</key>
+        <value>День22</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="aea45b57-1dfb-4797-9d48-3da8bdd28fd7">
+      <name>День23</name>
+      <synonym>
+        <key>ru</key>
+        <value>День23</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e8219ac9-568e-432b-b9d1-033c2d894d15">
+      <name>День24</name>
+      <synonym>
+        <key>ru</key>
+        <value>День24</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="363dbf3e-b495-48e4-b48c-7bfa46316ebb">
+      <name>День25</name>
+      <synonym>
+        <key>ru</key>
+        <value>День25</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="b683b91d-5655-4902-b5fc-28e05835ef4f">
+      <name>День26</name>
+      <synonym>
+        <key>ru</key>
+        <value>День26</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1e515c16-3d18-4e61-b4fe-03534c563afa">
+      <name>День27</name>
+      <synonym>
+        <key>ru</key>
+        <value>День27</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="77858644-49b5-45b9-baf7-c168c07e0f6e">
+      <name>День28</name>
+      <synonym>
+        <key>ru</key>
+        <value>День28</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1a522c58-7694-43fb-a321-67420f967805">
+      <name>День29</name>
+      <synonym>
+        <key>ru</key>
+        <value>День29</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="386c476a-60e8-4165-8fd5-5155e885dd66">
+      <name>День30</name>
+      <synonym>
+        <key>ru</key>
+        <value>День30</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="cc3c3eea-43a4-4512-8ec2-5a1922dc3389">
+      <name>День31</name>
+      <synonym>
+        <key>ru</key>
+        <value>День31</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="7f046da4-dd85-439c-b6aa-c025b4fa9a7b">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

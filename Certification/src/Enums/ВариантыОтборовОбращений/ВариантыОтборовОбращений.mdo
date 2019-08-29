@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9e134662-af5e-4eeb-840c-3e652dae7e4c">
+  <producedTypes>
+    <refType typeId="b4a22c0b-0a4e-4390-b4c9-1aab5e5cd8ca" valueTypeId="2f8ae3d6-3905-42fd-8094-31840ce957bc"/>
+    <listType typeId="d35bd9e0-78ed-4483-9ed4-97bf2f200242" valueTypeId="8730b694-9c26-4a5e-be5c-de03401eb751"/>
+    <managerType typeId="aab44ce6-7016-4533-b513-a0e76fd06b96" valueTypeId="53708667-23ec-43cb-9ae8-0f9ad39920b6"/>
+  </producedTypes>
+  <name>ВариантыОтборовОбращений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты отборов обращений</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="333ca658-36d5-4cc0-b116-193633c8be11">
+    <name>Новые</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новые</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e8d544f4-8488-43b3-a41d-8919d8ead893">
+    <name>НаМне</name>
+    <synonym>
+      <key>ru</key>
+      <value>На мне</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7ed92ac5-f4f4-4354-854d-e91139b00dd8">
+    <name>ОбщиеНаЛинии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Общие на линии</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fb31e46f-b143-4e9e-ba8a-871f9569a77a">
+    <name>ВРаботеУЛинии</name>
+    <synonym>
+      <key>ru</key>
+      <value>В работе у линии</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1cf813d2-472d-4273-a871-7b89e448753c">
+    <name>Все</name>
+    <synonym>
+      <key>ru</key>
+      <value>Все</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

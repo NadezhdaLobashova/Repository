@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bd713d99-4964-4247-a1ce-e2b96c5f0646">
+  <producedTypes>
+    <objectType typeId="45fb0669-0014-4205-a1ae-2e97e21a8c70" valueTypeId="e46a7a1c-8256-48b1-800a-1e21ce380b42"/>
+    <managerType typeId="c9ef0467-5e05-4763-9087-9cf40742cd1a" valueTypeId="d98b93d1-bc09-4520-a23a-2266df671514"/>
+  </producedTypes>
+  <name>АнализКарточекБазыЗнаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ карточек базы знаний</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.АнализКарточекБазыЗнаний.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="78a860dc-2949-40eb-92a2-97911315a30d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

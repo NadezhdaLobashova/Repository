@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="77175d5c-55d7-4991-8911-38a64040e167">
+  <name>ШаблоныБизнесПроцессов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблоны бизнес процессов</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

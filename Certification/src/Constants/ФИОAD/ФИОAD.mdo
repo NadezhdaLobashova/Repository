@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f21ff0fa-5433-42fd-830d-656569b27358">
+  <producedTypes>
+    <managerType typeId="277e874d-25a6-4c27-8414-c93c18415b84" valueTypeId="303ec5d2-c03e-4863-9d2c-ca558f3b50e9"/>
+    <valueManagerType typeId="4b6135ae-a383-4663-b179-dd345eceeb07" valueTypeId="9a325bb4-abec-4033-90bf-a197e9331d89"/>
+    <valueKeyType typeId="7cb4a35b-c836-57d7-af9a-e0073398a7ef" valueTypeId="301b9f14-bbbd-5c21-84c2-5b1695501ea9"/>
+  </producedTypes>
+  <name>ФИОAD</name>
+  <synonym>
+    <key>ru</key>
+    <value>ФИОAD</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

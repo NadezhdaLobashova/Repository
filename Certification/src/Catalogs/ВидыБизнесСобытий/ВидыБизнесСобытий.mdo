@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d70ff333-7af1-437c-ae41-74eeec6af4a7">
+  <producedTypes>
+    <objectType typeId="79020a94-e015-4763-93dc-a7934740671a" valueTypeId="36548188-cfc7-4da5-b9af-bb1ef5e4b6b3"/>
+    <refType typeId="703601bd-868e-4252-96b2-803a1e16ec1c" valueTypeId="0af7294f-07b7-4c58-8cc1-c5e268973af5"/>
+    <selectionType typeId="70de3701-4299-4d91-87ab-19659e8cb663" valueTypeId="cde28909-3d23-4490-b86f-d062726f39c1"/>
+    <listType typeId="fb9d0240-f7d7-4eda-854e-865a5e3f2e59" valueTypeId="d8715c9a-448d-448d-961b-e08e887eea34"/>
+    <managerType typeId="fe91e103-f38b-4743-ae0c-e0f2a4b94fb6" valueTypeId="d02f986c-2fda-49c5-8890-2c50533908c1"/>
+  </producedTypes>
+  <name>ВидыБизнесСобытий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды бизнес-событий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыБизнесСобытий.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа  вида бизнес-событий</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.ВидыБизнесСобытий.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Виды событий</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Виды бизнес-событий</value>
+  </extendedListPresentation>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>80</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="cea8253c-3e89-4d14-8389-5ad2f3ef8732">
+      <name>ВозобновлениеБизнесПроцесса</name>
+      <description>Возобновление процесса</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="a15a9ced-84fd-40e0-af66-c0e61c52a434">
+      <name>ВходящийЗвонокОтПользователяСервиса</name>
+      <description>Входящий звонок от пользователя сервиса</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="7afc061f-3e5a-48b7-ac00-a0ed044c58a7">
+      <name>ВыполнениеЗадачи</name>
+      <description>Выполнение задачи</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="d1aaf47f-89d0-46eb-b593-268e3a49514a">
+      <name>ДобавленФайл</name>
+      <description>Добавлен файл</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="63c7f271-d814-4bb7-84aa-faea3729c179">
+      <name>ЗавершениеБизнесПроцесса</name>
+      <description>Завершение процесса</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="dc1535cd-bf62-406d-b814-311386b53508">
+      <name>ЗакрытиеОбращения</name>
+      <description>Закрытие обращения</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="0f5da9fe-6058-46fb-b229-6d1bd700920f">
+      <name>ИзмененИнициаторОбращения</name>
+      <description>Изменен инициатор обращения</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="c557dc5a-abdd-469f-8b38-ab85f556d7cd">
+      <name>ИзменениеАктивнойПодпискиНаТариф</name>
+      <description>Изменение активной подписки на тариф</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="19d0b39f-45c2-4cbf-ab2a-e05e139f9a91">
+      <name>ИзменениеКонсультации</name>
+      <description>Изменение консультации</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="438a84a2-70a1-4f84-8c95-72bbfe8749f3">
+      <name>ИзменениеОбращения</name>
+      <description>Изменение обращения</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="318b8c49-4b5d-467d-9ac3-c557750ec351">
+      <name>ИзменениеОписанияОбращения</name>
+      <description>Изменение описания обращения</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="0d9bd7ae-cc68-47d7-91d5-14adb4dd24c2">
+      <name>ИзменениеОшибки</name>
+      <description>Изменение ошибки</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="54cf178b-e90e-4d1d-bb96-17230956d29b">
+      <name>ИзменениеПожелания</name>
+      <description>Изменение пожелания</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="2b72ec69-d043-4e38-a9cd-6d5712a111e5">
+      <name>ИзменениеПринадлежностиОбращения</name>
+      <description>Изменение принадлежности обращения</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="96b58c9f-5d52-49d5-83da-1ec3241ee7ef">
+      <name>ИзменениеСостоянияОбращения</name>
+      <description>Изменение состояния обращения</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="93dd4b68-1983-4eef-aaac-36aea36e311b">
+      <name>ИсходящийЗвонокПользователюСервиса</name>
+      <description>Исходящий звонок пользователю сервиса</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="e790fb5f-130c-42a1-bc4a-b0963ade664f">
+      <name>НапоминаниеНеуспешнойЗагрузкиПочтыРарус</name>
+      <description>Напоминание неуспешной загрузки почты (рарус)</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="586cc405-0a59-4987-93d9-222a941a6ed8">
+      <name>ОбращениеОтвязаноОтКарточкиБЗ</name>
+      <description>Обращение отвязано от карточки БЗ</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="6aad5d2d-c480-48ef-834c-c73781cdd983">
+      <name>ОбращениеПривязаноККарточкеБЗ</name>
+      <description>Обращение привязано к карточке БЗ</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="e1789d43-1f58-49da-8f20-e54722c05cc9">
+      <name>ОстановкаБизнесПроцесса</name>
+      <description>Остановка процесса</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="9d3bd085-4831-4a90-85c8-77d5ee1911c6">
+      <name>ОтправленоПисьмоПользователюСервиса</name>
+      <description>Отправлен e-mail пользователю сервиса</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="7efa6dca-a218-4145-b8ad-fec18828cd4f">
+      <name>ОтправленКомментарийПользователю</name>
+      <description>Отправлен комментарий пользователю</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="83e466bc-abe2-448e-ba36-65825338e57c">
+      <name>ОтправленоОповещениеПоКонтролируемымСрокам</name>
+      <description>Отправлено оповещение по контролируемым срокам</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="e93ce46f-a641-444e-9016-93b4a643a724">
+      <name>ПеренаправлениеЗадачи</name>
+      <description>Перенаправление задачи</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="5ac8818c-c601-4fe1-a678-0d8ce632c89f">
+      <name>ПеренаправлениеКонсультации</name>
+      <description>Перенаправление консультации</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="aa47304f-4593-42ec-9981-74895bf0a76a">
+      <name>ПеренаправлениеОбращения</name>
+      <description>Перенаправление обращения</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="d2e07d68-9bae-479b-b165-32720d82eaea">
+      <name>ПеренаправлениеОшибки</name>
+      <description>Перенаправление ошибки</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="2e415b07-4e2b-4540-87c9-eb8e05adf7e4">
+      <name>ПеренаправлениеПожелания</name>
+      <description>Перенаправление пожелания</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="50c56261-9473-4f03-adf8-ec16e8789ca5">
+      <name>ПовторноеОткрытиеОбращения</name>
+      <description>Повторное открытие обращения</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="73ac654c-edc4-42e2-93b6-8636014bfdd2">
+      <name>ПолученКомментарийОтПользователя</name>
+      <description>Получен комментарий от пользователя</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="c8c953b1-332a-4f11-8932-338bebcf8373">
+      <name>ПолученоПисьмоПоОбращению</name>
+      <description>Получено письмо по обращению</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="dd2d54c8-58aa-470c-b0e9-b16bde053830">
+      <name>СозданиеЗадачи</name>
+      <description>Создание задачи</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="4f13cf5d-c46b-4f08-a6e7-e3c7c1211380">
+      <name>СозданиеКонсультации</name>
+      <description>Создание консультации</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="18601a09-e248-4ffa-bbfe-ce402647f693">
+      <name>СозданиеОбращения</name>
+      <description>Создание обращения</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="c77de9b3-bb10-4e3d-bbe7-98e936828124">
+      <name>СозданиеОшибки</name>
+      <description>Создание ошибки</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="2a22f947-0f2d-4dcc-b916-43fc98625d46">
+      <name>СозданиеПожелания</name>
+      <description>Создание пожелания</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="3fc97bec-196b-43fc-8359-91643b6c3a28">
+      <name>СорванСрокОбработки</name>
+      <description>Сорван срок обработки</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="ec180cbb-b45d-4471-b8c9-ad8fd93a87c8">
+      <name>СорванСрокРеакции</name>
+      <description>Сорван срок реакции</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="827b73f7-2bc8-45f4-94f1-6aed344aa4e9">
+      <name>СтартБизнесПроцесса</name>
+      <description>Старт процесса</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВидыБизнесСобытий.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ВидыБизнесСобытий.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ВидыБизнесСобытий.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="de4abb86-25ca-4880-bc1c-68aee5259c4c">
+    <name>ДатаСоздания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата создания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата создания</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="37dd8e3f-46f4-4f36-ab16-15edc20a2de4">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="840cc210-426e-4b96-b83d-4f0a8d397ff1">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="61a5edbc-ba38-42ae-9d21-da6b18c7e3c1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3af117c7-5967-4451-953c-2b4643c3dc3d">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5cdd0510-ec7a-4496-86cf-cfbf9cbf22fc">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

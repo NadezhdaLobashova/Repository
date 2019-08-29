@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="75c5d6b6-0a7b-4dda-a439-1eed3994626b">
+  <name>РуководительПроектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Руководитель проектов</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Планирование</picture>
+  </picture>
+  <content>AccumulationRegister.ПланированиеПроектов_План</content>
+  <content>Document.ПланПроекта</content>
+  <content>AccumulationRegister.ПланированиеПроектов_Прогноз</content>
+  <content>AccumulationRegister.ПланированиеПроектов_Факт</content>
+  <content>Document.ПрогнозПроекта</content>
+  <content>Enum.ВидыСтатейПланирования</content>
+  <content>Document.ФактическиеПоказателиПроекта</content>
+  <content>Report.АнализВыполненияПлана</content>
+  <content>Report.АнализЗагрузкиСотрудников</content>
+  <content>Document.УчетФактическихДанных</content>
+  <content>Report.ОтчетАнализПоПроектамИКонтрагентам</content>
+  <content>Report.ПланФактПоВыполненнымРаботам</content>
+  <content>Report.ПланФактПоВыполненнымРаботамРасшифровка</content>
+  <content>Report.НескорректированныеЧасыСотрудников</content>
+  <content>Document.ПриемЧасов</content>
+  <content>DataProcessor.МассоваяПриемкаЧасов</content>
+  <content>Catalog.Задачи</content>
+  <content>Catalog.Проекты</content>
+  <content>Catalog.ЭтапыПроектов</content>
+  <content>Report.РасширенныйАнализРабот</content>
+  <content>Report.ЗатратыПроекта</content>
+  <content>Document.ЛистУчетаРабочегоВремени</content>
+  <content>Catalog.Абоненты</content>
+  <content>Document.ОтнесениеАктовНаПринятыеЧасы</content>
+  <content>DataProcessor.ОтнесениеПринятыхЧасовНаАкт</content>
+  <content>Report.ЗатратыПроектаПоАктам</content>
+  <content>Catalog.РолиНаПроекте</content>
+  <content>InformationRegister.РолиСотрудниковНаПроекте</content>
+</mdclass:Subsystem>

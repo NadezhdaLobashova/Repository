@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5d1c1db8-ddbe-4d8f-b162-2b114076deef">
+  <producedTypes>
+    <refType typeId="0e5023c1-0b8c-4c03-bed5-b026f8b8a172" valueTypeId="599d9ae5-928e-4af1-90b0-fae00784a66c"/>
+    <listType typeId="c2514bee-8897-4888-a575-65b465a399a1" valueTypeId="c175ec6d-157c-4e17-9945-d1319c989890"/>
+    <managerType typeId="a4be1c57-5359-4acc-9e12-f6b35fc1d480" valueTypeId="b57c990d-aa1f-4bba-8fea-bba94ee3fbc1"/>
+  </producedTypes>
+  <name>ВидыИнтерактивныхДействий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды интерактивных действий</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="1531d901-6c48-4668-9ff4-bdb73b0352b6">
+    <name>ЗакрытиеКарточкиТолькоЧтоСозданногоПожелания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закрытие карточки только что созданного пожелания</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="446a889f-113f-4057-944a-6f952842bc50">
+    <name>ЗакрытиеКарточкиТолькоЧтоСозданнойКонсультации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закрытие карточки только что созданной консультации</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c40be399-4ef6-4dd3-889b-12ac041e2001">
+    <name>ЗакрытиеКарточкиТолькоЧтоСозданнойОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закрытие карточки только что созданной ошибки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c54653f8-5cd6-4b79-be47-69f01f5ce521">
+    <name>ИнтерактивноеЗакрытиеОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивное закрытие ошибки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5918a450-49dc-4477-a553-ceb6ca99b471">
+    <name>ИнтерактивноеСнятиеАктуальностиКонсультации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивное снятие актуальности консультации</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7cb013aa-c02e-4698-910d-7dc8bf47fc0c">
+    <name>ИнтерактивноеПринятиеОшибкиКИсполнению</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интерактивное принятие ошибки к исполнению</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

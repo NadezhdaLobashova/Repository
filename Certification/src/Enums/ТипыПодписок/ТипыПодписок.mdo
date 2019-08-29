@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5f01b24b-9a54-4162-ab41-003cf2a24b7e">
+  <producedTypes>
+    <refType typeId="b94bce53-859d-4d61-b198-0a57b31dc977" valueTypeId="a69fffe0-9779-422a-8b58-d81892c53269"/>
+    <listType typeId="73fc939c-f3c9-4567-80f3-2dff6d4c9932" valueTypeId="f7161b71-5db8-43b1-a6d2-e573603d6278"/>
+    <managerType typeId="8bbdfe2b-fed5-4818-abc1-592755838eaf" valueTypeId="07f6df83-7cdd-4d29-b270-20a384d3f71f"/>
+  </producedTypes>
+  <name>ТипыПодписок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы подписок</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d674c607-9f0e-479b-a3e5-585d767ee7db">
+    <name>Продлевающая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продлевающая</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6d052dd4-8fd8-469c-97d6-847607bf700b">
+    <name>Основная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c9ea7519-2df2-49de-8fa5-f4802f8b8003">
+    <name>Расширяющая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширяющая</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

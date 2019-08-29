@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0b2cc577-1fec-49ee-a60c-702ab9a4a3ce">
+  <producedTypes>
+    <refType typeId="8ba72dbe-0c3e-46cb-8cb9-5ae8fdb6ff25" valueTypeId="a40e1dce-ee9d-48ea-b345-f6d510c33c03"/>
+    <listType typeId="fc3ec5e9-2804-49f1-b6a7-adef29fc0c88" valueTypeId="474f5153-2ee8-4704-b0e8-2c995e04d096"/>
+    <managerType typeId="5e0c09fa-a18e-4049-bfd9-04ce5e9f30ba" valueTypeId="9febb519-1ba2-42e3-8a1c-587167365aca"/>
+  </producedTypes>
+  <name>ПраваПользователейПриложений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Права пользователей приложений</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="407a9d59-9b33-465a-86f4-5f5282b8d37d">
+    <name>Запуск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запуск</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6ac76de0-f913-42aa-941a-ba1a8bc15a00">
+    <name>ЗапускИАдминистрирование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запуск и администрирование</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a15fd169-0377-40ee-89f2-8d4a20dc2c6b">
+    <name>ПросмотрРезервныхКопий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просмотр резервных копий</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5becbbec-fcc0-4d90-85ae-cb86cda4f489">
+    <name>Чтение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чтение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ce29b9ed-c746-4e60-a410-dbc398dbd967">
+    <name>Удаление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удаление</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fb66e5bd-2ed7-4458-b18e-9e2b0f3d4892">
+    <name>ВладелецАбонента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Владелец абонента</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="40e5d574-e572-4d7e-b501-e9976ccea357">
+    <name>АдминистраторАбонента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Администратор абонента</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="14bfd0d3-f58c-46ba-a026-85fd7803695b">
+    <name>УдаленныйДоступ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удаленный доступ</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4a5e51cc-6318-4292-8376-00993c3efa1b">
+    <name>ЧтениеСлужебныхДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чтение служебных данных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d840b2d9-6059-4022-854b-e77b7d3e5c10">
+    <name>Оператор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оператор</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

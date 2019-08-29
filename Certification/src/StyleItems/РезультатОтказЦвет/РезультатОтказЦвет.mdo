@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:StyleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ac34183b-1829-453e-b160-4d6261f4f94c">
+  <name>РезультатОтказЦвет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Результат отказ цвет</value>
+  </synonym>
+  <value xsi:type="core:ColorValue">
+    <value xsi:type="core:ColorRef">
+      <color>Web.DarkRed</color>
+    </value>
+  </value>
+</mdclass:StyleItem>

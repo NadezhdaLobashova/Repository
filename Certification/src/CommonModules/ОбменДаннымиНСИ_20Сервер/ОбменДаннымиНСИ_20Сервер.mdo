@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b8a98fc-c40e-41e2-bf69-8d73db8a0cfa">
+  <name>ОбменДаннымиНСИ_20Сервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данными НСИ 2.0 сервер</value>
+  </synonym>
+  <comment>// 1С:Рарус</comment>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

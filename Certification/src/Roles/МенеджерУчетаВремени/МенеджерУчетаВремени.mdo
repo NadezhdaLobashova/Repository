@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4f85139c-573e-4541-a321-ab1af87e567c">
+  <name>МенеджерУчетаВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Менеджер учета времени</value>
+  </synonym>
+</mdclass:Role>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="db5a6237-64c5-428c-a680-62ad70670541">
+  <name>ExchangeOBD</name>
+  <synonym>
+    <key>ru</key>
+    <value>Exchange OBD</value>
+  </synonym>
+  <rootURL>ExchangeOBD</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="eadc5458-3542-4dc7-baf5-10c8a96bb27e">
+    <name>SetPartner</name>
+    <synonym>
+      <key>ru</key>
+      <value>Set partner</value>
+    </synonym>
+    <template>/setPartner/*</template>
+    <methods uuid="66a1872d-9659-4e40-8c9b-8b149903bdd4">
+      <name>CreatChangePartner</name>
+      <synonym>
+        <key>ru</key>
+        <value>Creat change partner</value>
+      </synonym>
+      <comment>создать/изменить абонента</comment>
+      <httpMethod>Any</httpMethod>
+      <handler>SetPartnerCreatChangePartner</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="42f5147c-2a21-4112-83d3-22523e33be23">
+    <name>SetContactPerson</name>
+    <synonym>
+      <key>ru</key>
+      <value>Set contact person</value>
+    </synonym>
+    <template>/setContactPerson/*</template>
+    <methods uuid="602886b4-1683-44e0-865d-2ab0399755bf">
+      <name>CreatContactPerson</name>
+      <synonym>
+        <key>ru</key>
+        <value>Creat contact person</value>
+      </synonym>
+      <comment>создать/изменить контактное лицо</comment>
+      <httpMethod>Any</httpMethod>
+      <handler>SetContactPersonCreatContactPerson</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="bd8547af-5c36-46e2-babb-538cfcdcc484">
+    <name>Message</name>
+    <synonym>
+      <key>ru</key>
+      <value>Message</value>
+    </synonym>
+    <comment>Обращения</comment>
+    <template>/*</template>
+    <methods uuid="8c05abe6-1410-48ce-8e81-2224d816df1b">
+      <name>ReceiveMessage</name>
+      <synonym>
+        <key>ru</key>
+        <value>Receive message</value>
+      </synonym>
+      <comment>Получить обращения</comment>
+      <httpMethod>Any</httpMethod>
+      <handler>MessageReceiveMessage</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

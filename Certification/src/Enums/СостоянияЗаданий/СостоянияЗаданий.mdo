@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="515708f9-85ca-4362-8b5d-f37595ce9b99">
+  <producedTypes>
+    <refType typeId="fce0d5d0-188c-4f11-9ac9-a2de9fcc4512" valueTypeId="e5fa94ce-8874-4a08-8b98-16c32cad2672"/>
+    <listType typeId="6bf39567-df29-4ab5-b4d8-14cf54cf957d" valueTypeId="71d0eb3b-b313-43f1-9992-7162896e438b"/>
+    <managerType typeId="4d3a1203-c32c-4f6f-bc26-4dbc2e55f7ba" valueTypeId="9fdce42c-40d2-425c-aa38-566373146ea7"/>
+  </producedTypes>
+  <name>СостоянияЗаданий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния заданий</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="00138a03-9144-4bda-8f3a-b5dd4b6147cc">
+    <name>Запланировано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запланировано</value>
+    </synonym>
+    <comment>Задание запланировано на выполнение</comment>
+  </enumValues>
+  <enumValues uuid="40abcca0-4865-462e-a653-0df8c6e5e3d9">
+    <name>ВРаботе</name>
+    <synonym>
+      <key>ru</key>
+      <value>В работе</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5b06ccda-2a70-4621-8273-78408cbe72a9">
+    <name>Выполняется</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполняется</value>
+    </synonym>
+    <comment>Задание выполняется</comment>
+  </enumValues>
+  <enumValues uuid="89753385-64fd-4e76-9857-bfd5d7c23f71">
+    <name>Завершено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Завершено</value>
+    </synonym>
+    <comment>Задание завершено</comment>
+  </enumValues>
+  <enumValues uuid="1b3113f3-e7d4-4e6f-b6ed-08f5fd78c68e">
+    <name>НеЗапланировано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не запланировано</value>
+    </synonym>
+    <comment>Задание не запланировано</comment>
+  </enumValues>
+  <enumValues uuid="53e72cf2-e2a5-4b59-b5b1-a1fc28fda5bf">
+    <name>ОшибкаВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка выполнения</value>
+    </synonym>
+    <comment>Ошибка при выполнении задания</comment>
+  </enumValues>
+  <enumValues uuid="e20bcb57-2f68-4709-8a11-105d561a2dda">
+    <name>НеАктивно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не активно</value>
+    </synonym>
+    <comment>Задание не активно</comment>
+  </enumValues>
+  <enumValues uuid="782eb33c-5534-4d21-ae68-1f8b6a6dd906">
+    <name>Выдано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выдано</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="02bf231b-5c77-4987-83b6-41a4b05ec894">
+    <name>Выполнено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнено</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9a269fb7-fe59-4cd2-bee5-fbf9af0edad4">
+    <name>Отменено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отменено</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8340cae9-6a04-4310-8ce3-ec5779f61d4d">
+    <name>Передано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передано</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3df3f61a-2c17-4278-8d82-91089f793e6a">
+    <name>ОбработкаОшибкиПриАварийномЗавершении</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработка ошибки при аварийном завершении</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e853fd24-82aa-4d13-a14d-de967ecfd481">
+    <name>ПустойВыезд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пустой выезд</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4c60d69d-1b64-47b7-b584-a39b39fc654b">
+    <name>УслугиОказаны</name>
+    <synonym>
+      <key>ru</key>
+      <value>Услуги оказаны</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6a8670c5-8ecf-433a-a699-32d1af398695">
+    <name>Проверено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверено</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

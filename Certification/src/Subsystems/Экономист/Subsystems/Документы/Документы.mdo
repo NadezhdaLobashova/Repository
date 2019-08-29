@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fdfce5df-ac1d-474c-a782-4b101a3a2dd4">
+  <name>Документы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ИзменениеСостоянияСотрудника</content>
+  <content>Document.ПриемЧасов</content>
+  <content>Document.УстановкаСтавок</content>
+  <content>Document.УчетФактическихДанных</content>
+  <content>Document.ПрочиеЗатраты</content>
+  <content>Document.АктВыполненныхРабот</content>
+  <content>Document.ПланПроекта</content>
+  <content>Document.ВводНачальныхОстатковПоПринятымЧасам</content>
+  <content>InformationRegister.ПривлечениеСотрудникаНаПроект</content>
+  <content>Document.РегистрацияНачисленийСотрудниковПодразделения</content>
+  <content>Document.ОтнесениеАктовНаПринятыеЧасы</content>
+  <content>DataProcessor.ОтнесениеПринятыхЧасовНаАкт</content>
+  <parentSubsystem>Subsystem.Экономист</parentSubsystem>
+</mdclass:Subsystem>

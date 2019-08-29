@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8d4e1e95-f31d-4206-9719-f87fc5920617">
+  <producedTypes>
+    <selectionType typeId="977231b0-deff-4cf0-9dc4-c19c9c30dc8e" valueTypeId="5a1771a8-0f91-4fca-9e71-e038b187a5c9"/>
+    <listType typeId="6ea6070d-3396-444c-86cd-a6b1de814ccb" valueTypeId="7d4e23cd-3464-44ea-9b51-bd8a3bceef2d"/>
+    <managerType typeId="8a9477e3-28ac-400d-937a-3e12eaa12d98" valueTypeId="5a1a58f6-2853-42f8-8dbb-9427414a0c6a"/>
+    <recordSetType typeId="6fa1e293-f78e-401c-b911-ed31b371f1fa" valueTypeId="66c3dd88-1640-4170-a6e7-7848049e5ff8"/>
+    <recordKeyType typeId="c6501c98-bad0-4f15-b20f-54718c101173" valueTypeId="fc3446b3-5f6c-41d3-ac4b-09ec999a83e3"/>
+    <recordType typeId="a85e6801-2eb3-4e13-995f-cfbe7952a241" valueTypeId="5be58198-0b7d-47d9-9d0b-fe1cacdc3756"/>
+    <recordManagerType typeId="8fe442ba-2e77-403d-b4fb-b8c0280bc373" valueTypeId="83ca8a8b-19d3-4040-9820-46306ea6054f"/>
+  </producedTypes>
+  <name>ОтсутствияСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отсутствия сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c380fe97-da0d-4c8a-8f7b-655ba880e295">
+    <name>Часы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Часы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="cbe4c92a-8ba9-487a-926f-862769be1297">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b1a7b232-e4ca-4683-9eec-14f104c69718">
+    <name>ВидОтсутствия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид отсутствия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Работы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0ccf600c-2442-429c-8487-94a0e03c4c02">
+    <name>ПодразделениеСотрудника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение сотрудника</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4d08832f-81ed-4e12-af33-b2d0e472b903">
+  <producedTypes>
+    <objectType typeId="eeaa867e-f8ba-4a8d-8a9b-70b35e40289f" valueTypeId="1d05ec2d-65bb-49f0-ba35-2e542b8fe2d4"/>
+    <managerType typeId="a0141184-4e4e-4975-b93f-174cb2876154" valueTypeId="6d2ac9b1-f434-4ed2-a72e-cd1050ff7899"/>
+  </producedTypes>
+  <name>ОтчетРасшифровкаПоРегистраторам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расшифровка по регистраторам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОтчетРасшифровкаПоРегистраторам.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОтчетРасшифровкаПоРегистраторам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="812e9df5-f5cc-4876-8ac6-16323c4f1cdf">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="5f2633f6-2466-49fe-b345-5cc02215a7a4">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

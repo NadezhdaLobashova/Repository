@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fe863774-f46d-4f3f-9d4b-b694825634b5">
+  <name>ТехнологияСервиса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Технология сервиса</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <subsystems>ПодсистемыЦКК</subsystems>
+</mdclass:Subsystem>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="709cce61-03d1-4947-a123-578f6b97c591">
+  <name>SDApi</name>
+  <synonym>
+    <key>ru</key>
+    <value>SDApi</value>
+  </synonym>
+  <namespace>http://www.1cfresh.com/sd/api</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.ВнешнийИнтерфейс_1_0_3</value>
+  </xdtoPackages>
+  <descriptorFileName>api-soap</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="4d9f8c94-cf80-40f3-a4ea-9bfb623cc92c">
+    <name>execute</name>
+    <synonym>
+      <key>ru</key>
+      <value>execute</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Response</name>
+      <nsUri>http://www.1cfresh.com/sd/api</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ОбработатьЗапрос</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="9055044a-1075-4d73-90ad-6d1236a43b73">
+      <name>request</name>
+      <synonym>
+        <key>ru</key>
+        <value>request</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Request</name>
+        <nsUri>http://www.1cfresh.com/sd/api</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

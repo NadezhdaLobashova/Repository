@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="36402a9f-0e55-43d0-9c86-d175667cfa73">
+  <name>ВнешнийИнтерфейс</name>
+  <synonym>
+    <key>ru</key>
+    <value>Внешний интерфейс</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.ВнешнийИнтерфейс</content>
+  <content>XDTOPackage.ВнешнийИнтерфейс_1_0_3</content>
+  <content>WebService.SDApi</content>
+  <content>HTTPService.ВнешнийИнтерфейсXML</content>
+  <content>CommonModule.ВнешнийИнтерфейсПовтИсп</content>
+  <content>Constant.ВнешнийИнтерфейсРежимОтладки</content>
+  <content>Role.ИспользованиеВнешнегоИнтерфейса</content>
+</mdclass:Subsystem>

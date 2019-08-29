@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="543adf2c-e3e3-4160-bb47-a3d1c2a084a6">
+  <producedTypes>
+    <objectType typeId="b01e6b5e-0fd1-4e9e-9062-c4f55174ba2c" valueTypeId="fef5d5c5-e41b-43f0-8571-0ef18c211410"/>
+    <refType typeId="d506acc9-2323-4fa2-b6db-3b84e6b8178f" valueTypeId="ae193ac8-84af-4171-8eb5-633bcf8cbf0a"/>
+    <selectionType typeId="a5982865-ab82-4e60-8d59-a8896229b82e" valueTypeId="c2e12c0f-d69c-46be-ab4e-eb6b537e448e"/>
+    <listType typeId="9e3b7142-73da-45ee-8c22-d0140b83bb07" valueTypeId="2cc10c05-2ead-427f-a5b7-682172fbe144"/>
+    <managerType typeId="51427ed5-918a-42af-b9e1-5a51afafff0b" valueTypeId="c5ea900b-0474-4ffa-a96d-7b4fda6968ab"/>
+  </producedTypes>
+  <name>УстановкаОграниченийЗаписиНаЛК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка ограничений записи на ЛК</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.УстановкаОграниченийЗаписиНаЛК.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.УстановкаОграниченийЗаписиНаЛК.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.ОграниченияЗаписиНаЛК</registerRecords>
+  <attributes uuid="4d96898a-0974-437f-a2de-f6187cdc9971">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6d4cad85-cf76-4420-82c4-dda2874afee3">
+    <name>ДатаСоздания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата создания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="765866a4-d271-47bb-a356-156a18a7e174">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="269d5faf-0ed1-4084-bb51-aa1182867dc9">
+    <producedTypes>
+      <objectType typeId="315b10dc-1643-499d-922c-7062aae34477" valueTypeId="afafe0c5-b73e-4040-a9fb-5c7e57a86ea7"/>
+      <rowType typeId="e9988f7c-2330-47d4-8ce6-965043cf8e2b" valueTypeId="8b01ad6f-1574-4b74-86ed-6ab0dda87939"/>
+    </producedTypes>
+    <name>Ограничения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ограничения</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="0ade612b-ccd4-4465-8bc6-0762f629611e">
+      <name>ВидУслуги</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид услуги</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВидыУслуг</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ac4fa191-eac9-4b67-bff0-00ef3458ee56">
+      <name>ТипКлиентаЛК</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип клиента ЛК</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ТипыКлиентовЛК</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="169f3924-8e73-49e1-9f9d-f8e6a7609498">
+      <name>МаксимумКонсультацийВНеделю</name>
+      <synonym>
+        <key>ru</key>
+        <value>Максимум консультаций в неделю</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a520e6d4-dbd4-4bfc-8abd-bbba9deff996">
+      <name>МаксимумКонсультацийВДень</name>
+      <synonym>
+        <key>ru</key>
+        <value>Максимум консультаций в день</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="26ab1590-962e-467d-b8a7-f5457f00b18c">
+      <name>МинимальныйИнтервалВДнях</name>
+      <synonym>
+        <key>ru</key>
+        <value>Минимальный интервал в днях</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="fa3dfb40-011c-4ce4-b176-79767c5d3e86">
+      <name>КонсультацииНедоступны</name>
+      <synonym>
+        <key>ru</key>
+        <value>Консультации недоступны</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <commands uuid="b577ed55-ff39-466e-b4be-bcf1d20fa5d7">
+    <name>КомандаДвиженияДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Движения документа по регистрам</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Document>

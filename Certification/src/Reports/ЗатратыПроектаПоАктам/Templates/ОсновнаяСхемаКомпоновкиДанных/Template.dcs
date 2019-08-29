@@ -1,0 +1,1321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проект</dataPath>
+			<field>Проект</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сценарий</dataPath>
+			<field>Сценарий</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статья</dataPath>
+			<field>Статья</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапПроекта</dataPath>
+			<field>ЭтапПроекта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИдентификаторСтроки</dataPath>
+			<field>ИдентификаторСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодПланирования</dataPath>
+			<field>ПериодПланирования</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидРабочегоВремени</dataPath>
+			<field>ВидРабочегоВремени</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Месяц</dataPath>
+			<field>Месяц</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроцентАктирования</dataPath>
+			<field>ПроцентАктирования</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Процент актирования</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Задача</dataPath>
+			<field>Задача</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Работа</dataPath>
+			<field>Работа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаЭтапа</dataPath>
+			<field>СуммаЭтапа</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма этапа</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтработаноЧасов</dataPath>
+			<field>ОтработаноЧасов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Принятые часы</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВыставленныеЧасы</dataPath>
+			<field>ВыставленныеЧасы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выставленные часы (остаток)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаЗатрат</dataPath>
+			<field>СуммаЗатрат</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма затрат</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаАктов</dataPath>
+			<field>СуммаАктов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма актов</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаЗатратВсего</dataPath>
+			<field>СуммаЗатратВсего</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма затрат всего</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоступныйФОТВсего</dataPath>
+			<field>ДоступныйФОТВсего</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступный ФОТВсего</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроектВАрхиве</dataPath>
+			<field>ПроектВАрхиве</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект в архиве</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапЗакрыт</dataPath>
+			<field>ЭтапЗакрыт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап закрыт</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Регион</dataPath>
+			<field>Регион</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Должность</dataPath>
+			<field>Должность</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидРаботы</dataPath>
+			<field>ВидРаботы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтрагентАбонент</dataPath>
+			<field>КонтрагентАбонент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Обращение</dataPath>
+			<field>Обращение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Акт</dataPath>
+			<field>Акт</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтработаноСумма</dataPath>
+			<field>ОтработаноСумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отработано сумма</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПодразделениеЗатрат</dataPath>
+			<field>ПодразделениеЗатрат</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Квалификация</dataPath>
+			<field>Квалификация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДоступныйФОТ</dataPath>
+			<field>ДоступныйФОТ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступный ФОТ</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СтавкиСотрудниковПоВидамРаботСрезПоследних.Подразделение КАК Подразделение,
+	СтавкиСотрудниковПоВидамРаботСрезПоследних.Должность КАК Должность,
+	СтавкиСотрудниковПоВидамРаботСрезПоследних.Регион КАК Регион,
+	СтавкиСотрудниковПоВидамРаботСрезПоследних.ВидРаботы КАК ВидРаботы,
+	СтавкиСотрудниковПоВидамРаботСрезПоследних.Ставка КАК Ставка,
+	СтавкиСотрудниковПоВидамРаботСрезПоследних.Оклад КАК Оклад
+ПОМЕСТИТЬ СтавкиСрез
+ИЗ
+	РегистрСведений.СтавкиСотрудниковПоВидамРабот.СрезПоследних КАК СтавкиСотрудниковПоВидамРаботСрезПоследних
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	КадроваяИсторияСрезПоследних.Сотрудник КАК Сотрудник,
+	МАКСИМУМ(КадроваяИсторияСрезПоследних.Период) КАК Период
+ПОМЕСТИТЬ ВТ_МаксПоДолжности
+ИЗ
+	РегистрСведений.КадроваяИстория.СрезПоследних(, ) КАК КадроваяИсторияСрезПоследних
+
+СГРУППИРОВАТЬ ПО
+	КадроваяИсторияСрезПоследних.Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_МаксПоДолжности.Сотрудник КАК Сотрудник,
+	КадроваяИстория.Подразделение КАК Подразделение,
+	КадроваяИстория.Должность КАК Должность,
+	КадроваяИстория.Регион КАК Регион
+ПОМЕСТИТЬ ВТ_Должность
+ИЗ
+	ВТ_МаксПоДолжности КАК ВТ_МаксПоДолжности
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.КадроваяИстория КАК КадроваяИстория
+		ПО ВТ_МаксПоДолжности.Сотрудник = КадроваяИстория.Сотрудник
+			И ВТ_МаксПоДолжности.Период = КадроваяИстория.Период
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_Должность.Сотрудник КАК Сотрудник,
+	СтавкиСрез.Подразделение КАК Подразделение,
+	СтавкиСрез.Должность КАК Должность,
+	СтавкиСрез.ВидРаботы КАК ВидРаботы,
+	СтавкиСрез.Ставка КАК Ставка,
+	СтавкиСрез.Оклад КАК Оклад
+ПОМЕСТИТЬ ВТ_СтавкиНов
+ИЗ
+	СтавкиСрез КАК СтавкиСрез
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Должность КАК ВТ_Должность
+		ПО СтавкиСрез.Подразделение = ВТ_Должность.Подразделение
+			И СтавкиСрез.Должность = ВТ_Должность.Должность
+			И СтавкиСрез.Регион = ВТ_Должность.Регион
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ПланированиеПроектов_ПланОбороты.Проект КАК Проект,
+	ПланированиеПроектов_ПланОбороты.ЭтапПроекта КАК ЭтапПроекта,
+	ПланированиеПроектов_ПланОбороты.СуммаОборот КАК СуммаОборот,
+	ПланированиеПроектов_ПланОбороты.ЭтапПроекта.Неактуальный КАК Неактуальный,
+	ПланированиеПроектов_ПланОбороты.Сотрудник КАК Сотрудник
+ПОМЕСТИТЬ втЭтапыССуммой
+ИЗ
+	РегистрНакопления.ПланированиеПроектов_План.Обороты(, , , Статья.ВидСтатьи = ЗНАЧЕНИЕ(Перечисление.ВидыСтатейПланирования.Доход)) КАК ПланированиеПроектов_ПланОбороты
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЭтапыПроектов.Владелец КАК Проект,
+	ЭтапыПроектов.Ссылка КАК ЭтапПроекта,
+	ЕСТЬNULL(втЭтапыССуммой.СуммаОборот, 0) КАК СуммаОборот,
+	ЭтапыПроектов.Неактуальный КАК Неактуальный
+ПОМЕСТИТЬ втЭтапы
+ИЗ
+	Справочник.ЭтапыПроектов КАК ЭтапыПроектов
+		ЛЕВОЕ СОЕДИНЕНИЕ втЭтапыССуммой КАК втЭтапыССуммой
+		ПО (втЭтапыССуммой.ЭтапПроекта = ЭтапыПроектов.Ссылка)
+ГДЕ
+	ЭтапыПроектов.Владелец.УчетПоКонтрагентам
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	АктВыполненныхРабот.ЭтапПроекта КАК Этап,
+	СУММА(АктВыполненныхРабот.Сумма) КАК Сумма,
+	АктВыполненныхРабот.Проект КАК Проект,
+	АктВыполненныхРабот.Ссылка КАК Ссылка,
+	АктВыполненныхРабот.КонтрагентАбонент КАК КонтрагентАбонент
+ПОМЕСТИТЬ втАкты
+ИЗ
+	Документ.АктВыполненныхРабот КАК АктВыполненныхРабот
+ГДЕ
+	НЕ АктВыполненныхРабот.ПометкаУдаления
+	И АктВыполненныхРабот.Проведен
+
+СГРУППИРОВАТЬ ПО
+	АктВыполненныхРабот.ЭтапПроекта,
+	АктВыполненныхРабот.Проект,
+	АктВыполненныхРабот.Ссылка,
+	АктВыполненныхРабот.КонтрагентАбонент
+
+ИНДЕКСИРОВАТЬ ПО
+	Этап
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ПринятыеЧасы.ЭтапПроекта КАК Этап,
+	СУММА(ПринятыеЧасы.Часы) КАК Часы,
+	СУММА(ПринятыеЧасы.Сумма) КАК Сумма,
+	ПринятыеЧасы.ИдентификаторСтроки КАК ИдентификаторСтроки,
+	ПринятыеЧасы.Сотрудник КАК Сотрудник
+ПОМЕСТИТЬ втОтработано
+ИЗ
+	РегистрНакопления.ПринятыеЧасы КАК ПринятыеЧасы
+ГДЕ
+	(ПринятыеЧасы.Регистратор ССЫЛКА Документ.ПриемЧасов
+			ИЛИ ПринятыеЧасы.Регистратор ССЫЛКА Документ.ВводНачальныхОстатковПоПринятымЧасам)
+{ГДЕ
+	(ПринятыеЧасы.Регистратор.Дата МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания)}
+
+СГРУППИРОВАТЬ ПО
+	ПринятыеЧасы.ЭтапПроекта,
+	ПринятыеЧасы.ИдентификаторСтроки,
+	ПринятыеЧасы.Сотрудник
+
+ИНДЕКСИРОВАТЬ ПО
+	Этап
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ОтработанноеВремяОстатки.ЭтапПроекта КАК ЭтапПроекта,
+	СУММА(ОтработанноеВремяОстатки.ЧасыОстаток) КАК ЧасыОстаток,
+	СУММА(ОтработанноеВремяОстатки.ЧасыОстаток * ЕСТЬNULL(ВТ_СтавкиНов.Ставка, 0)) КАК СуммаОстаток,
+	ОтработанноеВремяОстатки.ИдентификаторСтроки КАК ИдентификаторСтроки,
+	ОтработанноеВремяОстатки.Сотрудник КАК Сотрудник
+ПОМЕСТИТЬ втВыставленныеПодготовка
+ИЗ
+	РегистрНакопления.ОтработанноеВремя.Остатки(, ) КАК ОтработанноеВремяОстатки
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СтавкиНов КАК ВТ_СтавкиНов
+		ПО ОтработанноеВремяОстатки.Сотрудник = ВТ_СтавкиНов.Сотрудник
+			И ОтработанноеВремяОстатки.Работа.ВидыРабот = ВТ_СтавкиНов.ВидРаботы
+
+СГРУППИРОВАТЬ ПО
+	ОтработанноеВремяОстатки.ЭтапПроекта,
+	ОтработанноеВремяОстатки.ИдентификаторСтроки,
+	ОтработанноеВремяОстатки.Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	втВыставленныеПодготовка.ЭтапПроекта КАК ЭтапПроекта,
+	СУММА(втВыставленныеПодготовка.ЧасыОстаток) КАК ЧасыОстаток,
+	СУММА(втВыставленныеПодготовка.СуммаОстаток) КАК СуммаОстаток,
+	втВыставленныеПодготовка.Сотрудник КАК Сотрудник
+ПОМЕСТИТЬ втВыставленные
+ИЗ
+	втВыставленныеПодготовка КАК втВыставленныеПодготовка
+
+СГРУППИРОВАТЬ ПО
+	втВыставленныеПодготовка.ЭтапПроекта,
+	втВыставленныеПодготовка.Сотрудник
+
+ИНДЕКСИРОВАТЬ ПО
+	ЭтапПроекта
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	АктыПринятыхЧасовОбороты.Проект КАК Проект,
+	АктыПринятыхЧасовОбороты.ЭтапПроекта КАК ЭтапПроекта,
+	АктыПринятыхЧасовОбороты.Акт КАК Акт,
+	АктыПринятыхЧасовОбороты.ЧасыОборот КАК ЧасыОборот,
+	АктыПринятыхЧасовОбороты.СуммаОборот КАК СуммаОборот,
+	АктыПринятыхЧасовОбороты.ИдентификаторСтроки КАК ИдентификаторСтроки,
+	АктыПринятыхЧасовОбороты.Сотрудник КАК Сотрудник
+ПОМЕСТИТЬ втАктыПринятыхЧасов
+ИЗ
+	РегистрНакопления.АктыПринятыхЧасов.Обороты КАК АктыПринятыхЧасовОбороты
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВЫБОР
+		КОГДА втЭтапы.Проект.ДатаОкончания &lt;= &amp;ТекущаяДата
+				ИЛИ втЭтапы.Проект.ДатаОкончания = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК ПроектВАрхиве,
+	втЭтапы.Проект КАК Проект,
+	втЭтапы.ЭтапПроекта КАК ЭтапПроекта,
+	втЭтапы.Неактуальный КАК ЭтапЗакрыт,
+	МАКСИМУМ(втЭтапы.СуммаОборот) КАК СуммаЭтапа,
+	МАКСИМУМ(втАктыПринятыхЧасов.Акт.Сумма) КАК СуммаАктов,
+	СУММА(ЕСТЬNULL(втОтработано.Часы, 0)) КАК ОтработаноЧасов,
+	МАКСИМУМ(ЕСТЬNULL(втВыставленные.ЧасыОстаток, 0)) КАК ВыставленныеЧасы,
+	СУММА(ЕСТЬNULL(втОтработано.Сумма, 0)) КАК ОтработаноСумма,
+	МАКСИМУМ(ЕСТЬNULL(втВыставленные.СуммаОстаток, 0)) КАК ВыставленныеСуммаОстаток,
+	втАктыПринятыхЧасов.Акт КАК Акт,
+	втАктыПринятыхЧасов.Сотрудник КАК Сотрудник
+ПОМЕСТИТЬ втИтог
+ИЗ
+	втЭтапы КАК втЭтапы
+		ЛЕВОЕ СОЕДИНЕНИЕ втАктыПринятыхЧасов КАК втАктыПринятыхЧасов
+			ЛЕВОЕ СОЕДИНЕНИЕ втОтработано КАК втОтработано
+			ПО втАктыПринятыхЧасов.ЭтапПроекта = втОтработано.Этап
+				И втАктыПринятыхЧасов.ИдентификаторСтроки = втОтработано.ИдентификаторСтроки
+				И втАктыПринятыхЧасов.Сотрудник = втОтработано.Сотрудник
+			ЛЕВОЕ СОЕДИНЕНИЕ втВыставленные КАК втВыставленные
+			ПО втАктыПринятыхЧасов.ЭтапПроекта = втВыставленные.ЭтапПроекта
+				И втАктыПринятыхЧасов.Сотрудник = втВыставленные.Сотрудник
+		ПО втЭтапы.ЭтапПроекта = втАктыПринятыхЧасов.ЭтапПроекта
+ГДЕ
+	ЕСТЬNULL(втОтработано.Часы, 0) &gt; 0
+
+СГРУППИРОВАТЬ ПО
+	ВЫБОР
+		КОГДА втЭтапы.Проект.ДатаОкончания &lt;= &amp;ТекущаяДата
+				ИЛИ втЭтапы.Проект.ДатаОкончания = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ,
+	втЭтапы.ЭтапПроекта,
+	втЭтапы.Неактуальный,
+	втЭтапы.Проект,
+	втАктыПринятыхЧасов.Акт,
+	втАктыПринятыхЧасов.Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	втИтог.ПроектВАрхиве КАК ПроектВАрхиве,
+	втИтог.Проект КАК Проект,
+	втИтог.ЭтапПроекта КАК ЭтапПроекта,
+	втИтог.ЭтапЗакрыт КАК ЭтапЗакрыт,
+	втИтог.СуммаЭтапа КАК СуммаЭтапа,
+	втИтог.СуммаАктов КАК СуммаАктов,
+	ВЫБОР
+		КОГДА втИтог.СуммаЭтапа &gt; 0
+			ТОГДА втИтог.СуммаАктов * 100 / втИтог.СуммаЭтапа
+		ИНАЧЕ 0
+	КОНЕЦ КАК ПроцентАктирования,
+	втИтог.ОтработаноЧасов КАК ОтработаноЧасов,
+	втИтог.ОтработаноСумма КАК ОтработаноСумма,
+	втИтог.ВыставленныеЧасы КАК ВыставленныеЧасы,
+	втИтог.ОтработаноСумма * 1.2 * 0.87 * 1.331 КАК СуммаЗатрат,
+	втИтог.СуммаАктов * 0.3 - втИтог.ОтработаноСумма * 1.2 * 0.87 * 1.331 КАК ДоступныйФОТ,
+	втИтог.ОтработаноСумма * 1.2 * 0.87 * 1.331 + втИтог.ВыставленныеСуммаОстаток * 1.2 * 0.87 * 1.331 КАК СуммаЗатратВсего,
+	втИтог.СуммаАктов * 0.3 - втИтог.ОтработаноСумма * 1.2 * 0.87 * 1.331 + втИтог.ВыставленныеСуммаОстаток * 1.2 * 0.87 * 1.331 КАК ДоступныйФОТВсего,
+	втИтог.Акт КАК Акт,
+	втИтог.Сотрудник КАК Сотрудник
+ИЗ
+	втИтог КАК втИтог</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ДоляФОТ</dataPath>
+		<expression>ВЫБОР
+		КОГДА СуммаАктов &gt; 0
+			ТОГДА СуммаЗатрат * 100 / СуммаАктов
+		ИНАЧЕ 100
+	КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Доля ФОТ</v8:content>
+			</v8:item>
+		</title>
+		<useRestriction>
+			<group>true</group>
+		</useRestriction>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=0</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ДоляФОТВсего</dataPath>
+		<expression>ВЫБОР
+		КОГДА СуммаАктов &gt; 0
+			ТОГДА СуммаЗатратВсего * 100 / СуммаАктов
+		ИНАЧЕ 100
+	КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Доля ФОТ всего</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=0</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<totalField>
+		<dataPath>ОтработаноЧасов</dataPath>
+		<expression>Сумма(ОтработаноЧасов)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентАктирования</dataPath>
+		<expression>Сумма(ПроцентАктирования)</expression>
+		<group>ВыставленныеЧасы</group>
+		<group>ДоляФОТ</group>
+		<group>ДоляФОТВсего</group>
+		<group>ДоступныйФОТВсего</group>
+		<group>ОтработаноЧасов</group>
+		<group>ПроцентАктирования</group>
+		<group>СуммаАктов</group>
+		<group>СуммаЗатрат</group>
+		<group>СуммаЗатратВсего</group>
+		<group>СуммаЭтапа</group>
+		<group>ЭтапЗакрыт</group>
+		<group>ЭтапПроекта</group>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаАктов</dataPath>
+		<expression>Максимум(СуммаАктов)</expression>
+		<group>Акт</group>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаЗатрат</dataPath>
+		<expression>Сумма(СуммаЗатрат)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаЭтапа</dataPath>
+		<expression>Сумма(СуммаЭтапа)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДоляФОТ</dataPath>
+		<expression>ВЫБОР
+		КОГДА Максимум(СуммаАктов) &gt; 0
+			ТОГДА Сумма(СуммаЗатрат) * 100 / Максимум(СуммаАктов)
+		ИНАЧЕ 100
+	КОНЕЦ)</expression>
+		<group>Акт</group>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаЗатратВсего</dataPath>
+		<expression>Сумма(СуммаЗатратВсего)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДоступныйФОТВсего</dataPath>
+		<expression>Сумма(ДоступныйФОТВсего)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДоляФОТВсего</dataPath>
+		<expression>ВЫБОР
+        КОГДА Сумма(СуммаАктов) &gt; 0
+            ТОГДА Сумма(СуммаЗатратВсего) * 100 / Сумма(СуммаАктов)
+        ИНАЧЕ 100
+    КОНЕЦ</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДоступныйФОТ</dataPath>
+		<expression>Максимум(СуммаАктов) * 0.3 - Сумма(ОтработаноСумма) * 1.2 * 0.87 * 1.331</expression>
+		<group>Акт</group>
+	</totalField>
+	<totalField>
+		<dataPath>ДоступныйФОТ</dataPath>
+		<expression>Сумма(СуммаАктов) * 0.3 - Сумма(ОтработаноСумма) * 1.2 * 0.87 * 1.331</expression>
+		<group>Проект</group>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаАктов</dataPath>
+		<expression>Сумма(ВычислитьВыражениеСГруппировкойМассив("Максимум(СуммаАктов)", "Акт"))</expression>
+		<group>Проект</group>
+	</totalField>
+	<totalField>
+		<dataPath>ДоляФОТ</dataPath>
+		<expression>ВЫБОР
+		КОГДА Сумма(ВычислитьВыражениеСГруппировкойМассив("Максимум(СуммаАктов)", "Акт")) &gt; 0
+			ТОГДА Сумма(СуммаЗатрат) * 100 / Сумма(ВычислитьВыражениеСГруппировкойМассив("Максимум(СуммаАктов)", "Акт"))
+		ИНАЧЕ 100
+	КОНЕЦ)</expression>
+		<group>Проект</group>
+	</totalField>
+	<totalField>
+		<dataPath>ДоступныйФОТ</dataPath>
+		<expression>Сумма(ВычислитьВыражениеСГруппировкойМассив("Максимум(СуммаАктов)", "Акт")) * 0.3 - Сумма(СуммаЗатрат)* 1.2 * 0.87 * 1.331</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ТекущаяДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текущая дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодПринятияЧасов.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодПринятияЧасов.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>ПериодПринятияЧасов</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период принятия часов</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Затраты проекта по актам</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Проект</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЭтапПроекта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Акт</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>СуммаЭтапа</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаАктов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>ПроцентАктирования</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтработаноЧасов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>ВыставленныеЧасы</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По принятым часам</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СуммаЗатрат</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДоляФОТ</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДоступныйФОТ</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По всем часам</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СуммаЗатратВсего</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сумма затрат</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДоляФОТВсего</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Доля ФОТ</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДоступныйФОТВсего</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Доступный ФОТ</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Проект</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>befaf1d0-c0e8-4267-9f9c-948db08f1b48</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Акт.КонтрагентАбонент</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>1b816797-fb82-44ca-96b6-238d4f284d7c</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Подразделение</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>2fd04898-2e89-4c4b-bf45-89d3b5b3f6df</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Сотрудник</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>7a0eb01f-38aa-4cda-a660-836ea8b0715c</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ПериодПринятияЧасов</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:userSettingID>8e3f3ede-8b8f-48c3-b03f-2ee7715fb187</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection/>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДоступныйФОТ</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:Salmon</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:presentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Превышение доступного ФОТ</v8:content>
+						</v8:item>
+					</dcsset:presentation>
+					<dcsset:useInGroup>DontUse</dcsset:useInGroup>
+					<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
+					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+					<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ЭтапПроекта</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ДоляФОТ</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СуммаЗатрат</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДоляФОТ</dcsset:left>
+							<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">40</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:FieldBackColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:presentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доля ФОТ от 40</v8:content>
+						</v8:item>
+					</dcsset:presentation>
+					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+					<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ЭтапПроекта</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ДоляФОТ</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СуммаЗатрат</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДоляФОТ</dcsset:left>
+							<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">30</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДоляФОТ</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">40</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#FFCC00</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:presentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доля ФОТ от 30 до 40</v8:content>
+						</v8:item>
+					</dcsset:presentation>
+					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+					<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ЭтапПроекта</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ДоляФОТ</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СуммаЗатрат</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДоляФОТ</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">30</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:LightGreen</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:presentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доля ФОТ до 30</v8:content>
+						</v8:item>
+					</dcsset:presentation>
+					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+					<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПроцентАктирования</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СуммаАктов</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ПроцентАктирования</dcsset:left>
+							<dcsset:comparisonType>Greater</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">100</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:FieldBackColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:presentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Некорректные акты</v8:content>
+						</v8:item>
+					</dcsset:presentation>
+					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+					<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ДоляФОТВсего</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СуммаЗатратВсего</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДоляФОТВсего</dcsset:left>
+							<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">40</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:FieldBackColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:presentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доля ФОТ от 40</v8:content>
+						</v8:item>
+					</dcsset:presentation>
+					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+					<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ДоляФОТВсего</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СуммаЗатратВсего</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДоляФОТВсего</dcsset:left>
+							<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">30</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДоляФОТВсего</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">40</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#FFCC00</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:presentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доля ФОТ от 30 до 40</v8:content>
+						</v8:item>
+					</dcsset:presentation>
+					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+					<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ДоляФОТВсего</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СуммаЗатратВсего</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ДоляФОТВсего</dcsset:left>
+							<dcsset:comparisonType>Less</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">30</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:LightGreen</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:presentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доля ФОТ до 30</v8:content>
+						</v8:item>
+					</dcsset:presentation>
+					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+					<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Акт.КонтрагентАбонент</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Проект</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item>
+							<dcsset:use>false</dcsset:use>
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ЭтапПроекта</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ВыставленныеЧасы</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>Акт</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:item>
+								<dcsset:groupItems>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>Сотрудник</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
+								</dcsset:groupItems>
+								<dcsset:order>
+									<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								</dcsset:order>
+								<dcsset:selection>
+									<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+								</dcsset:selection>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:row>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

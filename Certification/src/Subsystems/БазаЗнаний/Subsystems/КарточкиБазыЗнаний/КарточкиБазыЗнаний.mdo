@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ab5481e-52a8-46fa-b25e-c1c8091b54b7">
+  <name>КарточкиБазыЗнаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Карточки базы знаний</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Catalog.Ошибки</content>
+  <content>Catalog.Пожелания</content>
+  <content>Catalog.Консультации</content>
+  <content>CommonForm.ПеренаправлениеОбъекта</content>
+  <parentSubsystem>Subsystem.БазаЗнаний</parentSubsystem>
+</mdclass:Subsystem>

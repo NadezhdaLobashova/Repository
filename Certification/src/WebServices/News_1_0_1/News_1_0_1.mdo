@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7ca4a327-547d-4297-95c9-43623c8cab5f">
+  <name>News_1_0_1</name>
+  <synonym>
+    <key>ru</key>
+    <value>News 1 0 1</value>
+  </synonym>
+  <namespace>http://www.1cfresh.com/sd/news/1.0</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.News_1_0_1</value>
+  </xdtoPackages>
+  <descriptorFileName>News_1_0_1.1cws</descriptorFileName>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="9ebfa9ac-4009-4746-927e-4b2b27e4e938">
+    <name>getNews</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get news</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>NewsList</name>
+      <nsUri>http://www.1cfresh.com/sd/news/1.0</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьНовости</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="5051eef5-8364-424e-a30b-7237ec31ef9d">
+      <name>ServicePrefix</name>
+      <synonym>
+        <key>ru</key>
+        <value>Service prefix</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="a3d104ca-0c03-4102-86b1-b1cd35db0d29">
+      <name>ConfigName</name>
+      <synonym>
+        <key>ru</key>
+        <value>Config name</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="3015e924-f324-44cd-80d1-2a6f39361562">
+      <name>StartDate</name>
+      <synonym>
+        <key>ru</key>
+        <value>Start date</value>
+      </synonym>
+      <xdtoValueType>
+        <name>dateTime</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

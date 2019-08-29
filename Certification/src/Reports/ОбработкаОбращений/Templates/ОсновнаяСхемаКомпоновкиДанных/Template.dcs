@@ -1,0 +1,1477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Обращение</dataPath>
+			<field>Обращение</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Длительность</dataPath>
+			<field>Длительность</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток обращений в работе, ч (среднее)</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ='15'; ЧДЦ='2'</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбслуживающаяОрганизация</dataPath>
+			<field>ОбслуживающаяОрганизация</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЛинияПоддержки</dataPath>
+			<field>ЛинияПоддержки</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодДень</dataPath>
+			<field>ПериодДень</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период, день</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Additional</dcscom:periodType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДЛФ='D'</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Исполнитель</dataPath>
+			<field>Исполнитель</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодНеделя</dataPath>
+			<field>ПериодНеделя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период, неделя</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:periodNumber>2</dcscom:periodNumber>
+				<dcscom:periodType>Additional</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодМесяц</dataPath>
+			<field>ПериодМесяц</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период, месяц</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:periodNumber>3</dcscom:periodNumber>
+				<dcscom:periodType>Additional</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДвижениеРасход</dataPath>
+			<field>ДвижениеРасход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ушло</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДвижениеКонечныйОстаток</dataPath>
+			<field>ДвижениеКонечныйОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток на конец периода</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>Движение</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДвижениеНачальныйОстаток</dataPath>
+			<field>ДвижениеНачальныйОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток на начало периода</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>Движение</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДвижениеПриход</dataPath>
+			<field>ДвижениеПриход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пришло</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Признак</dataPath>
+			<field>Признак</field>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+				<dcscom:required>true</dcscom:required>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИсправлениеНачальныйОстаток</dataPath>
+			<field>ИсправлениеНачальныйОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На исправлении на начало периода</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>Исправление</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РасследованиеКонечныйОстаток</dataPath>
+			<field>РасследованиеКонечныйОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В расследовании на конец периода</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>Расследование</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИсправлениеКонечныйОстаток</dataPath>
+			<field>ИсправлениеКонечныйОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На исправлении на конец периода</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>Исправление</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РасследованиеНачальныйОстаток</dataPath>
+			<field>РасследованиеНачальныйОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В расследовании на начало периода</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>Расследование</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КритичныеКонечныйОстаток</dataPath>
+			<field>КритичныеКонечныйОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Критичные на конец периода</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>Критичные</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КритичныеНачальныйОстаток</dataPath>
+			<field>КритичныеНачальныйОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Критичные на начало периода</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>Критичные</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Закрыто</dataPath>
+			<field>Закрыто</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыто</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДвижениеОборот</dataPath>
+			<field>ДвижениеОборот</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оборот</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НовыеНачальныйОстаток</dataPath>
+			<field>НовыеНачальныйОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новые на начало периода</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>Новые</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НовыеКонечныйОстаток</dataPath>
+			<field>НовыеКонечныйОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новые на конец периода</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>Новые</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОжиданиеКонечныйОстаток</dataPath>
+			<field>ОжиданиеКонечныйОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В ожидании на конец периода</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>Ожидание</dcscom:balanceGroupName>
+				<dcscom:balanceType>ClosingBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОжиданиеНачальныйОстаток</dataPath>
+			<field>ОжиданиеНачальныйОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В ожидании на начало периода</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+			<role>
+				<dcscom:balance>true</dcscom:balance>
+				<dcscom:balanceGroupName>Ожидание</dcscom:balanceGroupName>
+				<dcscom:balanceType>OpeningBalance</dcscom:balanceType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДлительностьРасследование</dataPath>
+			<field>ДлительностьРасследование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток обращений на расследовании, ч (среднее)</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ='15'; ЧДЦ='2'</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДлительностьИсправление</dataPath>
+			<field>ДлительностьИсправление</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток обращений на исправлении, ч (среднее)</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ='15'; ЧДЦ='2'</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДлительностьНовое</dataPath>
+			<field>ДлительностьНовое</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток новых обращений, ч (среднее)</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ='15'; ЧДЦ='2'</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДлительностьОжидание</dataPath>
+			<field>ДлительностьОжидание</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток обращений в ожидании, ч (среднее)</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧЦ='15'; ЧДЦ='2'</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ДвиженияОбращенийОстатки.Обращение КАК Обращение,
+	ДвиженияОбращенийОстатки.ОбслуживающаяОрганизация КАК ОбслуживающаяОрганизация,
+	ДвиженияОбращенийОстатки.ЛинияПоддержки КАК ЛинияПоддержки,
+	ДвиженияОбращенийОстатки.Исполнитель КАК Исполнитель
+ПОМЕСТИТЬ Остатки
+ИЗ
+	РегистрНакопления.ДвиженияОбращений.Остатки(&amp;НачалоПериода, {(Обращение).*, (ОбслуживающаяОрганизация).*, (ЛинияПоддержки).*, (Исполнитель).*}) КАК ДвиженияОбращенийОстатки
+ГДЕ
+	ДвиженияОбращенийОстатки.ДвижениеОстаток &lt;&gt; 0
+
+ИНДЕКСИРОВАТЬ ПО
+	Исполнитель,
+	Обращение,
+	ЛинияПоддержки,
+	ОбслуживающаяОрганизация
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	1 КАК Признак,
+	ДлительностьОбработкиОбращений.Обращение,
+	НАЧАЛОПЕРИОДА(&amp;НачалоПериода, ДЕНЬ) КАК ПериодДень,
+	НАЧАЛОПЕРИОДА(&amp;НачалоПериода, НЕДЕЛЯ) КАК ПериодНеделя,
+	НАЧАЛОПЕРИОДА(&amp;НачалоПериода, МЕСЯЦ) КАК ПериодМесяц,
+	ДлительностьОбработкиОбращений.ОбслуживающаяОрганизация,
+	ДлительностьОбработкиОбращений.ЛинияПоддержки,
+	ДлительностьОбработкиОбращений.Исполнитель,
+	СУММА(ДлительностьОбработкиОбращений.Длительность) КАК Длительность,
+	СУММА(ВЫБОР
+			КОГДА ДлительностьОбработкиОбращений.Состояние = &amp;СостояниеНовое
+				ТОГДА ДлительностьОбработкиОбращений.Длительность
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ДлительностьНовое,
+	СУММА(ВЫБОР
+			КОГДА ДлительностьОбработкиОбращений.Состояние = &amp;СостояниеРасследование
+				ТОГДА ДлительностьОбработкиОбращений.Длительность
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ДлительностьРасследование,
+	СУММА(ВЫБОР
+			КОГДА ДлительностьОбработкиОбращений.Состояние = &amp;СостояниеИсправление
+				ТОГДА ДлительностьОбработкиОбращений.Длительность
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ДлительностьИсправление,
+	СУММА(ВЫБОР
+			КОГДА ДлительностьОбработкиОбращений.Состояние = &amp;СостояниеОжидание
+				ТОГДА ДлительностьОбработкиОбращений.Длительность
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ДлительностьОжидание,
+	0 КАК ДвижениеНачальныйОстаток,
+	0 КАК ДвижениеКонечныйОстаток,
+	0 КАК ДвижениеПриход,
+	0 КАК ДвижениеРасход,
+	0 КАК ДвижениеОборот,
+	0 КАК НовыеНачальныйОстаток,
+	0 КАК НовыеКонечныйОстаток,
+	0 КАК РасследованиеНачальныйОстаток,
+	0 КАК РасследованиеКонечныйОстаток,
+	0 КАК ИсправлениеНачальныйОстаток,
+	0 КАК ИсправлениеКонечныйОстаток,
+	0 КАК ОжиданиеНачальныйОстаток,
+	0 КАК ОжиданиеКонечныйОстаток,
+	0 КАК КритичныеНачальныйОстаток,
+	0 КАК КритичныеКонечныйОстаток,
+	0 КАК Закрыто
+ПОМЕСТИТЬ ВсеДанные
+ИЗ
+	РегистрСведений.ДлительностьОбработкиОбращений КАК ДлительностьОбработкиОбращений
+ГДЕ
+	(&amp;НачалоПериода = &amp;ПустаяДата
+			ИЛИ (ДлительностьОбработкиОбращений.Обращение, ДлительностьОбработкиОбращений.ОбслуживающаяОрганизация, ДлительностьОбработкиОбращений.ЛинияПоддержки, ДлительностьОбработкиОбращений.Исполнитель) В
+				(ВЫБРАТЬ
+					Остатки.Обращение,
+					Остатки.ОбслуживающаяОрганизация,
+					Остатки.ЛинияПоддержки,
+					Остатки.Исполнитель
+				ИЗ
+					Остатки КАК Остатки))
+{ГДЕ
+	(ДлительностьОбработкиОбращений.Период &lt; &amp;НачалоПериода),
+	ДлительностьОбработкиОбращений.Обращение.* КАК Обращение,
+	ДлительностьОбработкиОбращений.ОбслуживающаяОрганизация.* КАК ОбслуживающаяОрганизация,
+	ДлительностьОбработкиОбращений.ЛинияПоддержки.* КАК ЛинияПоддержки,
+	ДлительностьОбработкиОбращений.Исполнитель.* КАК Исполнитель}
+
+СГРУППИРОВАТЬ ПО
+	ДлительностьОбработкиОбращений.Обращение,
+	ДлительностьОбработкиОбращений.ОбслуживающаяОрганизация,
+	ДлительностьОбработкиОбращений.ЛинияПоддержки,
+	ДлительностьОбработкиОбращений.Исполнитель,
+	ДлительностьОбработкиОбращений.Длительность
+
+ИМЕЮЩИЕ
+	СУММА(ДлительностьОбработкиОбращений.Длительность) &gt; 0
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	1,
+	ДлительностьОбработкиОбращений.Обращение,
+	НАЧАЛОПЕРИОДА(ДлительностьОбработкиОбращений.Период, ДЕНЬ),
+	НАЧАЛОПЕРИОДА(ДлительностьОбработкиОбращений.Период, НЕДЕЛЯ),
+	НАЧАЛОПЕРИОДА(ДлительностьОбработкиОбращений.Период, МЕСЯЦ),
+	ДлительностьОбработкиОбращений.ОбслуживающаяОрганизация,
+	ДлительностьОбработкиОбращений.ЛинияПоддержки,
+	ДлительностьОбработкиОбращений.Исполнитель,
+	СУММА(ДлительностьОбработкиОбращений.Длительность),
+	СУММА(ВЫБОР
+			КОГДА ДлительностьОбработкиОбращений.Состояние = &amp;СостояниеНовое
+				ТОГДА ДлительностьОбработкиОбращений.Длительность
+			ИНАЧЕ 0
+		КОНЕЦ),
+	СУММА(ВЫБОР
+			КОГДА ДлительностьОбработкиОбращений.Состояние = &amp;СостояниеРасследование
+				ТОГДА ДлительностьОбработкиОбращений.Длительность
+			ИНАЧЕ 0
+		КОНЕЦ),
+	СУММА(ВЫБОР
+			КОГДА ДлительностьОбработкиОбращений.Состояние = &amp;СостояниеИсправление
+				ТОГДА ДлительностьОбработкиОбращений.Длительность
+			ИНАЧЕ 0
+		КОНЕЦ),
+	СУММА(ВЫБОР
+			КОГДА ДлительностьОбработкиОбращений.Состояние = &amp;СостояниеОжидание
+				ТОГДА ДлительностьОбработкиОбращений.Длительность
+			ИНАЧЕ 0
+		КОНЕЦ),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0
+ИЗ
+	РегистрСведений.ДлительностьОбработкиОбращений КАК ДлительностьОбработкиОбращений
+{ГДЕ
+	(ДлительностьОбработкиОбращений.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода),
+	ДлительностьОбработкиОбращений.Обращение.* КАК Обращение,
+	ДлительностьОбработкиОбращений.ОбслуживающаяОрганизация.* КАК ОбслуживающаяОрганизация,
+	ДлительностьОбработкиОбращений.ЛинияПоддержки.* КАК ЛинияПоддержки,
+	ДлительностьОбработкиОбращений.Исполнитель.* КАК Исполнитель}
+
+СГРУППИРОВАТЬ ПО
+	ДлительностьОбработкиОбращений.Обращение,
+	НАЧАЛОПЕРИОДА(ДлительностьОбработкиОбращений.Период, ДЕНЬ),
+	НАЧАЛОПЕРИОДА(ДлительностьОбработкиОбращений.Период, НЕДЕЛЯ),
+	НАЧАЛОПЕРИОДА(ДлительностьОбработкиОбращений.Период, МЕСЯЦ),
+	ДлительностьОбработкиОбращений.ОбслуживающаяОрганизация,
+	ДлительностьОбработкиОбращений.ЛинияПоддержки,
+	ДлительностьОбработкиОбращений.Исполнитель
+
+ИМЕЮЩИЕ
+	СУММА(ДлительностьОбработкиОбращений.Длительность) &gt; 0
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	2,
+	ДвиженияОбращенийОстаткиИОбороты.Обращение,
+	ДвиженияОбращенийОстаткиИОбороты.ПериодДень,
+	ДвиженияОбращенийОстаткиИОбороты.ПериодНеделя,
+	ДвиженияОбращенийОстаткиИОбороты.ПериодМесяц,
+	ДвиженияОбращенийОстаткиИОбороты.ОбслуживающаяОрганизация,
+	ДвиженияОбращенийОстаткиИОбороты.ЛинияПоддержки,
+	ДвиженияОбращенийОстаткиИОбороты.Исполнитель,
+	0,
+	0,
+	0,
+	0,
+	0,
+	ДвиженияОбращенийОстаткиИОбороты.ДвижениеНачальныйОстаток,
+	ДвиженияОбращенийОстаткиИОбороты.ДвижениеКонечныйОстаток,
+	ДвиженияОбращенийОстаткиИОбороты.ДвижениеПриход,
+	ДвиженияОбращенийОстаткиИОбороты.ДвижениеРасход,
+	ДвиженияОбращенийОстаткиИОбороты.ДвижениеОборот,
+	ВЫБОР
+		КОГДА ДвиженияОбращенийОстаткиИОбороты.Состояние = &amp;СостояниеНовое
+			ТОГДА ДвиженияОбращенийОстаткиИОбороты.ДвижениеНачальныйОстаток
+		ИНАЧЕ 0
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ДвиженияОбращенийОстаткиИОбороты.Состояние = &amp;СостояниеНовое
+			ТОГДА ДвиженияОбращенийОстаткиИОбороты.ДвижениеКонечныйОстаток
+		ИНАЧЕ 0
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ДвиженияОбращенийОстаткиИОбороты.Состояние = &amp;СостояниеРасследование
+			ТОГДА ДвиженияОбращенийОстаткиИОбороты.ДвижениеНачальныйОстаток
+		ИНАЧЕ 0
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ДвиженияОбращенийОстаткиИОбороты.Состояние = &amp;СостояниеРасследование
+			ТОГДА ДвиженияОбращенийОстаткиИОбороты.ДвижениеКонечныйОстаток
+		ИНАЧЕ 0
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ДвиженияОбращенийОстаткиИОбороты.Состояние = &amp;СостояниеИсправление
+			ТОГДА ДвиженияОбращенийОстаткиИОбороты.ДвижениеНачальныйОстаток
+		ИНАЧЕ 0
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ДвиженияОбращенийОстаткиИОбороты.Состояние = &amp;СостояниеИсправление
+			ТОГДА ДвиженияОбращенийОстаткиИОбороты.ДвижениеКонечныйОстаток
+		ИНАЧЕ 0
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ДвиженияОбращенийОстаткиИОбороты.Состояние = &amp;СостояниеОжидание
+			ТОГДА ДвиженияОбращенийОстаткиИОбороты.ДвижениеНачальныйОстаток
+		ИНАЧЕ 0
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ДвиженияОбращенийОстаткиИОбороты.Состояние = &amp;СостояниеОжидание
+			ТОГДА ДвиженияОбращенийОстаткиИОбороты.ДвижениеКонечныйОстаток
+		ИНАЧЕ 0
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ДвиженияОбращенийОстаткиИОбороты.Обращение.Важность = &amp;ВысокаяВажность
+			ТОГДА ДвиженияОбращенийОстаткиИОбороты.ДвижениеНачальныйОстаток
+		ИНАЧЕ 0
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ДвиженияОбращенийОстаткиИОбороты.Обращение.Важность = &amp;ВысокаяВажность
+			ТОГДА ДвиженияОбращенийОстаткиИОбороты.ДвижениеКонечныйОстаток
+		ИНАЧЕ 0
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ДвиженияОбращенийОстаткиИОбороты.Состояние = &amp;СостояниеЗакрыто
+			ТОГДА ДвиженияОбращенийОстаткиИОбороты.ДвижениеРасход
+		ИНАЧЕ 0
+	КОНЕЦ
+ИЗ
+	РегистрНакопления.ДвиженияОбращений.ОстаткиИОбороты({(&amp;НачалоПериода)}, {(&amp;КонецПериода)}, Авто, , {(Обращение).* КАК Обращение, (ОбслуживающаяОрганизация).* КАК ОбслуживающаяОрганизация, (ЛинияПоддержки).* КАК ЛинияПоддержки, (Исполнитель).* КАК Исполнитель}) КАК ДвиженияОбращенийОстаткиИОбороты
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВсеДанные.Признак КАК Признак,
+	ВсеДанные.Обращение КАК Обращение,
+	ВсеДанные.ПериодДень КАК ПериодДень,
+	ВсеДанные.ПериодНеделя КАК ПериодНеделя,
+	ВсеДанные.ПериодМесяц КАК ПериодМесяц,
+	ВсеДанные.ОбслуживающаяОрганизация КАК ОбслуживающаяОрганизация,
+	ВсеДанные.ЛинияПоддержки КАК ЛинияПоддержки,
+	ВсеДанные.Исполнитель КАК Исполнитель,
+	СУММА(ВсеДанные.Длительность / 3600) КАК Длительность,
+	СУММА(ВсеДанные.ДлительностьНовое / 3600) КАК ДлительностьНовое,
+	СУММА(ВсеДанные.ДлительностьРасследование / 3600) КАК ДлительностьРасследование,
+	СУММА(ВсеДанные.ДлительностьИсправление / 3600) КАК ДлительностьИсправление,
+	СУММА(ВсеДанные.ДлительностьОжидание / 3600) КАК ДлительностьОжидание,
+	СУММА(ВсеДанные.ДвижениеНачальныйОстаток) КАК ДвижениеНачальныйОстаток,
+	СУММА(ВсеДанные.ДвижениеКонечныйОстаток) КАК ДвижениеКонечныйОстаток,
+	СУММА(ВсеДанные.РасследованиеНачальныйОстаток) КАК РасследованиеНачальныйОстаток,
+	СУММА(ВсеДанные.РасследованиеКонечныйОстаток) КАК РасследованиеКонечныйОстаток,
+	СУММА(ВсеДанные.ИсправлениеНачальныйОстаток) КАК ИсправлениеНачальныйОстаток,
+	СУММА(ВсеДанные.ИсправлениеКонечныйОстаток) КАК ИсправлениеКонечныйОстаток,
+	СУММА(ВсеДанные.ДвижениеПриход) КАК ДвижениеПриход,
+	СУММА(ВсеДанные.ДвижениеРасход) КАК ДвижениеРасход,
+	СУММА(ВсеДанные.КритичныеНачальныйОстаток) КАК КритичныеНачальныйОстаток,
+	СУММА(ВсеДанные.КритичныеКонечныйОстаток) КАК КритичныеКонечныйОстаток,
+	СУММА(ВсеДанные.Закрыто) КАК Закрыто,
+	СУММА(ВсеДанные.ДвижениеОборот) КАК ДвижениеОборот,
+	СУММА(ВсеДанные.НовыеНачальныйОстаток) КАК НовыеНачальныйОстаток,
+	СУММА(ВсеДанные.НовыеКонечныйОстаток) КАК НовыеКонечныйОстаток,
+	СУММА(ВсеДанные.ОжиданиеНачальныйОстаток) КАК ОжиданиеНачальныйОстаток,
+	СУММА(ВсеДанные.ОжиданиеКонечныйОстаток) КАК ОжиданиеКонечныйОстаток
+{ВЫБРАТЬ
+	Признак,
+	Обращение.*,
+	ПериодДень,
+	ПериодНеделя,
+	ПериодМесяц,
+	ОбслуживающаяОрганизация.*,
+	ЛинияПоддержки.*,
+	Исполнитель.*,
+	Длительность,
+	ДлительностьНовое,
+	ДлительностьРасследование,
+	ДлительностьИсправление,
+	ДлительностьОжидание,
+	ДвижениеНачальныйОстаток,
+	ДвижениеКонечныйОстаток,
+	ДвижениеПриход,
+	ДвижениеРасход,
+	ДвижениеОборот,
+	НовыеНачальныйОстаток,
+	НовыеКонечныйОстаток,
+	РасследованиеНачальныйОстаток,
+	РасследованиеКонечныйОстаток,
+	ИсправлениеНачальныйОстаток,
+	ИсправлениеКонечныйОстаток,
+	КритичныеНачальныйОстаток,
+	КритичныеКонечныйОстаток,
+	ОжиданиеНачальныйОстаток,
+	ОжиданиеКонечныйОстаток,
+	Закрыто}
+ИЗ
+	ВсеДанные КАК ВсеДанные
+{ГДЕ
+	ВсеДанные.ПериодДень,
+	ВсеДанные.ПериодНеделя,
+	ВсеДанные.ПериодМесяц,
+	ВсеДанные.Длительность,
+	ВсеДанные.ДлительностьРасследование,
+	ВсеДанные.ДлительностьИсправление,
+	ВсеДанные.ДлительностьНовое,
+	ВсеДанные.ДлительностьОжидание,
+	ВсеДанные.ДвижениеНачальныйОстаток,
+	ВсеДанные.ДвижениеКонечныйОстаток,
+	ВсеДанные.ДвижениеПриход,
+	ВсеДанные.ДвижениеРасход,
+	ВсеДанные.РасследованиеНачальныйОстаток,
+	ВсеДанные.РасследованиеКонечныйОстаток,
+	ВсеДанные.ИсправлениеНачальныйОстаток,
+	ВсеДанные.ИсправлениеКонечныйОстаток,
+	ВсеДанные.КритичныеНачальныйОстаток,
+	ВсеДанные.КритичныеКонечныйОстаток,
+	ВсеДанные.Закрыто,
+	ВсеДанные.ДвижениеОборот,
+	ВсеДанные.НовыеНачальныйОстаток,
+	ВсеДанные.НовыеКонечныйОстаток,
+	ВсеДанные.ОжиданиеНачальныйОстаток,
+	ВсеДанные.ОжиданиеКонечныйОстаток,
+	ВсеДанные.Признак}
+
+СГРУППИРОВАТЬ ПО
+	ВсеДанные.Признак,
+	ВсеДанные.Обращение,
+	ВсеДанные.ПериодДень,
+	ВсеДанные.ПериодНеделя,
+	ВсеДанные.ПериодМесяц,
+	ВсеДанные.ОбслуживающаяОрганизация,
+	ВсеДанные.ЛинияПоддержки,
+	ВсеДанные.Исполнитель</query>
+		<autoFillFields>false</autoFillFields>
+	</dataSet>
+	<calculatedField>
+		<dataPath>Перенаправлено</dataPath>
+		<expression>Выбор Когда ДвижениеНачальныйОстаток = 1 И ДвижениеКонечныйОстаток = 1 Тогда 0
+    Когда ДвижениеПриход &gt; 1 Или ДвижениеРасход &gt; 1 
+    Тогда Выбор Когда ДвижениеРасход &gt;= ДвижениеПриход 
+                  Тогда 1 
+                  Иначе 0 
+               Конец 
+     Иначе ЕстьNULL(ДвижениеРасход,0)
+Конец - Выбор Когда ДвижениеОборот &gt; 0 Тогда 0 Иначе Закрыто Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Перенаправлено</v8:content>
+			</v8:item>
+		</title>
+		<useRestriction>
+			<group>true</group>
+		</useRestriction>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ДвижениеПриходСводный</dataPath>
+		<expression>Выбор Когда ДвижениеНачальныйОстаток = 1 И ДвижениеКонечныйОстаток = 1 Тогда 0 
+  Когда ДвижениеПриход &gt; 1 Или ДвижениеРасход &gt; 1 
+      Тогда Выбор Когда ДвижениеПриход &gt;= ДвижениеРасход 
+                     Тогда 1 
+                     Иначе 0 
+                 Конец 
+       Иначе ЕстьNULL(ДвижениеПриход, 0)
+Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Пришло</v8:content>
+			</v8:item>
+		</title>
+		<useRestriction>
+			<group>true</group>
+		</useRestriction>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ДвижениеРасходСводный</dataPath>
+		<expression>Выбор Когда ДвижениеНачальныйОстаток = 1 И ДвижениеКонечныйОстаток = 1 Тогда 0
+    Когда ДвижениеПриход &gt; 1 Или ДвижениеРасход &gt; 1 
+    Тогда Выбор Когда ДвижениеРасход &gt;= ДвижениеПриход 
+                  Тогда 1 
+                  Иначе 0 
+               Конец 
+     Иначе ЕстьNULL(ДвижениеРасход,0)
+Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ушло</v8:content>
+			</v8:item>
+		</title>
+		<useRestriction>
+			<group>true</group>
+		</useRestriction>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Закрыто</dataPath>
+		<expression>Выбор 
+    Когда ДвижениеКонечныйОстаток &gt;= 1 Тогда 0
+    Когда Закрыто &gt;= 1 Тогда 1 
+    Иначе 0 
+Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Закрыто</v8:content>
+			</v8:item>
+		</title>
+		<useRestriction>
+			<group>true</group>
+		</useRestriction>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<totalField>
+		<dataPath>ДвижениеНачальныйОстаток</dataPath>
+		<expression>Сумма(ДвижениеНачальныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДвижениеКонечныйОстаток</dataPath>
+		<expression>Сумма(ДвижениеКонечныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Длительность</dataPath>
+		<expression>Выбор Когда Сумма(ДвижениеКонечныйОстаток) = 0 Тогда 0 Иначе  ВычислитьВыражение("Сумма(Длительность)", "ПериодНеделя",, "Первая", "Текущая", "ПериодНеделя") / Сумма(ДвижениеКонечныйОстаток) Конец</expression>
+		<group>ПериодНеделя</group>
+	</totalField>
+	<totalField>
+		<dataPath>Длительность</dataPath>
+		<expression>Выбор Когда Сумма(ДвижениеКонечныйОстаток) = 0 Тогда 0 Иначе  ВычислитьВыражение("Сумма(Длительность)", "ПериодМесяц",, "Первая", "Текущая", "ПериодМесяц") / Сумма(ДвижениеКонечныйОстаток) Конец</expression>
+		<group>ПериодМесяц</group>
+	</totalField>
+	<totalField>
+		<dataPath>Длительность</dataPath>
+		<expression>Выбор Когда Сумма(ДвижениеКонечныйОстаток) = 0 Тогда 0 Иначе  Сумма(Длительность) / Сумма(ДвижениеКонечныйОстаток) Конец</expression>
+	</totalField>
+	<totalField>
+		<dataPath>РасследованиеНачальныйОстаток</dataPath>
+		<expression>Сумма(РасследованиеНачальныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>РасследованиеКонечныйОстаток</dataPath>
+		<expression>Сумма(РасследованиеКонечныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ИсправлениеНачальныйОстаток</dataPath>
+		<expression>Сумма(ИсправлениеНачальныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ИсправлениеКонечныйОстаток</dataPath>
+		<expression>Сумма(ИсправлениеКонечныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КритичныеКонечныйОстаток</dataPath>
+		<expression>Сумма(КритичныеКонечныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КритичныеНачальныйОстаток</dataPath>
+		<expression>Сумма(КритичныеНачальныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Закрыто</dataPath>
+		<expression>Сумма(ВычислитьВыражениеСГруппировкойМассив(
+"Выбор 
+    Когда Сумма(ДвижениеКонечныйОстаток) = 1 Тогда 0
+    Когда Сумма(Закрыто) &gt;= 1 Тогда 1 
+    Иначе 0 
+  Конец",
+"Обращение"))</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Перенаправлено</dataPath>
+		<expression>Сумма(ВычислитьВыражениеСГруппировкойМассив(
+"Выбор 
+    Когда Сумма(ДвижениеНачальныйОстаток) = 1 И Сумма(ДвижениеКонечныйОстаток) = 1 Тогда 0
+    Когда Сумма(ДвижениеРасход) &gt; 1 Или Сумма(ДвижениеПриход) &gt; 1 
+      Тогда Выбор Когда Сумма(ДвижениеРасход) &gt;= Сумма(ДвижениеПриход) 
+                  Тогда 1 
+                  Иначе 0 
+               Конец 
+     Иначе Сумма(ДвижениеРасход) Конец",
+"Обращение")) - Сумма(ВычислитьВыражениеСГруппировкойМассив(
+"Выбор 
+    Когда Сумма(ДвижениеКонечныйОстаток) = 1 Тогда 0
+    Когда Сумма(Закрыто) &gt;= 1 Тогда 1 
+       Иначе 0 
+  Конец",
+"Обращение"))</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДвижениеОборот</dataPath>
+		<expression>Сумма(ДвижениеОборот)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Длительность</dataPath>
+		<expression>Выбор Когда Сумма(ДвижениеКонечныйОстаток) = 0 Тогда 0 Иначе  ВычислитьВыражение("Сумма(Длительность)", "ПериодДень",, "Первая", "Текущая", "ПериодДень") / Сумма(ДвижениеКонечныйОстаток) Конец</expression>
+		<group>ПериодДень</group>
+	</totalField>
+	<totalField>
+		<dataPath>НовыеКонечныйОстаток</dataPath>
+		<expression>Сумма(НовыеКонечныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>НовыеНачальныйОстаток</dataPath>
+		<expression>Сумма(НовыеНачальныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОжиданиеКонечныйОстаток</dataPath>
+		<expression>Сумма(ОжиданиеКонечныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОжиданиеНачальныйОстаток</dataPath>
+		<expression>Сумма(ОжиданиеНачальныйОстаток)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДлительностьИсправление</dataPath>
+		<expression>Выбор Когда Сумма(ИсправлениеКонечныйОстаток) = 0 Тогда 0 Иначе  Сумма(ДлительностьИсправление) / Сумма(ИсправлениеКонечныйОстаток) Конец</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДлительностьРасследование</dataPath>
+		<expression>Выбор Когда Сумма(РасследованиеКонечныйОстаток) = 0 Тогда 0 Иначе  Сумма(ДлительностьРасследование) / Сумма(РасследованиеКонечныйОстаток) Конец</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДлительностьИсправление</dataPath>
+		<expression>Выбор Когда Сумма(ИсправлениеКонечныйОстаток) = 0 Тогда 0 Иначе ВычислитьВыражение("Сумма(ДлительностьИсправление)", "ПериодДень",, "Первая", "Текущая", "ПериодДень") / Сумма(ИсправлениеКонечныйОстаток) Конец</expression>
+		<group>ПериодДень</group>
+	</totalField>
+	<totalField>
+		<dataPath>ДлительностьИсправление</dataPath>
+		<expression>Выбор Когда Сумма(ИсправлениеКонечныйОстаток) = 0 Тогда 0 Иначе  ВычислитьВыражение("Сумма(ДлительностьИсправление )", "ПериодНеделя",, "Первая", "Текущая", "ПериодНеделя") / Сумма(ИсправлениеКонечныйОстаток) Конец</expression>
+		<group>ПериодНеделя</group>
+	</totalField>
+	<totalField>
+		<dataPath>ДлительностьИсправление</dataPath>
+		<expression>Выбор Когда Сумма(ИсправлениеКонечныйОстаток) = 0 Тогда 0 Иначе  ВычислитьВыражение("Сумма(ДлительностьИсправление)", "ПериодМесяц",, "Первая", "Текущая", "ПериодМесяц") / Сумма(ИсправлениеКонечныйОстаток) Конец</expression>
+		<group>ПериодМесяц</group>
+	</totalField>
+	<totalField>
+		<dataPath>ДлительностьРасследование</dataPath>
+		<expression>Выбор Когда Сумма(РасследованиеКонечныйОстаток) = 0 Тогда 0 Иначе ВычислитьВыражение("Сумма(ДлительностьРасследование)", "ПериодДень",, "Первая", "Текущая", "ПериодДень") / Сумма(РасследованиеКонечныйОстаток) Конец</expression>
+		<group>ПериодДень</group>
+	</totalField>
+	<totalField>
+		<dataPath>ДлительностьРасследование</dataPath>
+		<expression>Выбор Когда Сумма(РасследованиеКонечныйОстаток) = 0 Тогда 0 Иначе  ВычислитьВыражение("Сумма(ДлительностьРасследование)", "ПериодНеделя",, "Первая", "Текущая", "ПериодНеделя") / Сумма(РасследованиеКонечныйОстаток) Конец</expression>
+		<group>ПериодНеделя</group>
+	</totalField>
+	<totalField>
+		<dataPath>ДлительностьРасследование</dataPath>
+		<expression>Выбор Когда Сумма(РасследованиеКонечныйОстаток) = 0 Тогда 0 Иначе  ВычислитьВыражение("Сумма(ДлительностьИсправление)", "ПериодМесяц",, "Первая", "Текущая", "ПериодМесяц") / Сумма(РасследованиеКонечныйОстаток) Конец</expression>
+		<group>ПериодМесяц</group>
+	</totalField>
+	<totalField>
+		<dataPath>ДлительностьОжидание</dataPath>
+		<expression>Выбор Когда Сумма(ОжиданиеКонечныйОстаток) = 0 Тогда 0 Иначе ВычислитьВыражение("Сумма(ДлительностьОжидание)", "ПериодДень",, "Первая", "Текущая", "ПериодДень") / Сумма(ОжиданиеКонечныйОстаток) Конец</expression>
+		<group>ПериодДень</group>
+	</totalField>
+	<totalField>
+		<dataPath>ДлительностьОжидание</dataPath>
+		<expression>Выбор Когда Сумма(ОжиданиеКонечныйОстаток) = 0 Тогда 0 Иначе  ВычислитьВыражение("Сумма(ДлительностьОжидание)", "ПериодНеделя",, "Первая", "Текущая", "ПериодНеделя") / Сумма(ОжиданиеКонечныйОстаток) Конец</expression>
+		<group>ПериодНеделя</group>
+	</totalField>
+	<totalField>
+		<dataPath>ДлительностьОжидание</dataPath>
+		<expression>Выбор Когда Сумма(ОжиданиеКонечныйОстаток) = 0 Тогда 0 Иначе  ВычислитьВыражение("Сумма(ДлительностьОжидание)", "ПериодМесяц",, "Первая", "Текущая", "ПериодМесяц") / Сумма(ОжиданиеКонечныйОстаток) Конец</expression>
+		<group>ПериодМесяц</group>
+	</totalField>
+	<totalField>
+		<dataPath>ДлительностьОжидание</dataPath>
+		<expression>Выбор Когда Сумма(ОжиданиеКонечныйОстаток) = 0 Тогда 0 Иначе  Сумма(ДлительностьОжидание) / Сумма(ОжиданиеКонечныйОстаток) Конец</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДлительностьНовое</dataPath>
+		<expression>Выбор Когда Сумма(НовыеКонечныйОстаток) = 0 Тогда 0 Иначе ВычислитьВыражение("Сумма(ДлительностьНовое)", "ПериодДень",, "Первая", "Текущая", "ПериодДень") / Сумма(НовыеКонечныйОстаток) Конец</expression>
+		<group>ПериодДень</group>
+	</totalField>
+	<totalField>
+		<dataPath>ДлительностьНовое</dataPath>
+		<expression>Выбор Когда Сумма(НовыеКонечныйОстаток) = 0 Тогда 0 Иначе  ВычислитьВыражение("Сумма(ДлительностьНовое)", "ПериодНеделя",, "Первая", "Текущая", "ПериодНеделя") / Сумма(НовыеКонечныйОстаток) Конец</expression>
+		<group>ПериодНеделя</group>
+	</totalField>
+	<totalField>
+		<dataPath>ДлительностьНовое</dataPath>
+		<expression>Выбор Когда Сумма(НовыеКонечныйОстаток) = 0 Тогда 0 Иначе  ВычислитьВыражение("Сумма(ДлительностьНовое)", "ПериодМесяц",, "Первая", "Текущая", "ПериодМесяц") / Сумма(НовыеКонечныйОстаток) Конец</expression>
+		<group>ПериодМесяц</group>
+	</totalField>
+	<totalField>
+		<dataPath>ДлительностьНовое</dataPath>
+		<expression>Выбор Когда Сумма(НовыеКонечныйОстаток) = 0 Тогда 0 Иначе  Сумма(ДлительностьНовое) / Сумма(НовыеКонечныйОстаток) Конец</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДвижениеПриходСводный</dataPath>
+		<expression>Сумма(ВычислитьВыражениеСГруппировкойМассив(
+"Выбор 
+      Когда Сумма(ДвижениеНачальныйОстаток) = 1 И Сумма(ДвижениеКонечныйОстаток) = 1 Тогда 0 
+      Когда Сумма(ДвижениеПриход) &gt; 1 Или Сумма(ДвижениеРасход) &gt; 1 
+        Тогда Выбор Когда Сумма(ДвижениеПриход) &gt;= Сумма(ДвижениеРасход) 
+                     Тогда 1 
+                     Иначе 0 
+                 Конец 
+       Иначе Сумма(ДвижениеПриход) Конец",
+"Обращение"))</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДвижениеРасходСводный</dataPath>
+		<expression>Сумма(ВычислитьВыражениеСГруппировкойМассив(
+"Выбор 
+    Когда Сумма(ДвижениеНачальныйОстаток) = 1 И Сумма(ДвижениеКонечныйОстаток) = 1 Тогда 0
+    Когда Сумма(ДвижениеРасход) &gt; 1 Или Сумма(ДвижениеПриход) &gt; 1
+      Тогда Выбор Когда Сумма(ДвижениеРасход) &gt;= Сумма(ДвижениеПриход) 
+                  Тогда 1 
+                  Иначе 0 
+               Конец 
+     Иначе Сумма(ДвижениеРасход) Конец",
+"Обращение"))</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДвижениеПриход</dataPath>
+		<expression>Сумма(ДвижениеПриход)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДвижениеРасход</dataPath>
+		<expression>Сумма(ДвижениеРасход)</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>СостояниеИсправление</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Состояние исправление</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.СостоянияОбращений</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.СостоянияОбращений.Исправление</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>СостояниеРасследование</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Состояние расследование</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.СостоянияОбращений</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.СостоянияОбращений.Расследование</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ВысокаяВажность</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Высокая важность</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.ВариантыВажности</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.ВариантыВажности.ВысокаяВажность</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>СостояниеЗакрыто</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Состояние закрыто</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.СостоянияОбращений</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.СостоянияОбращений.Закрыто</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>СостояниеОжидание</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Состояние ожидание</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.СостоянияОбращений</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.СостоянияОбращений.ОжиданиеИнициатора</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>СостояниеНовое</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Состояние новое</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.СостоянияОбращений</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.СостоянияОбращений.Новое</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ПустаяДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Пустая дата</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ОбработкаОбращенийЛиниямиПоддержки</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Обработка обращений линиями поддержки</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>РасследованиеНачальныйОстаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИсправлениеНачальныйОстаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДвижениеПриходСводный</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДвижениеРасходСводный</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Перенаправлено</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Закрыто</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДвижениеКонечныйОстаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КритичныеКонечныйОстаток</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>a89332cc-70fe-44a5-a20d-711fef1d3d22</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Античный</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРесурсов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionResourcesPlacement">Vertically</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка обращений линиями поддержки</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ПериодДень</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ОбслуживающаяОрганизация</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ЛинияПоддержки</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:row>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e1c0bef7-dfeb-4033-9cd5-3e33affa1e87">
+  <producedTypes>
+    <managerType typeId="a54c8ba6-763f-4d94-8e46-0aff665c576a" valueTypeId="ce97a6a7-d562-4dac-a342-3c573b6eb89f"/>
+    <valueManagerType typeId="f687c93f-4d4c-469a-948d-0863ff1a7a44" valueTypeId="fe2a9349-b1d3-4245-ab3b-9bb735edc182"/>
+    <valueKeyType typeId="24496f40-030b-5544-b8c2-c50b9a88abc1" valueTypeId="c2ca8dcd-2176-569b-9344-be296e66b5b9"/>
+  </producedTypes>
+  <name>ФильтрAD</name>
+  <synonym>
+    <key>ru</key>
+    <value>Фильтр AD</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

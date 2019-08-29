@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b27a930c-7d0e-4533-9c32-9d7130808661">
+  <producedTypes>
+    <refType typeId="6c13a534-f481-482c-b52b-6a19db20090a" valueTypeId="91aa9081-20ae-42be-a5e1-b51958bf3918"/>
+    <listType typeId="35dd270e-5ba5-4966-850e-3bc608c64537" valueTypeId="496a3190-7bdd-4df5-8209-e62aa72217a5"/>
+    <managerType typeId="716cdd32-7332-442f-91cd-917165e2e31c" valueTypeId="1c333318-f751-4ab9-85f4-a9624353f2d7"/>
+  </producedTypes>
+  <name>ВидыПриглашений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды приглашений</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="fda8fcfa-f533-43dc-9653-fd795eafead6">
+    <name>Менеджеру</name>
+    <synonym>
+      <key>ru</key>
+      <value>Менеджеру</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3b633457-8494-4b9c-a27f-08c7fccf5893">
+    <name>Консультанту</name>
+    <synonym>
+      <key>ru</key>
+      <value>Консультанту</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="039aae21-1481-4a0b-ab79-77d38b8cb7ba">
+    <name>Эксперту</name>
+    <synonym>
+      <key>ru</key>
+      <value>Эксперту</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

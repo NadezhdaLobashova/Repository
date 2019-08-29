@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="939da104-0814-4ce2-bfe1-4badf907d4e4">
+  <producedTypes>
+    <objectType typeId="f6e510fb-6d80-460a-9e29-2235e1b21262" valueTypeId="04356b0e-69f3-47c3-ab7d-0a85667e42da"/>
+    <refType typeId="6d8c7281-3b78-4d58-8154-be16c727e44b" valueTypeId="46d7448e-2f05-4bfc-86b7-f976977dd4e7"/>
+    <selectionType typeId="9d6a0ef2-8907-4d02-8d65-6e1b1223e36f" valueTypeId="12bc07b4-ae62-47ef-8cf6-80a86f5d82d5"/>
+    <listType typeId="96e40208-27aa-466d-9b79-71994fc7fdae" valueTypeId="0614dcaf-297d-4574-8601-91ef8b328ce8"/>
+    <managerType typeId="e98c1a81-daa6-4ef5-951b-e7d7ac650d63" valueTypeId="817d7516-8221-476c-b7c8-85827b889d11"/>
+    <containerType typeId="04078512-c989-407e-9826-d548b518b815" valueTypeId="f980eda0-cf3b-410a-accc-a446a7ad80db"/>
+  </producedTypes>
+  <name>НастройкиТелефонии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки телефонии</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.НастройкиТелефонии.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.НастройкиТелефонии.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ValueType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <type>
+    <types>String</types>
+    <types>CatalogRef.Пользователи</types>
+    <types>CatalogRef.ВидыКонтактнойИнформации</types>
+    <stringQualifiers>
+      <length>100</length>
+    </stringQualifiers>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>100</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="b2a58457-2c54-41ab-9862-a503ef847996">
+      <name>АвтоОтвет</name>
+      <description>SIP заголовок &quot;Авто ответ&quot;</description>
+      <code>000000007</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="0f70ec36-7d7e-4173-9cb9-3eaed985032d">
+      <name>АдминистраторСистемыВзаимодействия</name>
+      <description>Администратор системы взаимодействия</description>
+      <code>000000005</code>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+    </items>
+    <items id="49c21964-fbbe-4310-b690-03dc65967c17">
+      <name>АдресСервераТелефонии</name>
+      <description>Адрес сервера телефонии</description>
+      <code>000000001</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="1603c18f-6aab-435e-975f-0ac62a540609">
+      <name>БазаODBC</name>
+      <description>База ODBC</description>
+      <code>000000010</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="adb24182-348a-48ca-b8fb-cf93fe6f4a25">
+      <name>ВидКИ_ВнутреннийНомерТелефона</name>
+      <description>Вид КИ &quot;внутренний номер телефона&quot;</description>
+      <code>000000006</code>
+      <type>
+        <types>CatalogRef.ВидыКонтактнойИнформации</types>
+      </type>
+    </items>
+    <items id="1f534a83-663d-4504-a3a7-e9cb4377790a">
+      <name>ДрайверODBC</name>
+      <description>Драйвер ODBC</description>
+      <code>000000008</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="e1e72e9f-3a31-4c9c-bdc7-c1c60d944818">
+      <name>КорневойКаталогАудиозаписей</name>
+      <description>Корневой каталог аудиозаписей</description>
+      <code>000000004</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="0497d005-745e-4539-98ee-8e28ca2f6cc8">
+      <name>Пользователь</name>
+      <description>Пользователь</description>
+      <code>000000003</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="cfdbc6b7-04d0-4236-99d4-e571b0d1337f">
+      <name>ПользовательODBC</name>
+      <description>Пользователь ODBC</description>
+      <code>000000011</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="3778f880-90bb-4144-8f94-a5b2ffcd3946">
+      <name>Порт</name>
+      <description>Порт</description>
+      <code>000000002</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+    </items>
+    <items id="b1a94c0f-1e84-4826-91ce-bff80c8f66d1">
+      <name>СерверODBC</name>
+      <description>Сервер ODBC</description>
+      <code>000000009</code>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:ChartOfCharacteristicTypes>

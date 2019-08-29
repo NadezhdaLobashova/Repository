@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="422a8687-8d57-461c-a733-d02a735ed389">
+  <producedTypes>
+    <refType typeId="67176647-47a0-4202-9d12-076f724290f2" valueTypeId="87bc5991-b2ee-4ee2-a0f2-597cfd427f7e"/>
+    <listType typeId="f4b0a9ee-5e95-4ee8-9647-d619c5054437" valueTypeId="46410896-d843-4faf-98bd-fda01a1f185c"/>
+    <managerType typeId="1d47b5fc-f530-4e0e-96f5-6bb036535595" valueTypeId="64b7e00c-1103-48e7-8a5a-05abfec3686b"/>
+  </producedTypes>
+  <name>СостоянияКонсультаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния консультаций</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f0c29a59-e70d-42c4-bc34-07bc0d3059d6">
+    <name>Актуальна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актуальна</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1ea25df7-7dc1-4a6f-8a98-35001b8ba0a6">
+    <name>НеАктуальна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не актуальна</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

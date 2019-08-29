@@ -1,0 +1,451 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.1cfresh.com/sd/api">
+	<valueType name="ComparisonOperator" base="xs:string" variety="Atomic">
+		<enumeration>=</enumeration>
+		<enumeration>&lt;&gt;</enumeration>
+		<enumeration>&gt;</enumeration>
+		<enumeration>&gt;=</enumeration>
+		<enumeration>&lt;</enumeration>
+		<enumeration>&lt;=</enumeration>
+		<enumeration>LIKE</enumeration>
+		<enumeration>IN</enumeration>
+		<enumeration>IN HIERARCHY</enumeration>
+	</valueType>
+	<valueType name="GetNewSubActions" base="xs:string" variety="Atomic">
+		<enumeration>FillFromArticle</enumeration>
+	</valueType>
+	<valueType name="PostActions" base="xs:string">
+		<enumeration xsi:type="xs:string">StartProcess</enumeration>
+	</valueType>
+	<valueType name="PutСompleteTaskActions" base="xs:string">
+		<enumeration xsi:type="xs:string">CompleteTask</enumeration>
+		<enumeration xsi:type="xs:string">ReturnOnCompletion</enumeration>
+		<enumeration xsi:type="xs:string">CancelOrder</enumeration>
+	</valueType>
+	<valueType name="PutActions" base="xs:string">
+		<enumeration xsi:type="xs:string">Consider</enumeration>
+	</valueType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="ActualWork" base="d2p1:Record">
+		<property name="addDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="description" type="xs:string" lowerBound="0"/>
+		<property name="source" type="d2p1:Object" lowerBound="0"/>
+		<property name="user" type="d2p1:User" lowerBound="0"/>
+		<property name="supportLine" type="d2p1:SupportLine" lowerBound="0"/>
+		<property name="partner" type="d2p1:Partner" lowerBound="0"/>
+		<property name="duration" type="xs:int" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="Application" base="d2p1:Object">
+		<property name="service" type="d2p1:Service" lowerBound="0"/>
+		<property name="code" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="ArticleComment" base="d2p1:Record">
+		<property name="date" type="xs:dateTime" lowerBound="0"/>
+		<property name="author" type="d2p1:User" lowerBound="0"/>
+		<property name="comment" type="xs:string" lowerBound="0"/>
+		<property name="supportLine" type="d2p1:SupportLine" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="Component" base="d2p1:Object">
+		<property name="service" type="d2p1:Service" lowerBound="0"/>
+		<property name="code" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="Consultation" base="d2p1:KnowledgeBaseArticle">
+		<property name="status" type="d2p1:ConsultationStatus" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="ConsultationStatus" base="d2p1:Object"/>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="DeleteRequest" base="d2p1:Request">
+		<property name="objectIds" type="d2p1:ObjectId" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="DeleteResponse" base="d2p1:Response"/>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="EMailAccount" base="d2p1:Object">
+		<property name="useForSending" type="xs:boolean" lowerBound="0"/>
+		<property name="useForReceiving" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="EMailBodyType" base="d2p1:Object"/>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="Error" base="d2p1:Response">
+		<property name="subject" type="xs:string" lowerBound="0"/>
+		<property name="description" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="File" base="d2p1:Object">
+		<property name="name" type="xs:string" lowerBound="0"/>
+		<property name="author" type="d2p1:User" lowerBound="0"/>
+		<property name="binaryData" type="xs:base64Binary" lowerBound="0"/>
+		<property name="creationDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="description" type="xs:string" lowerBound="0"/>
+		<property name="extension" type="xs:string" lowerBound="0"/>
+		<property name="modificationDateUniversal" type="xs:dateTime" lowerBound="0"/>
+		<property name="size" type="xs:integer" lowerBound="0"/>
+		<property name="text" type="xs:string" lowerBound="0"/>
+		<property name="owner" type="d2p1:Object" lowerBound="0"/>
+		<property name="deletionMark" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="GetCurrentUserRequest" base="d2p1:Request"/>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="GetCurrentUserResponse" base="d2p1:Response">
+		<property name="object" type="d2p1:Object"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="GetListRequest" base="d2p1:Request">
+		<property name="type" type="xs:string"/>
+		<property name="query" type="d2p1:ListQuery" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="GetListResponse" base="d2p1:Response">
+		<property name="items" type="d2p1:ListItem" lowerBound="0" upperBound="-1"/>
+		<property name="tooManyObjects" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="GetNewRequest" base="d2p1:Request">
+		<property name="type" type="xs:string"/>
+		<property name="columns" type="xs:string" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="GetNewResponse" base="d2p1:Response">
+		<property name="record" type="d2p1:Record"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="GetNewSubRequest" base="d2p1:GetNewRequest">
+		<property name="targetId" type="d2p1:ObjectId"/>
+		<property name="action" type="d2p1:GetNewSubActions" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="GetNewSubResponse" base="d2p1:GetNewResponse"/>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="GetRequest" base="d2p1:Request">
+		<property name="objectIds" type="d2p1:ObjectId" lowerBound="0" upperBound="-1"/>
+		<property name="columns" type="xs:string" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="GetResponse" base="d2p1:Response">
+		<property name="records" type="d2p1:Record" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="GetServiceUserInfoListRequest" base="d2p1:Request">
+		<property name="serviceId" type="d2p1:ObjectId"/>
+		<property name="subscriberCode" type="xs:int" lowerBound="0"/>
+		<property name="applicationCode" type="xs:int" lowerBound="0"/>
+		<property name="serviceUserEMail" type="xs:string" lowerBound="0"/>
+		<property name="serviceUserLogin" type="xs:string" lowerBound="0"/>
+		<property name="dynamicAttributes" type="d2p1:DynamicAttribute" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="GetServiceUserInfoListResponse" base="d2p1:Response">
+		<property name="items" type="d2p1:ServiceUserInfoItem" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="GetSubListRequest" base="d2p1:Request">
+		<property name="targetId" type="d2p1:ObjectId"/>
+		<property name="type" type="xs:string"/>
+		<property name="columns" type="xs:string" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="GetSubListResponse" base="d2p1:Response">
+		<property name="records" type="d2p1:Record" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="GetVersionRequest" base="d2p1:Request"/>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="GetVersionResponse" base="d2p1:Response">
+		<property name="version" type="xs:string"/>
+	</objectType>
+	<objectType name="HTMLObject">
+		<property name="htmlText" type="xs:string"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/api" name="images" type="d3p1:HTMLObjectImage" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="HTMLObjectImage">
+		<property name="name" type="xs:string"/>
+		<property name="data" type="xs:base64Binary"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="Importance" base="d2p1:Object"/>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="Incident" base="d2p1:Object">
+		<property name="objectVersion" type="xs:string" lowerBound="0"/>
+		<property name="importance" type="d2p1:Importance" lowerBound="0"/>
+		<property name="subject" type="xs:string" lowerBound="0"/>
+		<property name="type" type="d2p1:IncidentType" lowerBound="0"/>
+		<property name="status" type="d2p1:IncidentStatus" lowerBound="0"/>
+		<property name="deadline" type="xs:dateTime" lowerBound="0"/>
+		<property name="initiator" type="d2p1:ServiceUser" lowerBound="0"/>
+		<property name="partner" type="d2p1:Partner" lowerBound="0"/>
+		<property name="supportLine" type="d2p1:SupportLine" lowerBound="0"/>
+		<property name="responsible" type="d2p1:Object" lowerBound="0"/>
+		<property name="number" type="xs:string" lowerBound="0"/>
+		<property name="date" type="xs:dateTime" lowerBound="0"/>
+		<property name="service" type="d2p1:Service" lowerBound="0"/>
+		<property name="component" type="d2p1:Component" lowerBound="0"/>
+		<property name="section" type="d2p1:Section" lowerBound="0"/>
+		<property name="recievingChannel" type="d2p1:RecievingChannel" lowerBound="0"/>
+		<property name="knowledgeBaseArticle" type="d2p1:KnowledgeBaseArticle" lowerBound="0"/>
+		<property name="description" type="xs:string" lowerBound="0"/>
+		<property name="descriptionHTML" type="d2p1:HTMLObject" lowerBound="0"/>
+		<property name="hasNewInteractions" type="xs:boolean" lowerBound="0"/>
+		<property name="subscriber" type="d2p1:Subscriber" lowerBound="0"/>
+		<property name="subscriberPartner" type="d2p1:Subscriber" lowerBound="0"/>
+		<property name="eMailForCorrespondence" type="xs:string" lowerBound="0"/>
+		<property name="comments" type="d2p1:IncidentComment" lowerBound="0" upperBound="-1"/>
+		<property name="modifiedDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="dynamicAttributes" type="d2p1:DynamicAttribute" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="IncidentComment" base="d2p1:Record">
+		<property name="date" type="xs:dateTime" lowerBound="0"/>
+		<property name="author" type="d2p1:User" lowerBound="0"/>
+		<property name="comment" type="xs:string" lowerBound="0"/>
+		<property name="supportLine" type="d2p1:SupportLine" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="IncidentStatus" base="d2p1:Object"/>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="IncidentType" base="d2p1:Object"/>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="IncomingEMail" base="d2p1:Object">
+		<property name="subject" type="xs:string" lowerBound="0"/>
+		<property name="target" type="d2p1:Object"/>
+		<property name="creationDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="considered" type="xs:boolean" lowerBound="0"/>
+		<property name="body" type="xs:string" lowerBound="0"/>
+		<property name="bodyHTML" type="d2p1:HTMLObject" lowerBound="0"/>
+		<property name="bodyType" type="d2p1:EMailBodyType" lowerBound="0"/>
+		<property name="sender" type="xs:string" lowerBound="0"/>
+		<property name="recipients" type="xs:string" lowerBound="0"/>
+		<property name="recipientsOfCopies" type="xs:string" lowerBound="0"/>
+		<property name="internal" type="xs:boolean" lowerBound="0"/>
+		<property name="importance" type="d2p1:InteractionImportance" lowerBound="0"/>
+		<property name="containsAttachments" type="xs:boolean" lowerBound="0"/>
+		<property name="attachments" type="d2p1:File" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="InteractionImportance" base="d2p1:Object"/>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="KnowledgeBaseArticle" base="d2p1:Object" abstract="true">
+		<property name="objectVersion" type="xs:string" lowerBound="0"/>
+		<property name="code" type="xs:string" lowerBound="0"/>
+		<property name="name" type="xs:string" lowerBound="0"/>
+		<property name="services" type="d2p1:Service" lowerBound="0" upperBound="-1"/>
+		<property name="components" type="d2p1:Component" lowerBound="0" upperBound="-1"/>
+		<property name="sections" type="d2p1:Section" lowerBound="0" upperBound="-1"/>
+		<property name="creationDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="modifiedDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="description" type="xs:string" lowerBound="0"/>
+		<property name="descriptionHTML" type="d2p1:HTMLObject" lowerBound="0"/>
+		<property name="comments" type="d2p1:ArticleComment" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ListFilter">
+		<property name="property" type="xs:string"/>
+		<property name="value" type="xs:anyType"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/api" name="comparisonOperator" type="d3p1:ComparisonOperator" lowerBound="0"/>
+	</objectType>
+	<objectType name="ListItem">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/api" name="object" type="d3p1:Object"/>
+		<property name="isFolder" type="xs:boolean"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/api" name="parentId" type="d3p1:ObjectId" lowerBound="0"/>
+		<property name="canHaveChildren" type="xs:boolean"/>
+	</objectType>
+	<objectType name="ListQuery">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/api" name="filter" type="d3p1:ListFilter" lowerBound="0" upperBound="-1"/>
+		<property name="limit" type="xs:integer" lowerBound="0"/>
+		<property name="columns" type="xs:string" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="OK" base="d2p1:Response"/>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="Object" base="d2p1:Record">
+		<property name="objectId" type="d2p1:ObjectId" nillable="true"/>
+	</objectType>
+	<objectType name="ObjectId">
+		<property name="id" type="xs:string"/>
+		<property name="navRef" type="xs:string" lowerBound="0"/>
+		<property name="type" type="xs:string"/>
+		<property name="view" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="Order" base="d2p1:Object">
+		<property name="objectVersion" type="xs:string" lowerBound="0"/>
+		<property name="creationDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="number" type="xs:string" lowerBound="0"/>
+		<property name="name" type="xs:string" lowerBound="0"/>
+		<property name="description" type="xs:string" lowerBound="0"/>
+		<property name="descriptionHTML" type="d2p1:HTMLObject" lowerBound="0"/>
+		<property name="author" type="d2p1:User" lowerBound="0"/>
+		<property name="importance" type="d2p1:TaskImportance" lowerBound="0"/>
+		<property name="endDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="deadline" type="xs:dateTime" lowerBound="0"/>
+		<property name="performer" type="d2p1:TaskPerformer" lowerBound="0"/>
+		<property name="reviewer" type="d2p1:TaskPerformer" lowerBound="0"/>
+		<property name="reviewPeriod" type="xs:dateTime" lowerBound="0"/>
+		<property name="target" type="d2p1:Object" lowerBound="0"/>
+		<property name="status" type="d2p1:ProcessStatus" lowerBound="0"/>
+		<property name="runtimeComments" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="OrderRoutePoint" base="d2p1:RoutePoint"/>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="OutgoingEMail" base="d2p1:Object">
+		<property name="account" type="d2p1:EMailAccount" lowerBound="0"/>
+		<property name="creationDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="dateSent" type="xs:dateTime" lowerBound="0"/>
+		<property name="subject" type="xs:string" lowerBound="0"/>
+		<property name="importance" type="d2p1:InteractionImportance" lowerBound="0"/>
+		<property name="body" type="xs:string" lowerBound="0"/>
+		<property name="bodyHTML" type="d2p1:HTMLObject" lowerBound="0"/>
+		<property name="bodyType" type="d2p1:EMailBodyType" lowerBound="0"/>
+		<property name="baseId" type="xs:string" lowerBound="0"/>
+		<property name="target" type="d2p1:Object" lowerBound="0"/>
+		<property name="considered" type="xs:boolean" lowerBound="0"/>
+		<property name="recipients" type="xs:string" lowerBound="0"/>
+		<property name="recipientsOfCopies" type="xs:string" lowerBound="0"/>
+		<property name="recipientsOfBlindCopies" type="xs:string" lowerBound="0"/>
+		<property name="containsAttachments" type="xs:boolean" lowerBound="0"/>
+		<property name="status" type="d2p1:OutgoingEMailStatus" lowerBound="0"/>
+		<property name="internal" type="xs:boolean" lowerBound="0"/>
+		<property name="attachments" type="d2p1:File" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="OutgoingEMailStatus" base="d2p1:Object"/>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="Partner" base="d2p1:Object">
+		<property name="code" type="xs:string" lowerBound="0"/>
+		<property name="interactionEnabled" type="xs:boolean" lowerBound="0"/>
+		<property name="firstSupportLine" type="d2p1:SupportLine" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="PhoneCall" base="d2p1:Object">
+		<property name="objectVersion" type="xs:string" lowerBound="0"/>
+		<property name="target" type="d2p1:Object" lowerBound="0"/>
+		<property name="creationDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="subject" type="xs:string" lowerBound="0"/>
+		<property name="description" type="xs:string" lowerBound="0"/>
+		<property name="considered" type="xs:boolean" lowerBound="0"/>
+		<property name="incoming" type="xs:boolean" lowerBound="0"/>
+		<property name="internal" type="xs:boolean" lowerBound="0"/>
+		<property name="contact" type="d2p1:Subscriber" lowerBound="0"/>
+		<property name="callCode" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="PostRequest" base="d2p1:Request">
+		<property name="objects" type="d2p1:Object" lowerBound="0" upperBound="-1"/>
+		<property name="action" type="d2p1:PostActions" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="PostResponse" base="d2p1:Response">
+		<property name="objects" type="d2p1:Object" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="PostSubRequest" base="d2p1:Request">
+		<property name="targetId" type="d2p1:ObjectId"/>
+		<property name="record" type="d2p1:Record"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="PostSubResponse" base="d2p1:Response">
+		<property name="record" type="d2p1:Record"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="Problem" base="d2p1:KnowledgeBaseArticle">
+		<property name="critical" type="xs:boolean" lowerBound="0"/>
+		<property name="status" type="d2p1:ProblemStatus" lowerBound="0"/>
+		<property name="playback" type="xs:string" lowerBound="0"/>
+		<property name="playbackHTML" type="d2p1:HTMLObject" lowerBound="0"/>
+		<property name="solution" type="xs:string" lowerBound="0"/>
+		<property name="solutionHTML" type="d2p1:HTMLObject" lowerBound="0"/>
+		<property name="bypass" type="xs:string" lowerBound="0"/>
+		<property name="bypassHTML" type="d2p1:HTMLObject" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="ProblemStatus" base="d2p1:Object"/>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="ProcessStatus" base="d2p1:Object"/>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="PutAcceptRequest" base="d2p1:Request">
+		<property name="targetId" type="d2p1:ObjectId"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="PutCompleteTaskRequest" base="d2p1:Request">
+		<property name="targetId" type="d2p1:ObjectId"/>
+		<property name="comment" type="xs:string" lowerBound="0"/>
+		<property name="action" type="d2p1:PutСompleteTaskActions" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="PutRedirectRequest" base="d2p1:Request">
+		<property name="targetId" type="d2p1:ObjectId"/>
+		<property name="query" type="d2p1:RedirectQuery"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="PutRequest" base="d2p1:Request">
+		<property name="objects" type="d2p1:Object" upperBound="-1"/>
+		<property name="action" type="d2p1:PutActions" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="PutResponse" base="d2p1:Response">
+		<property name="objects" type="d2p1:Object" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="RecievingChannel" base="d2p1:Object">
+		<property name="code" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="Record" abstract="true"/>
+	<objectType name="RedirectQuery">
+		<property name="comment" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/api" name="performerId" type="d3p1:ObjectId"/>
+	</objectType>
+	<objectType name="Request" abstract="true"/>
+	<objectType name="Response" abstract="true"/>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="RoutePoint" base="d2p1:Object" abstract="true"/>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="Section" base="d2p1:Object">
+		<property name="code" type="xs:string" lowerBound="0"/>
+		<property name="services" type="d2p1:Service" lowerBound="0" upperBound="-1"/>
+		<property name="components" type="d2p1:Component" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="Service" base="d2p1:Object">
+		<property name="code" type="xs:string" lowerBound="0"/>
+		<property name="tariffsEnabled" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="ServiceUser" base="d2p1:Object">
+		<property name="service" type="d2p1:Service" lowerBound="0"/>
+		<property name="eMails" type="xs:string" lowerBound="0"/>
+		<property name="login" type="xs:string" lowerBound="0"/>
+		<property name="phone" type="xs:string" lowerBound="0"/>
+		<property name="fullName" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="ServiceUserComment" base="d2p1:Object">
+		<property name="target" type="d2p1:Object" lowerBound="0"/>
+		<property name="creationDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="considered" type="xs:boolean" lowerBound="0"/>
+		<property name="subject" type="xs:string" lowerBound="0"/>
+		<property name="description" type="xs:string" lowerBound="0"/>
+		<property name="descriptionHTML" type="d2p1:HTMLObject" lowerBound="0"/>
+		<property name="author" type="d2p1:Object" lowerBound="0"/>
+		<property name="responsible" type="d2p1:User" lowerBound="0"/>
+	</objectType>
+	<objectType name="ServiceUserInfoItem">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/api" name="subscriber" type="d3p1:Subscriber" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/api" name="subscriberPartner" type="d3p1:Subscriber" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/api" name="serviceUser" type="d3p1:ServiceUser" lowerBound="0"/>
+		<property name="applicationsCodes" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="Subscriber" base="d2p1:Object">
+		<property name="service" type="d2p1:Service" lowerBound="0"/>
+		<property name="code" type="xs:string" lowerBound="0"/>
+		<property name="serviceUsers" type="d2p1:ServiceUser" lowerBound="0" upperBound="-1"/>
+		<property name="dynamicAttributes" type="d2p1:DynamicAttribute" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="Suggestion" base="d2p1:KnowledgeBaseArticle">
+		<property name="status" type="d2p1:SuggestionStatus" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="SuggestionStatus" base="d2p1:Object"/>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="SupportLine" base="d2p1:Object">
+		<property name="partner" type="d2p1:Partner" lowerBound="0"/>
+		<property name="interactionEnabled" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="Task" base="d2p1:Object">
+		<property name="objectVersion" type="xs:string" lowerBound="0"/>
+		<property name="process" type="d2p1:Order" lowerBound="0"/>
+		<property name="creationDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="number" type="xs:string" lowerBound="0"/>
+		<property name="routePoint" type="d2p1:RoutePoint" lowerBound="0"/>
+		<property name="name" type="xs:string" lowerBound="0"/>
+		<property name="done" type="xs:boolean" lowerBound="0"/>
+		<property name="importance" type="d2p1:TaskImportance" lowerBound="0"/>
+		<property name="author" type="d2p1:User" lowerBound="0"/>
+		<property name="target" type="d2p1:Object" lowerBound="0"/>
+		<property name="description" type="xs:string" lowerBound="0"/>
+		<property name="performer" type="d2p1:TaskPerformer" lowerBound="0"/>
+		<property name="performerComment" type="xs:string" lowerBound="0"/>
+		<property name="deadline" type="xs:dateTime" lowerBound="0"/>
+		<property name="startDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="endDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="accepted" type="xs:boolean" lowerBound="0"/>
+		<property name="acceptDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="status" type="d2p1:ProcessStatus" lowerBound="0"/>
+		<property name="myTask" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="TaskAddressingObject" base="d2p1:Object"/>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="TaskImportance" base="d2p1:Object"/>
+	<objectType name="TaskPerformer">
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/api" name="user" type="d3p1:User" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/api" name="role" type="d3p1:TaskPerformerRole" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/api" name="mainAddressingObject" type="d3p1:TaskAddressingObject" lowerBound="0"/>
+		<property xmlns:d3p1="http://www.1cfresh.com/sd/api" name="secondaryAddressingObject" type="d3p1:TaskAddressingObject" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="TaskPerformerRole" base="d2p1:Object"/>
+	<objectType name="Type">
+		<property name="xdtoClassName" type="xs:string"/>
+		<property name="presentation" type="xs:string"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="User" base="d2p1:Object">
+		<property name="partner" type="d2p1:Partner" lowerBound="0"/>
+		<property name="supportLine" type="d2p1:SupportLine" lowerBound="0"/>
+		<property name="interactionEnabled" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="DynamicAttribute" base="d2p1:Object">
+		<property name="simpleValue" type="xs:anyType" lowerBound="0" nillable="true"/>
+		<property name="objectValue" type="d2p1:Object" lowerBound="0"/>
+		<property name="valueTypes" type="d2p1:Type" lowerBound="0" upperBound="-1"/>
+		<property name="usedIn" type="d2p1:Type" lowerBound="0" upperBound="-1"/>
+		<property name="tooltip" type="xs:string" lowerBound="0"/>
+		<property name="format" type="xs:string" lowerBound="0"/>
+		<property name="required" type="xs:boolean" lowerBound="0"/>
+		<property name="multilineInput" type="xs:int" lowerBound="0"/>
+		<property name="services" type="d2p1:Service" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="DynamicAttributeValue" base="d2p1:Object">
+		<property name="owner" type="d2p1:DynamicAttribute" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1cfresh.com/sd/api" name="DynamicAttributeValueHierarchy" base="d2p1:Object">
+		<property name="owner" type="d2p1:DynamicAttribute" lowerBound="0"/>
+	</objectType>
+</package>

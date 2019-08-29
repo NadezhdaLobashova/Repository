@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dbef7b57-bbd2-4f16-aebd-47ae0e1eafe4">
+  <producedTypes>
+    <refType typeId="cffdd7b3-df30-4ee1-b481-e02cd6328d6c" valueTypeId="167e360a-c686-438e-a258-5320d541f590"/>
+    <listType typeId="3abe489a-d623-4c6f-b719-930da8daa3f3" valueTypeId="e494506a-dac2-4c2d-9a2f-7d36bf5598f1"/>
+    <managerType typeId="1c6b5330-eb99-44e7-8767-aca6bd72082c" valueTypeId="5410fc95-cb33-4685-9146-7338a0dbe53f"/>
+  </producedTypes>
+  <name>ПоказателиКарточек</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показатели карточек</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ceedfd61-00ed-43cc-9528-83f2327fdef7">
+    <name>КоличествоКомментариев</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество комментариев</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7148a616-f973-4447-ae06-8ebaae0053ef">
+    <name>СуммаГолосов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма голосов</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="55cc333b-15d0-4fb3-812e-1d490af4b237">
+    <name>СуммаПоложительныхГолосов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма положительных голосов</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="51a71aca-95d2-4ff7-886a-9aea7f1a359f">
+    <name>СуммаОтрицательныхГолосов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма отрицательных голосов</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="444c91fb-3478-4ff8-806e-f973fd0937d7">
+    <name>КоличествоОбращений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество обращений</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

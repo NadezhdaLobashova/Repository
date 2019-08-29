@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a820290-5403-465f-bb11-e30c086d9f42">
+  <name>ИспользоватьИнтеграциюСТелефонией</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать интеграцию с телефонией</value>
+  </synonym>
+  <location>Constant.ИспользоватьИнтеграциюСТелефонией</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Subsystem.УправлениеСлужбойПоддержки.Subsystem.ИнтеграцияАстериск</content>
+  <content>ChartOfCharacteristicTypes.НастройкиТелефонии</content>
+  <content>InformationRegister.ЗначенияНастроекТелефонии</content>
+  <content>InformationRegister.ТелефонныеНомераДляПереадресации</content>
+  <content>DataProcessor.ПанельАдминистрированияУСП.Command.НастройкиТелефонии</content>
+  <content>InformationRegister.ВнешниеТелефонныеЛинии</content>
+</mdclass:FunctionalOption>

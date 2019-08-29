@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="71743622-7dd4-4f0e-86b5-d79f8b2e60d4">
+  <name>Координатор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Координатор</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Координатор</picture>
+  </picture>
+  <content>Document.УчетФактическихДанных</content>
+  <content>Report.АнализЗагрузкиСотрудников</content>
+  <content>Catalog.Задачи</content>
+  <content>Report.ОтчетАнализПоПроектам</content>
+  <content>Report.АнализВыполненияПлана</content>
+  <content>Document.Задание</content>
+  <content>Document.ЛистУчетаРабочегоВремени</content>
+  <content>Report.ОтчетАнализПоПроектамИКонтрагентам</content>
+  <content>Document.ОперативныйПрогноз</content>
+  <content>Catalog.Абоненты</content>
+  <content>Document.АктВыполненныхРабот</content>
+</mdclass:Subsystem>

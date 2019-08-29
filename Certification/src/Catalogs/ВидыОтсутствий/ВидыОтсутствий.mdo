@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd0cc6c8-dfc9-4022-a2db-cf5a3a8da924">
+  <producedTypes>
+    <objectType typeId="44b9b721-b8cb-4d22-b4bf-4825d6b01d04" valueTypeId="02d652fd-fb08-4088-aff1-326cf50b0b10"/>
+    <refType typeId="ca611e90-c015-4b1a-b4d9-5c391a7d362b" valueTypeId="ed44c512-bece-40c2-9c4d-504178d1b860"/>
+    <selectionType typeId="9b37d39f-b3fd-47f2-aafc-e1c1cf5b9e86" valueTypeId="f280c7f0-b92f-4487-b7cf-d1ca430664e4"/>
+    <listType typeId="8b2b2e41-ae41-4f67-aec4-3dd18d2850a5" valueTypeId="52308afd-418c-4c92-bfd7-decf624100ac"/>
+    <managerType typeId="76ec1684-7029-4e52-8c71-080cbe4b7363" valueTypeId="db333b45-b6d4-4e1a-bbde-b9167fab1335"/>
+  </producedTypes>
+  <name>ВидыОтсутствий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды отсутствий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыОтсутствий.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыОтсутствий.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

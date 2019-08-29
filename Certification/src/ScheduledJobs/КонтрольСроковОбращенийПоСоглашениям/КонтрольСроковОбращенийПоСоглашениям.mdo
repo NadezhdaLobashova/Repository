@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f08e6dbd-a37c-419e-b639-826a2e591156">
+  <name>КонтрольСроковОбращенийПоСоглашениям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль сроков обращений по соглашениям</value>
+  </synonym>
+  <methodName>CommonModule.Соглашения.КонтрольСроковОбращенийПоСоглашениям</methodName>
+  <description>Контроль сроков обращений по соглашениям</description>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

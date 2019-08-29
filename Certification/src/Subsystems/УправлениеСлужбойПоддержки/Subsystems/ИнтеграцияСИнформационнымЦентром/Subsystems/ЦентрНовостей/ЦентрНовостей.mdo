@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0a8ef6c0-004b-4ac9-97fc-efd5bfcd0afd">
+  <name>ЦентрНовостей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Центр новостей</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>WebService.News_1_0_1</content>
+  <content>Catalog.Новости</content>
+  <parentSubsystem>Subsystem.УправлениеСлужбойПоддержки.Subsystem.ИнтеграцияСИнформационнымЦентром</parentSubsystem>
+</mdclass:Subsystem>

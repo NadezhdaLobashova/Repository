@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8f0c780c-4c09-4cd5-b9fe-da59ad800532">
+  <producedTypes>
+    <objectType typeId="9b0afcdf-3602-426f-8fb8-7cca2f9b18e4" valueTypeId="0b9b71fa-3155-4152-8ef4-a2419ce1677e"/>
+    <refType typeId="bfbb31ce-c036-43fb-b848-50f5da3c595c" valueTypeId="5307cc88-754e-4fe2-8ae0-ad6c992424b3"/>
+    <selectionType typeId="589abff7-5bd9-49cc-9acc-634e7b9b8921" valueTypeId="bab3e92d-7686-4d74-8a46-7222d40297bc"/>
+    <listType typeId="be7e5ae6-8556-4b2c-9821-011aca51ac31" valueTypeId="59d2b282-b712-4442-93ed-c6939077ec47"/>
+    <managerType typeId="ce120c28-9733-4dc9-b7f9-7b130efcc078" valueTypeId="92fbfadd-b104-47ed-8d82-61132ca90c73"/>
+    <containerType typeId="b749e87f-14cf-44d1-8951-638c492be727" valueTypeId="bddb8cfe-b0ab-4f79-b583-ef518f4f4961"/>
+  </producedTypes>
+  <name>КлючевыеРеквизитыОбращений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ключевые реквизиты обращений</value>
+  </synonym>
+  <inputByString>ChartOfCharacteristicTypes.КлючевыеРеквизитыОбращений.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.КлючевыеРеквизитыОбращений.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ValueType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименование ключевого реквизита обращений</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Код ключевого реквизита обращений</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Ключевой реквизит обращений</value>
+  </objectPresentation>
+  <type>
+    <types>CatalogRef.Разделы</types>
+    <types>CatalogRef.Проекты</types>
+    <types>EnumRef.ТипыОбращений</types>
+    <types>CatalogRef.КомпонентыСервиса</types>
+    <types>EnumRef.ВариантыВажности</types>
+    <types>CatalogRef.Абоненты</types>
+    <types>CatalogRef.ЛинииПоддержки</types>
+    <types>EnumRef.СостоянияОбращений</types>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="95bcd77b-4461-4aae-bc30-df76309cfb80">
+      <name>Абонент</name>
+      <description>Абонент</description>
+      <code>000000007</code>
+      <type>
+        <types>CatalogRef.Абоненты</types>
+      </type>
+    </items>
+    <items id="b2d36a7f-77c7-4dfc-a6eb-85c66e15afe5">
+      <name>Важность</name>
+      <description>Важность</description>
+      <code>000000003</code>
+      <type>
+        <types>EnumRef.ВариантыВажности</types>
+      </type>
+    </items>
+    <items id="05c09990-0afd-4d69-9d28-a7eb7ecd0124">
+      <name>КомпонентСервиса</name>
+      <description>Компонент сервиса</description>
+      <code>000000005</code>
+      <type>
+        <types>CatalogRef.КомпонентыСервиса</types>
+      </type>
+    </items>
+    <items id="68e1d5de-491e-4e0d-8794-c68851e397ab">
+      <name>ЛинияПоддержки</name>
+      <description>Линия поддержки</description>
+      <code>000000004</code>
+      <type>
+        <types>CatalogRef.ЛинииПоддержки</types>
+      </type>
+    </items>
+    <items id="48605df2-3c28-4da7-b95e-c491afb4330f">
+      <name>Проект</name>
+      <description>Проект</description>
+      <code>000000008</code>
+      <type>
+        <types>CatalogRef.Проекты</types>
+      </type>
+    </items>
+    <items id="6503fde7-6d6b-45b6-8b26-69fc085fae97">
+      <name>Раздел</name>
+      <description>Раздел</description>
+      <code>000000006</code>
+      <type>
+        <types>CatalogRef.Разделы</types>
+      </type>
+    </items>
+    <items id="1168f5c2-be98-4196-82e4-583a79c24bc2">
+      <name>СостояниеОбращения</name>
+      <description>Состояние обращения</description>
+      <code>000000002</code>
+      <type>
+        <types>EnumRef.СостоянияОбращений</types>
+      </type>
+    </items>
+    <items id="c31d8a73-4fb3-458b-a182-1cf556417f45">
+      <name>ТипОбращения</name>
+      <description>Тип обращения</description>
+      <code>000000001</code>
+      <type>
+        <types>EnumRef.ТипыОбращений</types>
+      </type>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>ChartOfCharacteristicTypes.КлючевыеРеквизитыОбращений.Form.ФормаСписка</defaultListForm>
+  <forms uuid="b497a185-0729-45dd-954d-24ed4ca2cf4c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ChartOfCharacteristicTypes>

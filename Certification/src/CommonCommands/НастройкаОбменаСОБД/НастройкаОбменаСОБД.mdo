@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6f3f81fc-eb9b-4b42-899d-d11da3914ca6">
+  <name>НастройкаОбменаСОБД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка обмена ОБД</value>
+  </synonym>
+  <group>NavigationPanelImportant</group>
+  <commandParameterType/>
+  <representation>Auto</representation>
+  <shortcut></shortcut>
+</mdclass:CommonCommand>

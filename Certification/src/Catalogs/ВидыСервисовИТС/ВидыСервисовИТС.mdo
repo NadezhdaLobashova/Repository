@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d93c1b13-4941-472c-8f0c-3b4e9ed54957">
+  <producedTypes>
+    <objectType typeId="462cc613-5253-4c2d-b319-9e4ce56e9ce9" valueTypeId="90560993-8990-41d2-a29b-a6daae5b99f7"/>
+    <refType typeId="81d5d5aa-c3f7-438c-b86f-e68e764d721f" valueTypeId="0889f27e-fb60-4dd7-8b1a-c62bc331ea31"/>
+    <selectionType typeId="af40199c-150a-492d-ae21-812c8e2c5d95" valueTypeId="cf9bb9aa-045a-49b6-ad03-931170ff0a78"/>
+    <listType typeId="b2062fe7-8d3f-47ed-a997-9a23e82422e2" valueTypeId="a7520eb3-207b-428d-abbd-1396a2b0c7be"/>
+    <managerType typeId="8dba9c1d-f2f4-4bdd-a0a9-ce7dfd3019ad" valueTypeId="c07a86c4-d084-4cfa-8175-cae3bc9a1c00"/>
+  </producedTypes>
+  <name>ВидыСервисовИТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды сервисов ИТС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыСервисовИТС.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыСервисовИТС.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="100820fc-fcd5-49a0-b9c0-cd120bbdc926">
+  <name>ИспользоватьУведомления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать уведомления</value>
+  </synonym>
+  <location>Constant.ИспользоватьУведомления</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>DataProcessor.ПанельАдминистрированияУСП.Command.НастройкиУведомлений</content>
+</mdclass:FunctionalOption>

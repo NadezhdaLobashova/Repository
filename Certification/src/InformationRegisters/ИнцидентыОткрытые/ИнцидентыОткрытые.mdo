@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="820b7b93-f271-446a-9dec-306531689f81">
+  <producedTypes>
+    <selectionType typeId="72fbd448-f3ae-4423-bdcc-a0de1031ef5c" valueTypeId="a809b946-f581-42e7-9f10-01514ec62738"/>
+    <listType typeId="0f388672-70b8-4876-8810-d65862bafbdd" valueTypeId="fb28d3fc-9cb9-40db-9729-29c412ec6a03"/>
+    <managerType typeId="9279a7c9-396f-4e9f-a7d5-f4eb4c7df8bb" valueTypeId="9c2ae674-bdd5-4e91-b4b0-b469083e659f"/>
+    <recordSetType typeId="ae8aee01-b658-4b12-9d41-85e7e1f3b28e" valueTypeId="c3100700-74fd-4cba-a993-f50ff13a192d"/>
+    <recordKeyType typeId="c0dc877f-d618-4f16-875d-bd1e0ec90ff6" valueTypeId="8f77b6ba-ab62-4a21-9404-fa7925b0a864"/>
+    <recordType typeId="46ff825f-e42f-4703-a563-e54f0f663e4a" valueTypeId="cc3573bb-11ed-4bc6-b615-0399a8cbc360"/>
+    <recordManagerType typeId="8ba4146f-7674-4ce4-8035-12ca71830ef4" valueTypeId="cd5dd69a-e540-4c9a-8bcd-b1d5425d875a"/>
+  </producedTypes>
+  <name>ИнцидентыОткрытые</name>
+  <synonym>
+    <key>ru</key>
+    <value>Инциденты открытые</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8940314e-868e-40da-8ef0-d0083d834c7b">
+    <name>ИнцидентАктуален</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инцидент актуален</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="ec4a5494-12d2-4afe-8448-8f2c57aafeb4">
+    <name>ТипИнцидента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип инцидента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="71cc36b2-c9d2-4db9-972a-16ff9406060b">
+    <name>КодИнцидента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код инцидента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

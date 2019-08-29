@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a8bd401-8a7e-4ef7-865d-2e0d942cee48">
+  <producedTypes>
+    <objectType typeId="f88f8f93-477a-4000-a765-2756c06be1bc" valueTypeId="32adc599-0397-495b-a72e-1331ffdcefb0"/>
+    <managerType typeId="44a72ddd-4e19-4784-8284-f5e574cf8ac5" valueTypeId="76d41c95-75ab-4989-bd99-6ad451cee0c5"/>
+  </producedTypes>
+  <name>ЗагрузкаКонтрагентовExel</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка контрагентов (exel)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаКонтрагентовExel.Form.Форма</defaultForm>
+  <tabularSections uuid="b30a6fbc-7944-4edd-a158-f7b288c36619">
+    <producedTypes>
+      <objectType typeId="d093f5e2-761f-4baf-8402-b98d7ed40b9e" valueTypeId="4e4f03d6-b639-46e0-b1c5-eeae2418623b"/>
+      <rowType typeId="5dbb8d76-d436-4bb9-9d90-58f270fd7d9d" valueTypeId="988d3fef-76a9-4824-bba6-4e0cc2b0050d"/>
+    </producedTypes>
+    <name>ТаблицаКонтрагентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица контрагентов</value>
+    </synonym>
+    <attributes uuid="bc21c611-7bbc-4cf1-9aae-c479f27883d4">
+      <name>Контрагент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Контрагент</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="bfcee49f-97f4-4d54-a46f-160c3f3e4f63">
+      <name>ИНН</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИНН</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="4a6ad8ba-b76f-4e0e-baf7-776ae9e36110">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

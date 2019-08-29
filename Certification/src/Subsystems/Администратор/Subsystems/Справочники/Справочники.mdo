@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="641a8f29-5206-4491-ad64-a421feb1bf22">
+  <name>Справочники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Справочники</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Пользователи</content>
+  <content>Catalog.Проекты</content>
+  <content>Catalog.Работы</content>
+  <content>Catalog.Задачи</content>
+  <content>Catalog.ПользователиRedmine</content>
+  <content>Catalog.Должности</content>
+  <content>Catalog.Сертификаты</content>
+  <content>Catalog.ВидыРабот</content>
+  <content>Enum.ВидыРуководства</content>
+  <content>Catalog.ЭтапыПроектов</content>
+  <content>Catalog.Контрагенты</content>
+  <content>Catalog.Подразделения</content>
+  <content>Catalog.ВидыРабочегоВремени</content>
+  <content>Catalog.Регионы</content>
+  <content>Catalog.Абоненты</content>
+  <content>Catalog.ПричиныНепринятияЧасов</content>
+  <content>InformationRegister.НепринятыеЧасыИПричины</content>
+  <parentSubsystem>Subsystem.Администратор</parentSubsystem>
+</mdclass:Subsystem>

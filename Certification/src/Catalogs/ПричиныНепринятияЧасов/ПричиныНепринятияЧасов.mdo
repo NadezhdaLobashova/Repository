@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a3854a2a-8ab5-43c2-aa68-dd451c2c6047">
+  <producedTypes>
+    <objectType typeId="20eaf0bb-4775-4db5-80db-4d902d4ce07e" valueTypeId="c2b1e323-ed5d-42e3-bbb3-6a60b84b89a0"/>
+    <refType typeId="340af6f3-c117-4d68-b63e-4bd6f6c7997b" valueTypeId="3e57589b-1e88-405d-930b-38dc27449f82"/>
+    <selectionType typeId="7a5e73bc-03da-446f-8ef9-0b6347016f01" valueTypeId="ef85b207-2438-4a1e-a1e0-23cf0d6042be"/>
+    <listType typeId="853f7418-5c23-4c59-8800-c4934428eda1" valueTypeId="71a1ceb7-a8a7-4788-94b2-1a9edf109136"/>
+    <managerType typeId="0ee26f35-1ce7-4a22-b456-d10115e3d59c" valueTypeId="ea998732-e0e0-492a-97c2-40c2defe2aea"/>
+  </producedTypes>
+  <name>ПричиныНепринятияЧасов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причины непринятия часов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПричиныНепринятияЧасов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ПричиныНепринятияЧасов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

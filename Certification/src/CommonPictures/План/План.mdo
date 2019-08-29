@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="45b1534a-d3a1-457c-95ee-60f9d5744721">
+  <name>План</name>
+  <synonym>
+    <key>ru</key>
+    <value>План</value>
+  </synonym>
+  <transparentPixel>
+    <x>37</x>
+    <y>39</y>
+  </transparentPixel>
+</mdclass:CommonPicture>

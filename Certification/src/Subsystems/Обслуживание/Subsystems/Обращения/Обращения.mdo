@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8ef4babd-ce52-4aaf-83eb-b9ce57991052">
+  <name>Обращения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обращения</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Report.АнализОбращений</content>
+  <content>Report.ДвижениеОбращений</content>
+  <content>Report.ДлительностьОбработкиОбращений</content>
+  <content>Report.ВремяОбработкиЗакрытыхОбращений</content>
+  <content>Report.ОбращенияВРаботеПоНеделям</content>
+  <content>Report.ОбработкаОбращений</content>
+  <content>Report.ОбращенияВРаботеПоДням</content>
+  <content>InformationRegister.ДвижениеОбращений</content>
+  <parentSubsystem>Subsystem.Обслуживание</parentSubsystem>
+</mdclass:Subsystem>

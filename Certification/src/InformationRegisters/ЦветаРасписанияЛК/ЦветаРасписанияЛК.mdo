@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dd6acac4-efad-423f-8112-8cc94eba257b">
+  <producedTypes>
+    <selectionType typeId="8a0bda6f-9932-41c9-b0d9-047ffd4842eb" valueTypeId="4aeb7aa2-58b3-4546-9a31-06d5c91fadc1"/>
+    <listType typeId="69011c73-3d4c-4eb0-b6d6-3513d6496265" valueTypeId="357cde9f-7a79-4358-800d-9b6ae4fa3c49"/>
+    <managerType typeId="892cbb56-aa97-427c-8688-6b395be06c21" valueTypeId="0461e3e3-973c-49f5-9bdb-2a38cb2626de"/>
+    <recordSetType typeId="9d1aaf56-8cb6-461e-bf5e-4b5a4ceba201" valueTypeId="b253fe8a-8c76-4fbc-9e30-b9ab6150832e"/>
+    <recordKeyType typeId="70dda170-fdca-45db-9557-556628c524a9" valueTypeId="fd5b5516-aedd-4af0-a9c8-262bb634464c"/>
+    <recordType typeId="c15bdde3-7184-4c3d-aec6-28b141fe2397" valueTypeId="f900d8fe-c449-4cc7-b375-6bcdfc059d08"/>
+    <recordManagerType typeId="373d4188-a8e5-4cdb-a2d3-750ced3f5cbd" valueTypeId="8e3304ef-216f-4413-b80d-f846d6200002"/>
+  </producedTypes>
+  <name>ЦветаРасписанияЛК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цвета расписания ЛК</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ЦветаРасписанияЛК.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ЦветаРасписанияЛК.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="863d30b2-d206-45f7-a11d-f3775840b101">
+    <name>ЦветФона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет фона</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="652741a4-67e6-4c85-bdf9-35c811f57a96">
+    <name>ЦветТекста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет текста</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="27479989-81c0-4302-b0f8-79209be88d53">
+    <name>ИтоговыйСтатус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Итоговый статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ИтоговыеСтатусыРасписанияЛК</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fda98524-9fdc-46b6-94bf-93edaf93f7b8">
+    <name>Работа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Работы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="82603aff-3cfb-4271-b2e2-b9f5dfcfb73a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="41d831ce-bc6a-4bea-bcac-32cc6701bf81">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a4a15258-9a68-4468-90bd-c3362d020884">
+    <name>ФормаВыбораОформления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора оформления</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

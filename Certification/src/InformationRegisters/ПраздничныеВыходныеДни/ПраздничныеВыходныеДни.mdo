@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="48927398-48fb-426f-8b15-041cf96cde39">
+  <producedTypes>
+    <selectionType typeId="6c6b7a79-9d49-470c-848d-7fbbbe7df1a7" valueTypeId="ae570626-1344-43e8-883e-a793a28ef5d7"/>
+    <listType typeId="7801bdda-5e93-4e67-b0a0-b57d9d65cd7a" valueTypeId="48bec48c-9553-41d4-91db-a9d512404312"/>
+    <managerType typeId="3f90c10c-4a6f-44a1-baed-3f01f99a4b4a" valueTypeId="97b49cca-883a-4112-be53-852cb6272345"/>
+    <recordSetType typeId="ac53932a-95c0-4050-8415-aecfd90e1256" valueTypeId="01f49d3f-4851-4456-94ae-b128ff2e7289"/>
+    <recordKeyType typeId="646d3a0d-ccb2-47b4-99e1-4751c3733507" valueTypeId="98730fc7-f5f0-4dae-8f16-34973b07b8e1"/>
+    <recordType typeId="75f7bf98-de8d-4b93-86a7-05fb7914b5a0" valueTypeId="7d1291b3-bbba-4161-a5ef-aaa4d01a1dee"/>
+    <recordManagerType typeId="a35af7f8-2d6e-478c-b06b-eddbd7dc5e59" valueTypeId="8a6511a9-8419-480d-8f3f-bf4f36d1c063"/>
+  </producedTypes>
+  <name>ПраздничныеВыходныеДни</name>
+  <synonym>
+    <key>ru</key>
+    <value>Праздничные и выходные дни</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ПраздничныеВыходныеДни.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6b4fcc16-332e-4a88-b372-fc2ed6309813">
+    <name>ВидДня</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид дня</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыДнейКалендаря</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>f21f37e2-0fbc-4069-8262-20674423a296.628f44c6-c61e-4160-952d-e86bdf5886eb</value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="081b1201-4601-4e75-a0f3-07e4ad08f543">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="178a31ac-8839-47cb-9dc1-28a826b1b3df">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

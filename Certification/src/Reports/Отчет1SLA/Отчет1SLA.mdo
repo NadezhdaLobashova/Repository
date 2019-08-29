@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="112eb458-1870-4b3b-b10c-7ea6a1015a2d">
+  <producedTypes>
+    <objectType typeId="5f26e07d-ddf5-4edd-a8f0-1fd65f5c5c1a" valueTypeId="115647c0-3c55-4ecc-bc96-b24a9e3f48c1"/>
+    <managerType typeId="68509bfc-b44d-43f4-9554-c3ee0db468e2" valueTypeId="b20237db-875d-4579-8376-d75c2a80205b"/>
+  </producedTypes>
+  <name>Отчет1SLA</name>
+  <synonym>
+    <key>ru</key>
+    <value>ЛЛО: Отчет №1 SLA</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.Отчет1SLA.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="c95d2b82-d374-423a-a852-7b3255e26fb1">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

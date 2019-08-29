@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<V8Exch:_1CV8DtUD xmlns:V8Exch="http://www.1c.ru/V8/1CV8DtUD/" xmlns:core="http://v8.1c.ru/data" xmlns:v8="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<V8Exch:Data>
+		<v8:CatalogObject.ШаблоныЭлектронныхПисем>
+			<v8:Ref xsi:type="v8:CatalogRef.ШаблоныЭлектронныхПисем">d65e7330-eb1f-11e3-899c-bcaec5d6c3e4</v8:Ref>
+			<v8:DeletionMark>false</v8:DeletionMark>
+			<v8:Code>00001</v8:Code>
+			<v8:Description>Регистрация нового обращения</v8:Description>
+			<v8:ТекстПисьма>Уважаемый пользователь!
+Ваше обращение зарегистрировано под номером [Предмет.НомерСокращенный].
+Вас обслуживает [Предмет.ОбслуживающаяОрганизация].
+Пожалуйста не изменяйте тему при ответах и пересылках.</v8:ТекстПисьма>
+			<v8:ТекстПисьмаХранилище>AQE7AwAAAAAAAO+7v3siIyIsMTUxZjg3NzgtZTJkMC00OTZhLTlmMDItZDlmZmQ5
+M2I1N2VjLA0KezAsOTZhNTJmYTAtYzkwMC00ZWRlLTk3OGQtOWY0NjhlODllNzg2
+LA0KezAsNiwwLDQsDQp7MCwwLDAsNCwwLDEuMTUsMSwwLA0KezAsItCj0LLQsNC2
+0LDQtdC80YvQuSDQv9C+0LvRjNC30L7QstCw0YLQtdC70YwhIiwiIiwNCns3LDMs
+MCwxLDEwMH0sDQp7Myw0LA0KezB9DQp9LA0KezMsNCwNCnswfQ0KfQ0KfQ0KfSwN
+CnswLDEsMCw0LDAsMS4xNSwxLDAsDQp7MCwi0JLQsNGI0LUg0L7QsdGA0LDRidC1
+0L3QuNC1INC30LDRgNC10LPQuNGB0YLRgNC40YDQvtCy0LDQvdC+INC/0L7QtCDQ
+vdC+0LzQtdGA0L7QvCBb0J/RgNC10LTQvNC10YIu0J3QvtC80LXRgNCh0L7QutGA
+0LDRidC10L3QvdGL0LldLiIsIiIsDQp7NywzLDAsMSwxMDB9LA0KezMsNCwNCnsw
+fQ0KfSwNCnszLDQsDQp7MH0NCn0NCn0NCn0sDQp7MCw1LDAsNCwwLDEuMTUsMSww
+LA0KezAsItCS0LDRgSDQvtCx0YHQu9GD0LbQuNCy0LDQtdGCIFvQn9GA0LXQtNC8
+0LXRgi7QntCx0YHQu9GD0LbQuNCy0LDRjtGJ0LDRj9Ce0YDQs9Cw0L3QuNC30LDR
+htC40Y9dLiIsIiIsDQp7NywzLDAsMSwxMDB9LA0KezMsNCwNCnswfQ0KfSwNCnsz
+LDQsDQp7MH0NCn0NCn0NCn0sDQp7MCwzLDAsNCwwLDEuMTUsMSwwLA0KezAsItCf
+0L7QttCw0LvRg9C50YHRgtCwINC90LUg0LjQt9C80LXQvdGP0LnRgtC1INGC0LXQ
+vNGDINC/0YDQuCDQvtGC0LLQtdGC0LDRhSDQuCDQv9C10YDQtdGB0YvQu9C60LDR
+hS4iLCIiLA0KezcsMywwLDEsMTAwfSwNCnszLDQsDQp7MH0NCn0sDQp7Myw0LA0K
+ezB9DQp9DQp9DQp9DQp9DQp9DQp9</v8:ТекстПисьмаХранилище>
+			<v8:Тема>Ваше обращение зарегистрировано ([КлючОбращения])</v8:Тема>
+			<v8:Автор xsi:type="v8:CatalogRef.Пользователи">00000000-0000-0000-0000-000000000000</v8:Автор>
+		</v8:CatalogObject.ШаблоныЭлектронныхПисем>
+		<v8:CatalogObject.ШаблоныЭлектронныхПисем>
+			<v8:Ref xsi:type="v8:CatalogRef.ШаблоныЭлектронныхПисем">5dd2f747-ebdc-11e3-899c-bcaec5d6c3e4</v8:Ref>
+			<v8:DeletionMark>false</v8:DeletionMark>
+			<v8:Code>00002</v8:Code>
+			<v8:Description>Регистрация в службе поддержки</v8:Description>
+			<v8:ТекстПисьма>Добрый день, [Предмет.ПолноеИмяПользователя]!
+Поздравляем вас с регистрацией в нашем сервисе службы поддержки.
+Ваши регистрационные данные:
+Логин: [Предмет.АдресЭлектроннойПочты]
+Пароль: [Предмет.ПарольПользователя]
+Адрес входа: &lt;Заполнить адрес входа&gt;</v8:ТекстПисьма>
+			<v8:ТекстПисьмаХранилище>AQERBQAAAAAAAO+7v3siIyIsMTUxZjg3NzgtZTJkMC00OTZhLTlmMDItZDlmZmQ5
+M2I1N2VjLA0KezAsZmRkZjI3NTktNzA4Yy00OGM4LTk4NDUtYWJmOGFiOWMxMmQx
+LA0KezAsOSwwLDMsDQp7MCwwLDAsNCwwLDEuMTUsNCwwLA0KezAsItCU0L7QsdGA
+0YvQuSDQtNC10L3RjCwiLCIiLA0KezcsMywwLDEsMTAwfSwNCnszLDQsDQp7MH0N
+Cn0sDQp7MywwLA0KezB9DQp9DQp9LDAsDQp7MCwiIFvQn9GA0LXQtNC80LXRgi4i
+LCIiLA0KezcsMywwLDEsMTAwfSwNCnszLDQsDQp7MH0NCn0sDQp7MywwLA0KezB9
+DQp9DQp9LDAsDQp7MCwi0J/QvtC70L3QvtC10JjQvNGP0J/QvtC70YzQt9C+0LLQ
+sNGC0LXQu9GPIiwiIiwNCns3LDMsMCwxLDEwMH0sDQp7Myw0LA0KezB9DQp9LA0K
+ezMsMCwNCnswfQ0KfQ0KfSwwLA0KezAsIl0hIiwiIiwNCns3LDMsMCwxLDEwMH0s
+DQp7Myw0LA0KezB9DQp9LA0KezMsMCwNCnswfQ0KfQ0KfQ0KfSwNCnswLDIsMCw0
+LDAsMS4xNSwxLDAsDQp7MCwi0J/QvtC30LTRgNCw0LLQu9GP0LXQvCDQstCw0YEg
+0YEg0YDQtdCz0LjRgdGC0YDQsNGG0LjQtdC5INCyINC90LDRiNC10Lwg0YHQtdGA
+0LLQuNGB0LUg0YHQu9GD0LbQsdGLINC/0L7QtNC00LXRgNC20LrQuC4iLCIiLA0K
+ezcsMywwLDEsMTAwfSwNCnszLDQsDQp7MH0NCn0sDQp7MywwLA0KezB9DQp9DQp9
+DQp9LA0KezAsOCwwLDQsMCwxLjE1LDcsMCwNCnswLCLQktCw0YjQuCDRgNC10LPQ
+uNGB0YLRgNCw0YbQuNC+0L3QvdGL0LUg0LTQsNC90L3Ri9C1OiIsIiIsDQp7Nywz
+LDAsMSwxMDB9LA0KezMsNCwNCnswfQ0KfSwNCnszLDQsDQp7MH0NCn0NCn0sMiwN
+CnswfSwwLA0KezAsItCb0L7Qs9C40L06IFvQn9GA0LXQtNC80LXRgi7QkNC00YDQ
+tdGB0K3Qu9C10LrRgtGA0L7QvdC90L7QudCf0L7Rh9GC0YtdIiwiIiwNCns3LDAs
+NjMsMCwwLDAsMCw0MDAsMSwwLDAsMCwwLDAsMCwwLCIiLDEsMTAwfSwNCnszLDQs
+DQp7MH0NCn0sDQp7Myw0LA0KezB9DQp9DQp9LDIsDQp7MH0sMCwNCnswLCLQn9Cw
+0YDQvtC70Yw6IFvQn9GA0LXQtNC80LXRgi7Qn9Cw0YDQvtC70YzQn9C+0LvRjNC3
+0L7QstCw0YLQtdC70Y9dIiwiIiwNCns3LDAsNjMsMCwwLDAsMCw0MDAsMSwwLDAs
+MCwwLDAsMCwwLCIiLDEsMTAwfSwNCnszLDQsDQp7MH0NCn0sDQp7Myw0LA0KezB9
+DQp9DQp9LDIsDQp7MH0sMCwNCnswLCLQkNC00YDQtdGBINCy0YXQvtC00LA6IDzQ
+l9Cw0L/QvtC70L3QuNGC0Ywg0LDQtNGA0LXRgSDQstGF0L7QtNCwPiIsIiIsDQp7
+NywzLDAsMSwxMDB9LA0KezMsNCwNCnswfQ0KfSwNCnszLDAsDQp7MH0NCn0NCn0N
+Cn0NCn0NCn0NCn0=</v8:ТекстПисьмаХранилище>
+			<v8:Тема>Приглашение для регистрации</v8:Тема>
+			<v8:Автор xsi:type="v8:CatalogRef.Пользователи">00000000-0000-0000-0000-000000000000</v8:Автор>
+		</v8:CatalogObject.ШаблоныЭлектронныхПисем>
+		<v8:CatalogObject.ШаблоныЭлектронныхПисем>
+			<v8:Ref xsi:type="v8:CatalogRef.ШаблоныЭлектронныхПисем">0b53bf02-5832-11e4-8e16-bcaec5d6c3e4</v8:Ref>
+			<v8:DeletionMark>false</v8:DeletionMark>
+			<v8:Code>00003</v8:Code>
+			<v8:Description>Закрытие обращения</v8:Description>
+			<v8:ТекстПисьма>Ваше обращение номер [Предмет.НомерСокращенный] закрыто.</v8:ТекстПисьма>
+			<v8:ТекстПисьмаХранилище>AQGXAwAAAAAAAO+7v3siIyIsMTUxZjg3NzgtZTJkMC00OTZhLTlmMDItZDlmZmQ5
+M2I1N2VjLA0KezAsZDlkZTkwMjktMDA2MC00YmRiLWE4YWYtMWM0NjFhY2FmNjU5
+LA0KezAsMSwwLDEsDQp7MCwwLDAsNCwwLDEuMTUsNywwLA0KezAsItCS0LDRiNC1
+INC+0LHRgNCw0YnQtdC90LjQtSDQvdC+0LzQtdGAIFvQn9GA0LXQtNC80LXRgi4i
+LCIiLA0KezcsMCw2MywxMDAsMCwwLDAsNDAwLDAsMCwwLDAsMCwwLDAsMCwiIiwx
+LDEwMH0sDQp7Myw0LA0KezB9DQp9LA0KezMsNCwNCnswfQ0KfQ0KfSwwLA0KezAs
+ItCd0L7QvNC10YDQodC+0LrRgNCw0YnQtdC90L3Ri9C5XSIsIiIsDQp7NywwLDYz
+LDEwMCwwLDAsMCw0MDAsMCwwLDAsMCwwLDAsMCwwLCIiLDEsMTAwfSwNCnszLDQs
+DQp7MH0NCn0sDQp7Myw0LA0KezB9DQp9DQp9LDAsDQp7MCwiICIsIiIsDQp7Nyww
+LDYzLDEwMCwwLDAsMCw0MDAsMCwwLDAsMCwwLDAsMCwwLCIiLDEsMTAwfSwNCnsz
+LDQsDQp7MH0NCn0sDQp7Myw0LA0KezB9DQp9DQp9LDAsDQp7MCwi0LfQsCIsIiIs
+DQp7NywwLDYzLDEwMCwwLDAsMCw0MDAsMCwwLDAsMCwwLDAsMCwwLCIiLDEsMTAw
+fSwNCnszLDQsDQp7MH0NCn0sDQp7Myw0LA0KezB9DQp9DQp9LDAsDQp7MCwi0LrR
+gNGLIiwiIiwNCns3LDAsNjMsMTAwLDAsMCwwLDQwMCwwLDAsMCwwLDAsMCwwLDAs
+IiIsMSwxMDB9LA0KezMsNCwNCnswfQ0KfSwNCnszLDQsDQp7MH0NCn0NCn0sMCwN
+CnswLCLRgtC+IiwiIiwNCns3LDAsNjMsMTAwLDAsMCwwLDQwMCwwLDAsMCwwLDAs
+MCwwLDAsIiIsMSwxMDB9LA0KezMsNCwNCnswfQ0KfSwNCnszLDQsDQp7MH0NCn0N
+Cn0sMCwNCnswLCIuIiwiIiwNCns3LDAsNjMsMTAwLDAsMCwwLDQwMCwwLDAsMCww
+LDAsMCwwLDAsIiIsMSwxMDB9LA0KezMsNCwNCnswfQ0KfSwNCnszLDQsDQp7MH0N
+Cn0NCn0NCn0NCn0NCn0NCn0=</v8:ТекстПисьмаХранилище>
+			<v8:Тема>Ваше обращение номер [Предмет.НомерСокращенный] закрыто</v8:Тема>
+			<v8:Автор xsi:type="v8:CatalogRef.Пользователи">00000000-0000-0000-0000-000000000000</v8:Автор>
+		</v8:CatalogObject.ШаблоныЭлектронныхПисем>
+	</V8Exch:Data>
+	<PredefinedData/>
+</V8Exch:_1CV8DtUD>

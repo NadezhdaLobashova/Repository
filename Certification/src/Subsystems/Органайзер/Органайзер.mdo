@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a34aeb49-9719-44aa-9a70-da6133cba70d">
+  <name>Органайзер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Органайзер</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаНастройки</picture>
+  </picture>
+  <content>CommonCommand.СведенияОПользователе</content>
+  <content>CommonForm.ИзменениеПароляПользователяИБ</content>
+  <content>Task.ЗадачаИсполнителя</content>
+  <content>DocumentJournal.Взаимодействия</content>
+  <content>Catalog.Файлы</content>
+  <content>CommonForm.МоиНастройки</content>
+</mdclass:Subsystem>

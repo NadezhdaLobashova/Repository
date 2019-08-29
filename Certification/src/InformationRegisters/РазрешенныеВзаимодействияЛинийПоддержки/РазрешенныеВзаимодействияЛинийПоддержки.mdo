@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="96d9d775-e78d-4194-a1f0-972812daaf0a">
+  <producedTypes>
+    <selectionType typeId="a20dd17f-00ac-4371-a746-53ccae9aefb7" valueTypeId="4df62fe7-d2f7-4e66-a5ac-972beb2ff83f"/>
+    <listType typeId="6eac2b35-f0c8-4697-9c16-9f2863efe5c8" valueTypeId="499730df-75ba-4df0-9d45-af052fefc52b"/>
+    <managerType typeId="7da9699f-dce1-420d-aab4-3cd2a551cac0" valueTypeId="5ab5115a-9953-442a-8a2d-c81fc9d2a13c"/>
+    <recordSetType typeId="6ba3ef67-3f40-4105-9bcd-25b628ae9284" valueTypeId="6a1901a9-cca6-4382-8d71-b43645ca62b7"/>
+    <recordKeyType typeId="4dbedaf6-34fa-4d7d-bd1b-671a121f056a" valueTypeId="87c5dab3-2158-4f8f-820e-c5695d5ee337"/>
+    <recordType typeId="3d929c66-dc09-43df-a796-4ba05318b198" valueTypeId="9e053eb2-8edb-48a5-b25a-2bccf64c92b9"/>
+    <recordManagerType typeId="9e801dff-d873-4a1a-850d-3b2c0f8f4342" valueTypeId="4e772483-4221-4808-9385-2986be1bde87"/>
+  </producedTypes>
+  <name>РазрешенныеВзаимодействияЛинийПоддержки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разрешенные взаимодействия линий поддержки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.РазрешенныеВзаимодействияЛинийПоддержки.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.РазрешенныеВзаимодействияЛинийПоддержки.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="a31cb48c-2bc7-4542-9bf2-da53c24f5176">
+    <name>ЛинияПоддержки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Линия поддержки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЛинииПоддержки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9c3d6381-19c0-4002-8869-66d5aa5a73f5">
+    <name>РазрешеннаяЛинияПоддержки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешенная линия поддержки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЛинииПоддержки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="554653da-4356-45ee-9159-a276e0acf38e">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e1c3a01b-43df-418c-87db-96c8344aa217">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4c01e570-6313-45c4-a4ad-990cc1d1e08e">
+    <name>РазрешенныеВзаимодействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешенные взаимодействия</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="ad6a65da-37a5-48a5-9d8d-11a2793d9184">
+    <name>РазрешенныеВзаимодействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешенные взаимодействия</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.ЛинииПоддержки</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e102f5f3-0e25-4449-ba85-0b41cf7a92a8">
+  <producedTypes>
+    <managerType typeId="da58dcf9-00ea-4325-8612-49f287f0b817" valueTypeId="16ec2581-fa70-4ef4-bc10-e0fbd67bd9cd"/>
+    <valueManagerType typeId="f2bc2b5f-effb-4f7a-a83f-4383ad47c7da" valueTypeId="19aec182-4d7c-4596-be33-d1bd5cd831a2"/>
+    <valueKeyType typeId="543b5082-c8d3-57e1-8c56-59616825db94" valueTypeId="f6767dd7-833a-51f9-b9c3-9df336b0a7d0"/>
+  </producedTypes>
+  <name>ИспользоватьСоглашения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать соглашения</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

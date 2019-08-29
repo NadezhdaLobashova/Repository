@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b73d68a5-68fd-460f-9387-0b7e7d5a1fbe">
+  <producedTypes>
+    <refType typeId="d6536f74-e13b-41f3-a913-bd735b64e1c7" valueTypeId="245d52b9-6369-4d05-be92-d169070f2cba"/>
+    <listType typeId="a5d27a37-b7e6-44b0-b8a4-b8761f2d42e0" valueTypeId="6eb83584-4dd2-44cd-8d7a-7db73c5e4f09"/>
+    <managerType typeId="1944b5a7-102b-456b-97a3-6c70159502a8" valueTypeId="2bd17362-08ad-4a85-a370-cd75d6834b04"/>
+  </producedTypes>
+  <name>ВидыВзаимоотношений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды взаимоотношений</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="773b86a9-3727-496d-b167-9e1e6d11dbfe">
+    <name>ПровайдерАбонент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Провайдер - Абонент</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="3bbe2f55-8630-4518-a3aa-4965a78d34c7">
+    <name>ПровайдерОбслуживающаяОрганизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Провайдер - Обслуживающая организация</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a94955c9-31a6-4127-8e32-ed43c05f22c2">
+    <name>ОбслуживающаяОрганизацияАбонент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обслуживающая организация - Абонент</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

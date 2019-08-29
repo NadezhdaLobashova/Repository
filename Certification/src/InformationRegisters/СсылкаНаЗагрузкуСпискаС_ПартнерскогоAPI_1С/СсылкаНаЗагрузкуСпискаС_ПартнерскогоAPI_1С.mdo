@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e77d6443-ffd3-4e9f-bbd2-69f54cc260f2">
+  <producedTypes>
+    <selectionType typeId="a69b8d90-177b-458a-89fa-5d0563eb1952" valueTypeId="810d2391-2bd4-4210-9153-d8ddd2e43605"/>
+    <listType typeId="7146ac07-b5a8-4719-8965-afb4c6a5a85f" valueTypeId="0d627837-ec7d-4cdc-8562-4ff9cef0b9b6"/>
+    <managerType typeId="c1b9b2cd-21b8-46d8-a58a-9d37248c9b93" valueTypeId="7a88faca-e44a-4975-bf9b-20bb9d2be8ee"/>
+    <recordSetType typeId="2e0bb243-bcce-4ccf-83cd-df932f5f7957" valueTypeId="46d5ee3a-552c-42f4-b32b-49abf97c9a18"/>
+    <recordKeyType typeId="a10be417-a0b9-4640-9388-91eb9f83caa8" valueTypeId="10a2e2d4-4032-4210-8064-f376b2814158"/>
+    <recordType typeId="fef761af-b57e-4407-9f8c-13bd0b8f6079" valueTypeId="05e68b77-c28b-4c60-9882-6b75ca17c1d0"/>
+    <recordManagerType typeId="e65cb3d9-b9c9-4ad4-ae8f-002cf1f90198" valueTypeId="85c872fa-9edc-49db-9d7d-ac5bf9bf52e0"/>
+  </producedTypes>
+  <name>СсылкаНаЗагрузкуСпискаС_ПартнерскогоAPI_1С</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ссылка на загрузку списка с партнерского API 1 С</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.СсылкаНаЗагрузкуСпискаС_ПартнерскогоAPI_1С.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="7a9467bb-7105-422c-ba5e-e65e6c2f1a44">
+    <name>ДанныеПолучены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные получены</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7c8c5c12-44a9-43d6-95df-60da299c57f8">
+    <name>ДатаПолученияСсылки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата получения ссылки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2a97e63c-5b2b-4436-9a32-d668c40cfc53">
+    <name>Ссылка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="0a368a21-768e-4e08-bd0a-e72d024b97fe">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

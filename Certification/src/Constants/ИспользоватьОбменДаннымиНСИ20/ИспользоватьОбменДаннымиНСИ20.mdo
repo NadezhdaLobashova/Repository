@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7e36c145-9adb-4180-b7fd-22a5d32f16f9">
+  <producedTypes>
+    <managerType typeId="037e5712-916d-4408-ad67-a0d096e8c23f" valueTypeId="400bbbe1-7edc-4a29-bb0d-008da1274b72"/>
+    <valueManagerType typeId="2bab2837-7cef-4fee-bd1b-3bfeb4ca0035" valueTypeId="28de029b-4fac-4843-8460-a5d9cec99194"/>
+    <valueKeyType typeId="891825c3-ef80-4b52-ae7c-0b8ce5d453cb" valueTypeId="45f4fd09-0fd5-4bd8-b07e-69e3ce2671c7"/>
+  </producedTypes>
+  <name>ИспользоватьОбменДаннымиНСИ20</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать обмен данными НСИ20</value>
+  </synonym>
+  <comment>// 1С:Рарус</comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

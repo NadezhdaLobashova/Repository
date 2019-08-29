@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ed87894c-46b5-42c6-b849-8d87a5220da4">
+  <producedTypes>
+    <refType typeId="49e725ca-948c-40a6-b925-5704c9cdda96" valueTypeId="cdd72935-ba76-4b8d-b57f-9b79366288ce"/>
+    <listType typeId="efa6909b-58f2-4849-87c3-65429505a1bb" valueTypeId="2da000c5-1645-4829-a220-e4b929477500"/>
+    <managerType typeId="65474641-0b0f-458b-b9e1-c64455469dff" valueTypeId="4bc6083b-324b-4564-9eb1-e9cfa024fd47"/>
+  </producedTypes>
+  <name>ВидыОперацийРегистрацияПользователяМобильногоПриложения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды операций регистрация пользователя мобильного приложения</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d0420702-a9e4-449e-be5e-d1acce6e9a74">
+    <name>РегистрацияНовогоПрофиля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрация нового профиля</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="244bb2d3-9870-4bb9-ae7b-a27765c6bf72">
+    <name>УдалениеПофиля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удаление пофиля</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

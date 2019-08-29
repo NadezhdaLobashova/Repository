@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="413c734f-c0e0-4235-a1a2-f799e8baf659">
+  <name>СозданиеВнутреннихОбращений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Создание внутренних обращений</value>
+  </synonym>
+</mdclass:Role>

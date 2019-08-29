@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="02309a4b-e6a6-4fa9-a131-4b27b3b3590a">
+  <producedTypes>
+    <selectionType typeId="4413e32d-be4b-4f52-a5e9-4c691428d1b9" valueTypeId="4e809c29-a3c7-4dbb-9279-66658c8ee885"/>
+    <listType typeId="5b8ef434-51dd-4adf-941f-5dd2fa759901" valueTypeId="81e323fb-3fa7-4e1a-9654-80e72a15c401"/>
+    <managerType typeId="0dfcb0d3-ca53-4e8c-b9eb-8de496bde13e" valueTypeId="c1363ed8-e992-4d0b-bc00-55a9f54484df"/>
+    <recordSetType typeId="5f999a72-8c68-4a91-932d-25dcb9afd7b4" valueTypeId="48e73ae5-f1c2-4620-8219-1a3c6f9e33b1"/>
+    <recordKeyType typeId="0881fcfe-06d6-4282-9912-3db47e3e0a6d" valueTypeId="5f68b407-069a-40a2-a5e6-0a29ea79fc3c"/>
+    <recordType typeId="5a20d37e-4221-4f53-911d-81616200c4a7" valueTypeId="23200ef8-aabd-43ef-9a28-9702345cfcec"/>
+    <recordManagerType typeId="e1ebbf75-2dca-4407-a0d9-8d39d43f68d9" valueTypeId="4b55a335-d443-4a2b-aa71-35b55acbbc7b"/>
+  </producedTypes>
+  <name>ДлительностьОбработкиОбращений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Длительность обработки обращений</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ДлительностьОбработкиОбращений.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ДлительностьОбработкиОбращений.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период записи</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="467e2578-e188-499e-bb17-b82d9904e9ad">
+    <name>КоррекцияДоМестногоВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коррекция до местного времени, сек</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Коррекция до местного времени в секундах</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="99604f16-48c1-4cd3-be08-160d9330061d">
+    <name>Длительность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длительность, сек.</value>
+    </synonym>
+    <comment>Длительность обработки обращения в секундах</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Длительность обработки обращения в секундах</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="038f5e4e-bdfb-4a61-9748-38c45f44715f">
+    <name>ДлительностьВРабочееВремя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длительность в рабочее время, сек.</value>
+    </synonym>
+    <comment>Длительность обработки обращений в рабочее время в секундах</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Длительность обработки обращений в рабочее время в секундах</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="66c53b10-2490-4e3f-b4aa-4e1ef34df174">
+    <name>Превышение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Превышение, сек.</value>
+    </synonym>
+    <comment>Превышение срока обработки обращения в секундах</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Превышение срока обработки обращения в секундах</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="89eaac35-e709-4d30-bdeb-236737d834bb">
+    <name>ПревышениеВРабочееВремя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Превышение в рабочее время, сек.</value>
+    </synonym>
+    <comment>Превышение срока обработки в обращения в рабочее время в секундах</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Превышение срока обработки в обращения в рабочее время в секундах</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="b580e852-90cc-44cf-9b4f-8c99d7514ab0">
+    <name>ОбслуживающаяОрганизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обслуживающая организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОбслуживающиеОрганизации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Обслуживающая организация исполнителя</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b6fc525f-f792-442b-8d6f-0d2e6a50cddc">
+    <name>ЛинияПоддержки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Линия поддержки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЛинииПоддержки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Линия поддержки исполнителя</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bcf062ce-33ee-4087-89d6-d9c414982d0c">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.ЛинииПоддержки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Исполнитель обращения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9ece2072-ea46-4cae-b393-900ffd2bcd68">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СостоянияОбращений</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Состояние обращения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="70b3525f-a95b-4aa2-987f-c42ff299d20d">
+    <name>Обращение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обращение</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Обращение</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Обращение, по которому записана длительность обработки.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="2b512890-5f4c-4c1b-ad49-880b7a7a444a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="52a53406-aeed-4d05-86b8-347c3a58a8e4">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="974e6226-f194-4801-a2a5-5750d43e12f2">
+    <name>ДлительностьОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длительность обработки</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

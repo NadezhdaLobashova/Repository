@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3a5fe77c-a7eb-40b9-9b41-c2351cfbc599">
+  <producedTypes>
+    <refType typeId="be749438-231f-4d7c-99a2-160f4e3bac7b" valueTypeId="9bae3774-9bff-46f3-9f81-037a81333105"/>
+    <listType typeId="8c5548ac-a3ad-4173-be18-405bbefe23b3" valueTypeId="b38f7f36-028f-4014-b43c-2869225c7223"/>
+    <managerType typeId="8abad16f-d7ab-452b-a0df-2be75f6066d9" valueTypeId="2e399a27-2178-44a2-a30c-3e99d87356b8"/>
+  </producedTypes>
+  <name>ВидыРабот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды работ</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="9df0920a-1543-41f4-8e93-f74e8b16bc23">
+    <name>Больничный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Больничный</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="54dd0535-7901-47f5-b13c-2894431a9977">
+    <name>Обучение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обучение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c4078921-94a4-4537-92f3-1d499a0a6ba6">
+    <name>Отгул</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отгул</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b8d852bb-41e4-4361-95d3-2ea6febc95ac">
+    <name>Отпуск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отпуск</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1dfd65d0-854c-4ac4-a7dc-bb67ec94f887">
+    <name>Прочее</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочее</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="40c14370-0f68-426f-97de-8c1c7d92ff1d">
+    <name>РегламентированнаяРабота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регламентированная работа</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f035ee98-e8f5-4aeb-ad27-c255643e9279">
+    <name>ОкладнаяРабота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Окладная работа</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

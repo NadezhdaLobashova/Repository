@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e4f741e5-46da-4455-a75f-abd14ad34fdf">
+  <producedTypes>
+    <selectionType typeId="9aa69eb8-6a26-40b6-a05d-ec5508c7c13c" valueTypeId="d87c584e-de3f-425d-9af9-44c68a40fb84"/>
+    <listType typeId="3cf2b628-ed5b-41e2-a0f1-e25128ae7ec8" valueTypeId="fe987cb2-d7a7-4821-8a40-021162a2bbe7"/>
+    <managerType typeId="aa7cf5df-30a6-48ec-ae4a-ebff0b67d513" valueTypeId="4f20063b-b08f-4efe-b0b5-330acc45aa9f"/>
+    <recordSetType typeId="376f8b76-8e58-47be-b086-ee3bc12055fc" valueTypeId="6eb44383-ca99-4220-91f7-34c81f521d0e"/>
+    <recordKeyType typeId="83d24cba-02c9-407b-b2bf-1827d75005f6" valueTypeId="c7219fe4-c581-4bbf-b713-2797ff1a1c7f"/>
+    <recordType typeId="850edf28-38cc-4e1e-905d-597281e9a2ac" valueTypeId="ba711e10-50ad-464d-aa2b-11f3e79dd216"/>
+    <recordManagerType typeId="1002427f-aab4-4be1-bb76-0dae542825df" valueTypeId="14e8e845-8f52-4e47-84ba-de7b3eb737cc"/>
+  </producedTypes>
+  <name>ИнцидентыОграничениеСкоростиОтсылки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ограничение скорости отсылки инцидентов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="86c64a88-a8d7-4da0-9cce-ee91d1bcddd4">
+    <name>ПоследняяОтсылка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Последняя отсылка</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1c8613b3-7fb0-4acd-8d52-ef6dc3fb7f7b">
+    <name>ТипИнцидента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип инцидента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="375347b1-c51e-4e9c-b889-08612ce5d0cc">
+  <producedTypes>
+    <managerType typeId="62c992a4-1921-44a5-986d-9ab8d3cbb60e" valueTypeId="64e4728e-0eb1-44e8-9526-24de8ffbe86c"/>
+    <valueManagerType typeId="2f5071e4-d86b-4092-a5bb-842f372169fa" valueTypeId="badb15bf-b9e4-4f95-91a0-3b13ddc0f97e"/>
+    <valueKeyType typeId="aeb44f18-a4f2-50c5-889d-c1dcb43e9cf8" valueTypeId="53f44c46-31b7-5575-b3e8-a316cee07dba"/>
+  </producedTypes>
+  <name>ИспользоватьИнтеграциюСТелефонией</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать интеграцию с телефонией</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

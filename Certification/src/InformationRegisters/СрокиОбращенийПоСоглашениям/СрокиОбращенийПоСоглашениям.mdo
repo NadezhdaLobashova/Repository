@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bd0b63cd-9b93-4e84-9c5f-d89a0d4fb711">
+  <producedTypes>
+    <selectionType typeId="5a79eee2-5656-4c7e-9a09-c03866fce0a0" valueTypeId="94ef668f-3288-450d-bff3-eb596fa162b6"/>
+    <listType typeId="75f821fe-d257-4b3d-b94a-dae628488b83" valueTypeId="5b04a4b1-934b-4970-bb68-8b6ef96c57bb"/>
+    <managerType typeId="3bf5caf9-936b-478c-a43b-543f16a7da93" valueTypeId="8ca325dc-e216-4e19-9c10-bc319ec169b8"/>
+    <recordSetType typeId="a347cde4-31f3-4ca6-9382-4e42d3493f3e" valueTypeId="22a29bde-c7d3-4f25-adac-ee7e9e1743c0"/>
+    <recordKeyType typeId="040288ac-27fb-481e-98bb-70ffeecadad0" valueTypeId="4d75ec6e-8a59-4cd7-a143-898f0deb6f47"/>
+    <recordType typeId="8942705d-b8aa-4f3e-9991-eff0eafd08bc" valueTypeId="ddf34bdd-cc13-4e49-bab7-a98d46cd6e2c"/>
+    <recordManagerType typeId="a69892de-a09d-4dcd-b030-010f1140f01a" valueTypeId="03482358-d153-4f1d-9fbf-59b3587ceb55"/>
+  </producedTypes>
+  <name>СрокиОбращенийПоСоглашениям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сроки обращений по соглашениям</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СрокиОбращенийПоСоглашениям.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СрокиОбращенийПоСоглашениям.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период расчета</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата расчета сроков по обращению</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="05143c61-2fa3-4859-8a43-070ae8359a5e">
+    <name>Соглашение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соглашение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Соглашения</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Соглашение, на основании которого рассчитаны сроки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b9a3fc81-8f9c-48ed-bcf7-1825b4ac4f30">
+    <name>КлючПараметров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ параметров</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ключ параметров соглашения для, используемых для расчета сроков</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="a20ff1e0-6a5e-450a-a4e2-a37ecfb40887">
+    <name>ЛинияПоддержки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Линия поддержки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЛинииПоддержки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Линия поддержки обращения в момент расчета сроков</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d4865f5a-3ea7-41bc-a3f4-8d7d7259cab3">
+    <name>СостояниеОбращения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние обращения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СостоянияОбращений</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Состояние обращения в момент расчета сроков</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="81abf5aa-2ca0-4fc1-b356-6a393992b983">
+    <name>СрокРеакции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок реакции</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Срок реакции на обращение</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="df7872a8-2e09-4c7a-9779-0dcc9ffbfdd7">
+    <name>СрокРеакцииСорван</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок реакции сорван</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак срыва срока реакции. На обращение во время не среагировали и не приняли в работу.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="475cf88d-12c4-4676-936b-9348a0eb9c5c">
+    <name>СрокОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок обработки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Срок обработки обращения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="077edb9f-0578-4d3d-9d9c-c47c952af686">
+    <name>СрокОбработкиСорван</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок обработки сорван</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак срыва срока обработки обращения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ae8f8b0a-1f24-451f-b01e-4c864950b0c5">
+    <name>ЗатратыДоДатыРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Затраты до даты расчета, сек</value>
+    </synonym>
+    <comment>Затраты до даты расчета в секундах</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Временные затраты при работе над обращением до даты расчета сроков по обращению.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="d606da4b-6c77-4e86-9347-ccb5918eca7a">
+    <name>Обращение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обращение</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Обращение</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Обращение, по которому рассчитаны сроки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="0c225658-25e0-4f29-8975-720a59b76655">
+    <name>СрокиОбращения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сроки обращения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2f48c21f-8043-4b4c-a8c2-da42f23f0524">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4c322d34-e0db-463a-9396-32ea7f004635">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="57eaa8a2-af6a-4e1c-9a7d-d34c2d06c455">
+    <name>СрокиИДлительностьОбработкиОбращения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сроки и длительность обработки</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>DocumentRef.Обращение</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

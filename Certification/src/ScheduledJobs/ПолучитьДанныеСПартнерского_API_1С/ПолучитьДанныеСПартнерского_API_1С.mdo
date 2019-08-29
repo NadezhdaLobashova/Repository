@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee65afe5-f85a-402a-bb3c-23c9d2d1850d">
+  <name>ПолучитьДанныеСПартнерского_API_1С</name>
+  <synonym>
+    <key>ru</key>
+    <value>Получить данные с партнерского API 1С</value>
+  </synonym>
+  <methodName>CommonModule.ИнтеграцияСПартнерскимAPI_1C.ПодключитьсяКПартнерскомуAPIИЗагрузитьДанныеПоСервисамИТС</methodName>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

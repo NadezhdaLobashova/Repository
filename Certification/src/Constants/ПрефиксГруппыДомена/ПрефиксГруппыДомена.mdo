@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eb19b0ba-2672-453e-9c27-747e9d62f895">
+  <producedTypes>
+    <managerType typeId="d8e8e497-9c7d-44d1-ab5a-80009aaaa896" valueTypeId="83bc8839-0fbf-4c72-840f-d041857b01c3"/>
+    <valueManagerType typeId="c2c447b2-a6cb-4d86-a57c-67f41cb3705f" valueTypeId="548cd21b-ee25-4d97-ab5f-03eaedeb8df4"/>
+    <valueKeyType typeId="9eda5ba1-60a3-5b30-8d11-74886a0fa591" valueTypeId="c4d11746-847d-5dea-8ad6-1ced663b5351"/>
+  </producedTypes>
+  <name>ПрефиксГруппыДомена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Префикс группы домена</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

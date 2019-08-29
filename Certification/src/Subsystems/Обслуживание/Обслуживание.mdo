@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="db38a209-b94f-4cbd-acf8-01f081ccf467">
+  <name>Обслуживание</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обслуживание</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаОбслуживание</picture>
+  </picture>
+  <content>Document.Обращение</content>
+  <content>Role.ЧтениеОбращений</content>
+  <content>Role.ДобавлениеИзменениеОбращений</content>
+  <content>Document.ПриглашениеДляРегистрации</content>
+  <content>Catalog.ОбслуживающиеОрганизации</content>
+  <content>Catalog.Абоненты</content>
+  <content>FilterCriterion.КарточкиПоРазделу</content>
+  <content>Catalog.КаналыПолученияОбращений</content>
+  <content>15dcd524-420a-42fa-9409-18cc4050ac00</content>
+  <content>Enum.ТипыОбращений</content>
+  <content>Role.ДобавлениеИзменениеПриглашенийДляРегистрации</content>
+  <content>Catalog.ШаблоныТекстов</content>
+  <content>Role.ЧтениеШаблоновТекстов</content>
+  <content>Role.ДобавлениеИзменениеШаблоновТекстов</content>
+  <content>CommonModule.Обслуживание</content>
+  <content>CommonModule.ОбслуживаниеКлиент</content>
+  <content>Role.ДобавлениеИзменениеАбонентов</content>
+  <content>Role.ДобавлениеИзменениеПользователейСервиса</content>
+  <content>Role.ДобавлениеИзменениеПриложений</content>
+  <content>Role.ЧтениеПриложений</content>
+  <content>Role.ЧтениеПользователейСервиса</content>
+  <content>Role.ЧтениеАбонентов</content>
+  <content>InformationRegister.СостоянияОбращений</content>
+  <content>CommonCommand.ПанельОтчетовОбслуживание</content>
+  <content>Catalog.ПользователиСервисов</content>
+  <content>Catalog.Приложения</content>
+  <content>InformationRegister.ДлительностьОбработкиОбращений</content>
+  <content>ScheduledJob.РасчетДлительностиОбработкиАктивныхОбращений</content>
+  <content>InformationRegister.ИсторияПеренаправленийОбращений</content>
+  <content>Role.ЧтениеПриглашенийДляРегистрации</content>
+  <content>CommandGroup.ИнформационныйЦентр</content>
+  <content>Catalog.Новости</content>
+  <subsystems>БазаЗнаний</subsystems>
+  <subsystems>ДоступКОтчетам</subsystems>
+  <subsystems>КонтрольСроков</subsystems>
+  <subsystems>Обращения</subsystems>
+  <subsystems>УчетВремени</subsystems>
+  <subsystems>Тарифы</subsystems>
+</mdclass:Subsystem>

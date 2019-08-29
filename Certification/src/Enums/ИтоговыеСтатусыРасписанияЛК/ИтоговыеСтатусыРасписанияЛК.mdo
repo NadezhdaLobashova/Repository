@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ce092dce-2ca0-40cc-85d4-dc8cc0c3faf1">
+  <producedTypes>
+    <refType typeId="6ac7d9fe-77a8-4793-9b06-0e4a60b6374b" valueTypeId="8f0ce5f2-4f8f-41af-acf7-2c1c0d3d0b22"/>
+    <listType typeId="e1e938a8-d1ab-49e5-ab0d-b29f86aa6819" valueTypeId="87afea3f-2b5b-4df4-9ead-dc09cd09cc34"/>
+    <managerType typeId="0dba412e-bd3d-4b50-b216-dbea197f4939" valueTypeId="c1620235-b422-4b73-b694-503b7cd8d665"/>
+  </producedTypes>
+  <name>ИтоговыеСтатусыРасписанияЛК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Итоговые статусы расписания ЛК</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="33bdef2b-6e63-4f1a-b89a-225b3855ed38">
+    <name>Запланировано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запланировано</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a2c1062b-0b34-4c44-a5d1-40e8fd3daf67">
+    <name>ЗаписанКлиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Записан клиент</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="25d190c3-3250-4792-a448-89605f582b78">
+    <name>Блокировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блокировка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1ee13cd0-a2ab-437c-b3a5-9d29b2294246">
+    <name>ОказанаКонсультация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оказана консультация</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e653b372-4673-427a-b1e0-b78da59cbe14">
+    <name>НеОказанаКонсультация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не оказана консультация</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5f2a63c3-23f7-4b54-916b-edc884164edb">
+    <name>Свободно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свободно</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b32ed0b1-22aa-42c7-be53-630f93f87139">
+    <name>Выполнено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнено</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

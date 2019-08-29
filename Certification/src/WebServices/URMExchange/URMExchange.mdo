@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="39b0d6d4-7569-4efc-a07d-59a4aee29413">
+  <name>URMExchange</name>
+  <synonym>
+    <key>ru</key>
+    <value>URMExchange</value>
+  </synonym>
+  <namespace>http://bear.rarus.ru/OBDExchange</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.URMExcange</value>
+  </xdtoPackages>
+  <descriptorFileName>URMExchange.1cws</descriptorFileName>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="6ac28ebf-a911-486b-8e7a-6f8855a63107">
+    <name>AddTask</name>
+    <synonym>
+      <key>ru</key>
+      <value>Add task</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>DocumentJob</name>
+      <nsUri>http://bear.rarus.ru/OBDExchange</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>AddTask</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="d0a3f10a-8726-422e-8688-4408e467746c">
+      <name>Document</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document</value>
+      </synonym>
+      <xdtoValueType>
+        <name>DocumentJob</name>
+        <nsUri>http://bear.rarus.ru/OBDExchange</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="277435db-97a7-4a8b-b375-e1b0fbbdcefa">
+    <name>AddHours</name>
+    <synonym>
+      <key>ru</key>
+      <value>Add hours</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>AddHours</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="62710702-87f9-4255-a842-eff97ff0effa">
+      <name>Date1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Date1</value>
+      </synonym>
+      <xdtoValueType>
+        <name>date</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="4d0593fa-1095-4ce4-adcf-5b5625b12934">
+      <name>Date2</name>
+      <synonym>
+        <key>ru</key>
+        <value>Date2</value>
+      </synonym>
+      <xdtoValueType>
+        <name>date</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="0e54099e-cb36-485a-a6c3-00841014e9a4">
+      <name>EmployeeGUID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Employee GUID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="3655f6aa-30d3-41cb-b2f6-2629f7ecc7e8">
+      <name>ProjectGUID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Project GUID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="8f650c1e-5c1c-4d2a-a663-80edcf3e817d">
+      <name>PartnerGUID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Partner GUID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="3bb12803-798f-4dd6-9e72-be9f8494937c">
+    <name>AddDocTimeTracking</name>
+    <synonym>
+      <key>ru</key>
+      <value>Add doc time tracking</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>DocumentTimeTracking</name>
+      <nsUri>http://bear.rarus.ru/OBDExchange</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>AddDocTimeTracking</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="17ce416e-dd16-4ffd-8622-fed607b335c8">
+      <name>Document</name>
+      <synonym>
+        <key>ru</key>
+        <value>Document</value>
+      </synonym>
+      <xdtoValueType>
+        <name>DocumentTimeTracking</name>
+        <nsUri>http://bear.rarus.ru/OBDExchange</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

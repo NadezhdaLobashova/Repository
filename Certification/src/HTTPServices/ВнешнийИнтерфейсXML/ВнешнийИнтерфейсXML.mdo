@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dd992070-550f-4e0f-8e1e-da1915966054">
+  <name>ВнешнийИнтерфейсXML</name>
+  <synonym>
+    <key>ru</key>
+    <value>Внешний интерфейс XML</value>
+  </synonym>
+  <rootURL>api-xml</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="6efd880d-353d-4b5d-aac2-2f5fe0200d4b">
+    <name>Версия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия</value>
+    </synonym>
+    <template>/version</template>
+    <methods uuid="1de688ed-07ee-4a20-bfe1-46ae7bcd585e">
+      <name>ВерсияПолучить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Версия получить</value>
+      </synonym>
+      <handler>ВерсияПолучить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="5612d789-497a-43e5-980c-6abd84942a80">
+    <name>Модель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модель</value>
+    </synonym>
+    <template>/model.xsd</template>
+    <methods uuid="7b4abea8-6b8e-4e1d-8167-c2fbdfbe663a">
+      <name>МодельПолучить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Модель получить</value>
+      </synonym>
+      <handler>МодельПолучить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="35a608f0-0f5a-4d49-8b9a-caa6ac8eab2f">
+    <name>ТипОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить список, обновить\добавить объект</value>
+    </synonym>
+    <template>/{ТипОбъекта}</template>
+    <methods uuid="3a803d4e-d0cc-4364-906c-b08c249cc19f">
+      <name>ТипОбъектаСписок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип объекта список</value>
+      </synonym>
+      <handler>ТипОбъектаСписок</handler>
+    </methods>
+    <methods uuid="9dfbb6a9-45f0-40a8-ae46-6212dfbcbeec">
+      <name>ТипОбъектаДобавить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип объекта добавить</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>ТипОбъектаДобавить</handler>
+    </methods>
+    <methods uuid="27664ddd-b561-42f0-b942-957909c954ee">
+      <name>ТипОбъектаОбновить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип объекта обновить</value>
+      </synonym>
+      <httpMethod>PUT</httpMethod>
+      <handler>ТипОбъектаОбновить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="783d7d3b-d6da-466f-937f-6072f7a3d310">
+    <name>ТипОбъектаИдентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип объекта идентификатор</value>
+    </synonym>
+    <template>/{ТипОбъекта}/{Идентификатор}</template>
+    <methods uuid="317b840b-f205-4767-ae5f-eb1aea078b7a">
+      <name>ТипОбъектаИдентификаторПолучить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип объекта идентификатор получить</value>
+      </synonym>
+      <handler>ТипОбъектаИдентификаторПолучить</handler>
+    </methods>
+    <methods uuid="edb8344c-8129-4b39-b5f5-2f566bd03ad2">
+      <name>ТипОбъектаИдентификаторОбновить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип объекта идентификатор обновить</value>
+      </synonym>
+      <httpMethod>PUT</httpMethod>
+      <handler>ТипОбъектаИдентификаторОбновить</handler>
+    </methods>
+    <methods uuid="092844e5-57dc-48de-965e-84da98015a70">
+      <name>ТипОбъектаИдентификаторУдалить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип объекта идентификатор удалить</value>
+      </synonym>
+      <httpMethod>DELETE</httpMethod>
+      <handler>ТипОбъектаИдентификаторУдалить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="fefab62e-885c-4ce3-89d9-50f22e4b7b51">
+    <name>ПодчиненныеОбъекты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подчиненные объекты</value>
+    </synonym>
+    <template>/{ТипВладельца}/{ИдВладельца}/{ТипОбъекта}</template>
+    <methods uuid="3f2d669d-4381-478c-abdb-a95169e09cb0">
+      <name>ПодчиненныеОбъектыПолучитьСписок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подчиненные объекты получить список</value>
+      </synonym>
+      <handler>ПодчиненныеОбъектыПолучитьСписок</handler>
+    </methods>
+    <methods uuid="0a0ffdce-4371-4878-8ef0-2935b0aa0e77">
+      <name>ПодчиненныеОбъектыДобавить</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подчиненные объекты добавить</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>ПодчиненныеОбъектыДобавить</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="1091761a-2811-4d12-a244-fd18b0cc214b">
+    <name>ПодчиненныеОбъектыПоИд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подчиненные объекты по ид</value>
+    </synonym>
+    <template>/{ТипВладельца}/{ИдВладельца}/{ТипОбъекта}/{ИдОбъекта}</template>
+    <methods uuid="c68c4fdf-d38f-4c82-ba89-b47588b29c66">
+      <name>ПолучитьПодчиненныйОбъект</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить подчиненный объект</value>
+      </synonym>
+      <handler>ПолучитьПодчиненныйОбъект</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

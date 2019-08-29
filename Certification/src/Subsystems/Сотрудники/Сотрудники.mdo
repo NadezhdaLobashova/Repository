@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a2ad9774-b12d-4f20-8f57-af3a2f0d02ca">
+  <name>Сотрудники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сотрудники</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.УчетВремени</picture>
+  </picture>
+  <content>Document.УчетФактическихДанных</content>
+  <content>Catalog.Задачи</content>
+  <content>Report.АнализВыполненияПлана</content>
+  <content>Report.ОтчетАнализПоПроектам</content>
+  <content>Report.АнализЗагрузкиСотрудников</content>
+  <content>Report.ОтчетАнализПоПроектамИКонтрагентам</content>
+  <content>Document.ЛистУчетаРабочегоВремени</content>
+  <content>Document.РегистрацияВнеплановыхОтсутствий</content>
+  <content>Report.ВнеплановыеОтсутствия</content>
+  <content>Report.РасширенныйАнализРабот</content>
+  <content>Report.НачисленияСотрудникамПоПринятымЧасам</content>
+  <content>CommonForm.МояПрограммаРазвития</content>
+</mdclass:Subsystem>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7f556dee-62f1-4463-bb2a-ce6be718a578">
+  <producedTypes>
+    <refType typeId="ea646a46-1900-4175-baf1-8eef9c396be4" valueTypeId="ee2953ec-2015-4d7e-a3a7-706bf98a0c0b"/>
+    <listType typeId="ca813e67-3cdc-486a-ad0a-474bddc52be4" valueTypeId="807823f6-57e7-4f3f-8a7b-0a010edcd5a5"/>
+    <managerType typeId="6e950808-339f-489e-b5c5-8dd7d99d1040" valueTypeId="ed28b7aa-2f21-41b9-bc73-513174af29c5"/>
+  </producedTypes>
+  <name>ТипыОтсутствия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы отсутствия</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="9fcaa46b-12e8-4873-a84c-539e3580aa37">
+    <name>УдаленнаяРабота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удаленная работа</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e695790e-6689-4533-b3ae-60d2dfe10953">
+    <name>Отсутствие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отсутствие</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d72132e5-9221-4550-89db-ff06ad131b00">
+  <producedTypes>
+    <selectionType typeId="35e4eadc-bd00-4cb3-9b9e-f6631849fadd" valueTypeId="17c53143-4204-464f-b9ee-b349d0394e2f"/>
+    <listType typeId="e62af26d-e40d-4f4a-96e6-08612c6f0f83" valueTypeId="402feff8-86ad-4a4e-b787-baa4842e3aa1"/>
+    <managerType typeId="f789f7f4-69cb-4af0-b35a-e10badfac2ed" valueTypeId="2c20a536-4ad8-4680-baf3-1fea4b5b4eae"/>
+    <recordSetType typeId="d66c78f1-3204-4f43-acad-22a9fdfc1a9d" valueTypeId="014a5bdc-875a-483b-8c4d-b30f8582685e"/>
+    <recordKeyType typeId="1655951c-5c66-44c7-bfa5-c9ba495e2014" valueTypeId="39890cc8-4724-4eb3-bc94-ef7a11fc98a3"/>
+    <recordType typeId="a920adf6-ab12-4e35-b074-4dbf31196be8" valueTypeId="f46b5407-6064-41c2-b7f5-0d67e27bac7f"/>
+    <recordManagerType typeId="e94048fd-9776-4c7c-bc77-d6b19be74c15" valueTypeId="21c3f86a-06d5-40dd-8133-5f55a9c3b16b"/>
+  </producedTypes>
+  <name>КадроваяИстория</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кадровая история</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="9e0d5f55-decd-4e5c-90a5-f0ee83952895">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыСотрудника</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="28e39419-ed39-4ed0-b3b2-cc9fa22153d8">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2e676b94-83a6-4f28-a42a-1a106cf81b5a">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0a9e705b-06db-410d-970c-aba5272f8b7d">
+    <name>Регион</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регион</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Регионы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c9cec077-6659-4ff3-b21e-fc90c32c6147">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee991bab-1ddf-4998-98c7-c77a16a465d2">
+  <name>СрывСрокаРеакции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Срыв срока реакции</value>
+  </synonym>
+</mdclass:CommonPicture>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d410bbe9-e2ea-4a07-8dd9-337b089829fb">
+  <producedTypes>
+    <selectionType typeId="c2829942-1d9c-445f-813e-12bcb49ff20c" valueTypeId="04b334b3-fa2f-448f-9471-e6392028c6e0"/>
+    <listType typeId="c93355cb-fdf2-472d-8fbb-814561177024" valueTypeId="e094091e-debc-4947-94a3-f968750c0f78"/>
+    <managerType typeId="c98bfa61-2212-4124-9f6e-b2846c32583f" valueTypeId="bbb7e5cf-1b9b-413d-b8a3-8949eb1f736c"/>
+    <recordSetType typeId="a51b7224-78cd-4d09-836f-921249468d1c" valueTypeId="f232493d-b09c-4b4c-bce5-896627ef5f8e"/>
+    <recordKeyType typeId="418411d3-5dcc-494b-a632-2c8a2d1915eb" valueTypeId="2091b761-87a0-438a-8ffd-5f6510d478b4"/>
+    <recordType typeId="bef4d81d-b080-4710-9bc4-f90148304880" valueTypeId="ec62a915-2c7a-4e55-9ed8-36f089677163"/>
+  </producedTypes>
+  <name>ЗначенияПоказателей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значения показателей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="f2f8581c-c896-4510-952a-49a4fde82b92">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="8d9fd85b-72ad-443d-98cc-2e7c6e7a98ef">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПоказателиКарточек</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b6eacbab-42a2-43f7-aa8b-9b8bfcd4df76">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пожелания</types>
+      <types>CatalogRef.Консультации</types>
+      <types>CatalogRef.Ошибки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="461fe82b-e967-47d2-8e6d-ef36b54ab4f6">
+  <producedTypes>
+    <refType typeId="f24f856f-0904-4ee3-b2c7-7b1e112b3a99" valueTypeId="0e2a5a05-b54a-4daf-b240-0827285ba766"/>
+    <listType typeId="97e4699b-2fc6-4ffa-87d6-54c32e4040c2" valueTypeId="e5451c06-1936-445a-8819-763eb5db3db2"/>
+    <managerType typeId="b5328a2b-d99f-48d2-8863-c8d4d5e580a4" valueTypeId="485315c8-340e-40f3-aa31-25169db21812"/>
+  </producedTypes>
+  <name>СобытияУведомлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>События уведомлений</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="85db910f-ad75-4f9d-a354-fba84afa1c5d">
+    <name>ПодошелСрокЗадачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подошел срок задачи</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="38e1c441-011f-46fc-8523-c2eee2b44cc6">
+    <name>ПросроченаЗадача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Просрочена задача</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

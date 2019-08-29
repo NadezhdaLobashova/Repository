@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="28d8ea45-cbf8-44ac-80cd-34ae6e92eda3">
+  <producedTypes>
+    <objectType typeId="d05e46ef-60b6-454e-9196-f88b153bfd70" valueTypeId="e1829349-c19d-43dd-965b-8624dbda92cf"/>
+    <refType typeId="40bb0e04-33bb-476a-87e3-d92b2625f309" valueTypeId="af8ea09d-9996-4208-af79-fad31f7e9083"/>
+    <selectionType typeId="4b4bf033-a0e2-4758-a9c0-bc9afe088e18" valueTypeId="42bfceb9-d917-4be7-b264-03aa1593db6d"/>
+    <listType typeId="b056821e-c46d-4712-929a-6305134db543" valueTypeId="8b96dd35-41cb-4af2-90c6-abefdf0ef1ff"/>
+    <managerType typeId="38ba3c90-26dc-4db7-a37d-7f522b3175af" valueTypeId="cf0260ac-df5e-4f4c-828b-68354980a66b"/>
+  </producedTypes>
+  <name>РолиНаПроекте</name>
+  <synonym>
+    <key>ru</key>
+    <value>Роли на проекте</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.РолиНаПроекте.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.РолиНаПроекте.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

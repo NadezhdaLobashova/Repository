@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e460156e-5095-4d3e-8785-24786b1d3a94">
+  <name>ОбменДанныиНСИ_20</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данныи НСИ 20</value>
+  </synonym>
+  <methodName>CommonModule.ОбменДаннымиНСИ_20Сервер.ОбменДанныиНСИ_20</methodName>
+  <description>ОбменДанныиНСИ_20</description>
+  <key>ОбменДанныиНСИ_20</key>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

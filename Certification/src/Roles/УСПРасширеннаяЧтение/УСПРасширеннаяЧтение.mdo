@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="999521cb-657b-48df-a01d-1314dfcbfb3b">
+  <name>УСПРасширеннаяЧтение</name>
+  <synonym>
+    <key>ru</key>
+    <value>УСП расширенная чтение</value>
+  </synonym>
+</mdclass:Role>

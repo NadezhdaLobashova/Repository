@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9b332523-0c13-4a0e-b4f3-4165b9400118">
+  <name>Онлайн1С</name>
+  <synonym>
+    <key>ru</key>
+    <value>1С-Онлайн</value>
+  </synonym>
+</mdclass:Role>

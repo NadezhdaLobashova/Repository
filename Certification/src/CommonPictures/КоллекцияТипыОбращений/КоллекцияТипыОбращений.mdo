@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ae52a4f0-131b-4a4e-8bbf-3bcdc3bd8325">
+  <name>КоллекцияТипыОбращений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коллекция типы обращений</value>
+  </synonym>
+</mdclass:CommonPicture>

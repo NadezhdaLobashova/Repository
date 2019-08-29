@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fe7efc8d-1d04-459f-8730-5de8ec002b74">
+  <producedTypes>
+    <objectType typeId="f7d4cbc0-1b87-4c9b-aa19-526aa2ec3473" valueTypeId="ec09ce05-ed5d-4959-b643-a315eda4c239"/>
+    <managerType typeId="2af1db0b-edfd-4026-883d-0db2363a255b" valueTypeId="9478b430-5fe1-426d-b9f4-ed22b9727c4d"/>
+  </producedTypes>
+  <name>ОбращенияВРаботеПоНеделям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обращения в работе по неделям</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.ОбращенияВРаботеПоНеделям.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="645db3f5-c1bd-4478-9306-6d582fe6d7f5">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

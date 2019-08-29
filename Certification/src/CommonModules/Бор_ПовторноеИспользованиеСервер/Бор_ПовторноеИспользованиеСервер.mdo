@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="146f7a35-250d-4aaa-a135-7d4b5ea36742">
+  <name>Бор_ПовторноеИспользованиеСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бор повторное использование сервер</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <serverCall>true</serverCall>
+  <returnValuesReuse>DuringSession</returnValuesReuse>
+</mdclass:CommonModule>

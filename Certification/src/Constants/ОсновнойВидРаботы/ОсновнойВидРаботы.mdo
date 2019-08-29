@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="753f383f-88a0-47e5-9daf-40a9384f03fe">
+  <producedTypes>
+    <managerType typeId="b9c64175-8591-4002-9c4e-48fca81bb93a" valueTypeId="7c1de5da-a298-437a-9064-904fa16f1992"/>
+    <valueManagerType typeId="e82205d9-1a56-4d26-9c76-3b66e5454f23" valueTypeId="d9ac35bd-67fe-4714-8576-5dc61a2c2ec0"/>
+    <valueKeyType typeId="75488f49-d2d9-5518-bea9-27297fc9f9de" valueTypeId="b65da284-53bc-534f-952b-4b488f50e9aa"/>
+  </producedTypes>
+  <name>ОсновнойВидРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основной вид работы</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Работы</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

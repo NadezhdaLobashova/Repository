@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0cbacd6b-6fbe-4e62-8a4b-b9a9f51a393f">
+  <name>РасписаниеЛК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расписание ЛК</value>
+  </synonym>
+</mdclass:CommonPicture>

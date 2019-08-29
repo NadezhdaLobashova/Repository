@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4de2239-0d45-444c-9c92-54756b824871">
+  <producedTypes>
+    <managerType typeId="c2991747-47b2-4d4c-8676-c8769cc2edec" valueTypeId="434c768d-67d4-444a-9e80-543e4c13c125"/>
+    <valueManagerType typeId="99f88fdc-6a23-420e-9cb6-9fdd2d9b73a5" valueTypeId="ad8fffb5-0d79-411f-b47b-45363c3f7a79"/>
+    <valueKeyType typeId="ec4087d0-98bd-5c8f-9294-256231d1d546" valueTypeId="2639a5e4-2ee1-52ae-8f0f-99f2259cbe0f"/>
+  </producedTypes>
+  <name>ИспользоватьТарифы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать тарифы</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a9f7c150-9d5d-4955-b89d-d8635d159e3c">
+  <producedTypes>
+    <selectionType typeId="7b03f932-627e-4d6e-823f-446ba0d86df6" valueTypeId="e635d5fe-2daf-4e66-acbb-b44cc146c4d7"/>
+    <listType typeId="8cc22ad4-37ea-4777-8823-ee7ca6eebb41" valueTypeId="ee115cc3-0182-4ef3-b6da-226abf2ad55b"/>
+    <managerType typeId="4684784f-514c-4fa5-a752-b270c4a24ba9" valueTypeId="f47daf87-5025-419f-8fa6-4f3e77f74ce9"/>
+    <recordSetType typeId="c386fa43-fd8f-4f8c-ad22-d9b58e83e65b" valueTypeId="7d367d73-21f1-4aa4-b6cc-5605ee111536"/>
+    <recordKeyType typeId="3feb579a-63d4-4ce6-83dd-a3809c6901e2" valueTypeId="4900bf01-2be8-4929-ba52-f0b09345b59f"/>
+    <recordType typeId="9af5fb13-2a89-4335-b61e-7e97313be0e6" valueTypeId="abfab873-4840-4d0b-a72a-b774545cd548"/>
+    <recordManagerType typeId="0fe1a819-47f0-4483-a8c3-b115e0df3ec9" valueTypeId="24c73fca-0418-438e-b339-ad285a2c8c4e"/>
+  </producedTypes>
+  <name>ПривлечениеСотрудникаНаПроект</name>
+  <synonym>
+    <key>ru</key>
+    <value>Привлечение сотрудника на проект</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="41e26f0c-7bc9-4d18-a501-e567faeaed14">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fb2640ee-8c61-4525-ba42-55994d81daf7">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="366468e5-5b7f-48f9-929b-688dc962c600">
+    <name>ПодразделениеЗатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение затрат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d4b1c826-c641-42be-b753-3f248cb2cc13">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="75ae760a-0de1-4f78-8ddc-13d080cdf3a0">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

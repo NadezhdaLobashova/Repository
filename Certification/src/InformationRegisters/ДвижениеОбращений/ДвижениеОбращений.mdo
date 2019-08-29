@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ba0ed75d-d7b2-4b36-9240-445d848462dd">
+  <producedTypes>
+    <selectionType typeId="37605c7f-73c8-4dab-b13e-acbc2229c132" valueTypeId="1aeeee08-addc-40b1-be65-0aa74d4cbd03"/>
+    <listType typeId="dd6c21bc-e7ac-4d25-8607-12ade30ba593" valueTypeId="30cae169-a045-4d0c-8d7e-0a122c51c0b2"/>
+    <managerType typeId="83f83e28-81ff-4dc6-9ee5-02740ac85bc0" valueTypeId="ef1e876f-fe0f-4b75-af87-5441bad8e8a3"/>
+    <recordSetType typeId="29fd75de-292f-4553-ac42-f0f759d1b3af" valueTypeId="0709ff2f-de95-42f5-abbb-616afb12e994"/>
+    <recordKeyType typeId="1247c0b5-0dbc-4431-88df-3e2562c0bd7a" valueTypeId="450d2641-a98c-448b-85fb-413b49c021cf"/>
+    <recordType typeId="74621737-621e-418d-b96f-f01be3868740" valueTypeId="6944fc74-04e9-43f3-ae7e-fc2593b8aa25"/>
+    <recordManagerType typeId="140e6048-681d-4ebb-8c9c-cc71effd6b1e" valueTypeId="559d8657-de8c-45c8-a8a9-66217f276e7a"/>
+  </producedTypes>
+  <name>ДвижениеОбращений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движение обращений</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ДвижениеОбращений.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период движения</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="28a360fb-d288-42f6-8264-b289cf57f294">
+    <name>ОбслуживающаяОрганизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обслуживающая организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОбслуживающиеОрганизации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Обслуживающая организация исполнителя обращения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a84389b6-fe2f-421d-a847-01e591514aa5">
+    <name>ЛинияПоддержки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Линия поддержки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЛинииПоддержки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Линия поддержки исполнителя обращения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="69368917-be82-43cc-a68a-5dc2d18e1bb3">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.ЛинииПоддержки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Исполнитель обращения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="292b9697-e581-4cc2-9923-6bcdb7e26c86">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СостоянияОбращений</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Состояние обращения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="25e8df57-d040-4d0b-a0a8-52cbc7691a34">
+    <name>Обращение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обращение</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Обращение</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Обращение, по которому записано движение.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="fb1a98bb-6bce-4a7f-95aa-f0b10b678d6e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="37624800-6398-46d5-91fa-2d096e626081">
+    <name>Движения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Движения</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>DocumentRef.Обращение</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

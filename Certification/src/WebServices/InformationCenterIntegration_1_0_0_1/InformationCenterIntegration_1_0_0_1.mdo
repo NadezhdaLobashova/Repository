@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c20f01c7-57d3-4b56-afb1-802af083dee2">
+  <name>InformationCenterIntegration_1_0_0_1</name>
+  <synonym>
+    <key>ru</key>
+    <value>Information center integration 1 0 0 1</value>
+  </synonym>
+  <namespace>http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.InformationCenterIntegration_1_0_0_1</value>
+  </xdtoPackages>
+  <descriptorFileName>InformationCenterIntegration_1_0_0_1.1cws</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="8eebb31b-2239-4ec7-b7ed-e452c3de61e7">
+    <name>getIncidents</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get incidents</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>IncidentListPresentation</name>
+      <nsUri>http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьОбращения</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="a39f6c46-2d48-474e-8f3b-63a43fed6003">
+      <name>UserID</name>
+      <synonym>
+        <key>ru</key>
+        <value>User ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="2594a136-2ad0-4399-a52a-06799c89b8dc">
+      <name>PageNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>Page number</value>
+      </synonym>
+      <xdtoValueType>
+        <name>int</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="d4d0edb5-7c1b-4f2d-961b-e351328421e9">
+      <name>Filter</name>
+      <synonym>
+        <key>ru</key>
+        <value>Filter</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Filter</name>
+        <nsUri>http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="ea4193a4-5510-4235-a3b6-638ed44557cc">
+      <name>Sort</name>
+      <synonym>
+        <key>ru</key>
+        <value>Sort</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Sort</name>
+        <nsUri>http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="22eadf9f-2805-45ce-a43c-fde68e9802ba">
+    <name>getIncident</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get incident</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Incident</name>
+      <nsUri>http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьОбращение</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="37c6d46b-12bf-4dc7-887d-def8538d9646">
+      <name>UserID</name>
+      <synonym>
+        <key>ru</key>
+        <value>User ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="9062c911-2040-4373-9aab-601e060e7377">
+      <name>IncidentId</name>
+      <synonym>
+        <key>ru</key>
+        <value>Incident id</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="b0034be4-747d-4c21-a6d5-532a9a0390d0">
+    <name>getInteractions</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get interactions</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьВзаимодействияПоОбращению</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="2ac33a0f-6053-43c8-9357-83b1a10c77b5">
+      <name>UserID</name>
+      <synonym>
+        <key>ru</key>
+        <value>User ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="4d72081e-c7cf-4544-a711-613202a29ee0">
+      <name>IncidentID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Incident ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="dca16aa3-bc7a-49ad-b472-4a1d4395f626">
+      <name>PageNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>Page number</value>
+      </synonym>
+      <xdtoValueType>
+        <name>int</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="208f8cdd-6cce-472b-b9fc-4ae2427a50dc">
+    <name>getInteraction</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get interaction</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Interaction</name>
+      <nsUri>http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1</nsUri>
+    </xdtoReturningValueType>
+    <transactioned>true</transactioned>
+    <procedureName>ПолучитьВзаимодействие</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="f3c9fe8a-ed80-4094-b754-426968f5770c">
+      <name>UserID</name>
+      <synonym>
+        <key>ru</key>
+        <value>User ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="b9182594-2ed5-435c-8a82-206ca3d0a783">
+      <name>InteractionID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Interaction ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="b0aa73fd-1652-430b-b34c-c1fec25df157">
+      <name>TypeInteraction</name>
+      <synonym>
+        <key>ru</key>
+        <value>Type interaction</value>
+      </synonym>
+      <xdtoValueType>
+        <name>TypeInteracion</name>
+        <nsUri>http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="f3e2c053-3f5e-4e3b-b56d-b52a92a17238">
+      <name>Incoming</name>
+      <synonym>
+        <key>ru</key>
+        <value>Incoming</value>
+      </synonym>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="346e4d2c-2d87-41d7-a140-3cc34e7c9581">
+    <name>addComments</name>
+    <synonym>
+      <key>ru</key>
+      <value>Add comments</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>boolean</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <transactioned>true</transactioned>
+    <procedureName>ДобавитьКомментарий</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="6464929b-7e97-4347-ae4b-6baab9721748">
+      <name>UserID</name>
+      <synonym>
+        <key>ru</key>
+        <value>User ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="262f77fb-99c0-4ad0-89ef-f043c64584ec">
+      <name>IncidentID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Incident ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="9942edf3-c918-4bf5-9075-07e96b7149d2">
+      <name>Name</name>
+      <synonym>
+        <key>ru</key>
+        <value>Name</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="1211e175-8c8d-4164-af99-49eb4d97d5dd">
+      <name>HTMLText</name>
+      <synonym>
+        <key>ru</key>
+        <value>HTMLText</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="59ce799c-e81b-4b0e-802d-f8c3eb852488">
+      <name>CreateIncident</name>
+      <synonym>
+        <key>ru</key>
+        <value>Create incident</value>
+      </synonym>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="3ce888f3-1658-48c0-ac20-5a580c91150f">
+      <name>Files</name>
+      <synonym>
+        <key>ru</key>
+        <value>Files</value>
+      </synonym>
+      <xdtoValueType>
+        <name>ListFile</name>
+        <nsUri>http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="5f6ab484-2039-4dfc-9145-5c90b7f45952">
+      <name>ApplicationCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Application code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>int</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="d15a99e5-fabc-4ab0-8ae7-9a9eb6e9eca9">
+      <name>UserEmail</name>
+      <synonym>
+        <key>ru</key>
+        <value>User email</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="145e7ff9-241d-4b03-a6c2-e10275d1eef5">
+    <name>getInteractionFile</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get interaction file</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>File</name>
+      <nsUri>http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьФайлВзаимодействия</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="84f6c8ed-f9b6-46dc-bfcc-bc0a71ed5438">
+      <name>UserID</name>
+      <synonym>
+        <key>ru</key>
+        <value>User ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="49c2c7c7-1aea-4e20-bff5-92e88f514b10">
+      <name>InteractionID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Interaction ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="3776a3dd-747c-4ca7-8a17-b4b08dd2be99">
+      <name>FileID</name>
+      <synonym>
+        <key>ru</key>
+        <value>File ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="016fc487-ad2a-41c9-bea4-ea02f0c281a5">
+      <name>TypeInteracion</name>
+      <synonym>
+        <key>ru</key>
+        <value>Type interacion</value>
+      </synonym>
+      <xdtoValueType>
+        <name>TypeInteracion</name>
+        <nsUri>http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="e68b1cac-9f56-4eb1-a472-177956156947">
+      <name>Incoming</name>
+      <synonym>
+        <key>ru</key>
+        <value>Incoming</value>
+      </synonym>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="36edff05-f827-4382-9783-e7ea5909300a">
+    <name>setInteractionsViewed</name>
+    <synonym>
+      <key>ru</key>
+      <value>Set interactions viewed</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>boolean</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>УстановитьПризнакПросмотренностиУВзаимодействий</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="4803a38e-037a-4aed-914e-d50b9481c3c8">
+      <name>UserId</name>
+      <synonym>
+        <key>ru</key>
+        <value>User id</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="1033e541-5c57-43e9-b885-8034ca42958b">
+      <name>ListInteraction</name>
+      <synonym>
+        <key>ru</key>
+        <value>List interaction</value>
+      </synonym>
+      <xdtoValueType>
+        <name>ListInteraction</name>
+        <nsUri>http://www.1c.ru/1cFresh/InformationCenter/SupportServiceData/1.0.0.1</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

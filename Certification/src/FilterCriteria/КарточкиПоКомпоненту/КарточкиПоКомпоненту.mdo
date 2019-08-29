@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FilterCriterion xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6bf48134-5d6b-46cc-aadc-86fd441910a7">
+  <producedTypes>
+    <listType typeId="e12395ea-3cce-472a-895f-1e82bae62c20" valueTypeId="6c5d8070-e15a-4418-b86a-b6207cf7305d"/>
+    <managerType typeId="6d392cb0-a0e0-4a07-8ea9-2156a12a8423" valueTypeId="5ac4a069-f2d5-4d63-b1b9-f925e6652ba5"/>
+  </producedTypes>
+  <name>КарточкиПоКомпоненту</name>
+  <synonym>
+    <key>ru</key>
+    <value>Карточки по компоненту</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.КомпонентыСервиса</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <content>Catalog.Консультации.TabularSection.Компоненты.Attribute.Компонент</content>
+  <content>Catalog.Ошибки.TabularSection.Компоненты.Attribute.Компонент</content>
+  <content>Catalog.Пожелания.TabularSection.Компоненты.Attribute.Компонент</content>
+</mdclass:FilterCriterion>

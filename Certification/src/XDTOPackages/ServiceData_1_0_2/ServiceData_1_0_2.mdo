@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f43b2279-8cc9-4fdc-b139-1cae50c51e16">
+  <name>ServiceData_1_0_2</name>
+  <synonym>
+    <key>ru</key>
+    <value>Service Data 1.0.2</value>
+  </synonym>
+  <namespace>http://www.1cfresh.com/sd/data/1.0</namespace>
+</mdclass:XDTOPackage>

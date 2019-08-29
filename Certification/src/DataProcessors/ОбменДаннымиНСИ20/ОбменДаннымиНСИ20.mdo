@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d9b6e44-f2aa-47b4-9f87-a57c44353734">
+  <producedTypes>
+    <objectType typeId="3577d8c4-6063-4015-8ccb-83fd4de79381" valueTypeId="a2980b55-1fdb-4517-9574-d2b5380fbc0d"/>
+    <managerType typeId="66420418-7462-4a94-a7e7-d518dd0071ba" valueTypeId="33da9eeb-7ae6-43d3-91da-fc8ce61828c0"/>
+  </producedTypes>
+  <name>ОбменДаннымиНСИ20</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данными НСИ20</value>
+  </synonym>
+  <comment>//1С:Рарус</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОбменДаннымиНСИ20.Form.Форма</defaultForm>
+  <attributes uuid="c7a7af7a-d69d-4115-9033-3d3d9b5f8ad1">
+    <name>ПредставлениеПакетаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление пакета обмена</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="02ec2608-41e9-4bda-b350-d4e3afff28f6">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="18d6a8f2-8385-41a7-bc78-ba261b204584">
+    <name>ФормаОсновная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма основная</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ea79f201-b8f2-4922-abf9-51eb1e02f32f">
+  <name>КонтрольСроков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль сроков</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Соглашения</content>
+  <content>InformationRegister.СрокиОбращенийПоСоглашениям</content>
+  <content>InformationRegister.СоглашенияСервисов</content>
+  <content>InformationRegister.ОтправленныеОповещенияПоСоглашениям</content>
+  <content>ScheduledJob.ОтправкаОповещенийПоСоглашениям</content>
+  <content>ScheduledJob.КонтрольСроковОбращенийПоСоглашениям</content>
+  <content>CommonModule.Соглашения</content>
+  <content>Enum.ТипыСрывовСроков</content>
+  <content>Enum.ВыраженияПолучателей</content>
+  <content>ChartOfCharacteristicTypes.КлючевыеРеквизитыОбращений</content>
+  <content>Role.ЧтениеСоглашений</content>
+  <content>d1e44722-377a-405f-80b6-1b3780079dd4</content>
+  <content>7aa4fb96-f5ad-4367-b0ad-55e70c3e0c8f</content>
+  <content>Role.ДобавлениеИзменениеСоглашений</content>
+  <parentSubsystem>Subsystem.Обслуживание</parentSubsystem>
+</mdclass:Subsystem>

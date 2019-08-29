@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9afeb4b1-a256-4aa4-8692-24cc61267661">
+  <name>ПрисоединенныеФайлыУСП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Присоединенные файлы УСП</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

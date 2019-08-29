@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="19fdd06e-5593-44ee-b344-9dd6d8ccc60b">
+  <name>News_1_0_1</name>
+  <synonym>
+    <key>ru</key>
+    <value>News 1 0 1</value>
+  </synonym>
+  <namespace>http://www.1cfresh.com/sd/news/1.0</namespace>
+</mdclass:XDTOPackage>

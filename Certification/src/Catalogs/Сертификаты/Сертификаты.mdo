@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5cd779ce-ae5f-45ef-946a-ebc30a2f90e0">
+  <producedTypes>
+    <objectType typeId="50bc3ac8-c23d-416e-a649-6552dbbd133b" valueTypeId="1c6c370d-f740-4c8b-9e3c-918efd96fca1"/>
+    <refType typeId="274376bc-eb62-4ed9-9291-b2ac2e4a3f78" valueTypeId="cd85f9a5-abc9-4e8a-aefc-a8123a6f76ca"/>
+    <selectionType typeId="d221200d-41d9-4ec0-86f8-248a24ebc10c" valueTypeId="aa3708a3-e89e-478f-8775-16c670c5590e"/>
+    <listType typeId="87a2c9ac-627e-41d5-a658-f9f68ab90943" valueTypeId="4ea689b4-d8cf-4b48-8d69-2b811e0abd97"/>
+    <managerType typeId="67760a55-1cde-4c8d-a721-5d3606296108" valueTypeId="f23838c6-7719-4b14-bc3b-5c2db9bc9ad5"/>
+  </producedTypes>
+  <name>Сертификаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сертификаты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Сертификаты.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Сертификаты.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

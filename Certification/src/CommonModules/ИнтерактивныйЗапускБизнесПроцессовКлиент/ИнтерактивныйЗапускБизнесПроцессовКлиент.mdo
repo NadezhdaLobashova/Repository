@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a837aa7d-eb19-4575-97d5-962b6808d809">
+  <name>ИнтерактивныйЗапускБизнесПроцессовКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интерактивный запуск бизнес процессов клиент</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

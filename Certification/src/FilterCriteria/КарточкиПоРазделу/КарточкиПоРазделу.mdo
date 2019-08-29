@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FilterCriterion xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e832a8f-8689-4fcb-9e17-1ec15bfe7de8">
+  <producedTypes>
+    <listType typeId="ce7bd595-ba7a-47d4-9971-42769888d294" valueTypeId="edb95468-09f8-4581-ba7a-287a5a731e91"/>
+    <managerType typeId="852a33c3-13f7-4d9a-a6bf-51579833a8c9" valueTypeId="77d30366-c907-4464-bfec-fd2d048e009d"/>
+  </producedTypes>
+  <name>КарточкиПоРазделу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Карточки по разделу</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Разделы</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <content>Catalog.Консультации.TabularSection.Разделы.Attribute.Раздел</content>
+  <content>Catalog.Ошибки.TabularSection.Разделы.Attribute.Раздел</content>
+  <content>Catalog.Пожелания.TabularSection.Разделы.Attribute.Раздел</content>
+</mdclass:FilterCriterion>

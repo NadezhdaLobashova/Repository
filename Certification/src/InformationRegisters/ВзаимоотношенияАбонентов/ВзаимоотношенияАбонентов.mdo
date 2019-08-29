@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1e521572-9542-47d1-bf33-8a38ff188d73">
+  <producedTypes>
+    <selectionType typeId="f684aa41-5b4b-4aeb-8bd5-e57ae8390910" valueTypeId="6ace22ad-3259-44ab-89bb-d890baceeae8"/>
+    <listType typeId="6f492654-58fa-4ff4-9df1-c2cdbc98572b" valueTypeId="8b41fce2-6d68-42b1-9c64-0cef43d9e21c"/>
+    <managerType typeId="52a34df1-76e4-42a6-a68f-0780badf8089" valueTypeId="1a72af37-5cbb-4630-9111-5d2105c7b806"/>
+    <recordSetType typeId="9bf43dc4-83e9-4830-aa19-dcff3d64950c" valueTypeId="7b13a9e3-0cd3-41be-a16d-041f96a588ea"/>
+    <recordKeyType typeId="5cffc95a-6600-46dc-be47-249611000830" valueTypeId="7c4e8239-1dae-4217-aeaf-3a670c59d874"/>
+    <recordType typeId="54bbc379-1b27-4093-9786-b8a6befa09b1" valueTypeId="eac88ec0-4b7f-42f3-b9a3-a80fe3b9f5f7"/>
+    <recordManagerType typeId="3ef562ab-b29a-41e8-a34f-5cbe86c0c79b" valueTypeId="e4ee2cd2-ec9a-4b5f-942d-ebe9abc13ca0"/>
+  </producedTypes>
+  <name>ВзаимоотношенияАбонентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взаимоотношения абонентов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ВзаимоотношенияАбонентов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ВзаимоотношенияАбонентов.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="2d1c97a9-78a7-45e2-ab32-666795689b17">
+    <name>ВедущийАбонент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ведущий абонент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Абоненты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="79fba12f-ccd4-4e5f-8ff0-1978f9dfc3b3">
+    <name>Абонент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Абонент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Абоненты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+  </dimensions>
+  <dimensions uuid="517017c0-2c9d-4e0f-99f3-d3d643103ada">
+    <name>ВидВзаимоотношений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид взаимоотношений</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыВзаимоотношений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВидыВзаимоотношений.EnumValue.ОбслуживающаяОрганизацияАбонент</value>
+    </fillValue>
+  </dimensions>
+  <forms uuid="e1b95e40-1e37-42c4-9d46-3244dcb99e54">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d5a7673b-8d1b-4584-b52a-7ab4015bfc5d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d535a992-e714-4c9a-ab70-4449f1d2185b">
+    <name>ВедущийАбонентАбонент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обслуживающая организация для...</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e6932f23-c899-42e5-ac6c-286076a8becc">
+    <name>АбонентВедущийАбонент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обслуживается у...</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dbf2f188-128f-4280-91d2-24d362b77043">
+    <name>ВзаимоотношенияАбонента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Взаимоотношения абонента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="741aa708-80fd-4c8b-babf-f8d71f63b4f8">
+    <name>ВедущийАбонентАбонент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Абоненты на обслуживании</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Абоненты</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="adde1a4d-80c9-4f9d-a0e0-4cdfa6d5df73">
+    <name>АбонентВедущийАбонент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Где обслуживается</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Абоненты</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="080954ef-f9da-4165-a957-e67d82c50551">
+    <name>ВзаимоотношенияАбонента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Взаимоотношения</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Абоненты</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

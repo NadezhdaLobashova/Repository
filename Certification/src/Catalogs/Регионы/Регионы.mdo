@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fa3ea442-ae3e-4810-8ec8-311aefd9c6b6">
+  <producedTypes>
+    <objectType typeId="023e5f6a-7d09-4e0e-9701-2e2bdc1fb8b6" valueTypeId="2325e2e9-9ee6-41ab-bfab-cb2f4ec217c4"/>
+    <refType typeId="abd69684-aae1-4980-868d-0b95e7c79270" valueTypeId="b58be6b1-de92-49f5-b701-093751e228b5"/>
+    <selectionType typeId="71ed155b-0747-4e56-a4e0-f52f3fb5e2fa" valueTypeId="434f2db3-2b40-4b37-8aa4-eb531908a2f5"/>
+    <listType typeId="6a7ac397-63b7-48a0-8a44-95e470542270" valueTypeId="21d24887-8844-441b-b1e9-c0da6f1ba619"/>
+    <managerType typeId="31d75099-7087-457a-aac1-33a01d7ada34" valueTypeId="ceb1b5d1-8ea2-4b5c-9a9b-bbdb0a632d7b"/>
+  </producedTypes>
+  <name>Регионы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регионы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Регионы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Регионы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="14657bee-0e11-46a9-b008-f1d43c12a93f">
+      <name>Новосибирск</name>
+      <description>Новосибирск</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="04f51717-7d36-4e7e-82fc-0e6c4bedfbe0">
+    <name>РайонныйКоэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Районный коэффициент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

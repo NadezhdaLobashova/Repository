@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="203ecfd6-10de-446c-be87-fb43d817d0ab">
+  <producedTypes>
+    <selectionType typeId="9a4e5aa4-ce82-40fd-af11-405f9b455f35" valueTypeId="30d8f034-862d-46d2-8530-003f1b6df635"/>
+    <listType typeId="f534e42f-234e-4a27-93f0-1741a3095cd6" valueTypeId="5a03b98b-d541-4c9d-a51d-281863ee307a"/>
+    <managerType typeId="83cea0a9-91b4-4072-a159-fa7db0243041" valueTypeId="a51f7bff-b8a5-41f2-93b6-c44a06e98b64"/>
+    <recordSetType typeId="27ec310b-b728-4cc2-b3bb-c93debd7f9ff" valueTypeId="30008ba3-30f3-4e9e-8295-b15f96f41814"/>
+    <recordKeyType typeId="07779f73-ce0d-4617-bf5c-e79afc49bc4f" valueTypeId="3c8050a3-67ce-41ea-9a80-9264829aeee9"/>
+    <recordType typeId="23a99b60-7729-4b70-af95-270e0216074c" valueTypeId="87a384f7-6ed3-47ea-82f8-f9088cacef50"/>
+    <recordManagerType typeId="c9f5a99c-5ae5-4896-ae06-f3eb9f82dcc7" valueTypeId="c99b78fb-fde8-4b81-91b6-72781483ac0a"/>
+  </producedTypes>
+  <name>ИсторияПеренаправленийОбращений</name>
+  <synonym>
+    <key>ru</key>
+    <value>История перенаправлений обращений</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период записи</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="fb55c6d8-cb34-4268-808c-bfd3ac8f7ff1">
+    <name>ИсходнаяОбслуживающаяОрганизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходная обслуживающая организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОбслуживающиеОрганизации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Исходная обслуживающая организация исполнителя</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bb35dfcf-75c4-4c47-afe7-316e0f814743">
+    <name>ИсходнаяЛинияПоддержки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходная линия поддержки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЛинииПоддержки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Исходная линия поддержки исполнителя</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="48f266be-1d28-492c-9821-84e8a0053c05">
+    <name>ИсходныйИсполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходный исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.ЛинииПоддержки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Исходный исполнитель обращения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="65784a96-7297-4828-abed-09623d5c6e4d">
+    <name>ОбслуживающаяОрганизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обслуживающая организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОбслуживающиеОрганизации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Обслуживающая организация исполнителя</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c28925ed-caf3-4043-8de4-b0fd0376c504">
+    <name>ЛинияПоддержки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Линия поддержки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЛинииПоддержки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Линия поддержки исполнителя</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0dc2854c-8f1f-4234-9b8e-4bf6742ab28a">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.ЛинииПоддержки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Исполнитель обращения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d96e3ac4-c935-4bef-b241-bb085bf59cd9">
+    <name>Обращение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обращение</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Обращение</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Обращение, по которому зафиксировано перенаправление</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

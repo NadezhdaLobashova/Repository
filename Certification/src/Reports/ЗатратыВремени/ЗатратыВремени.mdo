@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1e3673e6-8f5a-4e7d-839c-9f7e545d1034">
+  <producedTypes>
+    <objectType typeId="4bfc554a-ef58-4b2b-88c5-104e13ed3001" valueTypeId="798097b0-3704-43b4-a8f9-d7228b6a9c56"/>
+    <managerType typeId="168b640c-f0f5-4e89-a406-efa3e2cc0eda" valueTypeId="3f25f81b-611c-430c-b531-f9486b39c410"/>
+  </producedTypes>
+  <name>ЗатратыВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Затраты времени</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.ЗатратыВремени.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <explanation>
+    <key>ru</key>
+    <value>Общий отчет по затратам времени</value>
+  </explanation>
+  <templates uuid="ac6894d9-9bea-4401-a761-634b9e05fb72">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

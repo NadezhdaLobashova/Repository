@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="caafe46b-af23-45f6-bba9-8caf651eb425">
+  <producedTypes>
+    <selectionType typeId="a758ae2f-f861-49ae-83e6-7b3df5a391a9" valueTypeId="b151470b-16fe-49b7-80ac-dbd3d52c1052"/>
+    <listType typeId="b6b9328f-e3e4-4b9f-801b-93722847717f" valueTypeId="0f152e87-3be1-4640-b83a-de63d2962b95"/>
+    <managerType typeId="05c39018-628b-4e01-9dd3-563f0577ff2d" valueTypeId="d7dab705-388d-455d-89e9-cc64c67b5b8c"/>
+    <recordSetType typeId="19ef522d-c093-4e71-9ab2-b0e0643a81d5" valueTypeId="9a3b4241-fb0f-41f4-bad8-59f2ce0bfd30"/>
+    <recordKeyType typeId="96fbc131-cece-4f8e-9469-7273abf01547" valueTypeId="a713f39f-15f9-48d9-87a0-fba523a1f35f"/>
+    <recordType typeId="53ccb6ab-799f-40fd-8edb-087f1417684b" valueTypeId="b6ff6914-7cea-4978-bfa5-cd403d35a7e6"/>
+    <recordManagerType typeId="5bf09513-59d0-445d-8952-e39359da5bb5" valueTypeId="5fbc52e7-7e40-4457-bfb2-e3a9b3bc84af"/>
+  </producedTypes>
+  <name>РуководителиПодразделений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Руководители подразделений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="76d05806-8971-4c4b-aa85-365cf7d42bf0">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9b066faa-44e0-4d55-9d7f-5c7e87023b2b">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6b58faae-d0f4-4cfc-9323-db9e71b65a2d">
+    <name>ВидРуководства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид руководства</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыРуководства</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

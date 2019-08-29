@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f4baa2b-4b92-411b-8d78-39d28a5b0df8">
+  <producedTypes>
+    <objectType typeId="aa0f0129-505e-46dc-8f0e-1fce160e16cd" valueTypeId="95cd6513-124c-45a8-a380-413877713b5d"/>
+    <refType typeId="f6bd8af7-5d9c-46b4-89d5-c6ccb39c24bf" valueTypeId="3eb5d5c7-8fbd-4193-adc3-762100b8d236"/>
+    <selectionType typeId="f2604dc7-b9fe-475c-98cd-49d110f39c58" valueTypeId="dabe6a25-3649-41f5-9561-d8579995f56f"/>
+    <listType typeId="5051232c-451a-444d-a698-12cfef943e67" valueTypeId="6e5246ee-6b38-4f93-b96f-f8fd48e593c7"/>
+    <managerType typeId="23f43f1e-27ea-4346-bfff-f7ac75a6b40d" valueTypeId="4e6e9ca4-a4dd-4fdf-8328-806eb5fde52d"/>
+  </producedTypes>
+  <name>СтатьиПланирования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статьи планирования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СтатьиПланирования.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СтатьиПланирования.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <hierarchyType>HierarchyOfItems</hierarchyType>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>3</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="77b13aac-730a-4e5a-b5c7-caa89b1261dc">
+    <name>УчетПоСумме</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет по сумме</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="17b185cc-f230-4dd4-a874-85a5a1a05ce9">
+    <name>УчетВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет времени</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e2dfae04-25f2-4bf5-acb2-3cf3ad340480">
+    <name>ВидСтатьи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид статьи</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыСтатейПланирования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

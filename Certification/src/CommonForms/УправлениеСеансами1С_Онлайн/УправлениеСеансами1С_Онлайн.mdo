@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="629538fd-8a81-4b58-b7aa-e541e57e9134">
+  <name>УправлениеСеансами1С_Онлайн</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление сеансами 1C - Онлайн</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+</mdclass:CommonForm>

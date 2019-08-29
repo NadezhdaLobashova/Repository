@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="17d17e7d-fa6a-4094-a94b-566647ebc2a2">
+  <producedTypes>
+    <objectType typeId="87186887-0980-44ab-bb0b-2f8555df5fa7" valueTypeId="c8ee8404-db67-411c-83ab-83e9689483fe"/>
+    <refType typeId="88baf69e-5eb1-4c19-b8b4-ce451e9bdfae" valueTypeId="c5872007-ef78-480f-996e-03c5bf16c991"/>
+    <selectionType typeId="b966a9cf-c033-4e9e-9b07-3be3eeb32834" valueTypeId="3bb47046-2680-4d16-8bfb-37a209b4dbcd"/>
+    <listType typeId="f803e40f-d411-4720-b79d-a81b86f2bba1" valueTypeId="7ba01bed-9800-4613-aedb-c8e1bd13f9ea"/>
+    <managerType typeId="908cd06d-7c1a-4a0c-b00d-625d0f0a633f" valueTypeId="fd560293-f882-41b5-8b2d-596ab25752f3"/>
+  </producedTypes>
+  <name>ЭтапыПроектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Этапы проектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЭтапыПроектов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЭтапыПроектов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Проекты</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>Catalog.ЭтапыПроектов.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ЭтапыПроектов.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="96fd0cd0-4a4b-4882-a5c1-d7d64b6cf6c2">
+    <name>RedmineID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Redmine ID</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c102f9b4-7a65-439f-9b90-a22d77968fe5">
+    <name>Неактуальный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Неактуальный</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="1de60e35-669e-48de-a15b-f85fb2602421">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8ae4eb0e-d552-49bf-83fa-d979343c07c2">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

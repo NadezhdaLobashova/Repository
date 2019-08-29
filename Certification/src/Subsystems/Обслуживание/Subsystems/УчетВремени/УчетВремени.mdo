@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c7ecbee3-ae7c-4880-87bb-c2629be65a39">
+  <name>УчетВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет времени</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.ФактическиеТрудозатраты</content>
+  <content>Report.ЗатратыВремени</content>
+  <content>CommonModule.УчетВремениКлиентСервер</content>
+  <content>CommonModule.УчетВремени</content>
+  <content>CommonModule.УчетВремениКлиент</content>
+  <content>Role.ДобавлениеИзменениеФактическихТрудозатрат</content>
+  <content>Role.КонтрольФактическихТрудозатрат</content>
+  <content>Report.СтоимостьПоддержки</content>
+  <content>CommonModule.УчетВремениВызовСервера</content>
+  <parentSubsystem>Subsystem.Обслуживание</parentSubsystem>
+</mdclass:Subsystem>

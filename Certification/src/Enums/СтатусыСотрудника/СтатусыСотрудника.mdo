@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2619ce60-a288-4b2f-9409-b779984402dc">
+  <producedTypes>
+    <refType typeId="5133d016-7249-49de-9561-d9cb068f702d" valueTypeId="fd5ca4d2-9892-4843-b88e-41f13a2465e9"/>
+    <listType typeId="183b3485-4b07-4f99-97ad-739d79c26094" valueTypeId="7b006f32-6694-4152-8a68-dffd9d5a9b99"/>
+    <managerType typeId="f30ae5eb-7f87-416e-b18f-588e23730a75" valueTypeId="a3d81c69-bf4d-48be-a55a-a8e667f1c28f"/>
+  </producedTypes>
+  <name>СтатусыСотрудника</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы сотрудника</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="2f9fa476-6994-49de-92fd-3acc4a9e3246">
+    <name>Работает</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работает</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0009df92-845e-40cd-a638-fb0bc704c82d">
+    <name>НеРаботает</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не работает</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

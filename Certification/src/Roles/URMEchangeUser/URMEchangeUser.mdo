@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bc305ded-f1ec-441e-80a2-4434395edeec">
+  <name>URMEchangeUser</name>
+  <synonym>
+    <key>ru</key>
+    <value>URMEchange user</value>
+  </synonym>
+</mdclass:Role>

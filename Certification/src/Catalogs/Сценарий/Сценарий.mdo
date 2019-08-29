@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="34551d42-3698-4b3d-b294-426a8af7978a">
+  <producedTypes>
+    <objectType typeId="1ad9f500-5722-4612-9580-8a2d2fcb00af" valueTypeId="43ba1240-6680-44e1-8201-e8c942db24d4"/>
+    <refType typeId="d89cf438-10ac-4950-9bc1-7435106eb291" valueTypeId="5211090d-9e15-48cd-a3f9-c51b85091678"/>
+    <selectionType typeId="6417a1b2-b174-430c-8e7c-a6c87b84afe8" valueTypeId="791b04ca-16ef-47da-b7db-e8073cc4d578"/>
+    <listType typeId="7b52fb0c-756a-41f2-b363-b45f5de102d6" valueTypeId="7f21124e-5ac0-4722-8150-a7397522dca0"/>
+    <managerType typeId="e33690c5-1081-449c-a560-156ae41e2825" valueTypeId="91f9f1bb-505e-419f-a2e0-4b6d9958f0d5"/>
+  </producedTypes>
+  <name>Сценарий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сценарий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Сценарий.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Сценарий.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="96c23e35-907c-4eba-965c-a8758d338116">
+      <name>План</name>
+      <description>План</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="e3854e4f-b40c-45ba-9a17-bba8b5ff3f4f">
+      <name>Прогноз</name>
+      <description>Прогноз</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="36cbfe4f-cd98-4901-911d-e14fe9cb2c11">
+      <name>Факт</name>
+      <description>Факт</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="2996def1-2c0b-4a4e-91dc-0d16070cc8d1">
+    <name>Основной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основной</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

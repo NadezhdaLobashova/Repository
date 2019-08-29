@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5ab94def-888b-4d51-9d66-15fd17272208">
+  <producedTypes>
+    <refType typeId="a073f408-a999-400b-83c4-79b69b2fa5c9" valueTypeId="5fc09dae-873f-40c3-a082-bceddd3ce4a5"/>
+    <listType typeId="9505623d-e7f5-4576-8c8d-36d7d8de42fc" valueTypeId="a69fa753-7464-4409-9a0a-952f89d8b322"/>
+    <managerType typeId="ddc1c663-80bf-433b-9674-1bcc329121b9" valueTypeId="8e379b30-6d6c-4e6a-b531-4660972da1eb"/>
+  </producedTypes>
+  <name>СостоянияОшибок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния ошибок</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="0fe8214c-d795-454e-997c-c98cf7b782b6">
+    <name>Расследование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расследование</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="321dfc40-841d-4ac0-b801-cea35e8a1183">
+    <name>Запланирована</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запланирована к исправлению</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="08bb04e9-9f75-4dd3-b842-f6f76f58a8d5">
+    <name>НаИсправлении</name>
+    <synonym>
+      <key>ru</key>
+      <value>На исправлении</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9274e9fd-04f0-4d56-b2ae-c0f6dd40242f">
+    <name>Исправлена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исправлена</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

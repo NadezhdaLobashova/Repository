@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="76b7c38b-4bfb-4815-b7b5-1aa3b7160bd2">
+  <producedTypes>
+    <selectionType typeId="8ebf697f-3863-4916-b90c-9b4f10501f7e" valueTypeId="5c01a4cc-7cf6-4cb5-a70e-a577a7e5f698"/>
+    <listType typeId="09f14887-451e-4973-9a8d-869a2eea714d" valueTypeId="a7a8d6a7-9dbb-48cd-b521-6c54ab4d3882"/>
+    <managerType typeId="19935ebd-a879-41a6-85e8-aca4beb04673" valueTypeId="a575ade8-b42a-457d-afbc-528ca1edf3c9"/>
+    <recordSetType typeId="7bffe566-6e4b-45a7-890e-76a8c5187b1d" valueTypeId="45ed5d5d-4493-4999-9f9d-f2004005d657"/>
+    <recordKeyType typeId="58077cb2-3974-44e0-95c6-432422a06933" valueTypeId="62af8b30-791d-43aa-a647-4b1794429137"/>
+    <recordType typeId="25293623-9df2-4c3e-a5ee-7d245b88c3df" valueTypeId="54a73491-7dde-4d6a-b555-57b4fb70f7d0"/>
+    <recordManagerType typeId="6a75b8d2-a6ad-42f0-8a8f-7fdd2e7024c6" valueTypeId="2e749656-4e09-443a-820d-54eecd0c1ab9"/>
+  </producedTypes>
+  <name>РазрешениеДоступаДляКлиентовКомпании</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разрешение доступа для клиентов компании</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="bad60716-4862-42f4-85dd-ef44ae519709">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="11daca86-13a8-4f25-a35e-f9a563d1aa38">
+    <name>Абонент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Абонент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Абоненты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8335ef82-3f65-41a3-9db9-00d4cce631cd">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d437d3b6-7969-4567-80ba-7568e4528c1a">
+    <name>ЭтапПроекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап проекта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭтапыПроектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

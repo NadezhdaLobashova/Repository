@@ -1,0 +1,71 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.1c.ru/1cFresh/InformationCenter/UsersIdeas/1.0.0.1">
+	<valueType name="StatusFilter" base="xs:string">
+		<enumeration xsi:type="xs:string">plan</enumeration>
+		<enumeration xsi:type="xs:string">voiting</enumeration>
+		<enumeration xsi:type="xs:string">deviation</enumeration>
+		<enumeration xsi:type="xs:string">realization</enumeration>
+		<enumeration xsi:type="xs:string">favorites</enumeration>
+		<enumeration xsi:type="xs:string">search</enumeration>
+	</valueType>
+	<valueType name="SortType" base="xs:string">
+		<enumeration xsi:type="xs:string">PlanMadeDate</enumeration>
+		<enumeration xsi:type="xs:string">CreateDate</enumeration>
+		<enumeration xsi:type="xs:string">ClosingDate</enumeration>
+		<enumeration xsi:type="xs:string">CommentsCount</enumeration>
+		<enumeration xsi:type="xs:string">Rating</enumeration>
+		<enumeration xsi:type="xs:string">ChangingDate</enumeration>
+	</valueType>
+	<objectType name="StatusFilterArray">
+		<property xmlns:d3p1="http://www.1c.ru/1cFresh/InformationCenter/UsersIdeas/1.0.0.1" name="StatusFilterElement" type="d3p1:StatusFilter" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="SubjectFilterArray">
+		<property name="SubjectFilterElement" type="xs:string" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="IdeaListPresentation">
+		<property xmlns:d3p1="http://www.1c.ru/1cFresh/InformationCenter/UsersIdeas/1.0.0.1" name="IdeasList" type="d3p1:Idea" lowerBound="0" upperBound="-1"/>
+		<property name="IdeasCount" type="xs:int"/>
+		<property name="SubjectsList" type="xs:string" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Idea">
+		<property name="Id" type="xs:string"/>
+		<property name="Name" type="xs:string"/>
+		<property name="UserId" type="xs:string"/>
+		<property name="UserName" type="xs:string"/>
+		<property name="CommentsCount" type="xs:int"/>
+		<property name="HTMLText" type="xs:string"/>
+		<property name="Subject" type="xs:string"/>
+		<property name="Status" type="xs:string"/>
+		<property name="CreateDate" type="xs:dateTime"/>
+		<property name="ClosingDate" type="xs:dateTime"/>
+		<property name="PlanMadeDate" type="xs:dateTime"/>
+		<property name="PlanMadeDatePresentation" type="xs:string"/>
+		<property name="DeveloperComment" type="xs:string"/>
+		<property name="PositiveVotesSum" type="xs:int"/>
+		<property name="NegativeVotesSum" type="xs:int"/>
+		<property name="Vote" type="xs:int"/>
+		<property xmlns:d3p1="http://www.1c.ru/1cFresh/InformationCenter/UsersIdeas/1.0.0.1" name="Attachments" type="d3p1:Attachment" lowerBound="0" upperBound="-1"/>
+		<property name="Text" type="xs:string"/>
+		<property name="Rating" type="xs:int"/>
+	</objectType>
+	<objectType name="IdeaPresentation">
+		<property xmlns:d3p1="http://www.1c.ru/1cFresh/InformationCenter/UsersIdeas/1.0.0.1" name="Idea" type="d3p1:Idea"/>
+		<property xmlns:d3p1="http://www.1c.ru/1cFresh/InformationCenter/UsersIdeas/1.0.0.1" name="CommentsList" type="d3p1:IdeaComment" lowerBound="0" upperBound="-1"/>
+		<property name="IdeaCommentsCount" type="xs:int"/>
+	</objectType>
+	<objectType name="Attachment">
+		<property name="Name" type="xs:string"/>
+		<property name="Data" type="xs:base64Binary"/>
+	</objectType>
+	<objectType name="IdeaComment">
+		<property name="UserName" type="xs:string"/>
+		<property name="UserId" type="xs:string"/>
+		<property name="Date" type="xs:dateTime"/>
+		<property name="IsSupport" type="xs:boolean"/>
+		<property name="Text" type="xs:string"/>
+		<property xmlns:d3p1="http://www.1c.ru/1cFresh/InformationCenter/UsersIdeas/1.0.0.1" name="MainIdeaComment" type="d3p1:IdeaComment" nillable="true"/>
+		<property name="Id" type="xs:string"/>
+	</objectType>
+	<objectType name="AttachmentList">
+		<property xmlns:d3p1="http://www.1c.ru/1cFresh/InformationCenter/UsersIdeas/1.0.0.1" name="AttachmentElement" type="d3p1:Attachment" lowerBound="0" upperBound="-1"/>
+	</objectType>
+</package>

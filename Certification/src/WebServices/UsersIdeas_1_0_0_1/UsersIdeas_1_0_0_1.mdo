@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f74c79e7-b7ff-4cee-acd3-e4f805e163ae">
+  <name>UsersIdeas_1_0_0_1</name>
+  <synonym>
+    <key>ru</key>
+    <value>Users ideas 1 0 0 1</value>
+  </synonym>
+  <namespace>http://www.1c.ru/1cFresh/InformationCenter/UsersIdeas/1.0.0.1</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.News_1_0_1</value>
+  </xdtoPackages>
+  <descriptorFileName>UsersIdeas_1_0_0_1.1cws</descriptorFileName>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="54bfcc1e-d61d-4269-bd4f-c1c605957c06">
+    <name>addIdea</name>
+    <synonym>
+      <key>ru</key>
+      <value>Add idea</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>boolean</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ДобавитьПожелание</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="3db3d2d1-ef30-4525-8dbe-b82ce031eec9">
+      <name>UserId</name>
+      <synonym>
+        <key>ru</key>
+        <value>User id</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="0186b1d4-51e8-423b-b59d-475ab3590b5f">
+      <name>HTMLText</name>
+      <synonym>
+        <key>ru</key>
+        <value>HTMLText</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="d2a7142e-0c27-409b-9048-0df85df2acbf">
+      <name>Attachments</name>
+      <synonym>
+        <key>ru</key>
+        <value>Attachments</value>
+      </synonym>
+      <xdtoValueType>
+        <name>AttachmentList</name>
+        <nsUri>http://www.1c.ru/1cFresh/InformationCenter/UsersIdeas/1.0.0.1</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="487fdc7d-dd9e-4dbc-ba8d-34c942492a6b">
+      <name>Subject</name>
+      <synonym>
+        <key>ru</key>
+        <value>Subject</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="b3dc543b-ee18-4da2-a400-65a0736b5726">
+      <name>Name</name>
+      <synonym>
+        <key>ru</key>
+        <value>Name</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="a1bdbed2-20a2-4fec-9c3e-c7020ac34387">
+    <name>addIdeaComment</name>
+    <synonym>
+      <key>ru</key>
+      <value>Add idea comment</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>boolean</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ДобавитьКомментарийКПожеланию</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="7bac60b1-3080-4fd2-8094-ed3cd86e0e60">
+      <name>IdeaId</name>
+      <synonym>
+        <key>ru</key>
+        <value>Idea id</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="91ee549c-6804-4068-aee9-143c5341c053">
+      <name>UserId</name>
+      <synonym>
+        <key>ru</key>
+        <value>User id</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="a36a1989-346c-47be-8ba6-9184ee7084ea">
+      <name>CommentId</name>
+      <synonym>
+        <key>ru</key>
+        <value>Comment id</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="bbf9a011-aa1f-4668-b292-5c5aed388bfb">
+      <name>Text</name>
+      <synonym>
+        <key>ru</key>
+        <value>Text</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="6c265786-0810-46b8-8fb2-7c436e08e1de">
+    <name>addVote</name>
+    <synonym>
+      <key>ru</key>
+      <value>Add vote</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>boolean</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ДобавитьГолос</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="85ec8c7a-4601-4dbb-9b68-38dd8071cd5f">
+      <name>IdeaId</name>
+      <synonym>
+        <key>ru</key>
+        <value>Idea id</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="f242fec2-cdd3-403f-a2fc-18dc034a450d">
+      <name>UserId</name>
+      <synonym>
+        <key>ru</key>
+        <value>User id</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="09820c7f-c50d-4ffa-93ce-08bb07ccdd69">
+      <name>Vote</name>
+      <synonym>
+        <key>ru</key>
+        <value>Vote</value>
+      </synonym>
+      <xdtoValueType>
+        <name>int</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="3352f8ff-9151-4a2d-9d0d-0788bd37f815">
+    <name>deleteIdeaComment</name>
+    <synonym>
+      <key>ru</key>
+      <value>Delete idea comment</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>boolean</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>УдалитьКомментарийКПожеланию</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="29170edc-b54e-45fb-823e-396d34e06f21">
+      <name>CommentId</name>
+      <synonym>
+        <key>ru</key>
+        <value>Comment id</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="98c132b8-9f9b-4d60-8c15-32fafaee7d52">
+    <name>getIdea</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get idea</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>IdeaPresentation</name>
+      <nsUri>http://www.1c.ru/1cFresh/InformationCenter/UsersIdeas/1.0.0.1</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьПожелание</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="73c7eaf6-ef47-4384-9e07-101e75030f24">
+      <name>Id</name>
+      <synonym>
+        <key>ru</key>
+        <value>Id</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="87add184-d10c-4008-b639-c69e1650ba8a">
+      <name>UserId</name>
+      <synonym>
+        <key>ru</key>
+        <value>User id</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="77f06cb4-d835-4e21-8470-2ca34e503e05">
+      <name>PageCommentNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>Page comment number</value>
+      </synonym>
+      <xdtoValueType>
+        <name>int</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="83f9fa94-2d05-40df-86db-84489bbdd9a5">
+      <name>CountCommentsOnPage</name>
+      <synonym>
+        <key>ru</key>
+        <value>Count comments on page</value>
+      </synonym>
+      <xdtoValueType>
+        <name>int</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="18df8f2d-751d-4044-a976-2a5894747363">
+    <name>getIdeas</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get ideas</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>IdeaListPresentation</name>
+      <nsUri>http://www.1c.ru/1cFresh/InformationCenter/UsersIdeas/1.0.0.1</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьПожелания</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="3d94ad8e-3bfd-4a3c-8aa9-64c613dc9d31">
+      <name>StatusFilter</name>
+      <synonym>
+        <key>ru</key>
+        <value>Status filter</value>
+      </synonym>
+      <xdtoValueType>
+        <name>StatusFilter</name>
+        <nsUri>http://www.1c.ru/1cFresh/InformationCenter/UsersIdeas/1.0.0.1</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="59dc57a0-f461-4e1d-91f5-e579c3662c64">
+      <name>SubjectsFilter</name>
+      <synonym>
+        <key>ru</key>
+        <value>Subjects filter</value>
+      </synonym>
+      <xdtoValueType>
+        <name>SubjectFilterArray</name>
+        <nsUri>http://www.1c.ru/1cFresh/InformationCenter/UsersIdeas/1.0.0.1</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="9b4fbd13-1f08-42d4-ae7b-afed39b4efb4">
+      <name>Sort</name>
+      <synonym>
+        <key>ru</key>
+        <value>Sort</value>
+      </synonym>
+      <xdtoValueType>
+        <name>SortType</name>
+        <nsUri>http://www.1c.ru/1cFresh/InformationCenter/UsersIdeas/1.0.0.1</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="16b11f40-5a6a-406a-86f5-0cea2036a537">
+      <name>PageNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>Page number</value>
+      </synonym>
+      <xdtoValueType>
+        <name>int</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="a9a90e7f-6ba5-4341-b57c-ad401b790b4d">
+      <name>UserId</name>
+      <synonym>
+        <key>ru</key>
+        <value>User id</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="2218fb8a-8d43-42e6-a3d7-1ff57f9de07d">
+      <name>CountIdeasOnPage</name>
+      <synonym>
+        <key>ru</key>
+        <value>Count ideas on page</value>
+      </synonym>
+      <xdtoValueType>
+        <name>int</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="4128166d-97db-4070-854d-43b1ce1752ed">
+    <name>searchIdeas</name>
+    <synonym>
+      <key>ru</key>
+      <value>Search ideas</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>IdeaListPresentation</name>
+      <nsUri>http://www.1c.ru/1cFresh/InformationCenter/UsersIdeas/1.0.0.1</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>НайтиПожелания</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="6bf5d6ab-7c66-4aed-a13a-0c62051be85b">
+      <name>Request</name>
+      <synonym>
+        <key>ru</key>
+        <value>Request</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="63b670ba-b066-4788-b4ca-fbbb4317c018">
+      <name>StatusFilter</name>
+      <synonym>
+        <key>ru</key>
+        <value>Status filter</value>
+      </synonym>
+      <xdtoValueType>
+        <name>StatusFilter</name>
+        <nsUri>http://www.1c.ru/1cFresh/InformationCenter/UsersIdeas/1.0.0.1</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="c8a4f25d-7a45-4140-83b3-e4d7e67c421f">
+      <name>SubjectsFilter</name>
+      <synonym>
+        <key>ru</key>
+        <value>Subjects filter</value>
+      </synonym>
+      <xdtoValueType>
+        <name>SubjectFilterArray</name>
+        <nsUri>http://www.1c.ru/1cFresh/InformationCenter/UsersIdeas/1.0.0.1</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="479956b4-d4d1-49c3-87b0-7124d1b99322">
+      <name>Sort</name>
+      <synonym>
+        <key>ru</key>
+        <value>Sort</value>
+      </synonym>
+      <xdtoValueType>
+        <name>SortType</name>
+        <nsUri>http://www.1c.ru/1cFresh/InformationCenter/UsersIdeas/1.0.0.1</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="81e8b07e-cae7-45f2-9411-ec2cdad07d85">
+      <name>PageNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>Page number</value>
+      </synonym>
+      <xdtoValueType>
+        <name>int</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="02dd84df-89f5-47e9-afa4-1cdc611e8fad">
+      <name>UserId</name>
+      <synonym>
+        <key>ru</key>
+        <value>User id</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="54ea9269-db2e-4841-b240-1309ed62a6d6">
+      <name>CountIdeasOnPage</name>
+      <synonym>
+        <key>ru</key>
+        <value>Count ideas on page</value>
+      </synonym>
+      <xdtoValueType>
+        <name>int</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

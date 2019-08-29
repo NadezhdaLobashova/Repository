@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="693402d4-d107-4997-9a11-46b80b02d4eb">
+  <producedTypes>
+    <objectType typeId="e5b3c81f-86dc-4681-b04c-6dbac056eb7f" valueTypeId="af95d36a-c28d-48a5-810f-9f63e95b1122"/>
+    <refType typeId="b5347735-f097-4c8b-9fea-d174af37a94d" valueTypeId="5100a75a-bd67-4102-8fb6-9cdb1f09b297"/>
+    <selectionType typeId="14d80021-85a9-43d9-ab14-a19bece50fa3" valueTypeId="6ecc6307-4e7a-48d3-89fe-888c5a500a6a"/>
+    <listType typeId="d87cc40c-8f1f-477f-8517-193999d2537b" valueTypeId="bd98d598-651e-4a9d-8842-72e0c68d1138"/>
+    <managerType typeId="29e05b2f-cb3b-44eb-b3d0-d908c1b5efa4" valueTypeId="faa1b9cc-e2a9-4a99-9b93-93df8b774eb0"/>
+  </producedTypes>
+  <name>УстановкаСтавок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка ставок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.УстановкаСтавок.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.УстановкаСтавок.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.УстановкаСтавок.Form.ФормаСписка</defaultListForm>
+  <registerRecords>InformationRegister.СтавкиСотрудниковПоВидамРабот</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="5ca3c62f-9926-4e1b-83aa-308595dc06a0">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="900fd2bb-bb65-435f-881d-1eab8fc06dc0">
+    <name>Регион</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регион</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Регионы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="25baace0-cc21-47d7-a73d-4353ce696fe4">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="ebdcb82d-eb96-455c-92f2-8bdda30ec505">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="56542679-49ef-45d8-96f9-3b55ef68c7b1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="da33bb99-3994-4ef2-b6ab-178272bc9ee4">
+    <producedTypes>
+      <objectType typeId="9b3846c8-990b-4a2b-b017-03c3776a8688" valueTypeId="21b690b4-7f0e-4604-8a0e-6106e1279e9c"/>
+      <rowType typeId="7a30a606-9f68-4dff-aa1f-94dd2e807f71" valueTypeId="20e20ca9-1bdf-4d61-a56e-56be42a8e704"/>
+    </producedTypes>
+    <name>Ставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставки</value>
+    </synonym>
+    <attributes uuid="997f5f5c-1a08-4a7e-a30a-de1567a32420">
+      <name>Ставка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ставка</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b3cfd99e-69f8-4f39-b116-5c6817e9d8c0">
+      <name>Оклад</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оклад</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6273db64-c52b-4586-8c06-a4176fa49e3e">
+      <name>ВидРаботы</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид работы</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВидыРабот</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d85e094a-44ef-4d45-82d2-76ad9772c3dc">
+      <name>УдалитьДолжность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Удалить должность</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Должности</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aac3553d-d8c5-4f42-9fb3-0577ae25ecb8">
+  <producedTypes>
+    <selectionType typeId="77cd817b-81a8-4839-9546-32876fd79928" valueTypeId="3aeaad92-19e9-4a94-8292-bc3119096e5a"/>
+    <listType typeId="140eefda-ba35-45b8-93be-e8a630c1fe1c" valueTypeId="4a99381c-e772-4b53-a0b5-5a38efe056b7"/>
+    <managerType typeId="5cca728c-4c03-4a92-b035-869e5ca00147" valueTypeId="f15f94c3-16f6-430c-b6ac-e6b5439bba6c"/>
+    <recordSetType typeId="1aa8f4a5-68ae-493f-b2bf-1db7b5efe06a" valueTypeId="e42786a0-8838-4b62-869c-3948d009d320"/>
+    <recordKeyType typeId="b4a33525-97c2-44fa-97ea-5ffc6361d2a8" valueTypeId="158476c8-4aff-4042-923a-5057ccff6713"/>
+    <recordType typeId="59b52f34-ce98-4df0-ad2c-28cb3b33c891" valueTypeId="562c4fb6-391c-4785-9198-bad5c0edef05"/>
+    <recordManagerType typeId="ce9aaa6a-10e8-4861-bc5d-2d95a316c3f7" valueTypeId="e57399d2-e536-4d8d-8f5d-eb7d475c971f"/>
+  </producedTypes>
+  <name>ЗначенияНастроекТелефонии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значения настроек телефонии</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="08ca8b6f-56cf-48ae-9dd9-14f8c7281199">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Characteristic.НастройкиТелефонии</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="e3146a46-dfac-4646-b1b7-492d64f8d15e">
+    <name>Сервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервис</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сервисы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f4623714-3ea9-4b5e-a9ef-9486f61b65ae">
+    <name>Настройка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.НастройкиТелефонии</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

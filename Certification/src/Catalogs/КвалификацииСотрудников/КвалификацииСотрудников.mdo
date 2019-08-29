@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b182a1c-012c-4a47-b7d7-75a06163202e">
+  <producedTypes>
+    <objectType typeId="fc7cde7a-0e5c-430e-8fff-85a2ec8a9f2e" valueTypeId="6c0e67f1-f983-44e2-86a6-1d163d54fa51"/>
+    <refType typeId="d292f8f3-38bd-49ba-8f94-aa79106d25a6" valueTypeId="4d87f216-224a-460a-b06e-c338dfd77327"/>
+    <selectionType typeId="0fdd64ae-00c1-46a8-8298-66a2c356bc3d" valueTypeId="bf7c9290-cf8d-46c5-9df8-eccae64988bc"/>
+    <listType typeId="67cda495-c461-401e-a60f-67df19c14458" valueTypeId="8cb1e80e-6e1b-4ca0-a78c-8f0416b1a91d"/>
+    <managerType typeId="ad9ef512-ef22-446e-97c6-d21018672d91" valueTypeId="e39beabb-592c-4195-ba20-ef0b897abeb7"/>
+  </producedTypes>
+  <name>КвалификацииСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Квалификации сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КвалификацииСотрудников.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.КвалификацииСотрудников.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>80</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="843b61f9-37e3-4391-a241-7e8123af918c">
+      <name>Программист</name>
+      <description>Программист</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="95b6cb76-b8d8-46bb-bb32-159ad4ac1258">
+      <name>СуперПрограммист</name>
+      <description>Супер программист</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:SessionParameter xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9cce8c48-d53d-4cd2-9932-a794014126c7">
+  <name>ПустаяОбслуживающаяОрганизация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пустая обслуживающая организация</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ОбслуживающиеОрганизации</types>
+  </type>
+</mdclass:SessionParameter>

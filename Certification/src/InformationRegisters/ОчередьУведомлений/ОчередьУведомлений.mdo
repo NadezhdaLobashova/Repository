@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5382d119-d9dc-4af9-ad02-0d86492c88c0">
+  <producedTypes>
+    <selectionType typeId="eda5f246-6d60-4b1e-9f46-3a677c118cf3" valueTypeId="7c8e1dfa-903d-4ccd-aa63-3364b51e268e"/>
+    <listType typeId="5c160a3f-705b-4f29-a890-54d97965a9aa" valueTypeId="8f428c75-e7f9-456d-8c95-b19f5eff197e"/>
+    <managerType typeId="ee564dd2-08a6-415f-a4df-8139a823a64d" valueTypeId="94c87750-e5cd-4d74-b615-fbcc757d42b2"/>
+    <recordSetType typeId="dc2e16fa-00c0-4bfa-b38d-f1be7dbbeae1" valueTypeId="d05b4edf-7537-41a3-8d78-aee706770d00"/>
+    <recordKeyType typeId="3473d28b-af02-4af4-8a8f-30734bc80b43" valueTypeId="a58e6196-98f3-40bf-b036-637ae734c250"/>
+    <recordType typeId="68dfd801-038f-44c7-973f-8addec883cbf" valueTypeId="ddffd650-1029-47fe-bc89-337027bda7c0"/>
+    <recordManagerType typeId="60dd28f9-7d59-44ac-8193-e8a80de2fa23" valueTypeId="1ac3e64f-1293-48b2-962a-dc80e1d80bef"/>
+  </producedTypes>
+  <name>ОчередьУведомлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь уведомлений</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ОчередьУведомлений.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6d6eca8b-4c01-4b3f-ac67-c605a9411472">
+    <name>КоличествоПопытокОтправки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество попыток отправки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9e232ab1-105f-4ce3-bf93-5a1228b34a37">
+    <name>ТекстУведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст уведомления</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="50c93885-df7c-42c3-8ae9-19471a6b1137">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>TaskRef.ЗадачаИсполнителя</types>
+      <types>CatalogRef.Пожелания</types>
+      <types>CatalogRef.Консультации</types>
+      <types>CatalogRef.Пользователи</types>
+      <types>DocumentRef.Обращение</types>
+      <types>CatalogRef.Ошибки</types>
+      <types>BusinessProcessRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a9b7f2ca-91b9-4405-901e-a525e6574ea3">
+    <name>Получатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.ЛинииПоддержки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="befa61b6-1a53-4a2c-9685-f102aea5c0ca">
+    <name>ВидСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид события</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыБизнесСобытий</types>
+      <types>EnumRef.СобытияУведомлений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="16af390f-14d6-4d16-bf42-7ba00e635a9d">
+    <name>ОбъектПодписки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект подписки</value>
+    </synonym>
+    <type>
+      <types>TaskRef.ЗадачаИсполнителя</types>
+      <types>CatalogRef.Пожелания</types>
+      <types>CatalogRef.Консультации</types>
+      <types>CatalogRef.Пользователи</types>
+      <types>DocumentRef.Обращение</types>
+      <types>CatalogRef.Ошибки</types>
+      <types>BusinessProcessRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="71ae0ae3-97e8-45a4-a962-1377ba8477e1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

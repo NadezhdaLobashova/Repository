@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5139fee9-0309-454e-b802-8ddf08a2b1cb">
+  <name>Экономист</name>
+  <synonym>
+    <key>ru</key>
+    <value>Экономист</value>
+  </synonym>
+</mdclass:Role>

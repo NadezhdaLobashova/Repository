@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1fdeafb2-bd2b-422f-a382-949a1a20ba9f">
+  <name>АФ_СпециалистДАК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Специалист ДАК</value>
+  </synonym>
+</mdclass:Role>

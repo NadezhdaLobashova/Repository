@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="468a168f-f30f-4b9a-bf4d-32312f443512">
+  <producedTypes>
+    <objectType typeId="4e2d3dd6-435a-4282-a514-c3edfa53ca67" valueTypeId="98a4ff53-1b9b-4137-968f-44a4c3b74192"/>
+    <managerType typeId="ba2badd7-d350-4dcc-bb21-8f0e2f6e0a4d" valueTypeId="6442e950-74a9-4a05-8006-425a8ea77ba8"/>
+  </producedTypes>
+  <name>ОтчетПоЗагруженнымДаннымСервисовИТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по загруженным данным сервисов ИТС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОтчетПоЗагруженнымДаннымСервисовИТС.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="836cc897-20e6-4f7b-8361-d1e7d5c53f0d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

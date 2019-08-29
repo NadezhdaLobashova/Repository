@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="69034bd7-83c8-4893-819e-8b0cffc8817e">
+  <producedTypes>
+    <managerType typeId="fd54d0e3-5bd1-48ec-a842-973392909589" valueTypeId="93e84617-d38d-441d-a780-5dea92b76b2f"/>
+    <valueManagerType typeId="e58e58c2-b020-4445-9750-11ac3f350acc" valueTypeId="648da04c-6e84-4c9c-9849-a33a7c1303d1"/>
+    <valueKeyType typeId="71d13637-da45-5c54-8a28-2692a28e64bb" valueTypeId="a349164e-b78b-5ab4-b38b-acedc98d182d"/>
+  </producedTypes>
+  <name>ОБД_Порт</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Порт подключения</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

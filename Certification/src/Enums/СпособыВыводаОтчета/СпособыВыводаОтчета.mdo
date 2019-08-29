@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="173b1e34-f0e1-4575-b6d8-2ecd671f0d85">
+  <producedTypes>
+    <refType typeId="8a5dca79-6db7-4d2e-ab6b-5a11c03f748f" valueTypeId="6bc43cb4-571c-47be-a25e-b51d1239965e"/>
+    <listType typeId="acfee9b1-26a8-4d26-8423-688c84e64845" valueTypeId="75654bee-f331-433c-9ca7-a703d06f0ebb"/>
+    <managerType typeId="7016dbbc-d9e1-4d44-bd6c-9eb793f161ef" valueTypeId="38b5bd02-b519-433a-a97a-4d7d5d1f3826"/>
+  </producedTypes>
+  <name>СпособыВыводаОтчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы вывода отчета</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Способ вывода отчета</value>
+  </listPresentation>
+  <enumValues uuid="b43435c4-b1b0-4096-ba8a-9fb68c393dd4">
+    <name>ПоВертикали</name>
+    <synonym>
+      <key>ru</key>
+      <value>По вертикали</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7f811e5d-b7c9-44cf-832e-106c903c3a0b">
+    <name>ПоГоризонтали</name>
+    <synonym>
+      <key>ru</key>
+      <value>По горизонтали</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

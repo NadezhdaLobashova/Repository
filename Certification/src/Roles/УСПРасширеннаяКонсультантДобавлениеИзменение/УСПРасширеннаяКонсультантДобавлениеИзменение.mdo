@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c803466b-1d24-4369-b507-b7349d9a7661">
+  <name>УСПРасширеннаяКонсультантДобавлениеИзменение</name>
+  <synonym>
+    <key>ru</key>
+    <value>УСП расширенная консультант добавление изменение</value>
+  </synonym>
+</mdclass:Role>

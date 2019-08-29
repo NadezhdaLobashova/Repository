@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b46d1047-b536-43fb-ba26-0a2e62f0af5e">
+  <name>ИнтерграцияСПартнерскимAPI_1C</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интерграция с партнерским API 1 C</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ОбновлениеВнешнихКомпонентССайта</picture>
+  </picture>
+  <content>InformationRegister.СсылкаНаЗагрузкуСпискаС_ПартнерскогоAPI_1С</content>
+  <content>Constant.ДанныеАутентификацииСПартнерскимAPI_1C</content>
+  <content>Catalog.СервисыИТС</content>
+  <content>Catalog.Абоненты</content>
+  <content>ScheduledJob.ПолучитьДанныеСПартнерского_API_1С</content>
+  <content>Document.РегистрационнаяАнкета</content>
+  <content>Document.РегистрацияИТС</content>
+  <content>InformationRegister.ПродуктыАбонента</content>
+  <content>Catalog.ВидыСервисовИТС</content>
+  <content>InformationRegister.ПодпискиНаСервисИТС</content>
+  <content>Report.ОтчетПоЗагруженнымДаннымСервисовИТС</content>
+</mdclass:Subsystem>

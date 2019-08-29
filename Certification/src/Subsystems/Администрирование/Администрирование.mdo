@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a028a12f-9516-4775-9a1e-a5990808dff0">
+  <name>Администрирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.РазделАдминистрирование</picture>
+  </picture>
+  <content>Constant.ЗаголовокСистемы</content>
+  <content>CommonForm.ИзменениеПароляПользователяИБ</content>
+  <content>CommonForm.МоиНастройки</content>
+  <content>CommonCommand.ДополнительныеОбработкиАдминистрирование</content>
+  <content>CommonCommand.ДополнительныеОтчетыАдминистрирование</content>
+  <content>CommonCommand.ПанельОтчетовАдминистрирование</content>
+  <content>DataProcessor.ПанельАдминистрированияБСП</content>
+  <content>DataProcessor.ПанельАдминистрированияУСП</content>
+  <content>Catalog.Сервисы</content>
+  <content>Catalog.Конфигурации</content>
+  <content>Catalog.ОбслуживающиеОрганизации</content>
+  <content>Catalog.ИнформационныеБазы</content>
+  <content>Catalog.ШаблоныПоручений</content>
+  <content>Catalog.ШаблоныТекстов</content>
+  <content>15dcd524-420a-42fa-9409-18cc4050ac00</content>
+  <content>Report.ИспользуемыеВнешниеРесурсы</content>
+  <content>Report.МестаИспользованияСсылок</content>
+  <content>Report.ПраваДоступа</content>
+  <content>Report.СведенияОПользователях</content>
+  <content>Catalog.ПроизводственныеКалендари</content>
+  <content>Catalog.Календари</content>
+  <content>Catalog.Витрины</content>
+</mdclass:Subsystem>
